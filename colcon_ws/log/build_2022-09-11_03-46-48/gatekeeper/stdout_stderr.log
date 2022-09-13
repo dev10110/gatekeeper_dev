@@ -1,0 +1,14 @@
+[35m[1mScanning dependencies of target nominal_controller[0m
+[ 60%] Built target gatekeeper
+[ 80%] [32mBuilding CXX object CMakeFiles/nominal_controller.dir/src/nominal_controller.cpp.o[0m
+/root/colcon_ws/src/gatekeeper/src/nominal_controller.cpp: In constructor ‘NominalController::NominalController()’:
+/root/colcon_ws/src/gatekeeper/src/nominal_controller.cpp:37:5: error: ‘joy_sub_’ was not declared in this scope
+   37 |     joy_sub_ = this->create_subscription<sensor_msgs::msg::Joy>("/joy", 10,
+      |     ^~~~~~~~
+/root/colcon_ws/src/gatekeeper/src/nominal_controller.cpp: In member function ‘void NominalController::publish_one_trajectory()’:
+/root/colcon_ws/src/gatekeeper/src/nominal_controller.cpp:131:21: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<double, std::allocator<double> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  131 |     for (int i=0; i < msg.ts.size(); i++){
+      |                   ~~^~~~~~~~~~~~~~~
+make[2]: *** [CMakeFiles/nominal_controller.dir/build.make:63: CMakeFiles/nominal_controller.dir/src/nominal_controller.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:107: CMakeFiles/nominal_controller.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

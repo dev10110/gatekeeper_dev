@@ -1,0 +1,39 @@
+[0.016s] Invoking command in '/root/colcon_ws/build/gatekeeper': CMAKE_PREFIX_PATH=/root/colcon_ws/install/dasc_msgs:/opt/ros/foxy:/root/colcon_ws/install/realsense_gazebo_plugin:/root/colcon_ws/install/px4_ros_com:/root/colcon_ws/install/dasc_robot:/root/colcon_ws/install/px4_msgs:/root/colcon_ws/install/gatekeeper:/root/colcon_ws/install/experiment LD_LIBRARY_PATH=/root/colcon_ws/install/dasc_msgs/lib:/root/colcon_ws/install/realsense_gazebo_plugin/lib:/root/colcon_ws/install/px4_ros_com/lib:/root/colcon_ws/install/dasc_robot/lib:/root/colcon_ws/install/px4_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib PYTHONPATH=/root/colcon_ws/install/dasc_msgs/lib/python3.8/site-packages:/root/colcon_ws/install/px4_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/cmake --build /root/colcon_ws/build/gatekeeper -- -j16 -l16
+[0.074s] [35m[1mScanning dependencies of target nominal_controller[0m
+[0.075s] [35m[1mScanning dependencies of target gatekeeper[0m
+[0.111s] [ 20%] [32mBuilding CXX object CMakeFiles/nominal_controller.dir/src/nominal_controller.cpp.o[0m
+[0.128s] [ 40%] [32mBuilding CXX object CMakeFiles/gatekeeper.dir/src/gatekeeper.cpp.o[0m
+[4.686s] /root/colcon_ws/src/gatekeeper/src/nominal_controller.cpp: In member function ‘void NominalController::publish_one_trajectory()’:
+[4.686s] /root/colcon_ws/src/gatekeeper/src/nominal_controller.cpp:111:12: warning: unused variable ‘R’ [-Wunused-variable]
+[4.686s]   111 |     double R = 0.5;
+[4.686s]       |            ^
+[4.686s] /root/colcon_ws/src/gatekeeper/src/nominal_controller.cpp: In member function ‘void NominalController::joy_callback(sensor_msgs::msg::Joy_<std::allocator<void> >::SharedPtr)’:
+[4.686s] /root/colcon_ws/src/gatekeeper/src/nominal_controller.cpp:196:60: warning: unused parameter ‘msg’ [-Wunused-parameter]
+[4.686s]   196 |   void joy_callback(const sensor_msgs::msg::Joy::SharedPtr msg){
+[4.686s]       |                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+[4.701s] [ 60%] [32m[1mLinking CXX executable nominal_controller[0m
+[4.935s] [ 60%] Built target nominal_controller
+[19.609s] [ 80%] [32m[1mLinking CXX executable gatekeeper[0m
+[22.021s] [100%] Built target gatekeeper
+[22.036s] Invoked command in '/root/colcon_ws/build/gatekeeper' returned '0': CMAKE_PREFIX_PATH=/root/colcon_ws/install/dasc_msgs:/opt/ros/foxy:/root/colcon_ws/install/realsense_gazebo_plugin:/root/colcon_ws/install/px4_ros_com:/root/colcon_ws/install/dasc_robot:/root/colcon_ws/install/px4_msgs:/root/colcon_ws/install/gatekeeper:/root/colcon_ws/install/experiment LD_LIBRARY_PATH=/root/colcon_ws/install/dasc_msgs/lib:/root/colcon_ws/install/realsense_gazebo_plugin/lib:/root/colcon_ws/install/px4_ros_com/lib:/root/colcon_ws/install/dasc_robot/lib:/root/colcon_ws/install/px4_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib PYTHONPATH=/root/colcon_ws/install/dasc_msgs/lib/python3.8/site-packages:/root/colcon_ws/install/px4_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/cmake --build /root/colcon_ws/build/gatekeeper -- -j16 -l16
+[22.072s] Invoking command in '/root/colcon_ws/build/gatekeeper': CMAKE_PREFIX_PATH=/root/colcon_ws/install/dasc_msgs:/opt/ros/foxy:/root/colcon_ws/install/realsense_gazebo_plugin:/root/colcon_ws/install/px4_ros_com:/root/colcon_ws/install/dasc_robot:/root/colcon_ws/install/px4_msgs:/root/colcon_ws/install/gatekeeper:/root/colcon_ws/install/experiment LD_LIBRARY_PATH=/root/colcon_ws/install/dasc_msgs/lib:/root/colcon_ws/install/realsense_gazebo_plugin/lib:/root/colcon_ws/install/px4_ros_com/lib:/root/colcon_ws/install/dasc_robot/lib:/root/colcon_ws/install/px4_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib PYTHONPATH=/root/colcon_ws/install/dasc_msgs/lib/python3.8/site-packages:/root/colcon_ws/install/px4_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/cmake --install /root/colcon_ws/build/gatekeeper
+[22.084s] -- Install configuration: ""
+[22.085s] -- Execute custom install script
+[22.085s] -- Up-to-date symlink: /root/colcon_ws/install/gatekeeper/lib/gatekeeper/nominal_controller
+[22.085s] -- Up-to-date symlink: /root/colcon_ws/install/gatekeeper/lib/gatekeeper/gatekeeper
+[22.086s] -- Up-to-date symlink: /root/colcon_ws/install/gatekeeper/share/ament_index/resource_index/package_run_dependencies/gatekeeper
+[22.086s] -- Up-to-date symlink: /root/colcon_ws/install/gatekeeper/share/ament_index/resource_index/parent_prefix_path/gatekeeper
+[22.086s] -- Up-to-date symlink: /root/colcon_ws/install/gatekeeper/share/gatekeeper/environment/ament_prefix_path.sh
+[22.086s] -- Up-to-date symlink: /root/colcon_ws/install/gatekeeper/share/gatekeeper/environment/ament_prefix_path.dsv
+[22.086s] -- Up-to-date symlink: /root/colcon_ws/install/gatekeeper/share/gatekeeper/environment/path.sh
+[22.086s] -- Up-to-date symlink: /root/colcon_ws/install/gatekeeper/share/gatekeeper/environment/path.dsv
+[22.086s] -- Up-to-date symlink: /root/colcon_ws/install/gatekeeper/share/gatekeeper/local_setup.bash
+[22.087s] -- Up-to-date symlink: /root/colcon_ws/install/gatekeeper/share/gatekeeper/local_setup.sh
+[22.087s] -- Up-to-date symlink: /root/colcon_ws/install/gatekeeper/share/gatekeeper/local_setup.zsh
+[22.087s] -- Up-to-date symlink: /root/colcon_ws/install/gatekeeper/share/gatekeeper/local_setup.dsv
+[22.087s] -- Symlinking: /root/colcon_ws/install/gatekeeper/share/gatekeeper/package.dsv
+[22.102s] -- Up-to-date symlink: /root/colcon_ws/install/gatekeeper/share/ament_index/resource_index/packages/gatekeeper
+[22.102s] -- Up-to-date symlink: /root/colcon_ws/install/gatekeeper/share/gatekeeper/cmake/gatekeeperConfig.cmake
+[22.102s] -- Up-to-date symlink: /root/colcon_ws/install/gatekeeper/share/gatekeeper/cmake/gatekeeperConfig-version.cmake
+[22.102s] -- Up-to-date symlink: /root/colcon_ws/install/gatekeeper/share/gatekeeper/package.xml
+[22.106s] Invoked command in '/root/colcon_ws/build/gatekeeper' returned '0': CMAKE_PREFIX_PATH=/root/colcon_ws/install/dasc_msgs:/opt/ros/foxy:/root/colcon_ws/install/realsense_gazebo_plugin:/root/colcon_ws/install/px4_ros_com:/root/colcon_ws/install/dasc_robot:/root/colcon_ws/install/px4_msgs:/root/colcon_ws/install/gatekeeper:/root/colcon_ws/install/experiment LD_LIBRARY_PATH=/root/colcon_ws/install/dasc_msgs/lib:/root/colcon_ws/install/realsense_gazebo_plugin/lib:/root/colcon_ws/install/px4_ros_com/lib:/root/colcon_ws/install/dasc_robot/lib:/root/colcon_ws/install/px4_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib PYTHONPATH=/root/colcon_ws/install/dasc_msgs/lib/python3.8/site-packages:/root/colcon_ws/install/px4_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/cmake --install /root/colcon_ws/build/gatekeeper

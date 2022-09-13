@@ -1,0 +1,159 @@
+[0.000000] (-) TimerEvent: {}
+[0.000119] (-) JobUnselected: {'identifier': 'dasc_msgs'}
+[0.000155] (-) JobUnselected: {'identifier': 'dasc_robot'}
+[0.000176] (-) JobUnselected: {'identifier': 'experiment'}
+[0.000196] (-) JobUnselected: {'identifier': 'px4_msgs'}
+[0.000213] (-) JobUnselected: {'identifier': 'px4_ros_com'}
+[0.000237] (-) JobUnselected: {'identifier': 'realsense_gazebo_plugin'}
+[0.000258] (gatekeeper) JobQueued: {'identifier': 'gatekeeper', 'dependencies': OrderedDict([('dasc_msgs', '/root/colcon_ws/install/dasc_msgs')])}
+[0.000280] (gatekeeper) JobStarted: {'identifier': 'gatekeeper'}
+[0.010339] (gatekeeper) JobProgress: {'identifier': 'gatekeeper', 'progress': 'cmake'}
+[0.010897] (gatekeeper) JobProgress: {'identifier': 'gatekeeper', 'progress': 'build'}
+[0.011559] (gatekeeper) Command: {'cmd': ['/usr/bin/cmake', '--build', '/root/colcon_ws/build/gatekeeper', '--', '-j16', '-l16'], 'cwd': '/root/colcon_ws/build/gatekeeper', 'env': OrderedDict([('JAVA_TOOL_OPTIONS', '-Dfile.encoding=UTF8'), ('HOSTNAME', 'dasc3-Dell-G15-5515'), ('ROS_PACKAGE_PATH', '/root/colcon_ws/install/realsense_gazebo_plugin/share'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/root/colcon_ws/install/dasc_msgs/lib:/root/colcon_ws/install/realsense_gazebo_plugin/lib:/root/colcon_ws/install/px4_ros_com/lib:/root/colcon_ws/install/dasc_robot/lib:/root/colcon_ws/install/px4_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('LOCAL_USER_ID', '1000'), ('HOME', '/root'), ('ROS_PYTHON_VERSION', '3'), ('CCACHE_UMASK', '000'), ('COLCON_PREFIX_PATH', '/root/colcon_ws/install'), ('ROS_DISTRO', 'foxy'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/root/colcon_ws/install/realsense_gazebo_plugin/lib/x86_64-linux-gnu/pkgconfig:/root/colcon_ws/install/realsense_gazebo_plugin/lib/pkgconfig'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/root/colcon_ws/install/px4_ros_com/bin:/opt/ros/foxy/bin:/usr/lib/ccache:/opt/gradle/gradle-6.3-rc-4/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':1'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('FASTRTPSGEN_DIR', '/usr/local/bin/'), ('AMENT_PREFIX_PATH', '/root/colcon_ws/install/px4_ros_com:/root/colcon_ws/install/dasc_robot:/root/colcon_ws/install/px4_msgs:/root/colcon_ws/install/gatekeeper:/root/colcon_ws/install/experiment:/root/colcon_ws/install/dasc_msgs:/opt/ros/foxy'), ('DEBIAN_FRONTEND', 'noninteractive'), ('PWD', '/root/colcon_ws/build/gatekeeper'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/root/colcon_ws/install/dasc_msgs/lib/python3.8/site-packages:/root/colcon_ws/install/px4_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('TZ', 'UTC'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/root/colcon_ws/install/dasc_msgs:/opt/ros/foxy:/root/colcon_ws/install/realsense_gazebo_plugin:/root/colcon_ws/install/px4_ros_com:/root/colcon_ws/install/dasc_robot:/root/colcon_ws/install/px4_msgs:/root/colcon_ws/install/gatekeeper:/root/colcon_ws/install/experiment')]), 'shell': False}
+[0.063354] (gatekeeper) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target gatekeeper\x1b[0m\n'}
+[0.083833] (gatekeeper) StdoutLine: {'line': b'[ 40%] Built target nominal_controller\n'}
+[0.099302] (-) TimerEvent: {}
+[0.109718] (gatekeeper) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/gatekeeper.dir/src/gatekeeper.cpp.o\x1b[0m\n'}
+[0.199416] (-) TimerEvent: {}
+[0.299706] (-) TimerEvent: {}
+[0.400019] (-) TimerEvent: {}
+[0.500317] (-) TimerEvent: {}
+[0.600603] (-) TimerEvent: {}
+[0.700907] (-) TimerEvent: {}
+[0.801206] (-) TimerEvent: {}
+[0.901492] (-) TimerEvent: {}
+[1.001787] (-) TimerEvent: {}
+[1.102087] (-) TimerEvent: {}
+[1.202379] (-) TimerEvent: {}
+[1.302661] (-) TimerEvent: {}
+[1.402948] (-) TimerEvent: {}
+[1.503230] (-) TimerEvent: {}
+[1.603514] (-) TimerEvent: {}
+[1.704222] (-) TimerEvent: {}
+[1.804860] (-) TimerEvent: {}
+[1.905158] (-) TimerEvent: {}
+[2.005833] (-) TimerEvent: {}
+[2.106130] (-) TimerEvent: {}
+[2.206449] (-) TimerEvent: {}
+[2.306754] (-) TimerEvent: {}
+[2.407041] (-) TimerEvent: {}
+[2.507337] (-) TimerEvent: {}
+[2.607667] (-) TimerEvent: {}
+[2.707970] (-) TimerEvent: {}
+[2.808243] (-) TimerEvent: {}
+[2.908528] (-) TimerEvent: {}
+[3.008801] (-) TimerEvent: {}
+[3.109079] (-) TimerEvent: {}
+[3.209366] (-) TimerEvent: {}
+[3.309663] (-) TimerEvent: {}
+[3.409956] (-) TimerEvent: {}
+[3.510251] (-) TimerEvent: {}
+[3.610552] (-) TimerEvent: {}
+[3.710851] (-) TimerEvent: {}
+[3.811140] (-) TimerEvent: {}
+[3.911430] (-) TimerEvent: {}
+[4.012142] (-) TimerEvent: {}
+[4.112598] (-) TimerEvent: {}
+[4.213264] (-) TimerEvent: {}
+[4.314011] (-) TimerEvent: {}
+[4.414335] (-) TimerEvent: {}
+[4.514695] (-) TimerEvent: {}
+[4.615153] (-) TimerEvent: {}
+[4.715780] (-) TimerEvent: {}
+[4.816533] (-) TimerEvent: {}
+[4.916825] (-) TimerEvent: {}
+[5.017477] (-) TimerEvent: {}
+[5.117769] (-) TimerEvent: {}
+[5.218080] (-) TimerEvent: {}
+[5.318406] (-) TimerEvent: {}
+[5.418710] (-) TimerEvent: {}
+[5.518987] (-) TimerEvent: {}
+[5.619269] (-) TimerEvent: {}
+[5.719555] (-) TimerEvent: {}
+[5.819835] (-) TimerEvent: {}
+[5.920119] (-) TimerEvent: {}
+[6.020412] (-) TimerEvent: {}
+[6.120695] (-) TimerEvent: {}
+[6.220991] (-) TimerEvent: {}
+[6.321262] (-) TimerEvent: {}
+[6.421571] (-) TimerEvent: {}
+[6.521856] (-) TimerEvent: {}
+[6.622202] (-) TimerEvent: {}
+[6.722515] (-) TimerEvent: {}
+[6.822823] (-) TimerEvent: {}
+[6.923124] (-) TimerEvent: {}
+[7.023439] (-) TimerEvent: {}
+[7.123751] (-) TimerEvent: {}
+[7.224065] (-) TimerEvent: {}
+[7.324374] (-) TimerEvent: {}
+[7.425104] (-) TimerEvent: {}
+[7.525728] (-) TimerEvent: {}
+[7.626024] (-) TimerEvent: {}
+[7.726322] (-) TimerEvent: {}
+[7.826624] (-) TimerEvent: {}
+[7.926904] (-) TimerEvent: {}
+[8.027201] (-) TimerEvent: {}
+[8.127823] (-) TimerEvent: {}
+[8.228331] (-) TimerEvent: {}
+[8.328665] (-) TimerEvent: {}
+[8.428960] (-) TimerEvent: {}
+[8.529315] (-) TimerEvent: {}
+[8.629601] (-) TimerEvent: {}
+[8.729937] (-) TimerEvent: {}
+[8.830285] (-) TimerEvent: {}
+[8.930586] (-) TimerEvent: {}
+[9.031261] (-) TimerEvent: {}
+[9.131569] (-) TimerEvent: {}
+[9.231885] (-) TimerEvent: {}
+[9.332182] (-) TimerEvent: {}
+[9.432552] (-) TimerEvent: {}
+[9.532921] (-) TimerEvent: {}
+[9.633308] (-) TimerEvent: {}
+[9.733682] (-) TimerEvent: {}
+[9.834002] (-) TimerEvent: {}
+[9.934297] (-) TimerEvent: {}
+[10.034599] (-) TimerEvent: {}
+[10.134893] (-) TimerEvent: {}
+[10.235209] (-) TimerEvent: {}
+[10.335882] (-) TimerEvent: {}
+[10.436182] (-) TimerEvent: {}
+[10.536474] (-) TimerEvent: {}
+[10.636778] (-) TimerEvent: {}
+[10.737074] (-) TimerEvent: {}
+[10.837371] (-) TimerEvent: {}
+[10.937717] (-) TimerEvent: {}
+[11.038016] (-) TimerEvent: {}
+[11.138324] (-) TimerEvent: {}
+[11.238671] (-) TimerEvent: {}
+[11.300560] (gatekeeper) StdoutLine: {'line': b'[ 80%] \x1b[32m\x1b[1mLinking CXX executable gatekeeper\x1b[0m\n'}
+[11.338788] (-) TimerEvent: {}
+[11.439066] (-) TimerEvent: {}
+[11.539357] (-) TimerEvent: {}
+[11.639641] (-) TimerEvent: {}
+[11.671313] (gatekeeper) StdoutLine: {'line': b'[100%] Built target gatekeeper\n'}
+[11.679582] (gatekeeper) CommandEnded: {'returncode': 0}
+[11.713239] (gatekeeper) JobProgress: {'identifier': 'gatekeeper', 'progress': 'install'}
+[11.727316] (gatekeeper) Command: {'cmd': ['/usr/bin/cmake', '--install', '/root/colcon_ws/build/gatekeeper'], 'cwd': '/root/colcon_ws/build/gatekeeper', 'env': OrderedDict([('JAVA_TOOL_OPTIONS', '-Dfile.encoding=UTF8'), ('HOSTNAME', 'dasc3-Dell-G15-5515'), ('ROS_PACKAGE_PATH', '/root/colcon_ws/install/realsense_gazebo_plugin/share'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/root/colcon_ws/install/dasc_msgs/lib:/root/colcon_ws/install/realsense_gazebo_plugin/lib:/root/colcon_ws/install/px4_ros_com/lib:/root/colcon_ws/install/dasc_robot/lib:/root/colcon_ws/install/px4_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('LOCAL_USER_ID', '1000'), ('HOME', '/root'), ('ROS_PYTHON_VERSION', '3'), ('CCACHE_UMASK', '000'), ('COLCON_PREFIX_PATH', '/root/colcon_ws/install'), ('ROS_DISTRO', 'foxy'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/root/colcon_ws/install/realsense_gazebo_plugin/lib/x86_64-linux-gnu/pkgconfig:/root/colcon_ws/install/realsense_gazebo_plugin/lib/pkgconfig'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/root/colcon_ws/install/px4_ros_com/bin:/opt/ros/foxy/bin:/usr/lib/ccache:/opt/gradle/gradle-6.3-rc-4/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':1'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('FASTRTPSGEN_DIR', '/usr/local/bin/'), ('AMENT_PREFIX_PATH', '/root/colcon_ws/install/px4_ros_com:/root/colcon_ws/install/dasc_robot:/root/colcon_ws/install/px4_msgs:/root/colcon_ws/install/gatekeeper:/root/colcon_ws/install/experiment:/root/colcon_ws/install/dasc_msgs:/opt/ros/foxy'), ('DEBIAN_FRONTEND', 'noninteractive'), ('PWD', '/root/colcon_ws/build/gatekeeper'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/root/colcon_ws/install/dasc_msgs/lib/python3.8/site-packages:/root/colcon_ws/install/px4_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('TZ', 'UTC'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/root/colcon_ws/install/dasc_msgs:/opt/ros/foxy:/root/colcon_ws/install/realsense_gazebo_plugin:/root/colcon_ws/install/px4_ros_com:/root/colcon_ws/install/dasc_robot:/root/colcon_ws/install/px4_msgs:/root/colcon_ws/install/gatekeeper:/root/colcon_ws/install/experiment')]), 'shell': False}
+[11.733418] (gatekeeper) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[11.733849] (gatekeeper) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[11.734186] (gatekeeper) StdoutLine: {'line': b'-- Up-to-date symlink: /root/colcon_ws/install/gatekeeper/lib/gatekeeper/nominal_controller\n'}
+[11.734482] (gatekeeper) StdoutLine: {'line': b'-- Up-to-date symlink: /root/colcon_ws/install/gatekeeper/lib/gatekeeper/gatekeeper\n'}
+[11.734670] (gatekeeper) StdoutLine: {'line': b'-- Up-to-date symlink: /root/colcon_ws/install/gatekeeper/share/ament_index/resource_index/package_run_dependencies/gatekeeper\n'}
+[11.734851] (gatekeeper) StdoutLine: {'line': b'-- Up-to-date symlink: /root/colcon_ws/install/gatekeeper/share/ament_index/resource_index/parent_prefix_path/gatekeeper\n'}
+[11.735040] (gatekeeper) StdoutLine: {'line': b'-- Up-to-date symlink: /root/colcon_ws/install/gatekeeper/share/gatekeeper/environment/ament_prefix_path.sh\n'}
+[11.735214] (gatekeeper) StdoutLine: {'line': b'-- Up-to-date symlink: /root/colcon_ws/install/gatekeeper/share/gatekeeper/environment/ament_prefix_path.dsv\n'}
+[11.735388] (gatekeeper) StdoutLine: {'line': b'-- Up-to-date symlink: /root/colcon_ws/install/gatekeeper/share/gatekeeper/environment/path.sh\n'}
+[11.735556] (gatekeeper) StdoutLine: {'line': b'-- Up-to-date symlink: /root/colcon_ws/install/gatekeeper/share/gatekeeper/environment/path.dsv\n'}
+[11.735703] (gatekeeper) StdoutLine: {'line': b'-- Up-to-date symlink: /root/colcon_ws/install/gatekeeper/share/gatekeeper/local_setup.bash\n'}
+[11.735863] (gatekeeper) StdoutLine: {'line': b'-- Up-to-date symlink: /root/colcon_ws/install/gatekeeper/share/gatekeeper/local_setup.sh\n'}
+[11.736025] (gatekeeper) StdoutLine: {'line': b'-- Up-to-date symlink: /root/colcon_ws/install/gatekeeper/share/gatekeeper/local_setup.zsh\n'}
+[11.736184] (gatekeeper) StdoutLine: {'line': b'-- Up-to-date symlink: /root/colcon_ws/install/gatekeeper/share/gatekeeper/local_setup.dsv\n'}
+[11.736314] (gatekeeper) StdoutLine: {'line': b'-- Symlinking: /root/colcon_ws/install/gatekeeper/share/gatekeeper/package.dsv\n'}
+[11.739712] (-) TimerEvent: {}
+[11.744510] (gatekeeper) StdoutLine: {'line': b'-- Up-to-date symlink: /root/colcon_ws/install/gatekeeper/share/ament_index/resource_index/packages/gatekeeper\n'}
+[11.744697] (gatekeeper) StdoutLine: {'line': b'-- Up-to-date symlink: /root/colcon_ws/install/gatekeeper/share/gatekeeper/cmake/gatekeeperConfig.cmake\n'}
+[11.744826] (gatekeeper) StdoutLine: {'line': b'-- Up-to-date symlink: /root/colcon_ws/install/gatekeeper/share/gatekeeper/cmake/gatekeeperConfig-version.cmake\n'}
+[11.745018] (gatekeeper) StdoutLine: {'line': b'-- Up-to-date symlink: /root/colcon_ws/install/gatekeeper/share/gatekeeper/package.xml\n'}
+[11.747146] (gatekeeper) CommandEnded: {'returncode': 0}
+[11.812124] (gatekeeper) JobEnded: {'identifier': 'gatekeeper', 'rc': 0}
+[11.813342] (-) EventReactorShutdown: {}

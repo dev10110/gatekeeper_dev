@@ -1,0 +1,17 @@
+[35m[1mScanning dependencies of target gatekeeper[0m
+[ 50%] Built target nominal_controller
+[ 75%] [32mBuilding CXX object CMakeFiles/gatekeeper.dir/src/gatekeeper.cpp.o[0m
+/root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp: In member function ‘void gatekeeper::Gatekeeper::cloud_callback(sensor_msgs::msg::PointCloud2_<std::allocator<void> >::SharedPtr)’:
+/root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:37:3: error: ‘PCLPointCloud’ {aka ‘pcl::PointCloud<pcl::PointXYZ>’} is not a template
+   37 |   PCLPointCloud<PCLPoint> pc;
+      |   ^~~~~~~~~~~~~
+/root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp: In member function ‘void gatekeeper::Gatekeeper::insertScan(const Vector3&, const PCLPointCloud&)’:
+/root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:45:65: warning: unused parameter ‘sensorOrigin’ [-Wunused-parameter]
+   45 | void Gatekeeper::insertScan( const geometry_msgs::msg::Vector3 &sensorOrigin,
+      |                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~
+/root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:46:24: warning: unused parameter ‘pc’ [-Wunused-parameter]
+   46 |   const PCLPointCloud& pc)
+      |   ~~~~~~~~~~~~~~~~~~~~~^~
+make[2]: *** [CMakeFiles/gatekeeper.dir/build.make:63: CMakeFiles/gatekeeper.dir/src/gatekeeper.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:80: CMakeFiles/gatekeeper.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

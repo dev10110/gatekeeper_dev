@@ -1,0 +1,19 @@
+[0.011s] Invoking command in '/root/colcon_ws/build/gatekeeper': CMAKE_PREFIX_PATH=/root/colcon_ws/install/dasc_msgs:/opt/ros/foxy:/root/colcon_ws/install/realsense_gazebo_plugin:/root/colcon_ws/install/px4_ros_com:/root/colcon_ws/install/dasc_robot:/root/colcon_ws/install/px4_msgs:/root/colcon_ws/install/gatekeeper:/root/colcon_ws/install/experiment LD_LIBRARY_PATH=/root/colcon_ws/install/dasc_msgs/lib:/root/colcon_ws/install/realsense_gazebo_plugin/lib:/root/colcon_ws/install/px4_ros_com/lib:/root/colcon_ws/install/dasc_robot/lib:/root/colcon_ws/install/px4_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib PYTHONPATH=/root/colcon_ws/install/dasc_msgs/lib/python3.8/site-packages:/root/colcon_ws/install/px4_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/cmake --build /root/colcon_ws/build/gatekeeper -- -j16 -l16
+[0.069s] [35m[1mScanning dependencies of target gatekeeper[0m
+[0.094s] [ 40%] Built target nominal_controller
+[0.115s] [ 60%] [32mBuilding CXX object CMakeFiles/gatekeeper.dir/src/gatekeeper.cpp.o[0m
+[14.642s] /root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp: In member function ‘void gatekeeper::Gatekeeper::publish_occupied_pcl()’:
+[14.642s] /root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:161:38: error: expected ‘)’ before ‘{’ token
+[14.643s]   161 |     if (m_octree->isNodeOccupied(*it){
+[14.643s]       |        ~                             ^
+[14.643s]       |                                      )
+[14.643s] /root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:165:3: error: expected primary-expression before ‘}’ token
+[14.643s]   165 |   }
+[14.643s]       |   ^
+[14.643s] /root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:172:40: error: ‘using SharedPtr = class std::shared_ptr<rclcpp::Clock>’ {aka ‘class std::shared_ptr<rclcpp::Clock>’} has no member named ‘now’
+[14.643s]   172 |   msg.header.stamp = this->get_clock().now();
+[14.643s]       |                                        ^~~
+[14.644s] make[2]: *** [CMakeFiles/gatekeeper.dir/build.make:63: CMakeFiles/gatekeeper.dir/src/gatekeeper.cpp.o] Error 1
+[14.644s] make[1]: *** [CMakeFiles/Makefile2:80: CMakeFiles/gatekeeper.dir/all] Error 2
+[14.644s] make: *** [Makefile:141: all] Error 2
+[14.647s] Invoked command in '/root/colcon_ws/build/gatekeeper' returned '2': CMAKE_PREFIX_PATH=/root/colcon_ws/install/dasc_msgs:/opt/ros/foxy:/root/colcon_ws/install/realsense_gazebo_plugin:/root/colcon_ws/install/px4_ros_com:/root/colcon_ws/install/dasc_robot:/root/colcon_ws/install/px4_msgs:/root/colcon_ws/install/gatekeeper:/root/colcon_ws/install/experiment LD_LIBRARY_PATH=/root/colcon_ws/install/dasc_msgs/lib:/root/colcon_ws/install/realsense_gazebo_plugin/lib:/root/colcon_ws/install/px4_ros_com/lib:/root/colcon_ws/install/dasc_robot/lib:/root/colcon_ws/install/px4_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib PYTHONPATH=/root/colcon_ws/install/dasc_msgs/lib/python3.8/site-packages:/root/colcon_ws/install/px4_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/cmake --build /root/colcon_ws/build/gatekeeper -- -j16 -l16

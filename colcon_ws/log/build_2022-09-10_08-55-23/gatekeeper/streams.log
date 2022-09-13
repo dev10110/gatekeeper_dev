@@ -1,0 +1,50 @@
+[0.009s] Invoking command in '/root/colcon_ws/build/gatekeeper': CMAKE_PREFIX_PATH=/root/colcon_ws/install/dasc_msgs:/opt/ros/foxy:/root/colcon_ws/install/realsense_gazebo_plugin:/root/colcon_ws/install/px4_ros_com:/root/colcon_ws/install/dasc_robot:/root/colcon_ws/install/px4_msgs:/root/colcon_ws/install/gatekeeper:/root/colcon_ws/install/experiment /usr/bin/cmake --build /root/colcon_ws/build/gatekeeper -- -j16 -l16
+[0.057s] [35m[1mScanning dependencies of target nominal_controller[0m
+[0.082s] [ 50%] [32mBuilding CXX object CMakeFiles/nominal_controller.dir/src/nominal_controller.cpp.o[0m
+[2.501s] /root/colcon_ws/src/gatekeeper/src/nominal_controller.cpp:56:3: error: ‘target_x’ does not name a type
+[2.501s]    56 |   target_x = 0.0;
+[2.501s]       |   ^~~~~~~~
+[2.501s] /root/colcon_ws/src/gatekeeper/src/nominal_controller.cpp:57:3: error: ‘target_y’ does not name a type
+[2.501s]    57 |   target_y = 0.0;
+[2.501s]       |   ^~~~~~~~
+[2.501s] /root/colcon_ws/src/gatekeeper/src/nominal_controller.cpp:58:3: error: ‘target_z’ does not name a type
+[2.501s]    58 |   target_z = 1.0;
+[2.501s]       |   ^~~~~~~~
+[2.501s] /root/colcon_ws/src/gatekeeper/src/nominal_controller.cpp:59:3: error: ‘target_yaw’ does not name a type
+[2.502s]    59 |   target_yaw = 0.0;
+[2.502s]       |   ^~~~~~~~~~
+[2.502s] /root/colcon_ws/src/gatekeeper/src/nominal_controller.cpp: In member function ‘void NominalController::joy_callback(sensor_msgs::msg::Joy_<std::allocator<void> >::SharedPtr)’:
+[2.502s] /root/colcon_ws/src/gatekeeper/src/nominal_controller.cpp:83:5: error: ‘target_x’ was not declared in this scope
+[2.502s]    83 |     target_x += cmd_roll/10.0;
+[2.502s]       |     ^~~~~~~~
+[2.503s] /root/colcon_ws/src/gatekeeper/src/nominal_controller.cpp:84:5: error: ‘target_y’ was not declared in this scope
+[2.503s]    84 |     target_y += cmd_pitch/10.0;
+[2.503s]       |     ^~~~~~~~
+[2.503s] /root/colcon_ws/src/gatekeeper/src/nominal_controller.cpp:85:5: error: ‘target_z’ was not declared in this scope
+[2.503s]    85 |     target_z += cmd_throttle/10.0;
+[2.503s]       |     ^~~~~~~~
+[2.503s] /root/colcon_ws/src/gatekeeper/src/nominal_controller.cpp:86:5: error: ‘target_yaw’ was not declared in this scope; did you mean ‘last_yaw’?
+[2.504s]    86 |     target_yaw += cmd_yaw / 10.0;
+[2.504s]       |     ^~~~~~~~~~
+[2.504s]       |     last_yaw
+[2.504s] /root/colcon_ws/src/gatekeeper/src/nominal_controller.cpp:90:16: error: ‘std_max’ was not declared in this scope
+[2.504s]    90 |     target_x = std_max(last_x - 1.0, std::min(target_x, last_x + 1.0));
+[2.504s]       |                ^~~~~~~
+[2.504s] /root/colcon_ws/src/gatekeeper/src/nominal_controller.cpp: In member function ‘void NominalController::timer_callback()’:
+[2.504s] /root/colcon_ws/src/gatekeeper/src/nominal_controller.cpp:132:22: error: ‘target_x’ was not declared in this scope
+[2.504s]   132 |     msg.xs.push_back(target_x);
+[2.504s]       |                      ^~~~~~~~
+[2.505s] /root/colcon_ws/src/gatekeeper/src/nominal_controller.cpp:133:22: error: ‘target_y’ was not declared in this scope
+[2.505s]   133 |     msg.ys.push_back(target_y);
+[2.505s]       |                      ^~~~~~~~
+[2.505s] /root/colcon_ws/src/gatekeeper/src/nominal_controller.cpp:134:22: error: ‘target_z’ was not declared in this scope
+[2.505s]   134 |     msg.zs.push_back(target_z);
+[2.505s]       |                      ^~~~~~~~
+[2.505s] /root/colcon_ws/src/gatekeeper/src/nominal_controller.cpp:135:24: error: ‘target_yaw’ was not declared in this scope; did you mean ‘last_yaw’?
+[2.505s]   135 |     msg.yaws.push_back(target_yaw);
+[2.505s]       |                        ^~~~~~~~~~
+[2.505s]       |                        last_yaw
+[2.505s] make[2]: *** [CMakeFiles/nominal_controller.dir/build.make:63: CMakeFiles/nominal_controller.dir/src/nominal_controller.cpp.o] Error 1
+[2.506s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/nominal_controller.dir/all] Error 2
+[2.506s] make: *** [Makefile:141: all] Error 2
+[2.506s] Invoked command in '/root/colcon_ws/build/gatekeeper' returned '2': CMAKE_PREFIX_PATH=/root/colcon_ws/install/dasc_msgs:/opt/ros/foxy:/root/colcon_ws/install/realsense_gazebo_plugin:/root/colcon_ws/install/px4_ros_com:/root/colcon_ws/install/dasc_robot:/root/colcon_ws/install/px4_msgs:/root/colcon_ws/install/gatekeeper:/root/colcon_ws/install/experiment /usr/bin/cmake --build /root/colcon_ws/build/gatekeeper -- -j16 -l16

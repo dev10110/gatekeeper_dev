@@ -1,0 +1,28 @@
+[35m[1mScanning dependencies of target nominal_controller[0m
+[ 60%] [32mBuilding CXX object CMakeFiles/nominal_controller.dir/src/nominal_controller.cpp.o[0m
+[ 80%] Built target gatekeeper
+/root/colcon_ws/src/gatekeeper/src/nominal_controller.cpp: In member function ‘void NominalController::publish_one_trajectory()’:
+/root/colcon_ws/src/gatekeeper/src/nominal_controller.cpp:131:21: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<double, std::allocator<double> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  131 |     for (int i=0; i < msg.ts.size(); i++){
+      |                   ~~^~~~~~~~~~~~~~~
+[100%] [32m[1mLinking CXX executable nominal_controller[0m
+[100%] Built target nominal_controller
+-- Install configuration: ""
+-- Execute custom install script
+-- Up-to-date symlink: /root/colcon_ws/install/gatekeeper/lib/gatekeeper/nominal_controller
+-- Up-to-date symlink: /root/colcon_ws/install/gatekeeper/lib/gatekeeper/gatekeeper
+-- Up-to-date symlink: /root/colcon_ws/install/gatekeeper/share/ament_index/resource_index/package_run_dependencies/gatekeeper
+-- Up-to-date symlink: /root/colcon_ws/install/gatekeeper/share/ament_index/resource_index/parent_prefix_path/gatekeeper
+-- Up-to-date symlink: /root/colcon_ws/install/gatekeeper/share/gatekeeper/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /root/colcon_ws/install/gatekeeper/share/gatekeeper/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /root/colcon_ws/install/gatekeeper/share/gatekeeper/environment/path.sh
+-- Up-to-date symlink: /root/colcon_ws/install/gatekeeper/share/gatekeeper/environment/path.dsv
+-- Up-to-date symlink: /root/colcon_ws/install/gatekeeper/share/gatekeeper/local_setup.bash
+-- Up-to-date symlink: /root/colcon_ws/install/gatekeeper/share/gatekeeper/local_setup.sh
+-- Up-to-date symlink: /root/colcon_ws/install/gatekeeper/share/gatekeeper/local_setup.zsh
+-- Up-to-date symlink: /root/colcon_ws/install/gatekeeper/share/gatekeeper/local_setup.dsv
+-- Symlinking: /root/colcon_ws/install/gatekeeper/share/gatekeeper/package.dsv
+-- Up-to-date symlink: /root/colcon_ws/install/gatekeeper/share/ament_index/resource_index/packages/gatekeeper
+-- Up-to-date symlink: /root/colcon_ws/install/gatekeeper/share/gatekeeper/cmake/gatekeeperConfig.cmake
+-- Up-to-date symlink: /root/colcon_ws/install/gatekeeper/share/gatekeeper/cmake/gatekeeperConfig-version.cmake
+-- Up-to-date symlink: /root/colcon_ws/install/gatekeeper/share/gatekeeper/package.xml

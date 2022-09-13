@@ -1,0 +1,50 @@
+In file included from [01m[K/root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:10[m[K:
+[01m[K/root/colcon_ws/src/gatekeeper/include/gatekeeper/gatekeeper.hpp:11:2:[m[K [01;31m[Kerror: [m[Kinvalid preprocessing directive #incldue; did you mean #include?
+   11 | #[01;31m[Kincldue[m[K <dasc_msgs/msg/quad_trajectory.hpp>
+      |  [01;31m[K^~~~~~~[m[K
+      |  [32m[Kinclude[m[K
+In file included from [01m[K/root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:10[m[K:
+[01m[K/root/colcon_ws/src/gatekeeper/include/gatekeeper/gatekeeper.hpp:43:26:[m[K [01;31m[Kerror: [m[K‘[01m[Kdasc_msgs[m[K’ was not declared in this scope
+   43 |     rclcpp::Subscription<[01;31m[Kdasc_msgs[m[K::msg::QuadTrajectory>::SharedPtr m_nominalTrajSub;
+      |                          [01;31m[K^~~~~~~~~[m[K
+[01m[K/root/colcon_ws/src/gatekeeper/include/gatekeeper/gatekeeper.hpp:43:56:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   43 |     rclcpp::Subscription<dasc_msgs::msg::QuadTrajectory[01;31m[K>[m[K::SharedPtr m_nominalTrajSub;
+      |                                                        [01;31m[K^[m[K
+[01m[K/root/colcon_ws/src/gatekeeper/include/gatekeeper/gatekeeper.hpp:43:56:[m[K [01;31m[Kerror: [m[Ktemplate argument 3 is invalid
+[01m[K/root/colcon_ws/src/gatekeeper/include/gatekeeper/gatekeeper.hpp:43:59:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+   43 |     rclcpp::Subscription<dasc_msgs::msg::QuadTrajectory>::[01;31m[KSharedPtr[m[K m_nominalTrajSub;
+      |                                                           [01;31m[K^~~~~~~~~[m[K
+      |                                                                    [32m[K;[m[K
+[01m[K/root/colcon_ws/src/gatekeeper/include/gatekeeper/gatekeeper.hpp:43:69:[m[K [01;31m[Kerror: [m[K‘[01m[Km_nominalTrajSub[m[K’ does not name a type
+   43 |     rclcpp::Subscription<dasc_msgs::msg::QuadTrajectory>::SharedPtr [01;31m[Km_nominalTrajSub[m[K;
+      |                                                                     [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:[m[K In constructor ‘[01m[Kgatekeeper::Gatekeeper::Gatekeeper()[m[K’:
+[01m[K/root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:24:3:[m[K [01;31m[Kerror: [m[K‘[01m[Km_nominalTrajSub[m[K’ was not declared in this scope
+   24 |   [01;31m[Km_nominalTrajSub[m[K = this->create_subscription<dasc_msgs::msg::QuadTrajectory>("/nominal_trajectory", 10,
+      |   [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:24:48:[m[K [01;31m[Kerror: [m[K‘[01m[Kdasc_msgs[m[K’ was not declared in this scope
+   24 |   m_nominalTrajSub = this->create_subscription<[01;31m[Kdasc_msgs[m[K::msg::QuadTrajectory>("/nominal_trajectory", 10,
+      |                                                [01;31m[K^~~~~~~~~[m[K
+[01m[K/root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:24:28:[m[K [01;31m[Kerror: [m[Kparse error in template argument list
+   24 |   m_nominalTrajSub = this->[01;31m[Kcreate_subscription<dasc_msgs::msg::QuadTrajectory>[m[K("/nominal_trajectory", 10,
+      |                            [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:25:30:[m[K [01;31m[Kerror: [m[K‘[01m[KnominalTraj_callback[m[K’ is not a member of ‘[01m[Kgatekeeper::Gatekeeper[m[K’
+   25 |       std::bind(&Gatekeeper::[01;31m[KnominalTraj_callback[m[K, this, ph::_1));
+      |                              [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:[m[K At global scope:
+[01m[K/root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:118:45:[m[K [01;31m[Kerror: [m[K‘[01m[Kdasc_msgs[m[K’ does not name a type
+  118 | void Gatekeeper::nominalTraj_callback(const [01;31m[Kdasc_msgs[m[K::msg::QuadTrajectory msg){
+      |                                             [01;31m[K^~~~~~~~~[m[K
+[01m[K/root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:118:59:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K::[m[K’ token
+  118 | void Gatekeeper::nominalTraj_callback(const dasc_msgs::msg[01;31m[K::[m[KQuadTrajectory msg){
+      |                                                           [01;31m[K^~[m[K
+[01m[K/root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:118:59:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K::[m[K’ token
+  118 | void Gatekeeper::nominalTraj_callback[34m[K([m[Kconst dasc_msgs::msg[01;31m[K:[m[K[32m[K:[m[KQuadTrajectory msg){
+      |                                      [34m[K~[m[K                    [01;31m[K^[m[K[32m[K~[m[K
+      |                                                           [32m[K)[m[K
+[01m[K/root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:118:59:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[K::[m[K’ token
+  118 | void Gatekeeper::nominalTraj_callback(const dasc_msgs::msg[01;31m[K::[m[KQuadTrajectory msg){
+      |                                                           [01;31m[K^~[m[K
+make[2]: *** [CMakeFiles/gatekeeper.dir/build.make:63: CMakeFiles/gatekeeper.dir/src/gatekeeper.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:80: CMakeFiles/gatekeeper.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

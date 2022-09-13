@@ -1,0 +1,57 @@
+[0.015s] Invoking command in '/root/colcon_ws/build/dasc_robot': CMAKE_PREFIX_PATH=/root/colcon_ws/install/px4_ros_com:/root/colcon_ws/install/px4_msgs:/opt/ros/foxy:/root/colcon_ws/install/realsense_gazebo_plugin:/root/colcon_ws/install/dasc_robot:/root/colcon_ws/install/gatekeeper:/root/colcon_ws/install/experiment LD_LIBRARY_PATH=/root/colcon_ws/install/px4_ros_com/lib:/root/colcon_ws/install/px4_msgs/lib:/root/colcon_ws/install/realsense_gazebo_plugin/lib:/root/colcon_ws/install/dasc_robot/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib /usr/bin/cmake --build /root/colcon_ws/build/dasc_robot -- -j16 -l16
+[0.066s] [35m[1mScanning dependencies of target dascBots[0m
+[0.109s] [  6%] [32mBuilding CXX object CMakeFiles/dascBots.dir/src/DASCRobots.cpp.o[0m
+[10.018s] [ 12%] [32m[1mLinking CXX static library libdascBots.a[0m
+[10.156s] [ 12%] Built target dascBots
+[10.169s] [35m[1mScanning dependencies of target joystick_controller[0m
+[10.185s] [ 43%] [32m[1mLinking CXX executable example_control_geometric_acceleration[0m
+[10.185s] [ 43%] [32m[1mLinking CXX executable example_control_geometric_velocity[0m
+[10.186s] [ 43%] [32m[1mLinking CXX executable example_control_geometric[0m
+[10.186s] [ 43%] [32m[1mLinking CXX executable example_control[0m
+[10.186s] [ 43%] [32m[1mLinking CXX executable example_control_multi_rover[0m
+[10.192s] [ 56%] [32m[1mLinking CXX shared library libdasc_robot_lib.so[0m
+[10.192s] [ 56%] [32mBuilding CXX object CMakeFiles/joystick_controller.dir/src/joystick_control.cpp.o[0m
+[11.965s] [ 62%] Built target example_control_geometric_acceleration
+[11.978s] [ 68%] Built target example_control_geometric_velocity
+[11.983s] [ 75%] Built target example_control_geometric
+[12.006s] [ 81%] Built target dasc_robot_lib
+[12.010s] [ 87%] Built target example_control_multi_rover
+[12.020s] [ 93%] Built target example_control
+[14.609s] /root/colcon_ws/src/robot-framework/src/joystick_control.cpp: In member function ‘void JoystickController::takeoff()’:
+[14.609s] /root/colcon_ws/src/robot-framework/src/joystick_control.cpp:63:12: warning: unused variable ‘target_yaw’ [-Wunused-variable]
+[14.609s]    63 |     double target_yaw    = 0.0;
+[14.609s]       |            ^~~~~~~~~~
+[14.628s] [100%] [32m[1mLinking CXX executable joystick_controller[0m
+[15.137s] [100%] Built target joystick_controller
+[15.150s] Invoked command in '/root/colcon_ws/build/dasc_robot' returned '0': CMAKE_PREFIX_PATH=/root/colcon_ws/install/px4_ros_com:/root/colcon_ws/install/px4_msgs:/opt/ros/foxy:/root/colcon_ws/install/realsense_gazebo_plugin:/root/colcon_ws/install/dasc_robot:/root/colcon_ws/install/gatekeeper:/root/colcon_ws/install/experiment LD_LIBRARY_PATH=/root/colcon_ws/install/px4_ros_com/lib:/root/colcon_ws/install/px4_msgs/lib:/root/colcon_ws/install/realsense_gazebo_plugin/lib:/root/colcon_ws/install/dasc_robot/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib /usr/bin/cmake --build /root/colcon_ws/build/dasc_robot -- -j16 -l16
+[15.216s] Invoking command in '/root/colcon_ws/build/dasc_robot': CMAKE_PREFIX_PATH=/root/colcon_ws/install/px4_ros_com:/root/colcon_ws/install/px4_msgs:/opt/ros/foxy:/root/colcon_ws/install/realsense_gazebo_plugin:/root/colcon_ws/install/dasc_robot:/root/colcon_ws/install/gatekeeper:/root/colcon_ws/install/experiment LD_LIBRARY_PATH=/root/colcon_ws/install/px4_ros_com/lib:/root/colcon_ws/install/px4_msgs/lib:/root/colcon_ws/install/realsense_gazebo_plugin/lib:/root/colcon_ws/install/dasc_robot/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib /usr/bin/cmake --install /root/colcon_ws/build/dasc_robot
+[15.228s] -- Install configuration: ""
+[15.229s] -- Execute custom install script
+[15.229s] -- Up-to-date symlink: /root/colcon_ws/install/dasc_robot/share/dasc_robot/environment/library_path.sh
+[15.229s] -- Up-to-date symlink: /root/colcon_ws/install/dasc_robot/share/dasc_robot/environment/library_path.dsv
+[15.229s] -- Up-to-date symlink: /root/colcon_ws/install/dasc_robot/lib/dasc_robot/example_control
+[15.230s] -- Up-to-date symlink: /root/colcon_ws/install/dasc_robot/lib/dasc_robot/example_control_multi_rover
+[15.230s] -- Up-to-date symlink: /root/colcon_ws/install/dasc_robot/lib/dasc_robot/example_control_geometric
+[15.230s] -- Up-to-date symlink: /root/colcon_ws/install/dasc_robot/lib/dasc_robot/example_control_geometric_velocity
+[15.231s] -- Up-to-date symlink: /root/colcon_ws/install/dasc_robot/lib/dasc_robot/example_control_geometric_acceleration
+[15.231s] -- Up-to-date symlink: /root/colcon_ws/install/dasc_robot/lib/dasc_robot/joystick_controller
+[15.231s] -- Up-to-date symlink: /root/colcon_ws/install/dasc_robot/share/ament_index/resource_index/package_run_dependencies/dasc_robot
+[15.231s] -- Up-to-date symlink: /root/colcon_ws/install/dasc_robot/share/ament_index/resource_index/parent_prefix_path/dasc_robot
+[15.231s] -- Up-to-date symlink: /root/colcon_ws/install/dasc_robot/share/dasc_robot/environment/ament_prefix_path.sh
+[15.232s] -- Up-to-date symlink: /root/colcon_ws/install/dasc_robot/share/dasc_robot/environment/ament_prefix_path.dsv
+[15.232s] -- Up-to-date symlink: /root/colcon_ws/install/dasc_robot/share/dasc_robot/environment/path.sh
+[15.232s] -- Up-to-date symlink: /root/colcon_ws/install/dasc_robot/share/dasc_robot/environment/path.dsv
+[15.232s] -- Up-to-date symlink: /root/colcon_ws/install/dasc_robot/share/dasc_robot/local_setup.bash
+[15.232s] -- Up-to-date symlink: /root/colcon_ws/install/dasc_robot/share/dasc_robot/local_setup.sh
+[15.233s] -- Up-to-date symlink: /root/colcon_ws/install/dasc_robot/share/dasc_robot/local_setup.zsh
+[15.233s] -- Up-to-date symlink: /root/colcon_ws/install/dasc_robot/share/dasc_robot/local_setup.dsv
+[15.233s] -- Symlinking: /root/colcon_ws/install/dasc_robot/share/dasc_robot/package.dsv
+[15.241s] -- Up-to-date symlink: /root/colcon_ws/install/dasc_robot/share/ament_index/resource_index/packages/dasc_robot
+[15.241s] -- Up-to-date symlink: /root/colcon_ws/install/dasc_robot/share/dasc_robot/cmake/ament_cmake_export_libraries-extras.cmake
+[15.242s] -- Up-to-date symlink: /root/colcon_ws/install/dasc_robot/share/dasc_robot/cmake/dasc_robotConfig.cmake
+[15.242s] -- Up-to-date symlink: /root/colcon_ws/install/dasc_robot/share/dasc_robot/cmake/dasc_robotConfig-version.cmake
+[15.242s] -- Up-to-date symlink: /root/colcon_ws/install/dasc_robot/share/dasc_robot/package.xml
+[15.242s] -- Installing: /root/colcon_ws/install/dasc_robot/lib/dasc_robot/libdascBots.a
+[15.258s] -- Installing: /root/colcon_ws/install/dasc_robot/lib/dasc_robot/libdasc_robot_lib.so
+[15.266s] -- Set runtime path of "/root/colcon_ws/install/dasc_robot/lib/dasc_robot/libdasc_robot_lib.so" to ""
+[15.269s] Invoked command in '/root/colcon_ws/build/dasc_robot' returned '0': CMAKE_PREFIX_PATH=/root/colcon_ws/install/px4_ros_com:/root/colcon_ws/install/px4_msgs:/opt/ros/foxy:/root/colcon_ws/install/realsense_gazebo_plugin:/root/colcon_ws/install/dasc_robot:/root/colcon_ws/install/gatekeeper:/root/colcon_ws/install/experiment LD_LIBRARY_PATH=/root/colcon_ws/install/px4_ros_com/lib:/root/colcon_ws/install/px4_msgs/lib:/root/colcon_ws/install/realsense_gazebo_plugin/lib:/root/colcon_ws/install/dasc_robot/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib /usr/bin/cmake --install /root/colcon_ws/build/dasc_robot

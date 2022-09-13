@@ -1,0 +1,105 @@
+[0.025s] Invoking command in '/root/colcon_ws/build/dasc_msgs': CMAKE_PREFIX_PATH=/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/bin/cmake --build /root/colcon_ws/build/dasc_msgs -- -j16 -l16
+[0.070s] [  7%] Built target dasc_msgs__cpp
+[0.070s] [ 12%] Built target dasc_msgs__rosidl_generator_c
+[0.091s] [ 23%] Built target dasc_msgs__rosidl_typesupport_introspection_c
+[0.091s] [ 33%] Built target dasc_msgs__rosidl_typesupport_introspection_cpp
+[0.092s] [ 43%] Built target dasc_msgs__rosidl_typesupport_cpp
+[0.092s] [ 53%] Built target dasc_msgs__rosidl_typesupport_c
+[0.097s] [ 64%] Built target dasc_msgs__rosidl_typesupport_fastrtps_cpp
+[0.125s] [ 74%] Built target dasc_msgs__rosidl_typesupport_fastrtps_c
+[0.138s] [ 74%] Built target dasc_msgs
+[0.156s] [ 76%] Built target dasc_msgs__py
+[0.180s] [ 84%] Built target dasc_msgs__python
+[0.204s] [100%] Built target dasc_msgs__rosidl_typesupport_fastrtps_c__pyext
+[0.204s] [100%] Built target dasc_msgs__rosidl_typesupport_introspection_c__pyext
+[0.204s] [100%] Built target dasc_msgs__rosidl_typesupport_c__pyext
+[0.228s] Invoked command in '/root/colcon_ws/build/dasc_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/bin/cmake --build /root/colcon_ws/build/dasc_msgs -- -j16 -l16
+[0.290s] Invoking command in '/root/colcon_ws/build/dasc_msgs': CMAKE_PREFIX_PATH=/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/bin/cmake --install /root/colcon_ws/build/dasc_msgs
+[0.300s] -- Install configuration: ""
+[0.301s] -- Execute custom install script
+[0.301s] -- Up-to-date symlink: /root/colcon_ws/install/dasc_msgs/share/ament_index/resource_index/rosidl_interfaces/dasc_msgs
+[0.302s] -- Up-to-date symlink: /root/colcon_ws/install/dasc_msgs/include/dasc_msgs/msg/detail/quad_setpoint__functions.h
+[0.302s] -- Up-to-date symlink: /root/colcon_ws/install/dasc_msgs/include/dasc_msgs/msg/detail/quad_setpoint__struct.h
+[0.302s] -- Up-to-date symlink: /root/colcon_ws/install/dasc_msgs/include/dasc_msgs/msg/detail/quad_setpoint__type_support.h
+[0.302s] -- Up-to-date symlink: /root/colcon_ws/install/dasc_msgs/include/dasc_msgs/msg/detail/quad_trajectory__functions.h
+[0.303s] -- Up-to-date symlink: /root/colcon_ws/install/dasc_msgs/include/dasc_msgs/msg/detail/quad_trajectory__struct.h
+[0.303s] -- Up-to-date symlink: /root/colcon_ws/install/dasc_msgs/include/dasc_msgs/msg/detail/quad_trajectory__type_support.h
+[0.303s] -- Up-to-date symlink: /root/colcon_ws/install/dasc_msgs/include/dasc_msgs/msg/quad_setpoint.h
+[0.303s] -- Up-to-date symlink: /root/colcon_ws/install/dasc_msgs/include/dasc_msgs/msg/quad_trajectory.h
+[0.304s] -- Up-to-date symlink: /root/colcon_ws/install/dasc_msgs/include/dasc_msgs/msg/rosidl_generator_c__visibility_control.h
+[0.304s] -- Up-to-date symlink: /root/colcon_ws/install/dasc_msgs/share/dasc_msgs/environment/library_path.sh
+[0.304s] -- Up-to-date symlink: /root/colcon_ws/install/dasc_msgs/share/dasc_msgs/environment/library_path.dsv
+[0.305s] -- Up-to-date symlink: /root/colcon_ws/install/dasc_msgs/include/dasc_msgs/msg/detail/quad_setpoint__rosidl_typesupport_fastrtps_c.h
+[0.305s] -- Up-to-date symlink: /root/colcon_ws/install/dasc_msgs/include/dasc_msgs/msg/detail/quad_trajectory__rosidl_typesupport_fastrtps_c.h
+[0.305s] -- Up-to-date symlink: /root/colcon_ws/install/dasc_msgs/include/dasc_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[0.306s] -- Up-to-date symlink: /root/colcon_ws/install/dasc_msgs/lib/libdasc_msgs__rosidl_typesupport_fastrtps_c.so
+[0.306s] -- Up-to-date symlink: /root/colcon_ws/install/dasc_msgs/include/dasc_msgs/msg/detail/quad_setpoint__rosidl_typesupport_fastrtps_cpp.hpp
+[0.306s] -- Up-to-date symlink: /root/colcon_ws/install/dasc_msgs/include/dasc_msgs/msg/detail/quad_trajectory__rosidl_typesupport_fastrtps_cpp.hpp
+[0.307s] -- Up-to-date symlink: /root/colcon_ws/install/dasc_msgs/include/dasc_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[0.307s] -- Up-to-date symlink: /root/colcon_ws/install/dasc_msgs/lib/libdasc_msgs__rosidl_typesupport_fastrtps_cpp.so
+[0.307s] -- Up-to-date symlink: /root/colcon_ws/install/dasc_msgs/include/dasc_msgs/msg/detail/quad_setpoint__rosidl_typesupport_introspection_c.h
+[0.308s] -- Up-to-date symlink: /root/colcon_ws/install/dasc_msgs/include/dasc_msgs/msg/detail/quad_trajectory__rosidl_typesupport_introspection_c.h
+[0.308s] -- Up-to-date symlink: /root/colcon_ws/install/dasc_msgs/include/dasc_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[0.308s] -- Up-to-date symlink: /root/colcon_ws/install/dasc_msgs/include/dasc_msgs/msg/detail/quad_setpoint__builder.hpp
+[0.309s] -- Up-to-date symlink: /root/colcon_ws/install/dasc_msgs/include/dasc_msgs/msg/detail/quad_setpoint__struct.hpp
+[0.309s] -- Up-to-date symlink: /root/colcon_ws/install/dasc_msgs/include/dasc_msgs/msg/detail/quad_setpoint__traits.hpp
+[0.309s] -- Up-to-date symlink: /root/colcon_ws/install/dasc_msgs/include/dasc_msgs/msg/detail/quad_trajectory__builder.hpp
+[0.309s] -- Up-to-date symlink: /root/colcon_ws/install/dasc_msgs/include/dasc_msgs/msg/detail/quad_trajectory__struct.hpp
+[0.310s] -- Up-to-date symlink: /root/colcon_ws/install/dasc_msgs/include/dasc_msgs/msg/detail/quad_trajectory__traits.hpp
+[0.310s] -- Up-to-date symlink: /root/colcon_ws/install/dasc_msgs/include/dasc_msgs/msg/quad_setpoint.hpp
+[0.310s] -- Up-to-date symlink: /root/colcon_ws/install/dasc_msgs/include/dasc_msgs/msg/quad_trajectory.hpp
+[0.310s] -- Up-to-date symlink: /root/colcon_ws/install/dasc_msgs/include/dasc_msgs/msg/detail/quad_setpoint__rosidl_typesupport_introspection_cpp.hpp
+[0.311s] -- Up-to-date symlink: /root/colcon_ws/install/dasc_msgs/include/dasc_msgs/msg/detail/quad_trajectory__rosidl_typesupport_introspection_cpp.hpp
+[0.311s] -- Up-to-date symlink: /root/colcon_ws/install/dasc_msgs/share/dasc_msgs/environment/pythonpath.sh
+[0.311s] -- Up-to-date symlink: /root/colcon_ws/install/dasc_msgs/share/dasc_msgs/environment/pythonpath.dsv
+[0.312s] -- Up-to-date symlink: /root/colcon_ws/install/dasc_msgs/lib/python3.8/site-packages/dasc_msgs/__init__.py
+[0.312s] -- Up-to-date symlink: /root/colcon_ws/install/dasc_msgs/lib/python3.8/site-packages/dasc_msgs/msg/__init__.py
+[0.312s] -- Up-to-date symlink: /root/colcon_ws/install/dasc_msgs/lib/python3.8/site-packages/dasc_msgs/msg/_quad_setpoint.py
+[0.312s] -- Up-to-date symlink: /root/colcon_ws/install/dasc_msgs/lib/python3.8/site-packages/dasc_msgs/msg/_quad_trajectory.py
+[0.313s] -- Up-to-date symlink: /root/colcon_ws/install/dasc_msgs/lib/python3.8/site-packages/dasc_msgs/dasc_msgs_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so
+[0.313s] -- Up-to-date symlink: /root/colcon_ws/install/dasc_msgs/lib/python3.8/site-packages/dasc_msgs/dasc_msgs_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so
+[0.313s] -- Up-to-date symlink: /root/colcon_ws/install/dasc_msgs/lib/python3.8/site-packages/dasc_msgs/dasc_msgs_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so
+[0.313s] -- Up-to-date symlink: /root/colcon_ws/install/dasc_msgs/lib/libdasc_msgs__python.so
+[0.314s] -- Up-to-date symlink: /root/colcon_ws/install/dasc_msgs/share/dasc_msgs/msg/QuadSetpoint.idl
+[0.314s] -- Up-to-date symlink: /root/colcon_ws/install/dasc_msgs/share/dasc_msgs/msg/QuadTrajectory.idl
+[0.314s] -- Up-to-date symlink: /root/colcon_ws/install/dasc_msgs/share/dasc_msgs/msg/QuadSetpoint.msg
+[0.314s] -- Up-to-date symlink: /root/colcon_ws/install/dasc_msgs/share/dasc_msgs/msg/QuadTrajectory.msg
+[0.314s] -- Up-to-date symlink: /root/colcon_ws/install/dasc_msgs/share/ament_index/resource_index/package_run_dependencies/dasc_msgs
+[0.315s] -- Up-to-date symlink: /root/colcon_ws/install/dasc_msgs/share/ament_index/resource_index/parent_prefix_path/dasc_msgs
+[0.315s] -- Up-to-date symlink: /root/colcon_ws/install/dasc_msgs/share/dasc_msgs/environment/ament_prefix_path.sh
+[0.315s] -- Up-to-date symlink: /root/colcon_ws/install/dasc_msgs/share/dasc_msgs/environment/ament_prefix_path.dsv
+[0.315s] -- Up-to-date symlink: /root/colcon_ws/install/dasc_msgs/share/dasc_msgs/environment/path.sh
+[0.316s] -- Up-to-date symlink: /root/colcon_ws/install/dasc_msgs/share/dasc_msgs/environment/path.dsv
+[0.316s] -- Up-to-date symlink: /root/colcon_ws/install/dasc_msgs/share/dasc_msgs/local_setup.bash
+[0.316s] -- Up-to-date symlink: /root/colcon_ws/install/dasc_msgs/share/dasc_msgs/local_setup.sh
+[0.316s] -- Up-to-date symlink: /root/colcon_ws/install/dasc_msgs/share/dasc_msgs/local_setup.zsh
+[0.316s] -- Up-to-date symlink: /root/colcon_ws/install/dasc_msgs/share/dasc_msgs/local_setup.dsv
+[0.317s] -- Symlinking: /root/colcon_ws/install/dasc_msgs/share/dasc_msgs/package.dsv
+[0.326s] -- Up-to-date symlink: /root/colcon_ws/install/dasc_msgs/share/ament_index/resource_index/packages/dasc_msgs
+[0.326s] -- Up-to-date symlink: /root/colcon_ws/install/dasc_msgs/share/dasc_msgs/cmake/rosidl_cmake-extras.cmake
+[0.326s] -- Up-to-date symlink: /root/colcon_ws/install/dasc_msgs/share/dasc_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.326s] -- Up-to-date symlink: /root/colcon_ws/install/dasc_msgs/share/dasc_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[0.327s] -- Up-to-date symlink: /root/colcon_ws/install/dasc_msgs/share/dasc_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[0.327s] -- Up-to-date symlink: /root/colcon_ws/install/dasc_msgs/share/dasc_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.327s] -- Up-to-date symlink: /root/colcon_ws/install/dasc_msgs/share/dasc_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[0.327s] -- Up-to-date symlink: /root/colcon_ws/install/dasc_msgs/share/dasc_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[0.328s] -- Up-to-date symlink: /root/colcon_ws/install/dasc_msgs/share/dasc_msgs/cmake/dasc_msgsConfig.cmake
+[0.328s] -- Up-to-date symlink: /root/colcon_ws/install/dasc_msgs/share/dasc_msgs/cmake/dasc_msgsConfig-version.cmake
+[0.328s] -- Up-to-date symlink: /root/colcon_ws/install/dasc_msgs/share/dasc_msgs/package.xml
+[0.328s] -- Up-to-date: /root/colcon_ws/install/dasc_msgs/lib/libdasc_msgs__rosidl_generator_c.so
+[0.328s] -- Up-to-date: /root/colcon_ws/install/dasc_msgs/lib/libdasc_msgs__rosidl_typesupport_introspection_c.so
+[0.329s] -- Up-to-date: /root/colcon_ws/install/dasc_msgs/lib/libdasc_msgs__rosidl_typesupport_c.so
+[0.329s] -- Up-to-date: /root/colcon_ws/install/dasc_msgs/lib/libdasc_msgs__rosidl_typesupport_introspection_cpp.so
+[0.329s] -- Up-to-date: /root/colcon_ws/install/dasc_msgs/lib/libdasc_msgs__rosidl_typesupport_cpp.so
+[0.358s] -- Up-to-date: /root/colcon_ws/install/dasc_msgs/share/dasc_msgs/cmake/dasc_msgs__rosidl_generator_cExport.cmake
+[0.358s] -- Up-to-date: /root/colcon_ws/install/dasc_msgs/share/dasc_msgs/cmake/dasc_msgs__rosidl_generator_cExport-noconfig.cmake
+[0.358s] -- Up-to-date: /root/colcon_ws/install/dasc_msgs/share/dasc_msgs/cmake/dasc_msgs__rosidl_typesupport_introspection_cExport.cmake
+[0.358s] -- Up-to-date: /root/colcon_ws/install/dasc_msgs/share/dasc_msgs/cmake/dasc_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[0.359s] -- Up-to-date: /root/colcon_ws/install/dasc_msgs/share/dasc_msgs/cmake/dasc_msgs__rosidl_typesupport_cExport.cmake
+[0.359s] -- Up-to-date: /root/colcon_ws/install/dasc_msgs/share/dasc_msgs/cmake/dasc_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[0.359s] -- Up-to-date: /root/colcon_ws/install/dasc_msgs/share/dasc_msgs/cmake/dasc_msgs__rosidl_generator_cppExport.cmake
+[0.359s] -- Up-to-date: /root/colcon_ws/install/dasc_msgs/share/dasc_msgs/cmake/dasc_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[0.359s] -- Up-to-date: /root/colcon_ws/install/dasc_msgs/share/dasc_msgs/cmake/dasc_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[0.359s] -- Up-to-date: /root/colcon_ws/install/dasc_msgs/share/dasc_msgs/cmake/dasc_msgs__rosidl_typesupport_cppExport.cmake
+[0.360s] -- Up-to-date: /root/colcon_ws/install/dasc_msgs/share/dasc_msgs/cmake/dasc_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[0.361s] Invoked command in '/root/colcon_ws/build/dasc_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/bin/cmake --install /root/colcon_ws/build/dasc_msgs

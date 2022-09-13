@@ -1,0 +1,14 @@
+/root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp: In member function ‘void gatekeeper::Gatekeeper::publish_occupied_pcl()’:
+/root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:161:38: error: expected ‘)’ before ‘{’ token
+  161 |     if (m_octree->isNodeOccupied(*it){
+      |        ~                             ^
+      |                                      )
+/root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:165:3: error: expected primary-expression before ‘}’ token
+  165 |   }
+      |   ^
+/root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:172:40: error: ‘using SharedPtr = class std::shared_ptr<rclcpp::Clock>’ {aka ‘class std::shared_ptr<rclcpp::Clock>’} has no member named ‘now’
+  172 |   msg.header.stamp = this->get_clock().now();
+      |                                        ^~~
+make[2]: *** [CMakeFiles/gatekeeper.dir/build.make:63: CMakeFiles/gatekeeper.dir/src/gatekeeper.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:80: CMakeFiles/gatekeeper.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

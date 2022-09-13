@@ -1,0 +1,8 @@
+/root/colcon_ws/src/gatekeeper/src/nominal_controller.cpp: In member function ‘void NominalController::publish_one_trajectory()’:
+/root/colcon_ws/src/gatekeeper/src/nominal_controller.cpp:111:12: warning: unused variable ‘R’ [-Wunused-variable]
+  111 |     double R = 0.5;
+      |            ^
+/root/colcon_ws/src/gatekeeper/src/nominal_controller.cpp: In member function ‘void NominalController::joy_callback(sensor_msgs::msg::Joy_<std::allocator<void> >::SharedPtr)’:
+/root/colcon_ws/src/gatekeeper/src/nominal_controller.cpp:196:60: warning: unused parameter ‘msg’ [-Wunused-parameter]
+  196 |   void joy_callback(const sensor_msgs::msg::Joy::SharedPtr msg){
+      |                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~

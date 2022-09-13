@@ -1,0 +1,103 @@
+/root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp: In member function ‘void gatekeeper::Gatekeeper::insertScan(const Vector3&, const PCLPointCloud&)’:
+/root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:165:56: error: expected ‘;’ before ‘)’ token
+  165 |   for (auto it=free_cells.begin(), end=free_cells.end()); it!=end; ++it){
+      |                                                        ^
+      |                                                        ;
+/root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:165:56: error: expected primary-expression before ‘)’ token
+/root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:165:56: error: expected ‘;’ before ‘)’ token
+  165 |   for (auto it=free_cells.begin(), end=free_cells.end()); it!=end; ++it){
+      |                                                        ^
+      |                                                        ;
+/root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:165:3: warning: this ‘for’ clause does not guard... [-Wmisleading-indentation]
+  165 |   for (auto it=free_cells.begin(), end=free_cells.end()); it!=end; ++it){
+      |   ^~~
+/root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:165:59: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘for’
+  165 |   for (auto it=free_cells.begin(), end=free_cells.end()); it!=end; ++it){
+      |                                                           ^~
+/root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:165:59: error: ‘it’ was not declared in this scope; did you mean ‘int’?
+  165 |   for (auto it=free_cells.begin(), end=free_cells.end()); it!=end; ++it){
+      |                                                           ^~
+      |                                                           int
+/root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:165:63: error: ‘end’ was not declared in this scope
+  165 |   for (auto it=free_cells.begin(), end=free_cells.end()); it!=end; ++it){
+      |                                                               ^~~
+/root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:165:63: note: suggested alternatives:
+In file included from /usr/include/c++/9/string:54,
+                 from /usr/include/c++/9/stdexcept:39,
+                 from /usr/include/c++/9/array:39,
+                 from /usr/include/c++/9/tuple:39,
+                 from /usr/include/c++/9/bits/unique_ptr.h:37,
+                 from /usr/include/c++/9/memory:80,
+                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:144,
+                 from /root/colcon_ws/src/gatekeeper/include/gatekeeper/gatekeeper.hpp:7,
+                 from /root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:10:
+/usr/include/c++/9/bits/range_access.h:107:37: note:   ‘std::end’
+  107 |   template<typename _Tp> const _Tp* end(const valarray<_Tp>&);
+      |                                     ^~~
+In file included from /usr/include/boost/mpl/vector/aux_/begin_end.hpp:21,
+                 from /usr/include/boost/mpl/vector/vector0.hpp:31,
+                 from /usr/include/boost/mpl/vector/vector10.hpp:18,
+                 from /usr/include/boost/mpl/vector/vector20.hpp:18,
+                 from /usr/include/boost/mpl/vector.hpp:36,
+                 from /usr/include/pcl-1.10/pcl/register_point_struct.h:57,
+                 from /usr/include/pcl-1.10/pcl/point_types.h:44,
+                 from /root/colcon_ws/src/gatekeeper/include/gatekeeper/gatekeeper.hpp:13,
+                 from /root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:10:
+/usr/include/boost/mpl/begin_end_fwd.hpp:23:38: note:   ‘boost::mpl::end’
+   23 | template< typename Sequence > struct end;
+      |                                      ^~~
+In file included from /usr/include/boost/fusion/mpl/back.hpp:12,
+                 from /usr/include/boost/fusion/mpl.hpp:15,
+                 from /usr/include/boost/fusion/include/mpl.hpp:12,
+                 from /usr/include/pcl-1.10/pcl/common/impl/accumulators.hpp:44,
+                 from /usr/include/pcl-1.10/pcl/common/centroid.h:954,
+                 from /usr/include/pcl-1.10/pcl/common/transforms.h:44,
+                 from /root/colcon_ws/src/gatekeeper/include/gatekeeper/gatekeeper.hpp:14,
+                 from /root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:10:
+/usr/include/boost/fusion/sequence/intrinsic/end.hpp:92:5: note:   ‘boost::fusion::end’
+   92 |     end(Sequence const& seq)
+      |     ^~~
+In file included from /usr/include/boost/foreach.hpp:80,
+                 from /usr/include/pcl-1.10/pcl/conversions.h:55,
+                 from /usr/include/pcl-1.10/pcl/common/impl/centroid.hpp:45,
+                 from /usr/include/pcl-1.10/pcl/common/centroid.h:1098,
+                 from /usr/include/pcl-1.10/pcl/common/transforms.h:44,
+                 from /root/colcon_ws/src/gatekeeper/include/gatekeeper/gatekeeper.hpp:14,
+                 from /root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:10:
+/usr/include/boost/range/end.hpp:108:61: note:   ‘boost::range_adl_barrier::end’
+  108 | inline BOOST_DEDUCED_TYPENAME range_iterator<const T>::type end( const T& r )
+      |                                                             ^~~
+In file included from /usr/include/pcl-1.10/pcl/conversions.h:55,
+                 from /usr/include/pcl-1.10/pcl/common/impl/centroid.hpp:45,
+                 from /usr/include/pcl-1.10/pcl/common/centroid.h:1098,
+                 from /usr/include/pcl-1.10/pcl/common/transforms.h:44,
+                 from /root/colcon_ws/src/gatekeeper/include/gatekeeper/gatekeeper.hpp:14,
+                 from /root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:10:
+/usr/include/boost/foreach.hpp:736:1: note:   ‘boost::foreach_detail_::end’
+  736 | end(auto_any_t, type2type<T *, C> *, boost::mpl::true_ *) // null-terminated C-style strings
+      | ^~~
+In file included from /usr/include/boost/filesystem.hpp:17,
+                 from /usr/include/pcl-1.10/pcl/io/boost.h:48,
+                 from /usr/include/pcl-1.10/pcl/io/file_io.h:42,
+                 from /usr/include/pcl-1.10/pcl/io/pcd_io.h:44,
+                 from /opt/ros/foxy/include/pcl_conversions/pcl_conversions.h:72,
+                 from /root/colcon_ws/src/gatekeeper/include/gatekeeper/gatekeeper.hpp:15,
+                 from /root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:10:
+/usr/include/boost/filesystem/operations.hpp:1367:32: note:   ‘boost::filesystem::end’
+ 1367 |   recursive_directory_iterator end(const recursive_directory_iterator&) BOOST_NOEXCEPT
+      |                                ^~~
+In file included from /usr/include/boost/fusion/sequence/intrinsic/value_at.hpp:16,
+                 from /usr/include/boost/fusion/mpl/at.hpp:12,
+                 from /usr/include/boost/fusion/mpl.hpp:14,
+                 from /usr/include/boost/fusion/include/mpl.hpp:12,
+                 from /usr/include/pcl-1.10/pcl/common/impl/accumulators.hpp:44,
+                 from /usr/include/pcl-1.10/pcl/common/centroid.h:954,
+                 from /usr/include/pcl-1.10/pcl/common/transforms.h:44,
+                 from /root/colcon_ws/src/gatekeeper/include/gatekeeper/gatekeeper.hpp:14,
+                 from /root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:10:
+/usr/include/boost/fusion/sequence/intrinsic_fwd.hpp:68:16: note:   ‘boost::fusion::result_of::end’
+   68 |         struct end;
+      |                ^~~
+make[2]: *** [CMakeFiles/gatekeeper.dir/build.make:63: CMakeFiles/gatekeeper.dir/src/gatekeeper.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:80: CMakeFiles/gatekeeper.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

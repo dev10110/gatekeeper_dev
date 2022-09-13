@@ -1,0 +1,33 @@
+[0.011s] Invoking command in '/root/colcon_ws/build/dasc_robot': CMAKE_PREFIX_PATH=/root/colcon_ws/install/px4_ros_com:/root/colcon_ws/install/px4_msgs:/opt/ros/foxy:/root/colcon_ws/install/realsense_gazebo_plugin:/root/colcon_ws/install/dasc_robot:/root/colcon_ws/install/experiment LD_LIBRARY_PATH=/root/colcon_ws/install/px4_ros_com/lib:/root/colcon_ws/install/px4_msgs/lib:/root/colcon_ws/install/realsense_gazebo_plugin/lib:/root/colcon_ws/install/dasc_robot/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib /usr/bin/cmake --build /root/colcon_ws/build/dasc_robot -- -j16 -l16
+[0.040s] -- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.060s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.184s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.192s] -- Found rclcpp: 2.4.0 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.225s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.229s] -- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.351s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.394s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.395s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.507s] -- Found tf2: 0.13.12 (/opt/ros/foxy/share/tf2/cmake)
+[0.543s] -- Found tf2_ros: 0.13.12 (/opt/ros/foxy/share/tf2_ros/cmake)
+[0.784s] -- Found px4_msgs: 2.0.1 (/root/colcon_ws/install/px4_msgs/share/px4_msgs/cmake)
+[0.796s] -- Found sensor_msgs: 2.0.4 (/opt/ros/foxy/share/sensor_msgs/cmake)
+[0.848s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/foxy/share/eigen3_cmake_module/cmake)
+[0.849s] -- Found px4_ros_com: 0.1.0 (/root/colcon_ws/install/px4_ros_com/share/px4_ros_com/cmake)
+[0.949s] -- Configuring done
+[0.953s] CMake Error at CMakeLists.txt:132 (add_executable):
+[0.953s]   Cannot find source file:
+[0.953s] 
+[0.953s]     src/joystick_controller.cpp
+[0.953s] 
+[0.953s]   Tried extensions .c .C .c++ .cc .cpp .cxx .cu .m .M .mm .h .hh .h++ .hm
+[0.953s]   .hpp .hxx .in .txx
+[0.953s] 
+[0.954s] 
+[0.954s] CMake Error at CMakeLists.txt:132 (add_executable):
+[0.954s]   No SOURCES given to target: joystick_controller
+[0.954s] 
+[0.954s] 
+[0.954s] CMake Generate step failed.  Build files cannot be regenerated correctly.
+[0.958s] make: *** [Makefile:530: cmake_check_build_system] Error 1
+[0.960s] Invoked command in '/root/colcon_ws/build/dasc_robot' returned '2': CMAKE_PREFIX_PATH=/root/colcon_ws/install/px4_ros_com:/root/colcon_ws/install/px4_msgs:/opt/ros/foxy:/root/colcon_ws/install/realsense_gazebo_plugin:/root/colcon_ws/install/dasc_robot:/root/colcon_ws/install/experiment LD_LIBRARY_PATH=/root/colcon_ws/install/px4_ros_com/lib:/root/colcon_ws/install/px4_msgs/lib:/root/colcon_ws/install/realsense_gazebo_plugin/lib:/root/colcon_ws/install/dasc_robot/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib /usr/bin/cmake --build /root/colcon_ws/build/dasc_robot -- -j16 -l16

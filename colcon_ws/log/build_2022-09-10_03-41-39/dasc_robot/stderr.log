@@ -1,0 +1,23 @@
+/root/colcon_ws/src/robot-framework/src/joystick_control.cpp: In constructor ‘JoystickController::JoystickController(std::shared_ptr<DASCRobot>)’:
+/root/colcon_ws/src/robot-framework/src/joystick_control.cpp:20:61: error: ‘_1’ was not declared in this scope; did you mean ‘std::placeholders::_1’?
+   20 |         &std::bind(&JoystickController::joy_callback, this, _1));
+      |                                                             ^~
+      |                                                             std::placeholders::_1
+In file included from /opt/ros/foxy/include/rclcpp/context.hpp:19,
+                 from /opt/ros/foxy/include/rclcpp/contexts/default_context.hpp:18,
+                 from /opt/ros/foxy/include/rclcpp/executor.hpp:32,
+                 from /opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26,
+                 from /opt/ros/foxy/include/rclcpp/executors.hpp:21,
+                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:146,
+                 from /root/colcon_ws/src/robot-framework/include/dasc_robot/DASCRobots.hpp:6,
+                 from /root/colcon_ws/src/robot-framework/src/joystick_control.cpp:2:
+/usr/include/c++/9/functional:211:34: note: ‘std::placeholders::_1’ declared here
+  211 |     extern const _Placeholder<1> _1;
+      |                                  ^~
+/root/colcon_ws/src/robot-framework/src/joystick_control.cpp: In member function ‘void JoystickController::joy_callback(sensor_msgs::msg::Joy)’:
+/root/colcon_ws/src/robot-framework/src/joystick_control.cpp:49:43: warning: unused parameter ‘msg’ [-Wunused-parameter]
+   49 |   void joy_callback(sensor_msgs::msg::Joy msg){
+      |                     ~~~~~~~~~~~~~~~~~~~~~~^~~
+make[2]: *** [CMakeFiles/joystick_controller.dir/build.make:63: CMakeFiles/joystick_controller.dir/src/joystick_control.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:308: CMakeFiles/joystick_controller.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

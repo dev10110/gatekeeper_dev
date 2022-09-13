@@ -1,0 +1,4 @@
+Invoking command in '/root/colcon_ws/build/experiment': CMAKE_PREFIX_PATH=/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/bin/cmake --build /root/colcon_ws/build/experiment -- -j16 -l16
+Invoked command in '/root/colcon_ws/build/experiment' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/bin/cmake --build /root/colcon_ws/build/experiment -- -j16 -l16
+Invoking command in '/root/colcon_ws/build/experiment': CMAKE_PREFIX_PATH=/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/bin/cmake --install /root/colcon_ws/build/experiment
+Invoked command in '/root/colcon_ws/build/experiment' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/bin/cmake --install /root/colcon_ws/build/experiment

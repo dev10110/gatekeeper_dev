@@ -1,0 +1,50 @@
+[ 12%] Built target dascBots
+[35m[1mScanning dependencies of target joystick_controller[0m
+[ 62%] Built target example_control_geometric
+[ 62%] Built target example_control
+[ 62%] Built target example_control_geometric_velocity
+[ 62%] Built target example_control_geometric_acceleration
+[ 75%] Built target example_control_multi_rover
+[ 87%] Built target dasc_robot_lib
+[ 93%] [32mBuilding CXX object CMakeFiles/joystick_controller.dir/src/joystick_control.cpp.o[0m
+/root/colcon_ws/src/robot-framework/src/joystick_control.cpp: In member function ‘void JoystickController::takeoff()’:
+/root/colcon_ws/src/robot-framework/src/joystick_control.cpp:76:7: error: ‘err’ was not declared in this scope; did you mean ‘erf’?
+   76 |       err = 0;
+      |       ^~~
+      |       erf
+In file included from /opt/ros/foxy/include/rclcpp/service.hpp:34,
+                 from /opt/ros/foxy/include/rclcpp/callback_group.hpp:25,
+                 from /opt/ros/foxy/include/rclcpp/any_executable.hpp:20,
+                 from /opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24,
+                 from /opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18,
+                 from /opt/ros/foxy/include/rclcpp/executor_options.hpp:20,
+                 from /opt/ros/foxy/include/rclcpp/executor.hpp:33,
+                 from /opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26,
+                 from /opt/ros/foxy/include/rclcpp/executors.hpp:21,
+                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:146,
+                 from /root/colcon_ws/src/robot-framework/include/dasc_robot/DASCRobots.hpp:6,
+                 from /root/colcon_ws/src/robot-framework/src/joystick_control.cpp:2:
+/root/colcon_ws/src/robot-framework/src/joystick_control.cpp:83:7: error: static assertion failed: First argument to logging macros must be an rclcpp::Logger
+   83 |       RCLCPP_INFO("TAKING OFF.. err: %f", std::sqrt(err));
+      |       ^~~~~~~~~~~
+In file included from /opt/ros/foxy/include/rclcpp/client.hpp:40,
+                 from /opt/ros/foxy/include/rclcpp/callback_group.hpp:23,
+                 from /opt/ros/foxy/include/rclcpp/any_executable.hpp:20,
+                 from /opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24,
+                 from /opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18,
+                 from /opt/ros/foxy/include/rclcpp/executor_options.hpp:20,
+                 from /opt/ros/foxy/include/rclcpp/executor.hpp:33,
+                 from /opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26,
+                 from /opt/ros/foxy/include/rclcpp/executors.hpp:21,
+                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:146,
+                 from /root/colcon_ws/src/robot-framework/include/dasc_robot/DASCRobots.hpp:6,
+                 from /root/colcon_ws/src/robot-framework/src/joystick_control.cpp:2:
+/root/colcon_ws/src/robot-framework/src/joystick_control.cpp:83:7: error: request for member ‘get_name’ in ‘"TAKING OFF.. err: %f"’, which is of non-class type ‘const char [21]’
+   83 |       RCLCPP_INFO("TAKING OFF.. err: %f", std::sqrt(err));
+      |       ^~~~~~~~~~~
+/root/colcon_ws/src/robot-framework/src/joystick_control.cpp:83:7: error: request for member ‘get_name’ in ‘"TAKING OFF.. err: %f"’, which is of non-class type ‘const char [21]’
+   83 |       RCLCPP_INFO("TAKING OFF.. err: %f", std::sqrt(err));
+      |       ^~~~~~~~~~~
+make[2]: *** [CMakeFiles/joystick_controller.dir/build.make:63: CMakeFiles/joystick_controller.dir/src/joystick_control.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:308: CMakeFiles/joystick_controller.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

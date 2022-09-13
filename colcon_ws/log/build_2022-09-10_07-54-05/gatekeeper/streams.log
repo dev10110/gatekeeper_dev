@@ -1,0 +1,11 @@
+[0.008s] Invoking command in '/root/colcon_ws/build/gatekeeper': CMAKE_PREFIX_PATH=/root/colcon_ws/install/dasc_msgs:/opt/ros/foxy:/root/colcon_ws/install/realsense_gazebo_plugin:/root/colcon_ws/install/px4_ros_com:/root/colcon_ws/install/dasc_robot:/root/colcon_ws/install/px4_msgs:/root/colcon_ws/install/gatekeeper:/root/colcon_ws/install/experiment /usr/bin/cmake --build /root/colcon_ws/build/gatekeeper -- -j16 -l16
+[0.043s] [35m[1mScanning dependencies of target nominal_controller[0m
+[0.065s] [ 50%] [32mBuilding CXX object CMakeFiles/nominal_controller.dir/src/nominal_controller.cpp.o[0m
+[2.439s] /root/colcon_ws/src/gatekeeper/src/nominal_controller.cpp: In member function ‘void NominalController::timer_callback()’:
+[2.439s] /root/colcon_ws/src/gatekeeper/src/nominal_controller.cpp:89:11: error: ‘transformStamped’ was not declared in this scope
+[2.440s]    89 |           transformStamped = tf_buffer_->lookupTransform(
+[2.440s]       |           ^~~~~~~~~~~~~~~~
+[2.440s] make[2]: *** [CMakeFiles/nominal_controller.dir/build.make:63: CMakeFiles/nominal_controller.dir/src/nominal_controller.cpp.o] Error 1
+[2.440s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/nominal_controller.dir/all] Error 2
+[2.440s] make: *** [Makefile:141: all] Error 2
+[2.442s] Invoked command in '/root/colcon_ws/build/gatekeeper' returned '2': CMAKE_PREFIX_PATH=/root/colcon_ws/install/dasc_msgs:/opt/ros/foxy:/root/colcon_ws/install/realsense_gazebo_plugin:/root/colcon_ws/install/px4_ros_com:/root/colcon_ws/install/dasc_robot:/root/colcon_ws/install/px4_msgs:/root/colcon_ws/install/gatekeeper:/root/colcon_ws/install/experiment /usr/bin/cmake --build /root/colcon_ws/build/gatekeeper -- -j16 -l16

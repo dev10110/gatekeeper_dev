@@ -1,0 +1,4 @@
+source;share/gatekeeper/local_setup.bash
+source;share/gatekeeper/local_setup.dsv
+source;share/gatekeeper/local_setup.sh
+source;share/gatekeeper/local_setup.zsh

@@ -1,0 +1,6 @@
+Invoking command in '/root/colcon_ws/build/dasc_msgs': CMAKE_PREFIX_PATH=/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/bin/cmake /root/colcon_ws/src/dasc_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/root/colcon_ws/install/dasc_msgs
+Invoked command in '/root/colcon_ws/build/dasc_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/bin/cmake /root/colcon_ws/src/dasc_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/root/colcon_ws/install/dasc_msgs
+Invoking command in '/root/colcon_ws/build/dasc_msgs': CMAKE_PREFIX_PATH=/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/bin/cmake --build /root/colcon_ws/build/dasc_msgs -- -j16 -l16
+Invoked command in '/root/colcon_ws/build/dasc_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/bin/cmake --build /root/colcon_ws/build/dasc_msgs -- -j16 -l16
+Invoking command in '/root/colcon_ws/build/dasc_msgs': CMAKE_PREFIX_PATH=/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/bin/cmake --install /root/colcon_ws/build/dasc_msgs
+Invoked command in '/root/colcon_ws/build/dasc_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/bin/cmake --install /root/colcon_ws/build/dasc_msgs

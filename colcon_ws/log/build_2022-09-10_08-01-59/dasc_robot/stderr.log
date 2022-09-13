@@ -1,0 +1,378 @@
+/root/colcon_ws/src/robot-framework/src/trajectory_follower.cpp: In member function ‘void TrajectoryFollower::traj_callback(dasc_msgs::msg::QuadTrajectory_<std::allocator<void> >::SharedPtr)’:
+/root/colcon_ws/src/robot-framework/src/trajectory_follower.cpp:121:27: error: no match for ‘operator>’ (operand types are ‘std_msgs::msg::Header_<std::allocator<void> >::_stamp_type’ {aka ‘builtin_interfaces::msg::Time_<std::allocator<void> >’} and ‘rclcpp::Time’)
+  121 |     if (msg->header.stamp > this->get_clock()->now()){
+      |         ~~~~~~~~~~~~~~~~~ ^ ~~~~~~~~~~~~~~~~~~~~~~~~
+      |                     |                             |
+      |                     |                             rclcpp::Time
+      |                     std_msgs::msg::Header_<std::allocator<void> >::_stamp_type {aka builtin_interfaces::msg::Time_<std::allocator<void> >}
+In file included from /usr/include/c++/9/bits/stl_algobase.h:64,
+                 from /usr/include/c++/9/memory:62,
+                 from /usr/include/c++/9/thread:39,
+                 from /root/colcon_ws/src/robot-framework/src/trajectory_follower.cpp:1:
+/usr/include/c++/9/bits/stl_pair.h:467:5: note: candidate: ‘template<class _T1, class _T2> constexpr bool std::operator>(const std::pair<_T1, _T2>&, const std::pair<_T1, _T2>&)’
+  467 |     operator>(const pair<_T1, _T2>& __x, const pair<_T1, _T2>& __y)
+      |     ^~~~~~~~
+/usr/include/c++/9/bits/stl_pair.h:467:5: note:   template argument deduction/substitution failed:
+/root/colcon_ws/src/robot-framework/src/trajectory_follower.cpp:121:52: note:   ‘std_msgs::msg::Header_<std::allocator<void> >::_stamp_type’ {aka ‘builtin_interfaces::msg::Time_<std::allocator<void> >’} is not derived from ‘const std::pair<_T1, _T2>’
+  121 |     if (msg->header.stamp > this->get_clock()->now()){
+      |                                                    ^
+In file included from /usr/include/c++/9/bits/stl_algobase.h:67,
+                 from /usr/include/c++/9/memory:62,
+                 from /usr/include/c++/9/thread:39,
+                 from /root/colcon_ws/src/robot-framework/src/trajectory_follower.cpp:1:
+/usr/include/c++/9/bits/stl_iterator.h:343:5: note: candidate: ‘template<class _Iterator> bool std::operator>(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_Iterator>&)’
+  343 |     operator>(const reverse_iterator<_Iterator>& __x,
+      |     ^~~~~~~~
+/usr/include/c++/9/bits/stl_iterator.h:343:5: note:   template argument deduction/substitution failed:
+/root/colcon_ws/src/robot-framework/src/trajectory_follower.cpp:121:52: note:   ‘std_msgs::msg::Header_<std::allocator<void> >::_stamp_type’ {aka ‘builtin_interfaces::msg::Time_<std::allocator<void> >’} is not derived from ‘const std::reverse_iterator<_Iterator>’
+  121 |     if (msg->header.stamp > this->get_clock()->now()){
+      |                                                    ^
+In file included from /usr/include/c++/9/bits/stl_algobase.h:67,
+                 from /usr/include/c++/9/memory:62,
+                 from /usr/include/c++/9/thread:39,
+                 from /root/colcon_ws/src/robot-framework/src/trajectory_follower.cpp:1:
+/usr/include/c++/9/bits/stl_iterator.h:381:5: note: candidate: ‘template<class _IteratorL, class _IteratorR> bool std::operator>(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_IteratorR>&)’
+  381 |     operator>(const reverse_iterator<_IteratorL>& __x,
+      |     ^~~~~~~~
+/usr/include/c++/9/bits/stl_iterator.h:381:5: note:   template argument deduction/substitution failed:
+/root/colcon_ws/src/robot-framework/src/trajectory_follower.cpp:121:52: note:   ‘std_msgs::msg::Header_<std::allocator<void> >::_stamp_type’ {aka ‘builtin_interfaces::msg::Time_<std::allocator<void> >’} is not derived from ‘const std::reverse_iterator<_Iterator>’
+  121 |     if (msg->header.stamp > this->get_clock()->now()){
+      |                                                    ^
+In file included from /usr/include/c++/9/bits/stl_algobase.h:67,
+                 from /usr/include/c++/9/memory:62,
+                 from /usr/include/c++/9/thread:39,
+                 from /root/colcon_ws/src/robot-framework/src/trajectory_follower.cpp:1:
+/usr/include/c++/9/bits/stl_iterator.h:1187:5: note: candidate: ‘template<class _IteratorL, class _IteratorR> bool std::operator>(const std::move_iterator<_IteratorL>&, const std::move_iterator<_IteratorR>&)’
+ 1187 |     operator>(const move_iterator<_IteratorL>& __x,
+      |     ^~~~~~~~
+/usr/include/c++/9/bits/stl_iterator.h:1187:5: note:   template argument deduction/substitution failed:
+/root/colcon_ws/src/robot-framework/src/trajectory_follower.cpp:121:52: note:   ‘std_msgs::msg::Header_<std::allocator<void> >::_stamp_type’ {aka ‘builtin_interfaces::msg::Time_<std::allocator<void> >’} is not derived from ‘const std::move_iterator<_IteratorL>’
+  121 |     if (msg->header.stamp > this->get_clock()->now()){
+      |                                                    ^
+In file included from /usr/include/c++/9/bits/stl_algobase.h:67,
+                 from /usr/include/c++/9/memory:62,
+                 from /usr/include/c++/9/thread:39,
+                 from /root/colcon_ws/src/robot-framework/src/trajectory_follower.cpp:1:
+/usr/include/c++/9/bits/stl_iterator.h:1193:5: note: candidate: ‘template<class _Iterator> bool std::operator>(const std::move_iterator<_IteratorL>&, const std::move_iterator<_IteratorL>&)’
+ 1193 |     operator>(const move_iterator<_Iterator>& __x,
+      |     ^~~~~~~~
+/usr/include/c++/9/bits/stl_iterator.h:1193:5: note:   template argument deduction/substitution failed:
+/root/colcon_ws/src/robot-framework/src/trajectory_follower.cpp:121:52: note:   ‘std_msgs::msg::Header_<std::allocator<void> >::_stamp_type’ {aka ‘builtin_interfaces::msg::Time_<std::allocator<void> >’} is not derived from ‘const std::move_iterator<_IteratorL>’
+  121 |     if (msg->header.stamp > this->get_clock()->now()){
+      |                                                    ^
+In file included from /usr/include/c++/9/string:55,
+                 from /usr/include/c++/9/stdexcept:39,
+                 from /usr/include/c++/9/array:39,
+                 from /usr/include/c++/9/tuple:39,
+                 from /usr/include/c++/9/bits/unique_ptr.h:37,
+                 from /usr/include/c++/9/memory:80,
+                 from /usr/include/c++/9/thread:39,
+                 from /root/colcon_ws/src/robot-framework/src/trajectory_follower.cpp:1:
+/usr/include/c++/9/bits/basic_string.h:6264:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> bool std::operator>(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)’
+ 6264 |     operator>(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+      |     ^~~~~~~~
+/usr/include/c++/9/bits/basic_string.h:6264:5: note:   template argument deduction/substitution failed:
+/root/colcon_ws/src/robot-framework/src/trajectory_follower.cpp:121:52: note:   ‘std_msgs::msg::Header_<std::allocator<void> >::_stamp_type’ {aka ‘builtin_interfaces::msg::Time_<std::allocator<void> >’} is not derived from ‘const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>’
+  121 |     if (msg->header.stamp > this->get_clock()->now()){
+      |                                                    ^
+In file included from /usr/include/c++/9/string:55,
+                 from /usr/include/c++/9/stdexcept:39,
+                 from /usr/include/c++/9/array:39,
+                 from /usr/include/c++/9/tuple:39,
+                 from /usr/include/c++/9/bits/unique_ptr.h:37,
+                 from /usr/include/c++/9/memory:80,
+                 from /usr/include/c++/9/thread:39,
+                 from /root/colcon_ws/src/robot-framework/src/trajectory_follower.cpp:1:
+/usr/include/c++/9/bits/basic_string.h:6277:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> bool std::operator>(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, const _CharT*)’
+ 6277 |     operator>(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+      |     ^~~~~~~~
+/usr/include/c++/9/bits/basic_string.h:6277:5: note:   template argument deduction/substitution failed:
+/root/colcon_ws/src/robot-framework/src/trajectory_follower.cpp:121:52: note:   ‘std_msgs::msg::Header_<std::allocator<void> >::_stamp_type’ {aka ‘builtin_interfaces::msg::Time_<std::allocator<void> >’} is not derived from ‘const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>’
+  121 |     if (msg->header.stamp > this->get_clock()->now()){
+      |                                                    ^
+In file included from /usr/include/c++/9/string:55,
+                 from /usr/include/c++/9/stdexcept:39,
+                 from /usr/include/c++/9/array:39,
+                 from /usr/include/c++/9/tuple:39,
+                 from /usr/include/c++/9/bits/unique_ptr.h:37,
+                 from /usr/include/c++/9/memory:80,
+                 from /usr/include/c++/9/thread:39,
+                 from /root/colcon_ws/src/robot-framework/src/trajectory_follower.cpp:1:
+/usr/include/c++/9/bits/basic_string.h:6289:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> bool std::operator>(const _CharT*, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)’
+ 6289 |     operator>(const _CharT* __lhs,
+      |     ^~~~~~~~
+/usr/include/c++/9/bits/basic_string.h:6289:5: note:   template argument deduction/substitution failed:
+/root/colcon_ws/src/robot-framework/src/trajectory_follower.cpp:121:52: note:   mismatched types ‘const _CharT*’ and ‘builtin_interfaces::msg::Time_<std::allocator<void> >’
+  121 |     if (msg->header.stamp > this->get_clock()->now()){
+      |                                                    ^
+In file included from /usr/include/c++/9/tuple:39,
+                 from /usr/include/c++/9/bits/unique_ptr.h:37,
+                 from /usr/include/c++/9/memory:80,
+                 from /usr/include/c++/9/thread:39,
+                 from /root/colcon_ws/src/robot-framework/src/trajectory_follower.cpp:1:
+/usr/include/c++/9/array:270:5: note: candidate: ‘template<class _Tp, long unsigned int _Nm> bool std::operator>(const std::array<_Tp, _Nm>&, const std::array<_Tp, _Nm>&)’
+  270 |     operator>(const array<_Tp, _Nm>& __one, const array<_Tp, _Nm>& __two)
+      |     ^~~~~~~~
+/usr/include/c++/9/array:270:5: note:   template argument deduction/substitution failed:
+/root/colcon_ws/src/robot-framework/src/trajectory_follower.cpp:121:52: note:   ‘std_msgs::msg::Header_<std::allocator<void> >::_stamp_type’ {aka ‘builtin_interfaces::msg::Time_<std::allocator<void> >’} is not derived from ‘const std::array<_Tp, _Nm>’
+  121 |     if (msg->header.stamp > this->get_clock()->now()){
+      |                                                    ^
+In file included from /usr/include/c++/9/bits/unique_ptr.h:37,
+                 from /usr/include/c++/9/memory:80,
+                 from /usr/include/c++/9/thread:39,
+                 from /root/colcon_ws/src/robot-framework/src/trajectory_follower.cpp:1:
+/usr/include/c++/9/tuple:1451:5: note: candidate: ‘template<class ... _TElements, class ... _UElements> constexpr bool std::operator>(const std::tuple<_Tps ...>&, const std::tuple<_Elements ...>&)’
+ 1451 |     operator>(const tuple<_TElements...>& __t,
+      |     ^~~~~~~~
+/usr/include/c++/9/tuple:1451:5: note:   template argument deduction/substitution failed:
+/root/colcon_ws/src/robot-framework/src/trajectory_follower.cpp:121:52: note:   ‘std_msgs::msg::Header_<std::allocator<void> >::_stamp_type’ {aka ‘builtin_interfaces::msg::Time_<std::allocator<void> >’} is not derived from ‘const std::tuple<_Tps ...>’
+  121 |     if (msg->header.stamp > this->get_clock()->now()){
+      |                                                    ^
+In file included from /usr/include/c++/9/memory:80,
+                 from /usr/include/c++/9/thread:39,
+                 from /root/colcon_ws/src/robot-framework/src/trajectory_follower.cpp:1:
+/usr/include/c++/9/bits/unique_ptr.h:790:5: note: candidate: ‘template<class _Tp, class _Dp, class _Up, class _Ep> bool std::operator>(const std::unique_ptr<_Tp, _Dp>&, const std::unique_ptr<_Up, _Ep>&)’
+  790 |     operator>(const unique_ptr<_Tp, _Dp>& __x,
+      |     ^~~~~~~~
+/usr/include/c++/9/bits/unique_ptr.h:790:5: note:   template argument deduction/substitution failed:
+/root/colcon_ws/src/robot-framework/src/trajectory_follower.cpp:121:52: note:   ‘std_msgs::msg::Header_<std::allocator<void> >::_stamp_type’ {aka ‘builtin_interfaces::msg::Time_<std::allocator<void> >’} is not derived from ‘const std::unique_ptr<_Tp, _Dp>’
+  121 |     if (msg->header.stamp > this->get_clock()->now()){
+      |                                                    ^
+In file included from /usr/include/c++/9/memory:80,
+                 from /usr/include/c++/9/thread:39,
+                 from /root/colcon_ws/src/robot-framework/src/trajectory_follower.cpp:1:
+/usr/include/c++/9/bits/unique_ptr.h:796:5: note: candidate: ‘template<class _Tp, class _Dp> bool std::operator>(const std::unique_ptr<_Tp, _Dp>&, std::nullptr_t)’
+  796 |     operator>(const unique_ptr<_Tp, _Dp>& __x, nullptr_t)
+      |     ^~~~~~~~
+/usr/include/c++/9/bits/unique_ptr.h:796:5: note:   template argument deduction/substitution failed:
+/root/colcon_ws/src/robot-framework/src/trajectory_follower.cpp:121:52: note:   ‘std_msgs::msg::Header_<std::allocator<void> >::_stamp_type’ {aka ‘builtin_interfaces::msg::Time_<std::allocator<void> >’} is not derived from ‘const std::unique_ptr<_Tp, _Dp>’
+  121 |     if (msg->header.stamp > this->get_clock()->now()){
+      |                                                    ^
+In file included from /usr/include/c++/9/memory:80,
+                 from /usr/include/c++/9/thread:39,
+                 from /root/colcon_ws/src/robot-framework/src/trajectory_follower.cpp:1:
+/usr/include/c++/9/bits/unique_ptr.h:802:5: note: candidate: ‘template<class _Tp, class _Dp> bool std::operator>(std::nullptr_t, const std::unique_ptr<_Tp, _Dp>&)’
+  802 |     operator>(nullptr_t, const unique_ptr<_Tp, _Dp>& __x)
+      |     ^~~~~~~~
+/usr/include/c++/9/bits/unique_ptr.h:802:5: note:   template argument deduction/substitution failed:
+/root/colcon_ws/src/robot-framework/src/trajectory_follower.cpp:121:52: note:   ‘rclcpp::Time’ is not derived from ‘const std::unique_ptr<_Tp, _Dp>’
+  121 |     if (msg->header.stamp > this->get_clock()->now()){
+      |                                                    ^
+In file included from /usr/include/c++/9/bits/shared_ptr.h:52,
+                 from /usr/include/c++/9/memory:81,
+                 from /usr/include/c++/9/thread:39,
+                 from /root/colcon_ws/src/robot-framework/src/trajectory_follower.cpp:1:
+/usr/include/c++/9/bits/shared_ptr_base.h:1487:5: note: candidate: ‘template<class _Tp1, class _Tp2, __gnu_cxx::_Lock_policy _Lp> bool std::operator>(const std::__shared_ptr<_Tp1, _Lp>&, const std::__shared_ptr<_Tp2, _Lp>&)’
+ 1487 |     operator>(const __shared_ptr<_Tp1, _Lp>& __a,
+      |     ^~~~~~~~
+/usr/include/c++/9/bits/shared_ptr_base.h:1487:5: note:   template argument deduction/substitution failed:
+/root/colcon_ws/src/robot-framework/src/trajectory_follower.cpp:121:52: note:   ‘std_msgs::msg::Header_<std::allocator<void> >::_stamp_type’ {aka ‘builtin_interfaces::msg::Time_<std::allocator<void> >’} is not derived from ‘const std::__shared_ptr<_Tp1, _Lp>’
+  121 |     if (msg->header.stamp > this->get_clock()->now()){
+      |                                                    ^
+In file included from /usr/include/c++/9/bits/shared_ptr.h:52,
+                 from /usr/include/c++/9/memory:81,
+                 from /usr/include/c++/9/thread:39,
+                 from /root/colcon_ws/src/robot-framework/src/trajectory_follower.cpp:1:
+/usr/include/c++/9/bits/shared_ptr_base.h:1493:5: note: candidate: ‘template<class _Tp, __gnu_cxx::_Lock_policy _Lp> bool std::operator>(const std::__shared_ptr<_Tp, _Lp>&, std::nullptr_t)’
+ 1493 |     operator>(const __shared_ptr<_Tp, _Lp>& __a, nullptr_t) noexcept
+      |     ^~~~~~~~
+/usr/include/c++/9/bits/shared_ptr_base.h:1493:5: note:   template argument deduction/substitution failed:
+/root/colcon_ws/src/robot-framework/src/trajectory_follower.cpp:121:52: note:   ‘std_msgs::msg::Header_<std::allocator<void> >::_stamp_type’ {aka ‘builtin_interfaces::msg::Time_<std::allocator<void> >’} is not derived from ‘const std::__shared_ptr<_Tp, _Lp>’
+  121 |     if (msg->header.stamp > this->get_clock()->now()){
+      |                                                    ^
+In file included from /usr/include/c++/9/bits/shared_ptr.h:52,
+                 from /usr/include/c++/9/memory:81,
+                 from /usr/include/c++/9/thread:39,
+                 from /root/colcon_ws/src/robot-framework/src/trajectory_follower.cpp:1:
+/usr/include/c++/9/bits/shared_ptr_base.h:1498:5: note: candidate: ‘template<class _Tp, __gnu_cxx::_Lock_policy _Lp> bool std::operator>(std::nullptr_t, const std::__shared_ptr<_Tp, _Lp>&)’
+ 1498 |     operator>(nullptr_t, const __shared_ptr<_Tp, _Lp>& __a) noexcept
+      |     ^~~~~~~~
+/usr/include/c++/9/bits/shared_ptr_base.h:1498:5: note:   template argument deduction/substitution failed:
+/root/colcon_ws/src/robot-framework/src/trajectory_follower.cpp:121:52: note:   ‘rclcpp::Time’ is not derived from ‘const std::__shared_ptr<_Tp, _Lp>’
+  121 |     if (msg->header.stamp > this->get_clock()->now()){
+      |                                                    ^
+In file included from /usr/include/c++/9/memory:81,
+                 from /usr/include/c++/9/thread:39,
+                 from /root/colcon_ws/src/robot-framework/src/trajectory_follower.cpp:1:
+/usr/include/c++/9/bits/shared_ptr.h:454:5: note: candidate: ‘template<class _Tp, class _Up> bool std::operator>(const std::shared_ptr<_Tp>&, const std::shared_ptr<_Tp>&)’
+  454 |     operator>(const shared_ptr<_Tp>& __a, const shared_ptr<_Up>& __b) noexcept
+      |     ^~~~~~~~
+/usr/include/c++/9/bits/shared_ptr.h:454:5: note:   template argument deduction/substitution failed:
+/root/colcon_ws/src/robot-framework/src/trajectory_follower.cpp:121:52: note:   ‘std_msgs::msg::Header_<std::allocator<void> >::_stamp_type’ {aka ‘builtin_interfaces::msg::Time_<std::allocator<void> >’} is not derived from ‘const std::shared_ptr<_Tp>’
+  121 |     if (msg->header.stamp > this->get_clock()->now()){
+      |                                                    ^
+In file included from /usr/include/c++/9/memory:81,
+                 from /usr/include/c++/9/thread:39,
+                 from /root/colcon_ws/src/robot-framework/src/trajectory_follower.cpp:1:
+/usr/include/c++/9/bits/shared_ptr.h:459:5: note: candidate: ‘template<class _Tp> bool std::operator>(const std::shared_ptr<_Tp>&, std::nullptr_t)’
+  459 |     operator>(const shared_ptr<_Tp>& __a, nullptr_t) noexcept
+      |     ^~~~~~~~
+/usr/include/c++/9/bits/shared_ptr.h:459:5: note:   template argument deduction/substitution failed:
+/root/colcon_ws/src/robot-framework/src/trajectory_follower.cpp:121:52: note:   ‘std_msgs::msg::Header_<std::allocator<void> >::_stamp_type’ {aka ‘builtin_interfaces::msg::Time_<std::allocator<void> >’} is not derived from ‘const std::shared_ptr<_Tp>’
+  121 |     if (msg->header.stamp > this->get_clock()->now()){
+      |                                                    ^
+In file included from /usr/include/c++/9/memory:81,
+                 from /usr/include/c++/9/thread:39,
+                 from /root/colcon_ws/src/robot-framework/src/trajectory_follower.cpp:1:
+/usr/include/c++/9/bits/shared_ptr.h:464:5: note: candidate: ‘template<class _Tp> bool std::operator>(std::nullptr_t, const std::shared_ptr<_Tp>&)’
+  464 |     operator>(nullptr_t, const shared_ptr<_Tp>& __a) noexcept
+      |     ^~~~~~~~
+/usr/include/c++/9/bits/shared_ptr.h:464:5: note:   template argument deduction/substitution failed:
+/root/colcon_ws/src/robot-framework/src/trajectory_follower.cpp:121:52: note:   ‘rclcpp::Time’ is not derived from ‘const std::shared_ptr<_Tp>’
+  121 |     if (msg->header.stamp > this->get_clock()->now()){
+      |                                                    ^
+In file included from /root/colcon_ws/src/robot-framework/src/trajectory_follower.cpp:1:
+/usr/include/c++/9/thread:302:3: note: candidate: ‘bool std::operator>(std::thread::id, std::thread::id)’
+  302 |   operator>(thread::id __x, thread::id __y) noexcept
+      |   ^~~~~~~~
+/usr/include/c++/9/thread:302:24: note:   no known conversion for argument 1 from ‘std_msgs::msg::Header_<std::allocator<void> >::_stamp_type’ {aka ‘builtin_interfaces::msg::Time_<std::allocator<void> >’} to ‘std::thread::id’
+  302 |   operator>(thread::id __x, thread::id __y) noexcept
+      |             ~~~~~~~~~~~^~~
+In file included from /usr/include/c++/9/deque:67,
+                 from /usr/include/c++/9/queue:60,
+                 from /root/colcon_ws/src/robot-framework/include/dasc_robot/DASCRobots.hpp:4,
+                 from /root/colcon_ws/src/robot-framework/src/trajectory_follower.cpp:2:
+/usr/include/c++/9/bits/stl_deque.h:327:5: note: candidate: ‘template<class _Tp, class _Ref, class _Ptr> bool std::operator>(const std::_Deque_iterator<_Tp, _Ref, _Ptr>&, const std::_Deque_iterator<_Tp, _Ref, _Ptr>&)’
+  327 |     operator>(const _Deque_iterator<_Tp, _Ref, _Ptr>& __x,
+      |     ^~~~~~~~
+/usr/include/c++/9/bits/stl_deque.h:327:5: note:   template argument deduction/substitution failed:
+/root/colcon_ws/src/robot-framework/src/trajectory_follower.cpp:121:52: note:   ‘std_msgs::msg::Header_<std::allocator<void> >::_stamp_type’ {aka ‘builtin_interfaces::msg::Time_<std::allocator<void> >’} is not derived from ‘const std::_Deque_iterator<_Tp, _Ref, _Ptr>’
+  121 |     if (msg->header.stamp > this->get_clock()->now()){
+      |                                                    ^
+In file included from /usr/include/c++/9/deque:67,
+                 from /usr/include/c++/9/queue:60,
+                 from /root/colcon_ws/src/robot-framework/include/dasc_robot/DASCRobots.hpp:4,
+                 from /root/colcon_ws/src/robot-framework/src/trajectory_follower.cpp:2:
+/usr/include/c++/9/bits/stl_deque.h:334:5: note: candidate: ‘template<class _Tp, class _RefL, class _PtrL, class _RefR, class _PtrR> bool std::operator>(const std::_Deque_iterator<_Tp, _Ref, _Ptr>&, const std::_Deque_iterator<_Tp, _RefR, _PtrR>&)’
+  334 |     operator>(const _Deque_iterator<_Tp, _RefL, _PtrL>& __x,
+      |     ^~~~~~~~
+/usr/include/c++/9/bits/stl_deque.h:334:5: note:   template argument deduction/substitution failed:
+/root/colcon_ws/src/robot-framework/src/trajectory_follower.cpp:121:52: note:   ‘std_msgs::msg::Header_<std::allocator<void> >::_stamp_type’ {aka ‘builtin_interfaces::msg::Time_<std::allocator<void> >’} is not derived from ‘const std::_Deque_iterator<_Tp, _Ref, _Ptr>’
+  121 |     if (msg->header.stamp > this->get_clock()->now()){
+      |                                                    ^
+In file included from /usr/include/c++/9/deque:67,
+                 from /usr/include/c++/9/queue:60,
+                 from /root/colcon_ws/src/robot-framework/include/dasc_robot/DASCRobots.hpp:4,
+                 from /root/colcon_ws/src/robot-framework/src/trajectory_follower.cpp:2:
+/usr/include/c++/9/bits/stl_deque.h:2345:5: note: candidate: ‘template<class _Tp, class _Alloc> bool std::operator>(const std::deque<_Tp, _Alloc>&, const std::deque<_Tp, _Alloc>&)’
+ 2345 |     operator>(const deque<_Tp, _Alloc>& __x,
+      |     ^~~~~~~~
+/usr/include/c++/9/bits/stl_deque.h:2345:5: note:   template argument deduction/substitution failed:
+/root/colcon_ws/src/robot-framework/src/trajectory_follower.cpp:121:52: note:   ‘std_msgs::msg::Header_<std::allocator<void> >::_stamp_type’ {aka ‘builtin_interfaces::msg::Time_<std::allocator<void> >’} is not derived from ‘const std::deque<_Tp, _Alloc>’
+  121 |     if (msg->header.stamp > this->get_clock()->now()){
+      |                                                    ^
+In file included from /usr/include/c++/9/vector:67,
+                 from /usr/include/c++/9/queue:61,
+                 from /root/colcon_ws/src/robot-framework/include/dasc_robot/DASCRobots.hpp:4,
+                 from /root/colcon_ws/src/robot-framework/src/trajectory_follower.cpp:2:
+/usr/include/c++/9/bits/stl_vector.h:1918:5: note: candidate: ‘template<class _Tp, class _Alloc> bool std::operator>(const std::vector<_Tp, _Alloc>&, const std::vector<_Tp, _Alloc>&)’
+ 1918 |     operator>(const vector<_Tp, _Alloc>& __x, const vector<_Tp, _Alloc>& __y)
+      |     ^~~~~~~~
+/usr/include/c++/9/bits/stl_vector.h:1918:5: note:   template argument deduction/substitution failed:
+/root/colcon_ws/src/robot-framework/src/trajectory_follower.cpp:121:52: note:   ‘std_msgs::msg::Header_<std::allocator<void> >::_stamp_type’ {aka ‘builtin_interfaces::msg::Time_<std::allocator<void> >’} is not derived from ‘const std::vector<_Tp, _Alloc>’
+  121 |     if (msg->header.stamp > this->get_clock()->now()){
+      |                                                    ^
+In file included from /usr/include/c++/9/queue:64,
+                 from /root/colcon_ws/src/robot-framework/include/dasc_robot/DASCRobots.hpp:4,
+                 from /root/colcon_ws/src/robot-framework/src/trajectory_follower.cpp:2:
+/usr/include/c++/9/bits/stl_queue.h:368:5: note: candidate: ‘template<class _Tp, class _Seq> bool std::operator>(const std::queue<_Tp, _Seq>&, const std::queue<_Tp, _Seq>&)’
+  368 |     operator>(const queue<_Tp, _Seq>& __x, const queue<_Tp, _Seq>& __y)
+      |     ^~~~~~~~
+/usr/include/c++/9/bits/stl_queue.h:368:5: note:   template argument deduction/substitution failed:
+/root/colcon_ws/src/robot-framework/src/trajectory_follower.cpp:121:52: note:   ‘std_msgs::msg::Header_<std::allocator<void> >::_stamp_type’ {aka ‘builtin_interfaces::msg::Time_<std::allocator<void> >’} is not derived from ‘const std::queue<_Tp, _Seq>’
+  121 |     if (msg->header.stamp > this->get_clock()->now()){
+      |                                                    ^
+In file included from /usr/include/c++/9/set:61,
+                 from /opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:21,
+                 from /opt/ros/foxy/include/rclcpp/executors.hpp:21,
+                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:146,
+                 from /root/colcon_ws/src/robot-framework/include/dasc_robot/DASCRobots.hpp:6,
+                 from /root/colcon_ws/src/robot-framework/src/trajectory_follower.cpp:2:
+/usr/include/c++/9/bits/stl_set.h:1010:5: note: candidate: ‘template<class _Key, class _Compare, class _Alloc> bool std::operator>(const std::set<_Key, _Compare, _Alloc>&, const std::set<_Key, _Compare, _Alloc>&)’
+ 1010 |     operator>(const set<_Key, _Compare, _Alloc>& __x,
+      |     ^~~~~~~~
+/usr/include/c++/9/bits/stl_set.h:1010:5: note:   template argument deduction/substitution failed:
+/root/colcon_ws/src/robot-framework/src/trajectory_follower.cpp:121:52: note:   ‘std_msgs::msg::Header_<std::allocator<void> >::_stamp_type’ {aka ‘builtin_interfaces::msg::Time_<std::allocator<void> >’} is not derived from ‘const std::set<_Key, _Compare, _Alloc>’
+  121 |     if (msg->header.stamp > this->get_clock()->now()){
+      |                                                    ^
+In file included from /usr/include/c++/9/set:62,
+                 from /opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:21,
+                 from /opt/ros/foxy/include/rclcpp/executors.hpp:21,
+                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:146,
+                 from /root/colcon_ws/src/robot-framework/include/dasc_robot/DASCRobots.hpp:6,
+                 from /root/colcon_ws/src/robot-framework/src/trajectory_follower.cpp:2:
+/usr/include/c++/9/bits/stl_multiset.h:995:5: note: candidate: ‘template<class _Key, class _Compare, class _Alloc> bool std::operator>(const std::multiset<_Key, _Compare, _Alloc>&, const std::multiset<_Key, _Compare, _Alloc>&)’
+  995 |     operator>(const multiset<_Key,_Compare,_Alloc>& __x,
+      |     ^~~~~~~~
+/usr/include/c++/9/bits/stl_multiset.h:995:5: note:   template argument deduction/substitution failed:
+/root/colcon_ws/src/robot-framework/src/trajectory_follower.cpp:121:52: note:   ‘std_msgs::msg::Header_<std::allocator<void> >::_stamp_type’ {aka ‘builtin_interfaces::msg::Time_<std::allocator<void> >’} is not derived from ‘const std::multiset<_Key, _Compare, _Alloc>’
+  121 |     if (msg->header.stamp > this->get_clock()->now()){
+      |                                                    ^
+In file included from /usr/include/c++/9/list:63,
+                 from /opt/ros/foxy/include/rclcpp/executor.hpp:23,
+                 from /opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26,
+                 from /opt/ros/foxy/include/rclcpp/executors.hpp:21,
+                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:146,
+                 from /root/colcon_ws/src/robot-framework/include/dasc_robot/DASCRobots.hpp:6,
+                 from /root/colcon_ws/src/robot-framework/src/trajectory_follower.cpp:2:
+/usr/include/c++/9/bits/stl_list.h:2038:5: note: candidate: ‘template<class _Tp, class _Alloc> bool std::operator>(const std::__cxx11::list<_Tp, _Alloc>&, const std::__cxx11::list<_Tp, _Alloc>&)’
+ 2038 |     operator>(const list<_Tp, _Alloc>& __x, const list<_Tp, _Alloc>& __y)
+      |     ^~~~~~~~
+/usr/include/c++/9/bits/stl_list.h:2038:5: note:   template argument deduction/substitution failed:
+/root/colcon_ws/src/robot-framework/src/trajectory_follower.cpp:121:52: note:   ‘std_msgs::msg::Header_<std::allocator<void> >::_stamp_type’ {aka ‘builtin_interfaces::msg::Time_<std::allocator<void> >’} is not derived from ‘const std::__cxx11::list<_Tp, _Alloc>’
+  121 |     if (msg->header.stamp > this->get_clock()->now()){
+      |                                                    ^
+In file included from /usr/include/c++/9/map:61,
+                 from /opt/ros/foxy/include/rclcpp/client.hpp:20,
+                 from /opt/ros/foxy/include/rclcpp/callback_group.hpp:23,
+                 from /opt/ros/foxy/include/rclcpp/any_executable.hpp:20,
+                 from /opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24,
+                 from /opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18,
+                 from /opt/ros/foxy/include/rclcpp/executor_options.hpp:20,
+                 from /opt/ros/foxy/include/rclcpp/executor.hpp:33,
+                 from /opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26,
+                 from /opt/ros/foxy/include/rclcpp/executors.hpp:21,
+                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:146,
+                 from /root/colcon_ws/src/robot-framework/include/dasc_robot/DASCRobots.hpp:6,
+                 from /root/colcon_ws/src/robot-framework/src/trajectory_follower.cpp:2:
+/usr/include/c++/9/bits/stl_map.h:1486:5: note: candidate: ‘template<class _Key, class _Tp, class _Compare, class _Alloc> bool std::operator>(const std::map<_Key, _Tp, _Compare, _Alloc>&, const std::map<_Key, _Tp, _Compare, _Alloc>&)’
+ 1486 |     operator>(const map<_Key, _Tp, _Compare, _Alloc>& __x,
+      |     ^~~~~~~~
+/usr/include/c++/9/bits/stl_map.h:1486:5: note:   template argument deduction/substitution failed:
+/root/colcon_ws/src/robot-framework/src/trajectory_follower.cpp:121:52: note:   ‘std_msgs::msg::Header_<std::allocator<void> >::_stamp_type’ {aka ‘builtin_interfaces::msg::Time_<std::allocator<void> >’} is not derived from ‘const std::map<_Key, _Tp, _Compare, _Alloc>’
+  121 |     if (msg->header.stamp > this->get_clock()->now()){
+      |                                                    ^
+In file included from /usr/include/c++/9/map:62,
+                 from /opt/ros/foxy/include/rclcpp/client.hpp:20,
+                 from /opt/ros/foxy/include/rclcpp/callback_group.hpp:23,
+                 from /opt/ros/foxy/include/rclcpp/any_executable.hpp:20,
+                 from /opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24,
+                 from /opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18,
+                 from /opt/ros/foxy/include/rclcpp/executor_options.hpp:20,
+                 from /opt/ros/foxy/include/rclcpp/executor.hpp:33,
+                 from /opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26,
+                 from /opt/ros/foxy/include/rclcpp/executors.hpp:21,
+                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:146,
+                 from /root/colcon_ws/src/robot-framework/include/dasc_robot/DASCRobots.hpp:6,
+                 from /root/colcon_ws/src/robot-framework/src/trajectory_follower.cpp:2:
+/usr/include/c++/9/bits/stl_multimap.h:1150:5: note: candidate: ‘template<class _Key, class _Tp, class _Compare, class _Alloc> bool std::operator>(const std::multimap<_Key, _Tp, _Compare, _Alloc>&, const std::multimap<_Key, _Tp, _Compare, _Alloc>&)’
+ 1150 |     operator>(const multimap<_Key, _Tp, _Compare, _Alloc>& __x,
+      |     ^~~~~~~~
+/usr/include/c++/9/bits/stl_multimap.h:1150:5: note:   template argument deduction/substitution failed:
+/root/colcon_ws/src/robot-framework/src/trajectory_follower.cpp:121:52: note:   ‘std_msgs::msg::Header_<std::allocator<void> >::_stamp_type’ {aka ‘builtin_interfaces::msg::Time_<std::allocator<void> >’} is not derived from ‘const std::multimap<_Key, _Tp, _Compare, _Alloc>’
+  121 |     if (msg->header.stamp > this->get_clock()->now()){
+      |                                                    ^
+/root/colcon_ws/src/robot-framework/src/trajectory_follower.cpp:126:12: error: no match for ‘operator=’ (operand types are ‘QuadTrajectory’ {aka ‘dasc_msgs::msg::QuadTrajectory_<std::allocator<void> >’} and ‘const SharedPtr’ {aka ‘const std::shared_ptr<dasc_msgs::msg::QuadTrajectory_<std::allocator<void> > >’})
+  126 |     traj = msg;
+      |            ^~~
+In file included from /root/colcon_ws/install/dasc_msgs/include/dasc_msgs/msg/quad_trajectory.hpp:7,
+                 from /root/colcon_ws/src/robot-framework/src/trajectory_follower.cpp:5:
+/root/colcon_ws/install/dasc_msgs/include/dasc_msgs/msg/detail/quad_trajectory__struct.hpp:35:8: note: candidate: ‘dasc_msgs::msg::QuadTrajectory_<std::allocator<void> >& dasc_msgs::msg::QuadTrajectory_<std::allocator<void> >::operator=(const dasc_msgs::msg::QuadTrajectory_<std::allocator<void> >&)’
+   35 | struct QuadTrajectory_
+      |        ^~~~~~~~~~~~~~~
+/root/colcon_ws/install/dasc_msgs/include/dasc_msgs/msg/detail/quad_trajectory__struct.hpp:35:8: note:   no known conversion for argument 1 from ‘const SharedPtr’ {aka ‘const std::shared_ptr<dasc_msgs::msg::QuadTrajectory_<std::allocator<void> > >’} to ‘const dasc_msgs::msg::QuadTrajectory_<std::allocator<void> >&’
+/root/colcon_ws/install/dasc_msgs/include/dasc_msgs/msg/detail/quad_trajectory__struct.hpp:35:8: note: candidate: ‘dasc_msgs::msg::QuadTrajectory_<std::allocator<void> >& dasc_msgs::msg::QuadTrajectory_<std::allocator<void> >::operator=(dasc_msgs::msg::QuadTrajectory_<std::allocator<void> >&&)’
+/root/colcon_ws/install/dasc_msgs/include/dasc_msgs/msg/detail/quad_trajectory__struct.hpp:35:8: note:   no known conversion for argument 1 from ‘const SharedPtr’ {aka ‘const std::shared_ptr<dasc_msgs::msg::QuadTrajectory_<std::allocator<void> > >’} to ‘dasc_msgs::msg::QuadTrajectory_<std::allocator<void> >&&’
+make[2]: *** [CMakeFiles/trajectory_follower.dir/build.make:63: CMakeFiles/trajectory_follower.dir/src/trajectory_follower.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:94: CMakeFiles/trajectory_follower.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

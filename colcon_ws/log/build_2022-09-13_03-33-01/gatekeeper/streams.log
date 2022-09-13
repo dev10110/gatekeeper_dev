@@ -1,0 +1,266 @@
+[0.008s] Invoking command in '/root/colcon_ws/build/gatekeeper': CMAKE_PREFIX_PATH=/root/colcon_ws/install/dasc_msgs:/opt/ros/foxy:/root/colcon_ws/install/realsense_gazebo_plugin:/root/colcon_ws/install/px4_ros_com:/root/colcon_ws/install/dasc_robot:/root/colcon_ws/install/px4_msgs:/root/colcon_ws/install/gatekeeper:/root/colcon_ws/install/experiment LD_LIBRARY_PATH=/root/colcon_ws/install/dasc_msgs/lib:/root/colcon_ws/install/realsense_gazebo_plugin/lib:/root/colcon_ws/install/px4_ros_com/lib:/root/colcon_ws/install/dasc_robot/lib:/root/colcon_ws/install/px4_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib PYTHONPATH=/root/colcon_ws/install/dasc_msgs/lib/python3.8/site-packages:/root/colcon_ws/install/px4_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/cmake --build /root/colcon_ws/build/gatekeeper -- -j16 -l16
+[0.040s] -- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.061s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.197s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.204s] -- Found sensor_msgs: 2.0.4 (/opt/ros/foxy/share/sensor_msgs/cmake)
+[0.221s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.223s] -- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.347s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.467s] -- Found dasc_msgs: 0.0.0 (/root/colcon_ws/install/dasc_msgs/share/dasc_msgs/cmake)
+[0.489s] -- Found visualization_msgs: 2.0.4 (/opt/ros/foxy/share/visualization_msgs/cmake)
+[0.543s] -- Found rclcpp: 2.4.0 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.568s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.569s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.666s] -- Found tf2: 0.13.12 (/opt/ros/foxy/share/tf2/cmake)
+[0.672s] -- Found tf2_ros: 0.13.12 (/opt/ros/foxy/share/tf2_ros/cmake)
+[0.910s] -- Eigen found (include: /usr/include/eigen3, version: 3.3.7)
+[0.986s] -- The imported target "vtkParseOGLExt" references the file
+[0.986s]    "/usr/bin/vtkParseOGLExt-7.1"
+[0.986s] but this file does not exist.  Possible reasons include:
+[0.986s] * The file was deleted, renamed, or moved to another location.
+[0.986s] * An install or uninstall procedure did not complete successfully.
+[0.986s] * The installation package was faulty and contained
+[0.986s]    "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"
+[0.986s] but not all the files it references.
+[0.987s] 
+[0.987s] -- The imported target "vtkRenderingPythonTkWidgets" references the file
+[0.987s]    "/usr/lib/x86_64-linux-gnu/libvtkRenderingPythonTkWidgets.so"
+[0.987s] but this file does not exist.  Possible reasons include:
+[0.987s] * The file was deleted, renamed, or moved to another location.
+[0.987s] * An install or uninstall procedure did not complete successfully.
+[0.987s] * The installation package was faulty and contained
+[0.987s]    "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"
+[0.987s] but not all the files it references.
+[0.987s] 
+[0.987s] -- The imported target "vtk" references the file
+[0.987s]    "/usr/bin/vtk"
+[0.987s] but this file does not exist.  Possible reasons include:
+[0.987s] * The file was deleted, renamed, or moved to another location.
+[0.987s] * An install or uninstall procedure did not complete successfully.
+[0.988s] * The installation package was faulty and contained
+[0.988s]    "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"
+[0.988s] but not all the files it references.
+[0.988s] 
+[0.988s] -- The imported target "pvtk" references the file
+[0.988s]    "/usr/bin/pvtk"
+[0.988s] but this file does not exist.  Possible reasons include:
+[0.988s] * The file was deleted, renamed, or moved to another location.
+[0.988s] * An install or uninstall procedure did not complete successfully.
+[0.988s] * The installation package was faulty and contained
+[0.988s]    "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"
+[0.988s] but not all the files it references.
+[0.988s] 
+[1.002s] -- OpenNI found (include: /usr/include/ni, lib: /usr/lib/libOpenNI.so)
+[1.006s] -- OpenNI2 found (include: /usr/include/openni2, lib: /usr/lib/libOpenNI2.so)
+[1.006s] ** WARNING ** io features related to pcap will be disabled
+[1.006s] ** WARNING ** io features related to png will be disabled
+[1.016s] ** WARNING ** io features related to libusb-1.0 will be disabled
+[1.021s] -- OpenNI found (include: /usr/include/ni, lib: /usr/lib/libOpenNI.so)
+[1.026s] -- OpenNI2 found (include: /usr/include/openni2, lib: /usr/lib/libOpenNI2.so)
+[1.038s] -- QHULL found (include: /usr/include, lib: optimized;/usr/lib/x86_64-linux-gnu/libqhull.so;debug;/usr/lib/x86_64-linux-gnu/libqhull.so)
+[1.044s] -- OpenNI found (include: /usr/include/ni, lib: /usr/lib/libOpenNI.so)
+[1.054s] -- looking for PCL_COMMON
+[1.055s] -- looking for PCL_KDTREE
+[1.055s] -- looking for PCL_OCTREE
+[1.056s] -- looking for PCL_SEARCH
+[1.056s] -- looking for PCL_SAMPLE_CONSENSUS
+[1.056s] -- looking for PCL_FILTERS
+[1.057s] -- looking for PCL_2D
+[1.057s] -- looking for PCL_GEOMETRY
+[1.057s] -- looking for PCL_IO
+[1.057s] -- looking for PCL_FEATURES
+[1.058s] -- looking for PCL_ML
+[1.058s] -- looking for PCL_SEGMENTATION
+[1.059s] -- looking for PCL_VISUALIZATION
+[1.059s] -- looking for PCL_SURFACE
+[1.060s] -- looking for PCL_REGISTRATION
+[1.061s] -- looking for PCL_KEYPOINTS
+[1.061s] -- looking for PCL_TRACKING
+[1.061s] -- looking for PCL_RECOGNITION
+[1.061s] -- looking for PCL_STEREO
+[1.062s] -- looking for PCL_APPS
+[1.062s] -- looking for PCL_IN_HAND_SCANNER
+[1.062s] -- looking for PCL_POINT_CLOUD_EDITOR
+[1.063s] -- looking for PCL_OUTOFCORE
+[1.063s] -- looking for PCL_PEOPLE
+[1.065s] -- Found ament_lint_auto: 0.9.6 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[1.126s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.126s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.127s] -- Configured cppcheck include dirs: /root/colcon_ws/src/gatekeeper/include
+[1.127s] -- Configured cppcheck exclude dirs and/or files: 
+[1.128s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[1.129s] -- Configured cpplint exclude dirs and/or files: 
+[1.129s] -- Added test 'lint_cmake' to check CMake code style
+[1.129s] -- Added test 'uncrustify' to check C / C++ code style
+[1.129s] -- Configured uncrustify additional arguments: 
+[1.129s] -- Added test 'xmllint' to check XML markup files
+[1.131s] -- Configuring done
+[1.169s] -- Generating done
+[1.170s] -- Build files have been written to: /root/colcon_ws/build/gatekeeper
+[1.200s] [35m[1mScanning dependencies of target gatekeeper[0m
+[1.217s] [ 40%] Built target nominal_controller
+[1.239s] [ 60%] [32mBuilding CXX object CMakeFiles/gatekeeper.dir/src/gatekeeper.cpp.o[0m
+[11.489s] /root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp: In constructor ‘gatekeeper::Gatekeeper::Gatekeeper()’:
+[11.489s] /root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:30:105: error: no matching function for call to ‘dasc_msgs::msg::QuadTrajectory_<std::allocator<void> >::QuadTrajectory_(const char [22], int)’
+[11.489s]    30 |   m_committedTrajPub = this->create_publisher<dasc_msgs::msg::QuadTrajectory("/committed_trajectory", 10);
+[11.490s]       |                                                                                                         ^
+[11.490s] In file included from /root/colcon_ws/install/dasc_msgs/include/dasc_msgs/msg/quad_trajectory.hpp:7,
+[11.490s]                  from /root/colcon_ws/src/gatekeeper/include/gatekeeper/gatekeeper.hpp:11,
+[11.490s]                  from /root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:10:
+[11.490s] /root/colcon_ws/install/dasc_msgs/include/dasc_msgs/msg/detail/quad_trajectory__struct.hpp:45:12: note: candidate: ‘dasc_msgs::msg::QuadTrajectory_<ContainerAllocator>::QuadTrajectory_(const ContainerAllocator&, rosidl_runtime_cpp::MessageInitialization) [with ContainerAllocator = std::allocator<void>]’
+[11.490s]    45 |   explicit QuadTrajectory_(const ContainerAllocator & _alloc, rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
+[11.490s]       |            ^~~~~~~~~~~~~~~
+[11.490s] /root/colcon_ws/install/dasc_msgs/include/dasc_msgs/msg/detail/quad_trajectory__struct.hpp:45:55: note:   no known conversion for argument 1 from ‘const char [22]’ to ‘const std::allocator<void>&’
+[11.490s]    45 |   explicit QuadTrajectory_(const ContainerAllocator & _alloc, rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
+[11.490s]       |                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+[11.490s] /root/colcon_ws/install/dasc_msgs/include/dasc_msgs/msg/detail/quad_trajectory__struct.hpp:39:12: note: candidate: ‘dasc_msgs::msg::QuadTrajectory_<ContainerAllocator>::QuadTrajectory_(rosidl_runtime_cpp::MessageInitialization) [with ContainerAllocator = std::allocator<void>]’
+[11.490s]    39 |   explicit QuadTrajectory_(rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
+[11.490s]       |            ^~~~~~~~~~~~~~~
+[11.490s] /root/colcon_ws/install/dasc_msgs/include/dasc_msgs/msg/detail/quad_trajectory__struct.hpp:39:12: note:   candidate expects 1 argument, 2 provided
+[11.490s] /root/colcon_ws/install/dasc_msgs/include/dasc_msgs/msg/detail/quad_trajectory__struct.hpp:35:8: note: candidate: ‘dasc_msgs::msg::QuadTrajectory_<std::allocator<void> >::QuadTrajectory_(const dasc_msgs::msg::QuadTrajectory_<std::allocator<void> >&)’
+[11.490s]    35 | struct QuadTrajectory_
+[11.490s]       |        ^~~~~~~~~~~~~~~
+[11.490s] /root/colcon_ws/install/dasc_msgs/include/dasc_msgs/msg/detail/quad_trajectory__struct.hpp:35:8: note:   candidate expects 1 argument, 2 provided
+[11.490s] /root/colcon_ws/install/dasc_msgs/include/dasc_msgs/msg/detail/quad_trajectory__struct.hpp:35:8: note: candidate: ‘dasc_msgs::msg::QuadTrajectory_<std::allocator<void> >::QuadTrajectory_(dasc_msgs::msg::QuadTrajectory_<std::allocator<void> >&&)’
+[11.491s] /root/colcon_ws/install/dasc_msgs/include/dasc_msgs/msg/detail/quad_trajectory__struct.hpp:35:8: note:   candidate expects 1 argument, 2 provided
+[11.491s] /root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:30:30: error: parse error in template argument list
+[11.491s]    30 |   m_committedTrajPub = this->create_publisher<dasc_msgs::msg::QuadTrajectory("/committed_trajectory", 10);
+[11.491s]       |                              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[11.491s] /root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:30:30: error: no match for ‘operator=’ (operand types are ‘rclcpp::Publisher<dasc_msgs::msg::QuadTrajectory_<std::allocator<void> > >::SharedPtr’ {aka ‘std::shared_ptr<rclcpp::Publisher<dasc_msgs::msg::QuadTrajectory_<std::allocator<void> > > >’} and ‘<unresolved overloaded function type>’)
+[11.491s] In file included from /usr/include/c++/9/memory:81,
+[11.491s]                  from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:144,
+[11.491s]                  from /root/colcon_ws/src/gatekeeper/include/gatekeeper/gatekeeper.hpp:7,
+[11.491s]                  from /root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:10:
+[11.491s] /usr/include/c++/9/bits/shared_ptr.h:309:19: note: candidate: ‘std::shared_ptr<_Tp>& std::shared_ptr<_Tp>::operator=(const std::shared_ptr<_Tp>&) [with _Tp = rclcpp::Publisher<dasc_msgs::msg::QuadTrajectory_<std::allocator<void> > >]’
+[11.491s]   309 |       shared_ptr& operator=(const shared_ptr&) noexcept = default;
+[11.491s]       |                   ^~~~~~~~
+[11.491s] /usr/include/c++/9/bits/shared_ptr.h:309:29: note:   no known conversion for argument 1 from ‘<unresolved overloaded function type>’ to ‘const std::shared_ptr<rclcpp::Publisher<dasc_msgs::msg::QuadTrajectory_<std::allocator<void> > > >&’
+[11.491s]   309 |       shared_ptr& operator=(const shared_ptr&) noexcept = default;
+[11.491s]       |                             ^~~~~~~~~~~~~~~~~
+[11.491s] /usr/include/c++/9/bits/shared_ptr.h:313:2: note: candidate: ‘template<class _Yp> std::shared_ptr<_Tp>::_Assignable<const std::shared_ptr<_Yp>&> std::shared_ptr<_Tp>::operator=(const std::shared_ptr<_Yp>&) [with _Yp = _Yp; _Tp = rclcpp::Publisher<dasc_msgs::msg::QuadTrajectory_<std::allocator<void> > >]’
+[11.491s]   313 |  operator=(const shared_ptr<_Yp>& __r) noexcept
+[11.491s]       |  ^~~~~~~~
+[11.492s] /usr/include/c++/9/bits/shared_ptr.h:313:2: note:   template argument deduction/substitution failed:
+[11.492s] /root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:30:30: note:   couldn’t deduce template parameter ‘_Yp’
+[11.492s]    30 |   m_committedTrajPub = this->create_publisher<dasc_msgs::msg::QuadTrajectory("/committed_trajectory", 10);
+[11.492s]       |                              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[11.492s] In file included from /usr/include/c++/9/memory:81,
+[11.492s]                  from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:144,
+[11.492s]                  from /root/colcon_ws/src/gatekeeper/include/gatekeeper/gatekeeper.hpp:7,
+[11.492s]                  from /root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:10:
+[11.492s] /usr/include/c++/9/bits/shared_ptr.h:324:2: note: candidate: ‘template<class _Yp> std::shared_ptr<_Tp>::_Assignable<std::auto_ptr<_Up> > std::shared_ptr<_Tp>::operator=(std::auto_ptr<_Up>&&) [with _Yp = _Yp; _Tp = rclcpp::Publisher<dasc_msgs::msg::QuadTrajectory_<std::allocator<void> > >]’
+[11.492s]   324 |  operator=(auto_ptr<_Yp>&& __r)
+[11.492s]       |  ^~~~~~~~
+[11.492s] /usr/include/c++/9/bits/shared_ptr.h:324:2: note:   template argument deduction/substitution failed:
+[11.492s] /root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:30:30: note:   couldn’t deduce template parameter ‘_Yp’
+[11.492s]    30 |   m_committedTrajPub = this->create_publisher<dasc_msgs::msg::QuadTrajectory("/committed_trajectory", 10);
+[11.492s]       |                              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[11.492s] In file included from /usr/include/c++/9/memory:81,
+[11.492s]                  from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:144,
+[11.492s]                  from /root/colcon_ws/src/gatekeeper/include/gatekeeper/gatekeeper.hpp:7,
+[11.492s]                  from /root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:10:
+[11.492s] /usr/include/c++/9/bits/shared_ptr.h:333:7: note: candidate: ‘std::shared_ptr<_Tp>& std::shared_ptr<_Tp>::operator=(std::shared_ptr<_Tp>&&) [with _Tp = rclcpp::Publisher<dasc_msgs::msg::QuadTrajectory_<std::allocator<void> > >]’
+[11.492s]   333 |       operator=(shared_ptr&& __r) noexcept
+[11.493s]       |       ^~~~~~~~
+[11.493s] /usr/include/c++/9/bits/shared_ptr.h:333:30: note:   no known conversion for argument 1 from ‘<unresolved overloaded function type>’ to ‘std::shared_ptr<rclcpp::Publisher<dasc_msgs::msg::QuadTrajectory_<std::allocator<void> > > >&&’
+[11.493s]   333 |       operator=(shared_ptr&& __r) noexcept
+[11.493s]       |                 ~~~~~~~~~~~~~^~~
+[11.493s] /usr/include/c++/9/bits/shared_ptr.h:341:2: note: candidate: ‘template<class _Yp> std::shared_ptr<_Tp>::_Assignable<std::shared_ptr<_Yp> > std::shared_ptr<_Tp>::operator=(std::shared_ptr<_Yp>&&) [with _Yp = _Yp; _Tp = rclcpp::Publisher<dasc_msgs::msg::QuadTrajectory_<std::allocator<void> > >]’
+[11.493s]   341 |  operator=(shared_ptr<_Yp>&& __r) noexcept
+[11.493s]       |  ^~~~~~~~
+[11.493s] /usr/include/c++/9/bits/shared_ptr.h:341:2: note:   template argument deduction/substitution failed:
+[11.493s] /root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:30:30: note:   couldn’t deduce template parameter ‘_Yp’
+[11.493s]    30 |   m_committedTrajPub = this->create_publisher<dasc_msgs::msg::QuadTrajectory("/committed_trajectory", 10);
+[11.493s]       |                              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[11.493s] In file included from /usr/include/c++/9/memory:81,
+[11.493s]                  from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:144,
+[11.494s]                  from /root/colcon_ws/src/gatekeeper/include/gatekeeper/gatekeeper.hpp:7,
+[11.494s]                  from /root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:10:
+[11.494s] /usr/include/c++/9/bits/shared_ptr.h:349:2: note: candidate: ‘template<class _Yp, class _Del> std::shared_ptr<_Tp>::_Assignable<std::unique_ptr<_Up, _Ep> > std::shared_ptr<_Tp>::operator=(std::unique_ptr<_Up, _Ep>&&) [with _Yp = _Yp; _Del = _Del; _Tp = rclcpp::Publisher<dasc_msgs::msg::QuadTrajectory_<std::allocator<void> > >]’
+[11.494s]   349 |  operator=(unique_ptr<_Yp, _Del>&& __r)
+[11.494s]       |  ^~~~~~~~
+[11.494s] /usr/include/c++/9/bits/shared_ptr.h:349:2: note:   template argument deduction/substitution failed:
+[11.494s] /root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:30:30: note:   couldn’t deduce template parameter ‘_Yp’
+[11.494s]    30 |   m_committedTrajPub = this->create_publisher<dasc_msgs::msg::QuadTrajectory("/committed_trajectory", 10);
+[11.494s]       |                              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[11.494s] In file included from /opt/ros/foxy/include/rclcpp/node_interfaces/node_topics_interface.hpp:32,
+[11.494s]                  from /opt/ros/foxy/include/rclcpp/node.hpp:55,
+[11.494s]                  from /opt/ros/foxy/include/rclcpp/executors/single_threaded_executor.hpp:28,
+[11.494s]                  from /opt/ros/foxy/include/rclcpp/executors.hpp:22,
+[11.494s]                  from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:146,
+[11.494s]                  from /root/colcon_ws/src/gatekeeper/include/gatekeeper/gatekeeper.hpp:7,
+[11.494s]                  from /root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:10:
+[11.495s] /opt/ros/foxy/include/rclcpp/subscription_factory.hpp: In instantiation of ‘rclcpp::SubscriptionFactory rclcpp::create_subscription_factory(CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr, std::shared_ptr<rclcpp::topic_statistics::SubscriptionTopicStatistics<CallbackMessageT> >) [with MessageT = dasc_msgs::msg::QuadTrajectory_<std::allocator<void> >; CallbackT = std::_Bind<void (gatekeeper::Gatekeeper::*(gatekeeper::Gatekeeper*, std::_Placeholder<1>))(dasc_msgs::msg::QuadTrajectory_<std::allocator<void> >)>; AllocatorT = std::allocator<void>; CallbackMessageT = dasc_msgs::msg::QuadTrajectory_<std::allocator<void> >; SubscriptionT = rclcpp::Subscription<dasc_msgs::msg::QuadTrajectory_<std::allocator<void> > >; MessageMemoryStrategyT = rclcpp::message_memory_strategy::MessageMemoryStrategy<dasc_msgs::msg::QuadTrajectory_<std::allocator<void> >, std::allocator<void> >; typename MessageMemoryStrategyT::SharedPtr = std::shared_ptr<rclcpp::message_memory_strategy::MessageMemoryStrategy<dasc_msgs::msg::QuadTrajectory_<std::allocator<void> >, std::allocator<void> > >]’:
+[11.495s] /opt/ros/foxy/include/rclcpp/create_subscription.hpp:144:63:   required from ‘std::shared_ptr<SubscriptionT> rclcpp::create_subscription(NodeT&&, const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr) [with MessageT = dasc_msgs::msg::QuadTrajectory_<std::allocator<void> >; CallbackT = std::_Bind<void (gatekeeper::Gatekeeper::*(gatekeeper::Gatekeeper*, std::_Placeholder<1>))(dasc_msgs::msg::QuadTrajectory_<std::allocator<void> >)>; AllocatorT = std::allocator<void>; CallbackMessageT = dasc_msgs::msg::QuadTrajectory_<std::allocator<void> >; SubscriptionT = rclcpp::Subscription<dasc_msgs::msg::QuadTrajectory_<std::allocator<void> > >; MessageMemoryStrategyT = rclcpp::message_memory_strategy::MessageMemoryStrategy<dasc_msgs::msg::QuadTrajectory_<std::allocator<void> >, std::allocator<void> >; NodeT = rclcpp::Node&; std::string = std::__cxx11::basic_string<char>; typename MessageMemoryStrategyT::SharedPtr = std::shared_ptr<rclcpp::message_memory_strategy::MessageMemoryStrategy<dasc_msgs::msg::QuadTrajectory_<std::allocator<void> >, std::allocator<void> > >]’
+[11.495s] /opt/ros/foxy/include/rclcpp/node_impl.hpp:98:47:   required from ‘std::shared_ptr<SubscriptionT> rclcpp::Node::create_subscription(const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr) [with MessageT = dasc_msgs::msg::QuadTrajectory_<std::allocator<void> >; CallbackT = std::_Bind<void (gatekeeper::Gatekeeper::*(gatekeeper::Gatekeeper*, std::_Placeholder<1>))(dasc_msgs::msg::QuadTrajectory_<std::allocator<void> >)>; AllocatorT = std::allocator<void>; CallbackMessageT = dasc_msgs::msg::QuadTrajectory_<std::allocator<void> >; SubscriptionT = rclcpp::Subscription<dasc_msgs::msg::QuadTrajectory_<std::allocator<void> > >; MessageMemoryStrategyT = rclcpp::message_memory_strategy::MessageMemoryStrategy<dasc_msgs::msg::QuadTrajectory_<std::allocator<void> >, std::allocator<void> >; std::string = std::__cxx11::basic_string<char>; typename MessageMemoryStrategyT::SharedPtr = std::shared_ptr<rclcpp::message_memory_strategy::MessageMemoryStrategy<dasc_msgs::msg::QuadTrajectory_<std::allocator<void> >, std::allocator<void> > >]’
+[11.495s] /root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:25:65:   required from here
+[11.495s] /opt/ros/foxy/include/rclcpp/subscription_factory.hpp:97:3: error: no matching function for call to ‘rclcpp::AnySubscriptionCallback<dasc_msgs::msg::QuadTrajectory_<std::allocator<void> >, std::allocator<void> >::set(std::_Bind<void (gatekeeper::Gatekeeper::*(gatekeeper::Gatekeeper*, std::_Placeholder<1>))(dasc_msgs::msg::QuadTrajectory_<std::allocator<void> >)>)’
+[11.495s]    97 |   any_subscription_callback.set(std::forward<CallbackT>(callback));
+[11.495s]       |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+[11.495s] In file included from /opt/ros/foxy/include/rclcpp/subscription_base.hpp:29,
+[11.495s]                  from /opt/ros/foxy/include/rclcpp/callback_group.hpp:26,
+[11.495s]                  from /opt/ros/foxy/include/rclcpp/any_executable.hpp:20,
+[11.495s]                  from /opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24,
+[11.495s]                  from /opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18,
+[11.495s]                  from /opt/ros/foxy/include/rclcpp/executor_options.hpp:20,
+[11.495s]                  from /opt/ros/foxy/include/rclcpp/executor.hpp:33,
+[11.495s]                  from /opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26,
+[11.496s]                  from /opt/ros/foxy/include/rclcpp/executors.hpp:21,
+[11.496s]                  from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:146,
+[11.496s]                  from /root/colcon_ws/src/gatekeeper/include/gatekeeper/gatekeeper.hpp:7,
+[11.496s]                  from /root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:10:
+[11.496s] /opt/ros/foxy/include/rclcpp/any_subscription_callback.hpp:83:8: note: candidate: ‘template<class CallbackT, typename std::enable_if<rclcpp::function_traits::same_arguments<CallbackT, std::function<void(std::shared_ptr<dasc_msgs::msg::QuadTrajectory_<std::allocator<void> > >)> >::value, void>::type* <anonymous> > void rclcpp::AnySubscriptionCallback<MessageT, Alloc>::set(CallbackT) [with CallbackT = CallbackT; typename std::enable_if<rclcpp::function_traits::same_arguments<CallbackT, std::function<void(std::shared_ptr<_Tp>)> >::value>::type* <anonymous> = <enumerator>; MessageT = dasc_msgs::msg::QuadTrajectory_<std::allocator<void> >; Alloc = std::allocator<void>]’
+[11.496s]    83 |   void set(CallbackT callback)
+[11.496s]       |        ^~~
+[11.496s] /opt/ros/foxy/include/rclcpp/any_subscription_callback.hpp:83:8: note:   template argument deduction/substitution failed:
+[11.497s] /opt/ros/foxy/include/rclcpp/any_subscription_callback.hpp:81:17: error: no type named ‘type’ in ‘struct std::enable_if<false, void>’
+[11.497s]    81 |     >::type * = nullptr
+[11.497s]       |                 ^~~~~~~
+[11.497s] /opt/ros/foxy/include/rclcpp/any_subscription_callback.hpp:97:8: note: candidate: ‘template<class CallbackT, typename std::enable_if<rclcpp::function_traits::same_arguments<CallbackT, std::function<void(std::shared_ptr<dasc_msgs::msg::QuadTrajectory_<std::allocator<void> > >, const rclcpp::MessageInfo&)> >::value, void>::type* <anonymous> > void rclcpp::AnySubscriptionCallback<MessageT, Alloc>::set(CallbackT) [with CallbackT = CallbackT; typename std::enable_if<rclcpp::function_traits::same_arguments<CallbackT, std::function<void(std::shared_ptr<_Tp>, const rclcpp::MessageInfo&)> >::value>::type* <anonymous> = <enumerator>; MessageT = dasc_msgs::msg::QuadTrajectory_<std::allocator<void> >; Alloc = std::allocator<void>]’
+[11.497s]    97 |   void set(CallbackT callback)
+[11.497s]       |        ^~~
+[11.498s] /opt/ros/foxy/include/rclcpp/any_subscription_callback.hpp:97:8: note:   template argument deduction/substitution failed:
+[11.498s] /opt/ros/foxy/include/rclcpp/any_subscription_callback.hpp:95:17: error: no type named ‘type’ in ‘struct std::enable_if<false, void>’
+[11.498s]    95 |     >::type * = nullptr
+[11.498s]       |                 ^~~~~~~
+[11.498s] /opt/ros/foxy/include/rclcpp/any_subscription_callback.hpp:111:8: note: candidate: ‘template<class CallbackT, typename std::enable_if<rclcpp::function_traits::same_arguments<CallbackT, std::function<void(std::shared_ptr<const dasc_msgs::msg::QuadTrajectory_<std::allocator<void> > >)> >::value, void>::type* <anonymous> > void rclcpp::AnySubscriptionCallback<MessageT, Alloc>::set(CallbackT) [with CallbackT = CallbackT; typename std::enable_if<rclcpp::function_traits::same_arguments<CallbackT, std::function<void(std::shared_ptr<const _Tp>)> >::value>::type* <anonymous> = <enumerator>; MessageT = dasc_msgs::msg::QuadTrajectory_<std::allocator<void> >; Alloc = std::allocator<void>]’
+[11.498s]   111 |   void set(CallbackT callback)
+[11.498s]       |        ^~~
+[11.498s] /opt/ros/foxy/include/rclcpp/any_subscription_callback.hpp:111:8: note:   template argument deduction/substitution failed:
+[11.498s] /opt/ros/foxy/include/rclcpp/any_subscription_callback.hpp:109:17: error: no type named ‘type’ in ‘struct std::enable_if<false, void>’
+[11.498s]   109 |     >::type * = nullptr
+[11.498s]       |                 ^~~~~~~
+[11.498s] /opt/ros/foxy/include/rclcpp/any_subscription_callback.hpp:125:8: note: candidate: ‘template<class CallbackT, typename std::enable_if<rclcpp::function_traits::same_arguments<CallbackT, std::function<void(std::shared_ptr<const dasc_msgs::msg::QuadTrajectory_<std::allocator<void> > >, const rclcpp::MessageInfo&)> >::value, void>::type* <anonymous> > void rclcpp::AnySubscriptionCallback<MessageT, Alloc>::set(CallbackT) [with CallbackT = CallbackT; typename std::enable_if<rclcpp::function_traits::same_arguments<CallbackT, std::function<void(std::shared_ptr<const _Tp>, const rclcpp::MessageInfo&)> >::value>::type* <anonymous> = <enumerator>; MessageT = dasc_msgs::msg::QuadTrajectory_<std::allocator<void> >; Alloc = std::allocator<void>]’
+[11.499s]   125 |   void set(CallbackT callback)
+[11.499s]       |        ^~~
+[11.499s] /opt/ros/foxy/include/rclcpp/any_subscription_callback.hpp:125:8: note:   template argument deduction/substitution failed:
+[11.499s] /opt/ros/foxy/include/rclcpp/any_subscription_callback.hpp:123:17: error: no type named ‘type’ in ‘struct std::enable_if<false, void>’
+[11.499s]   123 |     >::type * = nullptr
+[11.499s]       |                 ^~~~~~~
+[11.499s] /opt/ros/foxy/include/rclcpp/any_subscription_callback.hpp:139:8: note: candidate: ‘template<class CallbackT, typename std::enable_if<rclcpp::function_traits::same_arguments<CallbackT, std::function<void(std::unique_ptr<dasc_msgs::msg::QuadTrajectory_<std::allocator<void> >, std::default_delete<dasc_msgs::msg::QuadTrajectory_<std::allocator<void> > > >)> >::value, void>::type* <anonymous> > void rclcpp::AnySubscriptionCallback<MessageT, Alloc>::set(CallbackT) [with CallbackT = CallbackT; typename std::enable_if<rclcpp::function_traits::same_arguments<CallbackT, std::function<void(std::unique_ptr<MessageT, typename std::conditional<std::is_same<typename std::allocator_traits<typename std::allocator_traits<_Alloc>::rebind_traits<MessageT>::allocator_type>::rebind_alloc<MessageT>, typename std::allocator<void>::rebind<_Tp1>::other>::value, std::default_delete<_Tp>, rclcpp::allocator::AllocatorDeleter<typename std::allocator_traits<_Alloc>::rebind_traits<MessageT>::allocator_type> >::type>)> >::value>::type* <anonymous> = <enumerator>; MessageT = dasc_msgs::msg::QuadTrajectory_<std::allocator<void> >; Alloc = std::allocator<void>]’
+[11.499s]   139 |   void set(CallbackT callback)
+[11.499s]       |        ^~~
+[11.499s] /opt/ros/foxy/include/rclcpp/any_subscription_callback.hpp:139:8: note:   template argument deduction/substitution failed:
+[11.499s] /opt/ros/foxy/include/rclcpp/any_subscription_callback.hpp:137:17: error: no type named ‘type’ in ‘struct std::enable_if<false, void>’
+[11.499s]   137 |     >::type * = nullptr
+[11.500s]       |                 ^~~~~~~
+[11.500s] /opt/ros/foxy/include/rclcpp/any_subscription_callback.hpp:153:8: note: candidate: ‘template<class CallbackT, typename std::enable_if<rclcpp::function_traits::same_arguments<CallbackT, std::function<void(std::unique_ptr<dasc_msgs::msg::QuadTrajectory_<std::allocator<void> >, std::default_delete<dasc_msgs::msg::QuadTrajectory_<std::allocator<void> > > >, const rclcpp::MessageInfo&)> >::value, void>::type* <anonymous> > void rclcpp::AnySubscriptionCallback<MessageT, Alloc>::set(CallbackT) [with CallbackT = CallbackT; typename std::enable_if<rclcpp::function_traits::same_arguments<CallbackT, std::function<void(std::unique_ptr<MessageT, typename std::conditional<std::is_same<typename std::allocator_traits<typename std::allocator_traits<_Alloc>::rebind_traits<MessageT>::allocator_type>::rebind_alloc<MessageT>, typename std::allocator<void>::rebind<_Tp1>::other>::value, std::default_delete<_Tp>, rclcpp::allocator::AllocatorDeleter<typename std::allocator_traits<_Alloc>::rebind_traits<MessageT>::allocator_type> >::type>, const rclcpp::MessageInfo&)> >::value>::type* <anonymous> = <enumerator>; MessageT = dasc_msgs::msg::QuadTrajectory_<std::allocator<void> >; Alloc = std::allocator<void>]’
+[11.500s]   153 |   void set(CallbackT callback)
+[11.500s]       |        ^~~
+[11.500s] /opt/ros/foxy/include/rclcpp/any_subscription_callback.hpp:153:8: note:   template argument deduction/substitution failed:
+[11.500s] /opt/ros/foxy/include/rclcpp/any_subscription_callback.hpp:151:17: error: no type named ‘type’ in ‘struct std::enable_if<false, void>’
+[11.500s]   151 |     >::type * = nullptr
+[11.500s]       |                 ^~~~~~~
+[11.500s] In file included from /usr/include/c++/9/future:48,
+[11.500s]                  from /opt/ros/foxy/include/rclcpp/executors.hpp:18,
+[11.500s]                  from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:146,
+[11.501s]                  from /root/colcon_ws/src/gatekeeper/include/gatekeeper/gatekeeper.hpp:7,
+[11.501s]                  from /root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:10:
+[11.501s] /usr/include/c++/9/bits/std_function.h: At global scope:
+[11.501s] /usr/include/c++/9/bits/std_function.h:667:7: error: ‘std::function<_Res(_ArgTypes ...)>::function(_Functor) [with _Functor = rclcpp::create_subscription_factory(CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr, std::shared_ptr<rclcpp::topic_statistics::SubscriptionTopicStatistics<CallbackMessageT> >) [with MessageT = dasc_msgs::msg::QuadTrajectory_<std::allocator<void> >; CallbackT = std::_Bind<void (gatekeeper::Gatekeeper::*(gatekeeper::Gatekeeper*, std::_Placeholder<1>))(dasc_msgs::msg::QuadTrajectory_<std::allocator<void> >)>; AllocatorT = std::allocator<void>; CallbackMessageT = dasc_msgs::msg::QuadTrajectory_<std::allocator<void> >; SubscriptionT = rclcpp::Subscription<dasc_msgs::msg::QuadTrajectory_<std::allocator<void> > >; MessageMemoryStrategyT = rclcpp::message_memory_strategy::MessageMemoryStrategy<dasc_msgs::msg::QuadTrajectory_<std::allocator<void> >, std::allocator<void> >; typename MessageMemoryStrategyT::SharedPtr = std::shared_ptr<rclcpp::message_memory_strategy::MessageMemoryStrategy<dasc_msgs::msg::QuadTrajectory_<std::allocator<void> >, std::allocator<void> > >]::<lambda(rclcpp::node_interfaces::NodeBaseInterface*, const string&, const rclcpp::QoS&)>; <template-parameter-2-2> = void; <template-parameter-2-3> = void; _Res = std::shared_ptr<rclcpp::SubscriptionBase>; _ArgTypes = {rclcpp::node_interfaces::NodeBaseInterface*, const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, const rclcpp::QoS&}]’, declared using local type ‘rclcpp::create_subscription_factory(CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr, std::shared_ptr<rclcpp::topic_statistics::SubscriptionTopicStatistics<CallbackMessageT> >) [with MessageT = dasc_msgs::msg::QuadTrajectory_<std::allocator<void> >; CallbackT = std::_Bind<void (gatekeeper::Gatekeeper::*(gatekeeper::Gatekeeper*, std::_Placeholder<1>))(dasc_msgs::msg::QuadTrajectory_<std::allocator<void> >)>; AllocatorT = std::allocator<void>; CallbackMessageT = dasc_msgs::msg::QuadTrajectory_<std::allocator<void> >; SubscriptionT = rclcpp::Subscription<dasc_msgs::msg::QuadTrajectory_<std::allocator<void> > >; MessageMemoryStrategyT = rclcpp::message_memory_strategy::MessageMemoryStrategy<dasc_msgs::msg::QuadTrajectory_<std::allocator<void> >, std::allocator<void> >; typename MessageMemoryStrategyT::SharedPtr = std::shared_ptr<rclcpp::message_memory_strategy::MessageMemoryStrategy<dasc_msgs::msg::QuadTrajectory_<std::allocator<void> >, std::allocator<void> > >]::<lambda(rclcpp::node_interfaces::NodeBaseInterface*, const string&, const rclcpp::QoS&)>’, is used but never defined [-fpermissive]
+[11.501s]   667 |       function<_Res(_ArgTypes...)>::
+[11.501s]       |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[11.501s] make[2]: *** [CMakeFiles/gatekeeper.dir/build.make:63: CMakeFiles/gatekeeper.dir/src/gatekeeper.cpp.o] Error 1
+[11.501s] make[1]: *** [CMakeFiles/Makefile2:80: CMakeFiles/gatekeeper.dir/all] Error 2
+[11.501s] make: *** [Makefile:141: all] Error 2
+[11.502s] Invoked command in '/root/colcon_ws/build/gatekeeper' returned '2': CMAKE_PREFIX_PATH=/root/colcon_ws/install/dasc_msgs:/opt/ros/foxy:/root/colcon_ws/install/realsense_gazebo_plugin:/root/colcon_ws/install/px4_ros_com:/root/colcon_ws/install/dasc_robot:/root/colcon_ws/install/px4_msgs:/root/colcon_ws/install/gatekeeper:/root/colcon_ws/install/experiment LD_LIBRARY_PATH=/root/colcon_ws/install/dasc_msgs/lib:/root/colcon_ws/install/realsense_gazebo_plugin/lib:/root/colcon_ws/install/px4_ros_com/lib:/root/colcon_ws/install/dasc_robot/lib:/root/colcon_ws/install/px4_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib PYTHONPATH=/root/colcon_ws/install/dasc_msgs/lib/python3.8/site-packages:/root/colcon_ws/install/px4_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/cmake --build /root/colcon_ws/build/gatekeeper -- -j16 -l16

@@ -1,0 +1,70 @@
+[0.017s] Invoking command in '/root/colcon_ws/build/gatekeeper': CMAKE_PREFIX_PATH=/root/colcon_ws/install/dasc_msgs:/opt/ros/foxy:/root/colcon_ws/install/realsense_gazebo_plugin:/root/colcon_ws/install/px4_ros_com:/root/colcon_ws/install/dasc_robot:/root/colcon_ws/install/px4_msgs:/root/colcon_ws/install/gatekeeper:/root/colcon_ws/install/experiment LD_LIBRARY_PATH=/root/colcon_ws/install/dasc_msgs/lib:/root/colcon_ws/install/realsense_gazebo_plugin/lib:/root/colcon_ws/install/px4_ros_com/lib:/root/colcon_ws/install/dasc_robot/lib:/root/colcon_ws/install/px4_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib PYTHONPATH=/root/colcon_ws/install/dasc_msgs/lib/python3.8/site-packages:/root/colcon_ws/install/px4_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/cmake --build /root/colcon_ws/build/gatekeeper -- -j16 -l16
+[0.083s] [35m[1mScanning dependencies of target nominal_controller[0m
+[0.116s] [ 60%] Built target gatekeeper
+[0.120s] [ 80%] [32mBuilding CXX object CMakeFiles/nominal_controller.dir/src/nominal_controller.cpp.o[0m
+[3.473s] /root/colcon_ws/src/gatekeeper/src/nominal_controller.cpp:134:5: error: expected unqualified-id before ‘while’
+[3.474s]   134 |     while (true) {
+[3.474s]       |     ^~~~~
+[3.474s] /root/colcon_ws/src/gatekeeper/src/nominal_controller.cpp:152:5: error: expected unqualified-id before ‘while’
+[3.474s]   152 |     while (true) {
+[3.474s]       |     ^~~~~
+[3.474s] /root/colcon_ws/src/gatekeeper/src/nominal_controller.cpp:169:5: error: ‘traj_pub_’ does not name a type
+[3.474s]   169 |     traj_pub_ -> publish(msg);
+[3.474s]       |     ^~~~~~~~~
+[3.474s] In file included from /opt/ros/foxy/include/rclcpp/service.hpp:34,
+[3.475s]                  from /opt/ros/foxy/include/rclcpp/callback_group.hpp:25,
+[3.475s]                  from /opt/ros/foxy/include/rclcpp/any_executable.hpp:20,
+[3.475s]                  from /opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24,
+[3.475s]                  from /opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18,
+[3.475s]                  from /opt/ros/foxy/include/rclcpp/executor_options.hpp:20,
+[3.475s]                  from /opt/ros/foxy/include/rclcpp/executor.hpp:33,
+[3.475s]                  from /opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26,
+[3.475s]                  from /opt/ros/foxy/include/rclcpp/executors.hpp:21,
+[3.475s]                  from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:146,
+[3.475s]                  from /root/colcon_ws/src/gatekeeper/src/nominal_controller.cpp:5:
+[3.475s] /root/colcon_ws/src/gatekeeper/src/nominal_controller.cpp:170:5: error: expected unqualified-id before ‘do’
+[3.475s]   170 |     RCLCPP_INFO(this->get_logger(), "PUBLISHED");
+[3.475s]       |     ^~~~~~~~~~~
+[3.475s] /root/colcon_ws/src/gatekeeper/src/nominal_controller.cpp:170:5: error: expected unqualified-id before ‘while’
+[3.475s]   170 |     RCLCPP_INFO(this->get_logger(), "PUBLISHED");
+[3.475s]       |     ^~~~~~~~~~~
+[3.475s] /root/colcon_ws/src/gatekeeper/src/nominal_controller.cpp:196:4: error: expected ‘;’ after class definition
+[3.475s]   196 |   }
+[3.476s]       |    ^
+[3.476s]       |    ;
+[3.476s] /root/colcon_ws/src/gatekeeper/src/nominal_controller.cpp: In constructor ‘NominalController::NominalController()’:
+[3.476s] /root/colcon_ws/src/gatekeeper/src/nominal_controller.cpp:47:39: error: ‘timer_callback’ is not a member of ‘NominalController’
+[3.476s]    47 |         std::bind(&NominalController::timer_callback, this));
+[3.476s]       |                                       ^~~~~~~~~~~~~~
+[3.476s] /root/colcon_ws/src/gatekeeper/src/nominal_controller.cpp: In member function ‘void NominalController::publish_one_trajectory()’:
+[3.476s] /root/colcon_ws/src/gatekeeper/src/nominal_controller.cpp:116:5: warning: this ‘while’ clause does not guard... [-Wmisleading-indentation]
+[3.476s]   116 |     while (true);
+[3.476s]       |     ^~~~~
+[3.476s] /root/colcon_ws/src/gatekeeper/src/nominal_controller.cpp:117:6: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘while’
+[3.476s]   117 |      double th =  2.0 * M_PI * t / T;
+[3.476s]       |      ^~~~~~
+[3.476s] /root/colcon_ws/src/gatekeeper/src/nominal_controller.cpp:130:18: error: break statement not within loop or switch
+[3.476s]   130 |       if (t > T) break;
+[3.476s]       |                  ^~~~~
+[3.476s] /root/colcon_ws/src/gatekeeper/src/nominal_controller.cpp:107:9: warning: unused variable ‘N’ [-Wunused-variable]
+[3.477s]   107 |     int N = (T / dt);
+[3.477s]       |         ^
+[3.477s] /root/colcon_ws/src/gatekeeper/src/nominal_controller.cpp:113:12: warning: unused variable ‘R’ [-Wunused-variable]
+[3.477s]   113 |     double R = 0.5;
+[3.477s]       |            ^
+[3.477s] /root/colcon_ws/src/gatekeeper/src/nominal_controller.cpp: In function ‘void joy_callback(sensor_msgs::msg::Joy_<std::allocator<void> >::SharedPtr)’:
+[3.477s] /root/colcon_ws/src/gatekeeper/src/nominal_controller.cpp:198:60: warning: unused parameter ‘msg’ [-Wunused-parameter]
+[3.477s]   198 |   void joy_callback(const sensor_msgs::msg::Joy::SharedPtr msg){
+[3.477s]       |                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+[3.477s] /root/colcon_ws/src/gatekeeper/src/nominal_controller.cpp: In function ‘void timer_callback()’:
+[3.477s] /root/colcon_ws/src/gatekeeper/src/nominal_controller.cpp:248:4: error: ‘publish_one_trajectory’ was not declared in this scope
+[3.477s]   248 |    publish_one_trajectory();
+[3.478s]       |    ^~~~~~~~~~~~~~~~~~~~~~
+[3.478s] /root/colcon_ws/src/gatekeeper/src/nominal_controller.cpp: At global scope:
+[3.478s] /root/colcon_ws/src/gatekeeper/src/nominal_controller.cpp:310:1: error: expected declaration before ‘}’ token
+[3.478s]   310 | }; // class NominalController
+[3.478s]       | ^
+[3.478s] make[2]: *** [CMakeFiles/nominal_controller.dir/build.make:63: CMakeFiles/nominal_controller.dir/src/nominal_controller.cpp.o] Error 1
+[3.478s] make[1]: *** [CMakeFiles/Makefile2:107: CMakeFiles/nominal_controller.dir/all] Error 2
+[3.479s] make: *** [Makefile:141: all] Error 2
+[3.479s] Invoked command in '/root/colcon_ws/build/gatekeeper' returned '2': CMAKE_PREFIX_PATH=/root/colcon_ws/install/dasc_msgs:/opt/ros/foxy:/root/colcon_ws/install/realsense_gazebo_plugin:/root/colcon_ws/install/px4_ros_com:/root/colcon_ws/install/dasc_robot:/root/colcon_ws/install/px4_msgs:/root/colcon_ws/install/gatekeeper:/root/colcon_ws/install/experiment LD_LIBRARY_PATH=/root/colcon_ws/install/dasc_msgs/lib:/root/colcon_ws/install/realsense_gazebo_plugin/lib:/root/colcon_ws/install/px4_ros_com/lib:/root/colcon_ws/install/dasc_robot/lib:/root/colcon_ws/install/px4_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib PYTHONPATH=/root/colcon_ws/install/dasc_msgs/lib/python3.8/site-packages:/root/colcon_ws/install/px4_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/cmake --build /root/colcon_ws/build/gatekeeper -- -j16 -l16

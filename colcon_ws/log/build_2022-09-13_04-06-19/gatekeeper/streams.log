@@ -1,0 +1,22 @@
+[0.017s] Invoking command in '/root/colcon_ws/build/gatekeeper': CMAKE_PREFIX_PATH=/root/colcon_ws/install/dasc_msgs:/opt/ros/foxy:/root/colcon_ws/install/realsense_gazebo_plugin:/root/colcon_ws/install/px4_ros_com:/root/colcon_ws/install/dasc_robot:/root/colcon_ws/install/px4_msgs:/root/colcon_ws/install/gatekeeper:/root/colcon_ws/install/experiment LD_LIBRARY_PATH=/root/colcon_ws/install/dasc_msgs/lib:/root/colcon_ws/install/realsense_gazebo_plugin/lib:/root/colcon_ws/install/px4_ros_com/lib:/root/colcon_ws/install/dasc_robot/lib:/root/colcon_ws/install/px4_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib PYTHONPATH=/root/colcon_ws/install/dasc_msgs/lib/python3.8/site-packages:/root/colcon_ws/install/px4_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/cmake --build /root/colcon_ws/build/gatekeeper -- -j16 -l16
+[0.089s] [35m[1mScanning dependencies of target nominal_controller[0m
+[0.131s] [ 60%] Built target gatekeeper
+[0.132s] [ 80%] [32mBuilding CXX object CMakeFiles/nominal_controller.dir/src/nominal_controller.cpp.o[0m
+[3.723s] /root/colcon_ws/src/gatekeeper/src/nominal_controller.cpp: In member function ‘void NominalController::publish_one_trajectory()’:
+[3.724s] /root/colcon_ws/src/gatekeeper/src/nominal_controller.cpp:114:13: error: expected ‘;’ before ‘while’
+[3.724s]   114 |     T = 15.0
+[3.724s]       |             ^
+[3.724s]       |             ;
+[3.724s]   115 |     while (true){
+[3.724s]       |     ~~~~~    
+[3.724s] /root/colcon_ws/src/gatekeeper/src/nominal_controller.cpp:111:12: warning: unused variable ‘R’ [-Wunused-variable]
+[3.724s]   111 |     double R = 0.5;
+[3.724s]       |            ^
+[3.724s] /root/colcon_ws/src/gatekeeper/src/nominal_controller.cpp: In member function ‘void NominalController::joy_callback(sensor_msgs::msg::Joy_<std::allocator<void> >::SharedPtr)’:
+[3.725s] /root/colcon_ws/src/gatekeeper/src/nominal_controller.cpp:197:60: warning: unused parameter ‘msg’ [-Wunused-parameter]
+[3.725s]   197 |   void joy_callback(const sensor_msgs::msg::Joy::SharedPtr msg){
+[3.725s]       |                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+[3.725s] make[2]: *** [CMakeFiles/nominal_controller.dir/build.make:63: CMakeFiles/nominal_controller.dir/src/nominal_controller.cpp.o] Error 1
+[3.725s] make[1]: *** [CMakeFiles/Makefile2:107: CMakeFiles/nominal_controller.dir/all] Error 2
+[3.725s] make: *** [Makefile:141: all] Error 2
+[3.729s] Invoked command in '/root/colcon_ws/build/gatekeeper' returned '2': CMAKE_PREFIX_PATH=/root/colcon_ws/install/dasc_msgs:/opt/ros/foxy:/root/colcon_ws/install/realsense_gazebo_plugin:/root/colcon_ws/install/px4_ros_com:/root/colcon_ws/install/dasc_robot:/root/colcon_ws/install/px4_msgs:/root/colcon_ws/install/gatekeeper:/root/colcon_ws/install/experiment LD_LIBRARY_PATH=/root/colcon_ws/install/dasc_msgs/lib:/root/colcon_ws/install/realsense_gazebo_plugin/lib:/root/colcon_ws/install/px4_ros_com/lib:/root/colcon_ws/install/dasc_robot/lib:/root/colcon_ws/install/px4_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib PYTHONPATH=/root/colcon_ws/install/dasc_msgs/lib/python3.8/site-packages:/root/colcon_ws/install/px4_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/cmake --build /root/colcon_ws/build/gatekeeper -- -j16 -l16

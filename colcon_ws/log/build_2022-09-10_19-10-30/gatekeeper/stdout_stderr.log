@@ -1,0 +1,139 @@
+[35m[1mScanning dependencies of target gatekeeper[0m
+[ 50%] Built target nominal_controller
+[ 75%] [32mBuilding CXX object CMakeFiles/gatekeeper.dir/src/gatekeeper.cpp.o[0m
+In file included from /root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:10:
+/root/colcon_ws/src/gatekeeper/include/gatekeeper/gatekeeper.hpp:62:2: error: expected ‘;’ after class definition
+   62 | }
+      |  ^
+      |  ;
+/root/colcon_ws/src/gatekeeper/include/gatekeeper/gatekeeper.hpp:67:2: warning: extra ‘;’ [-Wpedantic]
+   67 | }; // namespace gatekeeper
+      |  ^
+/root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:15:24: error: definition of implicitly-declared ‘gatekeeper::Gatekeeper::Gatekeeper()’
+   15 | Gatekeeper::Gatekeeper()
+      |                        ^
+/root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:33:32: error: variable or field ‘cloud_callback’ declared void
+   33 | void Gatekeeper::cloud_callback(
+      |                                ^
+In file included from /opt/ros/foxy/include/rclcpp/service.hpp:34,
+                 from /opt/ros/foxy/include/rclcpp/callback_group.hpp:25,
+                 from /opt/ros/foxy/include/rclcpp/any_executable.hpp:20,
+                 from /opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24,
+                 from /opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18,
+                 from /opt/ros/foxy/include/rclcpp/executor_options.hpp:20,
+                 from /opt/ros/foxy/include/rclcpp/executor.hpp:33,
+                 from /opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26,
+                 from /opt/ros/foxy/include/rclcpp/executors.hpp:21,
+                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:146,
+                 from /root/colcon_ws/src/gatekeeper/include/gatekeeper/gatekeeper.hpp:7,
+                 from /root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:10:
+/root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:35:3: error: expected primary-expression before ‘do’
+   35 |   RCLCPP_INFO(this->get_logger(), "Received cloud");
+      |   ^~~~~~~~~~~
+/root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:40:6: error: ‘Gatekeeper’ has not been declared
+   40 | void Gatekeeper::insertScan( const geometry_msgs::msg::Vector3 &sensorOrigin,
+      |      ^~~~~~~~~~
+In file included from /opt/ros/foxy/include/rclcpp/service.hpp:34,
+                 from /opt/ros/foxy/include/rclcpp/callback_group.hpp:25,
+                 from /opt/ros/foxy/include/rclcpp/any_executable.hpp:20,
+                 from /opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24,
+                 from /opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18,
+                 from /opt/ros/foxy/include/rclcpp/executor_options.hpp:20,
+                 from /opt/ros/foxy/include/rclcpp/executor.hpp:33,
+                 from /opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26,
+                 from /opt/ros/foxy/include/rclcpp/executors.hpp:21,
+                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:146,
+                 from /root/colcon_ws/src/gatekeeper/include/gatekeeper/gatekeeper.hpp:7,
+                 from /root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:10:
+/root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp: In function ‘void insertScan(const Vector3&, const PCLPointCloud&)’:
+/root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:44:15: error: invalid use of ‘this’ in non-member function
+   44 |   RCLCPP_INFO(this->get_logger(), "insert Scan");
+      |               ^~~~
+/root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:44:15: error: invalid use of ‘this’ in non-member function
+/root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:44:3: error: template argument 1 is invalid
+   44 |   RCLCPP_INFO(this->get_logger(), "insert Scan");
+      |   ^~~~~~~~~~~
+/root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:44:3: error: template argument 1 is invalid
+   44 |   RCLCPP_INFO(this->get_logger(), "insert Scan");
+      |   ^~~~~~~~~~~
+/root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:44:3: error: template argument 1 is invalid
+   44 |   RCLCPP_INFO(this->get_logger(), "insert Scan");
+      |   ^~~~~~~~~~~
+In file included from /opt/ros/foxy/include/rclcpp/client.hpp:40,
+                 from /opt/ros/foxy/include/rclcpp/callback_group.hpp:23,
+                 from /opt/ros/foxy/include/rclcpp/any_executable.hpp:20,
+                 from /opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24,
+                 from /opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18,
+                 from /opt/ros/foxy/include/rclcpp/executor_options.hpp:20,
+                 from /opt/ros/foxy/include/rclcpp/executor.hpp:33,
+                 from /opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26,
+                 from /opt/ros/foxy/include/rclcpp/executors.hpp:21,
+                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:146,
+                 from /root/colcon_ws/src/gatekeeper/include/gatekeeper/gatekeeper.hpp:7,
+                 from /root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:10:
+/root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:44:15: error: invalid use of ‘this’ in non-member function
+   44 |   RCLCPP_INFO(this->get_logger(), "insert Scan");
+      |               ^~~~
+/root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:44:15: error: invalid use of ‘this’ in non-member function
+   44 |   RCLCPP_INFO(this->get_logger(), "insert Scan");
+      |               ^~~~
+/root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:40:65: warning: unused parameter ‘sensorOrigin’ [-Wunused-parameter]
+   40 | void Gatekeeper::insertScan( const geometry_msgs::msg::Vector3 &sensorOrigin,
+      |                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~
+/root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:41:24: warning: unused parameter ‘pc’ [-Wunused-parameter]
+   41 |   const PCLPointCloud& pc)
+      |   ~~~~~~~~~~~~~~~~~~~~~^~
+/root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp: At global scope:
+/root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:51:1: error: expected declaration before ‘}’ token
+   51 | }; // namespace gatekeeper
+      | ^
+/root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp: In function ‘int main(int, char**)’:
+/root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:61:11: warning: statement is a reference, not call, to function ‘rclcpp::shutdown’ [-Waddress]
+   61 |   rclcpp::shutdown;
+      |   ~~~~~~~~^~~~~~~~
+/root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:61:11: warning: statement has no effect [-Wunused-value]
+In file included from /usr/include/x86_64-linux-gnu/c++/9/bits/c++allocator.h:33,
+                 from /usr/include/c++/9/bits/allocator.h:46,
+                 from /usr/include/c++/9/memory:63,
+                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:144,
+                 from /root/colcon_ws/src/gatekeeper/include/gatekeeper/gatekeeper.hpp:7,
+                 from /root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:10:
+/usr/include/c++/9/ext/new_allocator.h: In instantiation of ‘void __gnu_cxx::new_allocator<_Tp>::construct(_Up*, _Args&& ...) [with _Up = gatekeeper::Gatekeeper; _Args = {}; _Tp = gatekeeper::Gatekeeper]’:
+/usr/include/c++/9/bits/alloc_traits.h:482:2:   required from ‘static void std::allocator_traits<std::allocator<_Tp1> >::construct(std::allocator_traits<std::allocator<_Tp1> >::allocator_type&, _Up*, _Args&& ...) [with _Up = gatekeeper::Gatekeeper; _Args = {}; _Tp = gatekeeper::Gatekeeper; std::allocator_traits<std::allocator<_Tp1> >::allocator_type = std::allocator<gatekeeper::Gatekeeper>]’
+/usr/include/c++/9/bits/shared_ptr_base.h:548:39:   required from ‘std::_Sp_counted_ptr_inplace<_Tp, _Alloc, _Lp>::_Sp_counted_ptr_inplace(_Alloc, _Args&& ...) [with _Args = {}; _Tp = gatekeeper::Gatekeeper; _Alloc = std::allocator<gatekeeper::Gatekeeper>; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic]’
+/usr/include/c++/9/bits/shared_ptr_base.h:679:16:   required from ‘std::__shared_count<_Lp>::__shared_count(_Tp*&, std::_Sp_alloc_shared_tag<_Alloc>, _Args&& ...) [with _Tp = gatekeeper::Gatekeeper; _Alloc = std::allocator<gatekeeper::Gatekeeper>; _Args = {}; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic]’
+/usr/include/c++/9/bits/shared_ptr_base.h:1344:71:   required from ‘std::__shared_ptr<_Tp, _Lp>::__shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<gatekeeper::Gatekeeper>; _Args = {}; _Tp = gatekeeper::Gatekeeper; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic]’
+/usr/include/c++/9/bits/shared_ptr.h:359:59:   required from ‘std::shared_ptr<_Tp>::shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<gatekeeper::Gatekeeper>; _Args = {}; _Tp = gatekeeper::Gatekeeper]’
+/usr/include/c++/9/bits/shared_ptr.h:701:14:   required from ‘std::shared_ptr<_Tp> std::allocate_shared(const _Alloc&, _Args&& ...) [with _Tp = gatekeeper::Gatekeeper; _Alloc = std::allocator<gatekeeper::Gatekeeper>; _Args = {}]’
+/usr/include/c++/9/bits/shared_ptr.h:717:39:   required from ‘std::shared_ptr<_Tp> std::make_shared(_Args&& ...) [with _Tp = gatekeeper::Gatekeeper; _Args = {}]’
+/root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:58:56:   required from here
+/usr/include/c++/9/ext/new_allocator.h:145:20: error: use of deleted function ‘gatekeeper::Gatekeeper::Gatekeeper()’
+  145 |  noexcept(noexcept(::new((void *)__p)
+      |                    ^~~~~~~~~~~~~~~~~~
+  146 |        _Up(std::forward<_Args>(__args)...)))
+      |        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:10:
+/root/colcon_ws/src/gatekeeper/include/gatekeeper/gatekeeper.hpp:31:7: note: ‘gatekeeper::Gatekeeper::Gatekeeper()’ is implicitly deleted because the default definition would be ill-formed:
+   31 | class Gatekeeper : public rclcpp::Node {
+      |       ^~~~~~~~~~
+/root/colcon_ws/src/gatekeeper/include/gatekeeper/gatekeeper.hpp:31:7: error: no matching function for call to ‘rclcpp::Node::Node()’
+In file included from /opt/ros/foxy/include/rclcpp/executors/single_threaded_executor.hpp:28,
+                 from /opt/ros/foxy/include/rclcpp/executors.hpp:22,
+                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:146,
+                 from /root/colcon_ws/src/gatekeeper/include/gatekeeper/gatekeeper.hpp:7,
+                 from /root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:10:
+/opt/ros/foxy/include/rclcpp/node.hpp:1193:3: note: candidate: ‘rclcpp::Node::Node(const rclcpp::Node&, const string&)’
+ 1193 |   Node(
+      |   ^~~~
+/opt/ros/foxy/include/rclcpp/node.hpp:1193:3: note:   candidate expects 2 arguments, 0 provided
+/opt/ros/foxy/include/rclcpp/node.hpp:98:12: note: candidate: ‘rclcpp::Node::Node(const string&, const string&, const rclcpp::NodeOptions&)’
+   98 |   explicit Node(
+      |            ^~~~
+/opt/ros/foxy/include/rclcpp/node.hpp:98:12: note:   candidate expects 3 arguments, 0 provided
+/opt/ros/foxy/include/rclcpp/node.hpp:86:12: note: candidate: ‘rclcpp::Node::Node(const string&, const rclcpp::NodeOptions&)’
+   86 |   explicit Node(
+      |            ^~~~
+/opt/ros/foxy/include/rclcpp/node.hpp:86:12: note:   candidate expects 2 arguments, 0 provided
+make[2]: *** [CMakeFiles/gatekeeper.dir/build.make:63: CMakeFiles/gatekeeper.dir/src/gatekeeper.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:80: CMakeFiles/gatekeeper.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

@@ -1,0 +1,19 @@
+[0.012s] Invoking command in '/root/colcon_ws/build/gatekeeper': CMAKE_PREFIX_PATH=/root/colcon_ws/install/dasc_msgs:/opt/ros/foxy:/root/colcon_ws/install/realsense_gazebo_plugin:/root/colcon_ws/install/px4_ros_com:/root/colcon_ws/install/dasc_robot:/root/colcon_ws/install/px4_msgs:/root/colcon_ws/install/gatekeeper:/root/colcon_ws/install/experiment LD_LIBRARY_PATH=/root/colcon_ws/install/dasc_msgs/lib:/root/colcon_ws/install/realsense_gazebo_plugin/lib:/root/colcon_ws/install/px4_ros_com/lib:/root/colcon_ws/install/dasc_robot/lib:/root/colcon_ws/install/px4_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib PYTHONPATH=/root/colcon_ws/install/dasc_msgs/lib/python3.8/site-packages:/root/colcon_ws/install/px4_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/cmake --build /root/colcon_ws/build/gatekeeper -- -j16 -l16
+[0.060s] [35m[1mScanning dependencies of target gatekeeper[0m
+[0.078s] [ 50%] Built target nominal_controller
+[0.098s] [ 75%] [32mBuilding CXX object CMakeFiles/gatekeeper.dir/src/gatekeeper.cpp.o[0m
+[9.025s] /root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp: In member function ‘void gatekeeper::Gatekeeper::cloud_callback(sensor_msgs::msg::PointCloud2_<std::allocator<void> >::SharedPtr)’:
+[9.025s] /root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:37:3: error: ‘PCLPointCloud’ {aka ‘pcl::PointCloud<pcl::PointXYZ>’} is not a template
+[9.025s]    37 |   PCLPointCloud<PCLPoint> pc;
+[9.025s]       |   ^~~~~~~~~~~~~
+[9.025s] /root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp: In member function ‘void gatekeeper::Gatekeeper::insertScan(const Vector3&, const PCLPointCloud&)’:
+[9.025s] /root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:45:65: warning: unused parameter ‘sensorOrigin’ [-Wunused-parameter]
+[9.025s]    45 | void Gatekeeper::insertScan( const geometry_msgs::msg::Vector3 &sensorOrigin,
+[9.026s]       |                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~
+[9.026s] /root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:46:24: warning: unused parameter ‘pc’ [-Wunused-parameter]
+[9.026s]    46 |   const PCLPointCloud& pc)
+[9.026s]       |   ~~~~~~~~~~~~~~~~~~~~~^~
+[9.027s] make[2]: *** [CMakeFiles/gatekeeper.dir/build.make:63: CMakeFiles/gatekeeper.dir/src/gatekeeper.cpp.o] Error 1
+[9.027s] make[1]: *** [CMakeFiles/Makefile2:80: CMakeFiles/gatekeeper.dir/all] Error 2
+[9.027s] make: *** [Makefile:141: all] Error 2
+[9.029s] Invoked command in '/root/colcon_ws/build/gatekeeper' returned '2': CMAKE_PREFIX_PATH=/root/colcon_ws/install/dasc_msgs:/opt/ros/foxy:/root/colcon_ws/install/realsense_gazebo_plugin:/root/colcon_ws/install/px4_ros_com:/root/colcon_ws/install/dasc_robot:/root/colcon_ws/install/px4_msgs:/root/colcon_ws/install/gatekeeper:/root/colcon_ws/install/experiment LD_LIBRARY_PATH=/root/colcon_ws/install/dasc_msgs/lib:/root/colcon_ws/install/realsense_gazebo_plugin/lib:/root/colcon_ws/install/px4_ros_com/lib:/root/colcon_ws/install/dasc_robot/lib:/root/colcon_ws/install/px4_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib PYTHONPATH=/root/colcon_ws/install/dasc_msgs/lib/python3.8/site-packages:/root/colcon_ws/install/px4_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/cmake --build /root/colcon_ws/build/gatekeeper -- -j16 -l16

@@ -1,0 +1,4 @@
+/root/colcon_ws/src/gatekeeper/src/nominal_controller.cpp: In member function ‘void NominalController::publish_one_trajectory()’:
+/root/colcon_ws/src/gatekeeper/src/nominal_controller.cpp:131:21: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<double, std::allocator<double> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  131 |     for (int i=0; i < msg.ts.size(); i++){
+      |                   ~~^~~~~~~~~~~~~~~

@@ -1,0 +1,391 @@
+[0.000000] (-) TimerEvent: {}
+[0.000145] (-) JobUnselected: {'identifier': 'dasc_msgs'}
+[0.000178] (-) JobUnselected: {'identifier': 'dasc_robot'}
+[0.000199] (-) JobUnselected: {'identifier': 'experiment'}
+[0.000230] (-) JobUnselected: {'identifier': 'px4_msgs'}
+[0.000245] (-) JobUnselected: {'identifier': 'px4_ros_com'}
+[0.000265] (-) JobUnselected: {'identifier': 'realsense_gazebo_plugin'}
+[0.000297] (gatekeeper) JobQueued: {'identifier': 'gatekeeper', 'dependencies': OrderedDict([('dasc_msgs', '/root/colcon_ws/install/dasc_msgs')])}
+[0.000330] (gatekeeper) JobStarted: {'identifier': 'gatekeeper'}
+[0.010061] (gatekeeper) JobProgress: {'identifier': 'gatekeeper', 'progress': 'cmake'}
+[0.010537] (gatekeeper) JobProgress: {'identifier': 'gatekeeper', 'progress': 'build'}
+[0.011099] (gatekeeper) Command: {'cmd': ['/usr/bin/cmake', '--build', '/root/colcon_ws/build/gatekeeper', '--', '-j16', '-l16'], 'cwd': '/root/colcon_ws/build/gatekeeper', 'env': OrderedDict([('JAVA_TOOL_OPTIONS', '-Dfile.encoding=UTF8'), ('HOSTNAME', 'dasc3-Dell-G15-5515'), ('ROS_PACKAGE_PATH', '/root/colcon_ws/install/realsense_gazebo_plugin/share'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/root/colcon_ws/install/dasc_msgs/lib:/root/colcon_ws/install/realsense_gazebo_plugin/lib:/root/colcon_ws/install/px4_ros_com/lib:/root/colcon_ws/install/dasc_robot/lib:/root/colcon_ws/install/px4_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('LOCAL_USER_ID', '1000'), ('HOME', '/root'), ('ROS_PYTHON_VERSION', '3'), ('CCACHE_UMASK', '000'), ('COLCON_PREFIX_PATH', '/root/colcon_ws/install'), ('ROS_DISTRO', 'foxy'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/root/colcon_ws/install/realsense_gazebo_plugin/lib/x86_64-linux-gnu/pkgconfig:/root/colcon_ws/install/realsense_gazebo_plugin/lib/pkgconfig'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/root/colcon_ws/install/px4_ros_com/bin:/opt/ros/foxy/bin:/usr/lib/ccache:/opt/gradle/gradle-6.3-rc-4/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':1'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('FASTRTPSGEN_DIR', '/usr/local/bin/'), ('AMENT_PREFIX_PATH', '/root/colcon_ws/install/px4_ros_com:/root/colcon_ws/install/dasc_robot:/root/colcon_ws/install/px4_msgs:/root/colcon_ws/install/gatekeeper:/root/colcon_ws/install/experiment:/root/colcon_ws/install/dasc_msgs:/opt/ros/foxy'), ('DEBIAN_FRONTEND', 'noninteractive'), ('PWD', '/root/colcon_ws/build/gatekeeper'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/root/colcon_ws/install/dasc_msgs/lib/python3.8/site-packages:/root/colcon_ws/install/px4_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('TZ', 'UTC'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/root/colcon_ws/install/dasc_msgs:/opt/ros/foxy:/root/colcon_ws/install/realsense_gazebo_plugin:/root/colcon_ws/install/px4_ros_com:/root/colcon_ws/install/dasc_robot:/root/colcon_ws/install/px4_msgs:/root/colcon_ws/install/gatekeeper:/root/colcon_ws/install/experiment')]), 'shell': False}
+[0.043090] (gatekeeper) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[0.062951] (gatekeeper) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.099304] (-) TimerEvent: {}
+[0.193551] (gatekeeper) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.199400] (-) TimerEvent: {}
+[0.202851] (gatekeeper) StdoutLine: {'line': b'-- Found sensor_msgs: 2.0.4 (/opt/ros/foxy/share/sensor_msgs/cmake)\n'}
+[0.221407] (gatekeeper) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.223622] (gatekeeper) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[0.299521] (-) TimerEvent: {}
+[0.332013] (gatekeeper) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.399635] (-) TimerEvent: {}
+[0.451044] (gatekeeper) StdoutLine: {'line': b'-- Found dasc_msgs: 0.0.0 (/root/colcon_ws/install/dasc_msgs/share/dasc_msgs/cmake)\n'}
+[0.470696] (gatekeeper) StdoutLine: {'line': b'-- Found rclcpp: 2.4.0 (/opt/ros/foxy/share/rclcpp/cmake)\n'}
+[0.494572] (gatekeeper) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)\n'}
+[0.495158] (gatekeeper) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.499721] (-) TimerEvent: {}
+[0.591374] (gatekeeper) StdoutLine: {'line': b'-- Found tf2: 0.13.12 (/opt/ros/foxy/share/tf2/cmake)\n'}
+[0.598027] (gatekeeper) StdoutLine: {'line': b'-- Found tf2_ros: 0.13.12 (/opt/ros/foxy/share/tf2_ros/cmake)\n'}
+[0.599816] (-) TimerEvent: {}
+[0.700404] (-) TimerEvent: {}
+[0.801195] (-) TimerEvent: {}
+[0.833941] (gatekeeper) StdoutLine: {'line': b"-- Checking for module 'eigen3'\n"}
+[0.851982] (gatekeeper) StdoutLine: {'line': b'--   Found eigen3, version 3.3.7\n'}
+[0.901708] (gatekeeper) StdoutLine: {'line': b'-- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") \n'}
+[0.901994] (-) TimerEvent: {}
+[0.902160] (gatekeeper) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.3.7)\n'}
+[0.946455] (gatekeeper) StdoutLine: {'line': b'-- Found Boost: /usr/include (found suitable version "1.71.0", minimum required is "1.55.0") found components: system filesystem date_time iostreams regex \n'}
+[0.963733] (gatekeeper) StdoutLine: {'line': b"-- Checking for module 'flann'\n"}
+[0.985387] (gatekeeper) StdoutLine: {'line': b'--   Found flann, version 1.9.1\n'}
+[1.002481] (-) TimerEvent: {}
+[1.042616] (gatekeeper) StdoutLine: {'line': b'-- Found FLANN: /usr/lib/x86_64-linux-gnu/libflann_cpp.so  \n'}
+[1.094502] (gatekeeper) StdoutLine: {'line': b'-- The imported target "vtkParseOGLExt" references the file\n'}
+[1.094665] (gatekeeper) StdoutLine: {'line': b'   "/usr/bin/vtkParseOGLExt-7.1"\n'}
+[1.094758] (gatekeeper) StdoutLine: {'line': b'but this file does not exist.  Possible reasons include:\n'}
+[1.094839] (gatekeeper) StdoutLine: {'line': b'* The file was deleted, renamed, or moved to another location.\n'}
+[1.094925] (gatekeeper) StdoutLine: {'line': b'* An install or uninstall procedure did not complete successfully.\n'}
+[1.095004] (gatekeeper) StdoutLine: {'line': b'* The installation package was faulty and contained\n'}
+[1.095094] (gatekeeper) StdoutLine: {'line': b'   "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"\n'}
+[1.095193] (gatekeeper) StdoutLine: {'line': b'but not all the files it references.\n'}
+[1.095332] (gatekeeper) StdoutLine: {'line': b'\n'}
+[1.095660] (gatekeeper) StdoutLine: {'line': b'-- The imported target "vtkRenderingPythonTkWidgets" references the file\n'}
+[1.095790] (gatekeeper) StdoutLine: {'line': b'   "/usr/lib/x86_64-linux-gnu/libvtkRenderingPythonTkWidgets.so"\n'}
+[1.095882] (gatekeeper) StdoutLine: {'line': b'but this file does not exist.  Possible reasons include:\n'}
+[1.095982] (gatekeeper) StdoutLine: {'line': b'* The file was deleted, renamed, or moved to another location.\n'}
+[1.096062] (gatekeeper) StdoutLine: {'line': b'* An install or uninstall procedure did not complete successfully.\n'}
+[1.096140] (gatekeeper) StdoutLine: {'line': b'* The installation package was faulty and contained\n'}
+[1.096213] (gatekeeper) StdoutLine: {'line': b'   "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"\n'}
+[1.096284] (gatekeeper) StdoutLine: {'line': b'but not all the files it references.\n'}
+[1.096355] (gatekeeper) StdoutLine: {'line': b'\n'}
+[1.096540] (gatekeeper) StdoutLine: {'line': b'-- The imported target "vtk" references the file\n'}
+[1.096635] (gatekeeper) StdoutLine: {'line': b'   "/usr/bin/vtk"\n'}
+[1.096799] (gatekeeper) StdoutLine: {'line': b'but this file does not exist.  Possible reasons include:\n'}
+[1.096887] (gatekeeper) StdoutLine: {'line': b'* The file was deleted, renamed, or moved to another location.\n'}
+[1.096953] (gatekeeper) StdoutLine: {'line': b'* An install or uninstall procedure did not complete successfully.\n'}
+[1.097012] (gatekeeper) StdoutLine: {'line': b'* The installation package was faulty and contained\n'}
+[1.097068] (gatekeeper) StdoutLine: {'line': b'   "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"\n'}
+[1.097131] (gatekeeper) StdoutLine: {'line': b'but not all the files it references.\n'}
+[1.097186] (gatekeeper) StdoutLine: {'line': b'\n'}
+[1.097248] (gatekeeper) StdoutLine: {'line': b'-- The imported target "pvtk" references the file\n'}
+[1.097302] (gatekeeper) StdoutLine: {'line': b'   "/usr/bin/pvtk"\n'}
+[1.097355] (gatekeeper) StdoutLine: {'line': b'but this file does not exist.  Possible reasons include:\n'}
+[1.097407] (gatekeeper) StdoutLine: {'line': b'* The file was deleted, renamed, or moved to another location.\n'}
+[1.097458] (gatekeeper) StdoutLine: {'line': b'* An install or uninstall procedure did not complete successfully.\n'}
+[1.097508] (gatekeeper) StdoutLine: {'line': b'* The installation package was faulty and contained\n'}
+[1.097561] (gatekeeper) StdoutLine: {'line': b'   "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"\n'}
+[1.097613] (gatekeeper) StdoutLine: {'line': b'but not all the files it references.\n'}
+[1.097664] (gatekeeper) StdoutLine: {'line': b'\n'}
+[1.102562] (-) TimerEvent: {}
+[1.120168] (gatekeeper) StdoutLine: {'line': b"-- Checking for module 'libusb-1.0'\n"}
+[1.141436] (gatekeeper) StdoutLine: {'line': b'--   Found libusb-1.0, version 1.0.23\n'}
+[1.198919] (gatekeeper) StdoutLine: {'line': b'-- Found USB_10: /usr/lib/x86_64-linux-gnu/libusb-1.0.so  \n'}
+[1.202695] (-) TimerEvent: {}
+[1.280089] (gatekeeper) StdoutLine: {'line': b'-- Found OpenNI: /usr/lib/libOpenNI.so  \n'}
+[1.280352] (gatekeeper) StdoutLine: {'line': b'-- OpenNI found (include: /usr/include/ni, lib: /usr/lib/libOpenNI.so)\n'}
+[1.302840] (-) TimerEvent: {}
+[1.367030] (gatekeeper) StdoutLine: {'line': b'-- Found OpenNI2: /usr/lib/libOpenNI2.so  \n'}
+[1.367607] (gatekeeper) StdoutLine: {'line': b'-- OpenNI2 found (include: /usr/include/openni2, lib: /usr/lib/libOpenNI2.so)\n'}
+[1.367834] (gatekeeper) StderrLine: {'line': b'** WARNING ** io features related to pcap will be disabled\n'}
+[1.368161] (gatekeeper) StderrLine: {'line': b'** WARNING ** io features related to png will be disabled\n'}
+[1.384411] (gatekeeper) StdoutLine: {'line': b'-- Found libusb-1.0: /usr/include  \n'}
+[1.384600] (gatekeeper) StderrLine: {'line': b'** WARNING ** io features related to libusb-1.0 will be disabled\n'}
+[1.388424] (gatekeeper) StdoutLine: {'line': b'-- OpenNI found (include: /usr/include/ni, lib: /usr/lib/libOpenNI.so)\n'}
+[1.392370] (gatekeeper) StdoutLine: {'line': b'-- OpenNI2 found (include: /usr/include/openni2, lib: /usr/lib/libOpenNI2.so)\n'}
+[1.402931] (-) TimerEvent: {}
+[1.411127] (gatekeeper) StdoutLine: {'line': b'-- Found Qhull: optimized;/usr/lib/x86_64-linux-gnu/libqhull.so;debug;/usr/lib/x86_64-linux-gnu/libqhull.so  \n'}
+[1.411227] (gatekeeper) StdoutLine: {'line': b'-- QHULL found (include: /usr/include, lib: optimized;/usr/lib/x86_64-linux-gnu/libqhull.so;debug;/usr/lib/x86_64-linux-gnu/libqhull.so)\n'}
+[1.415167] (gatekeeper) StdoutLine: {'line': b'-- OpenNI found (include: /usr/include/ni, lib: /usr/lib/libOpenNI.so)\n'}
+[1.423682] (gatekeeper) StdoutLine: {'line': b'-- looking for PCL_COMMON\n'}
+[1.424207] (gatekeeper) StdoutLine: {'line': b'-- Found PCL_COMMON: /usr/lib/x86_64-linux-gnu/libpcl_common.so  \n'}
+[1.424443] (gatekeeper) StdoutLine: {'line': b'-- looking for PCL_KDTREE\n'}
+[1.425109] (gatekeeper) StdoutLine: {'line': b'-- Found PCL_KDTREE: /usr/lib/x86_64-linux-gnu/libpcl_kdtree.so  \n'}
+[1.425304] (gatekeeper) StdoutLine: {'line': b'-- looking for PCL_OCTREE\n'}
+[1.425993] (gatekeeper) StdoutLine: {'line': b'-- Found PCL_OCTREE: /usr/lib/x86_64-linux-gnu/libpcl_octree.so  \n'}
+[1.426182] (gatekeeper) StdoutLine: {'line': b'-- looking for PCL_SEARCH\n'}
+[1.426850] (gatekeeper) StdoutLine: {'line': b'-- Found PCL_SEARCH: /usr/lib/x86_64-linux-gnu/libpcl_search.so  \n'}
+[1.427063] (gatekeeper) StdoutLine: {'line': b'-- looking for PCL_SAMPLE_CONSENSUS\n'}
+[1.427791] (gatekeeper) StdoutLine: {'line': b'-- Found PCL_SAMPLE_CONSENSUS: /usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so  \n'}
+[1.427978] (gatekeeper) StdoutLine: {'line': b'-- looking for PCL_FILTERS\n'}
+[1.428648] (gatekeeper) StdoutLine: {'line': b'-- Found PCL_FILTERS: /usr/lib/x86_64-linux-gnu/libpcl_filters.so  \n'}
+[1.428858] (gatekeeper) StdoutLine: {'line': b'-- looking for PCL_2D\n'}
+[1.429048] (gatekeeper) StdoutLine: {'line': b'-- Found PCL_2D: /usr/include/pcl-1.10  \n'}
+[1.429576] (gatekeeper) StdoutLine: {'line': b'-- looking for PCL_GEOMETRY\n'}
+[1.429800] (gatekeeper) StdoutLine: {'line': b'-- Found PCL_GEOMETRY: /usr/include/pcl-1.10  \n'}
+[1.429946] (gatekeeper) StdoutLine: {'line': b'-- looking for PCL_IO\n'}
+[1.430629] (gatekeeper) StdoutLine: {'line': b'-- Found PCL_IO: /usr/lib/x86_64-linux-gnu/libpcl_io.so  \n'}
+[1.430888] (gatekeeper) StdoutLine: {'line': b'-- looking for PCL_FEATURES\n'}
+[1.431663] (gatekeeper) StdoutLine: {'line': b'-- Found PCL_FEATURES: /usr/lib/x86_64-linux-gnu/libpcl_features.so  \n'}
+[1.431950] (gatekeeper) StdoutLine: {'line': b'-- looking for PCL_ML\n'}
+[1.432632] (gatekeeper) StdoutLine: {'line': b'-- Found PCL_ML: /usr/lib/x86_64-linux-gnu/libpcl_ml.so  \n'}
+[1.432804] (gatekeeper) StdoutLine: {'line': b'-- looking for PCL_SEGMENTATION\n'}
+[1.433849] (gatekeeper) StdoutLine: {'line': b'-- Found PCL_SEGMENTATION: /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so  \n'}
+[1.434157] (gatekeeper) StdoutLine: {'line': b'-- looking for PCL_VISUALIZATION\n'}
+[1.434803] (gatekeeper) StdoutLine: {'line': b'-- Found PCL_VISUALIZATION: /usr/lib/x86_64-linux-gnu/libpcl_visualization.so  \n'}
+[1.435059] (gatekeeper) StdoutLine: {'line': b'-- looking for PCL_SURFACE\n'}
+[1.435777] (gatekeeper) StdoutLine: {'line': b'-- Found PCL_SURFACE: /usr/lib/x86_64-linux-gnu/libpcl_surface.so  \n'}
+[1.435985] (gatekeeper) StdoutLine: {'line': b'-- looking for PCL_REGISTRATION\n'}
+[1.436618] (gatekeeper) StdoutLine: {'line': b'-- Found PCL_REGISTRATION: /usr/lib/x86_64-linux-gnu/libpcl_registration.so  \n'}
+[1.436863] (gatekeeper) StdoutLine: {'line': b'-- looking for PCL_KEYPOINTS\n'}
+[1.437539] (gatekeeper) StdoutLine: {'line': b'-- Found PCL_KEYPOINTS: /usr/lib/x86_64-linux-gnu/libpcl_keypoints.so  \n'}
+[1.437784] (gatekeeper) StdoutLine: {'line': b'-- looking for PCL_TRACKING\n'}
+[1.438440] (gatekeeper) StdoutLine: {'line': b'-- Found PCL_TRACKING: /usr/lib/x86_64-linux-gnu/libpcl_tracking.so  \n'}
+[1.438658] (gatekeeper) StdoutLine: {'line': b'-- looking for PCL_RECOGNITION\n'}
+[1.439352] (gatekeeper) StdoutLine: {'line': b'-- Found PCL_RECOGNITION: /usr/lib/x86_64-linux-gnu/libpcl_recognition.so  \n'}
+[1.439655] (gatekeeper) StdoutLine: {'line': b'-- looking for PCL_STEREO\n'}
+[1.440306] (gatekeeper) StdoutLine: {'line': b'-- Found PCL_STEREO: /usr/lib/x86_64-linux-gnu/libpcl_stereo.so  \n'}
+[1.440498] (gatekeeper) StdoutLine: {'line': b'-- looking for PCL_APPS\n'}
+[1.441142] (gatekeeper) StdoutLine: {'line': b'-- Found PCL_APPS: /usr/lib/x86_64-linux-gnu/libpcl_apps.so  \n'}
+[1.441679] (gatekeeper) StdoutLine: {'line': b'-- looking for PCL_IN_HAND_SCANNER\n'}
+[1.441917] (gatekeeper) StdoutLine: {'line': b'-- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.10  \n'}
+[1.442046] (gatekeeper) StdoutLine: {'line': b'-- looking for PCL_POINT_CLOUD_EDITOR\n'}
+[1.442974] (gatekeeper) StdoutLine: {'line': b'-- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.10  \n'}
+[1.443106] (gatekeeper) StdoutLine: {'line': b'-- looking for PCL_OUTOFCORE\n'}
+[1.443838] (gatekeeper) StdoutLine: {'line': b'-- Found PCL_OUTOFCORE: /usr/lib/x86_64-linux-gnu/libpcl_outofcore.so  \n'}
+[1.444076] (gatekeeper) StdoutLine: {'line': b'-- looking for PCL_PEOPLE\n'}
+[1.444724] (gatekeeper) StdoutLine: {'line': b'-- Found PCL_PEOPLE: /usr/lib/x86_64-linux-gnu/libpcl_people.so  \n'}
+[1.445587] (gatekeeper) StdoutLine: {'line': b'-- Found PCL: pcl_common;pcl_kdtree;pcl_octree;pcl_search;pcl_sample_consensus;pcl_filters;pcl_io;pcl_features;pcl_ml;pcl_segmentation;pcl_visualization;pcl_surface;pcl_registration;pcl_keypoints;pcl_tracking;pcl_recognition;pcl_stereo;pcl_apps;pcl_outofcore;pcl_people;/usr/lib/x86_64-linux-gnu/libboost_system.so;/usr/lib/x86_64-linux-gnu/libboost_filesystem.so;/usr/lib/x86_64-linux-gnu/libboost_date_time.so;/usr/lib/x86_64-linux-gnu/libboost_iostreams.so;/usr/lib/x86_64-linux-gnu/libboost_regex.so;optimized;/usr/lib/x86_64-linux-gnu/libqhull.so;debug;/usr/lib/x86_64-linux-gnu/libqhull.so;/usr/lib/libOpenNI.so;/usr/lib/libOpenNI2.so;vtkChartsCore;vtkCommonColor;vtkCommonCore;vtksys;vtkCommonDataModel;vtkCommonMath;vtkCommonMisc;vtkCommonSystem;vtkCommonTransforms;vtkCommonExecutionModel;vtkFiltersGeneral;vtkCommonComputationalGeometry;vtkFiltersCore;vtkInfovisCore;vtkFiltersExtraction;vtkFiltersStatistics;vtkImagingFourier;vtkImagingCore;vtkalglib;vtkRenderingContext2D;vtkRenderingCore;vtkFiltersGeometry;vtkFiltersSources;vtkRenderingFreeType;/usr/lib/x86_64-linux-gnu/libfreetype.so;/usr/lib/x86_64-linux-gnu/libz.so;vtkFiltersModeling;vtkImagingSources;vtkInteractionStyle;vtkInteractionWidgets;vtkFiltersHybrid;vtkImagingColor;vtkImagingGeneral;vtkImagingHybrid;vtkIOImage;vtkDICOMParser;vtkmetaio;/usr/lib/x86_64-linux-gnu/libjpeg.so;/usr/lib/x86_64-linux-gnu/libpng.so;/usr/lib/x86_64-linux-gnu/libtiff.so;vtkRenderingAnnotation;vtkRenderingVolume;vtkIOXML;vtkIOCore;vtkIOXMLParser;/usr/lib/x86_64-linux-gnu/libexpat.so;vtkIOGeometry;vtkIOLegacy;vtkIOPLY;vtkRenderingLOD;vtkViewsContext2D;vtkViewsCore;vtkRenderingContextOpenGL2;vtkRenderingOpenGL2;FLANN::FLANN (Required is at least version "1.7") \n'}
+[1.451052] (gatekeeper) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.9.6 (/opt/ros/foxy/share/ament_lint_auto/cmake)\n'}
+[1.503077] (-) TimerEvent: {}
+[1.512758] (gatekeeper) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[1.513433] (gatekeeper) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[1.514194] (gatekeeper) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /root/colcon_ws/src/gatekeeper/include\n'}
+[1.514301] (gatekeeper) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[1.514685] (gatekeeper) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[1.514792] (gatekeeper) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[1.515098] (gatekeeper) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.515680] (gatekeeper) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[1.515812] (gatekeeper) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[1.515990] (gatekeeper) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.518687] (gatekeeper) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.558540] (gatekeeper) StdoutLine: {'line': b'-- Generating done\n'}
+[1.560118] (gatekeeper) StdoutLine: {'line': b'-- Build files have been written to: /root/colcon_ws/build/gatekeeper\n'}
+[1.588422] (gatekeeper) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target gatekeeper\x1b[0m\n'}
+[1.589552] (gatekeeper) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target nominal_controller\x1b[0m\n'}
+[1.603188] (-) TimerEvent: {}
+[1.607733] (gatekeeper) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/nominal_controller.dir/src/nominal_controller.cpp.o\x1b[0m\n'}
+[1.664261] (gatekeeper) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/gatekeeper.dir/src/gatekeeper.cpp.o\x1b[0m\n'}
+[1.703334] (-) TimerEvent: {}
+[1.741164] (gatekeeper) StdoutLine: {'line': b'[ 75%] \x1b[32m\x1b[1mLinking CXX executable nominal_controller\x1b[0m\n'}
+[1.803460] (-) TimerEvent: {}
+[1.903754] (-) TimerEvent: {}
+[1.926000] (gatekeeper) StdoutLine: {'line': b'[ 75%] Built target nominal_controller\n'}
+[2.004524] (-) TimerEvent: {}
+[2.104833] (-) TimerEvent: {}
+[2.205130] (-) TimerEvent: {}
+[2.305434] (-) TimerEvent: {}
+[2.405734] (-) TimerEvent: {}
+[2.506045] (-) TimerEvent: {}
+[2.606351] (-) TimerEvent: {}
+[2.706649] (-) TimerEvent: {}
+[2.806982] (-) TimerEvent: {}
+[2.907304] (-) TimerEvent: {}
+[3.007685] (-) TimerEvent: {}
+[3.107991] (-) TimerEvent: {}
+[3.208306] (-) TimerEvent: {}
+[3.308626] (-) TimerEvent: {}
+[3.408961] (-) TimerEvent: {}
+[3.509268] (-) TimerEvent: {}
+[3.609631] (-) TimerEvent: {}
+[3.709929] (-) TimerEvent: {}
+[3.810224] (-) TimerEvent: {}
+[3.911152] (-) TimerEvent: {}
+[4.011691] (-) TimerEvent: {}
+[4.111991] (-) TimerEvent: {}
+[4.212307] (-) TimerEvent: {}
+[4.312622] (-) TimerEvent: {}
+[4.412923] (-) TimerEvent: {}
+[4.513214] (-) TimerEvent: {}
+[4.613503] (-) TimerEvent: {}
+[4.713800] (-) TimerEvent: {}
+[4.814087] (-) TimerEvent: {}
+[4.914383] (-) TimerEvent: {}
+[5.014675] (-) TimerEvent: {}
+[5.115430] (-) TimerEvent: {}
+[5.215728] (-) TimerEvent: {}
+[5.316019] (-) TimerEvent: {}
+[5.416314] (-) TimerEvent: {}
+[5.516587] (-) TimerEvent: {}
+[5.616896] (-) TimerEvent: {}
+[5.717226] (-) TimerEvent: {}
+[5.817522] (-) TimerEvent: {}
+[5.917812] (-) TimerEvent: {}
+[6.018115] (-) TimerEvent: {}
+[6.118404] (-) TimerEvent: {}
+[6.218697] (-) TimerEvent: {}
+[6.318989] (-) TimerEvent: {}
+[6.419311] (-) TimerEvent: {}
+[6.519603] (-) TimerEvent: {}
+[6.619896] (-) TimerEvent: {}
+[6.720196] (-) TimerEvent: {}
+[6.820497] (-) TimerEvent: {}
+[6.920787] (-) TimerEvent: {}
+[7.021080] (-) TimerEvent: {}
+[7.121376] (-) TimerEvent: {}
+[7.221669] (-) TimerEvent: {}
+[7.321966] (-) TimerEvent: {}
+[7.422265] (-) TimerEvent: {}
+[7.522543] (-) TimerEvent: {}
+[7.622823] (-) TimerEvent: {}
+[7.723117] (-) TimerEvent: {}
+[7.771941] (gatekeeper) StderrLine: {'line': b'In file included from /root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:10:\n'}
+[7.772135] (gatekeeper) StderrLine: {'line': b'/root/colcon_ws/src/gatekeeper/include/gatekeeper/gatekeeper.hpp:22:48: error: expected \xe2\x80\x98;\xe2\x80\x99 before \xe2\x80\x98using\xe2\x80\x99\n'}
+[7.772208] (gatekeeper) StderrLine: {'line': b'   22 | using PCLPointCloud = pcl::PointCloud<PCLPoint>\n'}
+[7.772274] (gatekeeper) StderrLine: {'line': b'      |                                                ^\n'}
+[7.772338] (gatekeeper) StderrLine: {'line': b'      |                                                ;\n'}
+[7.772400] (gatekeeper) StderrLine: {'line': b'   23 | using OcTreeT = octomap::OcTree;\n'}
+[7.772460] (gatekeeper) StderrLine: {'line': b'      | ~~~~~                                           \n'}
+[7.772518] (gatekeeper) StderrLine: {'line': b'/root/colcon_ws/src/gatekeeper/include/gatekeeper/gatekeeper.hpp:42:21: error: \xe2\x80\x98OcTreeT\xe2\x80\x99 was not declared in this scope\n'}
+[7.772743] (gatekeeper) StderrLine: {'line': b'   42 |     std::shared_ptr<OcTreeT> m_octree;\n'}
+[7.772934] (gatekeeper) StderrLine: {'line': b'      |                     ^~~~~~~\n'}
+[7.773009] (gatekeeper) StderrLine: {'line': b'/root/colcon_ws/src/gatekeeper/include/gatekeeper/gatekeeper.hpp:42:28: error: template argument 1 is invalid\n'}
+[7.773096] (gatekeeper) StderrLine: {'line': b'   42 |     std::shared_ptr<OcTreeT> m_octree;\n'}
+[7.773237] (gatekeeper) StderrLine: {'line': b'      |                            ^\n'}
+[7.773308] (gatekeeper) StderrLine: {'line': b'/root/colcon_ws/src/gatekeeper/include/gatekeeper/gatekeeper.hpp:56:15: error: \xe2\x80\x98PCLPointCloud\xe2\x80\x99 does not name a type; did you mean \xe2\x80\x98PCLPoint\xe2\x80\x99?\n'}
+[7.773395] (gatekeeper) StderrLine: {'line': b'   56 |         const PCLPointCloud& pc);\n'}
+[7.773540] (gatekeeper) StderrLine: {'line': b'      |               ^~~~~~~~~~~~~\n'}
+[7.773609] (gatekeeper) StderrLine: {'line': b'      |               PCLPoint\n'}
+[7.773676] (gatekeeper) StderrLine: {'line': b'/root/colcon_ws/src/gatekeeper/include/gatekeeper/gatekeeper.hpp:62:2: error: expected \xe2\x80\x98;\xe2\x80\x99 after class definition\n'}
+[7.773751] (gatekeeper) StderrLine: {'line': b'   62 | }\n'}
+[7.773818] (gatekeeper) StderrLine: {'line': b'      |  ^\n'}
+[7.773885] (gatekeeper) StderrLine: {'line': b'      |  ;\n'}
+[7.773949] (gatekeeper) StderrLine: {'line': b'/root/colcon_ws/src/gatekeeper/include/gatekeeper/gatekeeper.hpp:67:2: warning: extra \xe2\x80\x98;\xe2\x80\x99 [-Wpedantic]\n'}
+[7.774018] (gatekeeper) StderrLine: {'line': b'   67 | }; // namespace gatekeeper\n'}
+[7.774086] (gatekeeper) StderrLine: {'line': b'      |  ^\n'}
+[7.774152] (gatekeeper) StderrLine: {'line': b'/root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:15:24: error: definition of implicitly-declared \xe2\x80\x98gatekeeper::Gatekeeper::Gatekeeper()\xe2\x80\x99\n'}
+[7.774220] (gatekeeper) StderrLine: {'line': b'   15 | Gatekeeper::Gatekeeper()\n'}
+[7.774285] (gatekeeper) StderrLine: {'line': b'      |                        ^\n'}
+[7.774350] (gatekeeper) StderrLine: {'line': b'/root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:33:32: error: variable or field \xe2\x80\x98cloud_callback\xe2\x80\x99 declared void\n'}
+[7.774416] (gatekeeper) StderrLine: {'line': b'   33 | void Gatekeeper::cloud_callback(\n'}
+[7.774480] (gatekeeper) StderrLine: {'line': b'      |                                ^\n'}
+[7.774544] (gatekeeper) StderrLine: {'line': b'In file included from /opt/ros/foxy/include/rclcpp/service.hpp:34,\n'}
+[7.774609] (gatekeeper) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/callback_group.hpp:25,\n'}
+[7.774764] (gatekeeper) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/any_executable.hpp:20,\n'}
+[7.774843] (gatekeeper) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24,\n'}
+[7.774923] (gatekeeper) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18,\n'}
+[7.775006] (gatekeeper) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/executor_options.hpp:20,\n'}
+[7.775079] (gatekeeper) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/executor.hpp:33,\n'}
+[7.775151] (gatekeeper) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26,\n'}
+[7.775224] (gatekeeper) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/executors.hpp:21,\n'}
+[7.775330] (gatekeeper) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:146,\n'}
+[7.775415] (gatekeeper) StderrLine: {'line': b'                 from /root/colcon_ws/src/gatekeeper/include/gatekeeper/gatekeeper.hpp:7,\n'}
+[7.775489] (gatekeeper) StderrLine: {'line': b'                 from /root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:10:\n'}
+[7.775560] (gatekeeper) StderrLine: {'line': b'/root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:35:3: error: expected primary-expression before \xe2\x80\x98do\xe2\x80\x99\n'}
+[7.775755] (gatekeeper) StderrLine: {'line': b'   35 |   RCLCPP_INFO(this->get_logger(), "Received cloud");\n'}
+[7.775833] (gatekeeper) StderrLine: {'line': b'      |   ^~~~~~~~~~~\n'}
+[7.775910] (gatekeeper) StderrLine: {'line': b'/root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:40:6: error: \xe2\x80\x98Gatekeeper\xe2\x80\x99 has not been declared\n'}
+[7.776094] (gatekeeper) StderrLine: {'line': b'   40 | void Gatekeeper::insertScan( const geometry_msgs::msg::Vector3 &sensorOrigin,\n'}
+[7.776175] (gatekeeper) StderrLine: {'line': b'      |      ^~~~~~~~~~\n'}
+[7.776251] (gatekeeper) StderrLine: {'line': b'/root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:41:9: error: \xe2\x80\x98PCLPointCloud\xe2\x80\x99 does not name a type; did you mean \xe2\x80\x98PCLPoint\xe2\x80\x99?\n'}
+[7.776328] (gatekeeper) StderrLine: {'line': b'   41 |   const PCLPointCloud& pc)\n'}
+[7.776404] (gatekeeper) StderrLine: {'line': b'      |         ^~~~~~~~~~~~~\n'}
+[7.776480] (gatekeeper) StderrLine: {'line': b'      |         PCLPoint\n'}
+[7.776554] (gatekeeper) StderrLine: {'line': b'In file included from /opt/ros/foxy/include/rclcpp/service.hpp:34,\n'}
+[7.776630] (gatekeeper) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/callback_group.hpp:25,\n'}
+[7.776706] (gatekeeper) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/any_executable.hpp:20,\n'}
+[7.776780] (gatekeeper) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24,\n'}
+[7.776854] (gatekeeper) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18,\n'}
+[7.776927] (gatekeeper) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/executor_options.hpp:20,\n'}
+[7.777000] (gatekeeper) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/executor.hpp:33,\n'}
+[7.777074] (gatekeeper) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26,\n'}
+[7.777205] (gatekeeper) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/executors.hpp:21,\n'}
+[7.777295] (gatekeeper) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:146,\n'}
+[7.777392] (gatekeeper) StderrLine: {'line': b'                 from /root/colcon_ws/src/gatekeeper/include/gatekeeper/gatekeeper.hpp:7,\n'}
+[7.777555] (gatekeeper) StderrLine: {'line': b'                 from /root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:10:\n'}
+[7.777639] (gatekeeper) StderrLine: {'line': b'/root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp: In function \xe2\x80\x98void insertScan(const Vector3&, const int&)\xe2\x80\x99:\n'}
+[7.777717] (gatekeeper) StderrLine: {'line': b'/root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:44:15: error: invalid use of \xe2\x80\x98this\xe2\x80\x99 in non-member function\n'}
+[7.777794] (gatekeeper) StderrLine: {'line': b'   44 |   RCLCPP_INFO(this->get_logger(), "insert Scan");\n'}
+[7.777868] (gatekeeper) StderrLine: {'line': b'      |               ^~~~\n'}
+[7.777942] (gatekeeper) StderrLine: {'line': b'/root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:44:15: error: invalid use of \xe2\x80\x98this\xe2\x80\x99 in non-member function\n'}
+[7.778015] (gatekeeper) StderrLine: {'line': b'/root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:44:3: error: template argument 1 is invalid\n'}
+[7.778089] (gatekeeper) StderrLine: {'line': b'   44 |   RCLCPP_INFO(this->get_logger(), "insert Scan");\n'}
+[7.778162] (gatekeeper) StderrLine: {'line': b'      |   ^~~~~~~~~~~\n'}
+[7.778235] (gatekeeper) StderrLine: {'line': b'/root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:44:3: error: template argument 1 is invalid\n'}
+[7.778308] (gatekeeper) StderrLine: {'line': b'   44 |   RCLCPP_INFO(this->get_logger(), "insert Scan");\n'}
+[7.778381] (gatekeeper) StderrLine: {'line': b'      |   ^~~~~~~~~~~\n'}
+[7.778605] (gatekeeper) StderrLine: {'line': b'/root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:44:3: error: template argument 1 is invalid\n'}
+[7.778682] (gatekeeper) StderrLine: {'line': b'   44 |   RCLCPP_INFO(this->get_logger(), "insert Scan");\n'}
+[7.778756] (gatekeeper) StderrLine: {'line': b'      |   ^~~~~~~~~~~\n'}
+[7.778829] (gatekeeper) StderrLine: {'line': b'In file included from /opt/ros/foxy/include/rclcpp/client.hpp:40,\n'}
+[7.778903] (gatekeeper) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/callback_group.hpp:23,\n'}
+[7.778975] (gatekeeper) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/any_executable.hpp:20,\n'}
+[7.779048] (gatekeeper) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24,\n'}
+[7.779121] (gatekeeper) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18,\n'}
+[7.779193] (gatekeeper) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/executor_options.hpp:20,\n'}
+[7.779309] (gatekeeper) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/executor.hpp:33,\n'}
+[7.779427] (gatekeeper) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26,\n'}
+[7.779507] (gatekeeper) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/executors.hpp:21,\n'}
+[7.779582] (gatekeeper) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:146,\n'}
+[7.779655] (gatekeeper) StderrLine: {'line': b'                 from /root/colcon_ws/src/gatekeeper/include/gatekeeper/gatekeeper.hpp:7,\n'}
+[7.779728] (gatekeeper) StderrLine: {'line': b'                 from /root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:10:\n'}
+[7.779801] (gatekeeper) StderrLine: {'line': b'/root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:44:15: error: invalid use of \xe2\x80\x98this\xe2\x80\x99 in non-member function\n'}
+[7.779873] (gatekeeper) StderrLine: {'line': b'   44 |   RCLCPP_INFO(this->get_logger(), "insert Scan");\n'}
+[7.779945] (gatekeeper) StderrLine: {'line': b'      |               ^~~~\n'}
+[7.780018] (gatekeeper) StderrLine: {'line': b'/root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:44:15: error: invalid use of \xe2\x80\x98this\xe2\x80\x99 in non-member function\n'}
+[7.780090] (gatekeeper) StderrLine: {'line': b'   44 |   RCLCPP_INFO(this->get_logger(), "insert Scan");\n'}
+[7.780164] (gatekeeper) StderrLine: {'line': b'      |               ^~~~\n'}
+[7.780236] (gatekeeper) StderrLine: {'line': b'/root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:40:65: warning: unused parameter \xe2\x80\x98sensorOrigin\xe2\x80\x99 [-Wunused-parameter]\n'}
+[7.780308] (gatekeeper) StderrLine: {'line': b'   40 | void Gatekeeper::insertScan( const geometry_msgs::msg::Vector3 &sensorOrigin,\n'}
+[7.780380] (gatekeeper) StderrLine: {'line': b'      |                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~\n'}
+[7.780451] (gatekeeper) StderrLine: {'line': b'/root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:41:24: warning: unused parameter \xe2\x80\x98pc\xe2\x80\x99 [-Wunused-parameter]\n'}
+[7.780524] (gatekeeper) StderrLine: {'line': b'   41 |   const PCLPointCloud& pc)\n'}
+[7.780597] (gatekeeper) StderrLine: {'line': b'      |   ~~~~~~~~~~~~~~~~~~~~~^~\n'}
+[7.780670] (gatekeeper) StderrLine: {'line': b'/root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp: At global scope:\n'}
+[7.780921] (gatekeeper) StderrLine: {'line': b'/root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:51:1: error: expected declaration before \xe2\x80\x98}\xe2\x80\x99 token\n'}
+[7.780996] (gatekeeper) StderrLine: {'line': b'   51 | }; // namespace gatekeeper\n'}
+[7.781050] (gatekeeper) StderrLine: {'line': b'      | ^\n'}
+[7.781104] (gatekeeper) StderrLine: {'line': b'/root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp: In function \xe2\x80\x98int main(int, char**)\xe2\x80\x99:\n'}
+[7.781158] (gatekeeper) StderrLine: {'line': b'/root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:61:11: warning: statement is a reference, not call, to function \xe2\x80\x98rclcpp::shutdown\xe2\x80\x99 [-Waddress]\n'}
+[7.781215] (gatekeeper) StderrLine: {'line': b'   61 |   rclcpp::shutdown;\n'}
+[7.781267] (gatekeeper) StderrLine: {'line': b'      |   ~~~~~~~~^~~~~~~~\n'}
+[7.781318] (gatekeeper) StderrLine: {'line': b'/root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:61:11: warning: statement has no effect [-Wunused-value]\n'}
+[7.781372] (gatekeeper) StderrLine: {'line': b'In file included from /usr/include/x86_64-linux-gnu/c++/9/bits/c++allocator.h:33,\n'}
+[7.781425] (gatekeeper) StderrLine: {'line': b'                 from /usr/include/c++/9/bits/allocator.h:46,\n'}
+[7.781477] (gatekeeper) StderrLine: {'line': b'                 from /usr/include/c++/9/memory:63,\n'}
+[7.781529] (gatekeeper) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:144,\n'}
+[7.781585] (gatekeeper) StderrLine: {'line': b'                 from /root/colcon_ws/src/gatekeeper/include/gatekeeper/gatekeeper.hpp:7,\n'}
+[7.781638] (gatekeeper) StderrLine: {'line': b'                 from /root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:10:\n'}
+[7.781690] (gatekeeper) StderrLine: {'line': b'/usr/include/c++/9/ext/new_allocator.h: In instantiation of \xe2\x80\x98void __gnu_cxx::new_allocator<_Tp>::construct(_Up*, _Args&& ...) [with _Up = gatekeeper::Gatekeeper; _Args = {}; _Tp = gatekeeper::Gatekeeper]\xe2\x80\x99:\n'}
+[7.781744] (gatekeeper) StderrLine: {'line': b'/usr/include/c++/9/bits/alloc_traits.h:482:2:   required from \xe2\x80\x98static void std::allocator_traits<std::allocator<_Tp1> >::construct(std::allocator_traits<std::allocator<_Tp1> >::allocator_type&, _Up*, _Args&& ...) [with _Up = gatekeeper::Gatekeeper; _Args = {}; _Tp = gatekeeper::Gatekeeper; std::allocator_traits<std::allocator<_Tp1> >::allocator_type = std::allocator<gatekeeper::Gatekeeper>]\xe2\x80\x99\n'}
+[7.781800] (gatekeeper) StderrLine: {'line': b'/usr/include/c++/9/bits/shared_ptr_base.h:548:39:   required from \xe2\x80\x98std::_Sp_counted_ptr_inplace<_Tp, _Alloc, _Lp>::_Sp_counted_ptr_inplace(_Alloc, _Args&& ...) [with _Args = {}; _Tp = gatekeeper::Gatekeeper; _Alloc = std::allocator<gatekeeper::Gatekeeper>; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic]\xe2\x80\x99\n'}
+[7.781853] (gatekeeper) StderrLine: {'line': b'/usr/include/c++/9/bits/shared_ptr_base.h:679:16:   required from \xe2\x80\x98std::__shared_count<_Lp>::__shared_count(_Tp*&, std::_Sp_alloc_shared_tag<_Alloc>, _Args&& ...) [with _Tp = gatekeeper::Gatekeeper; _Alloc = std::allocator<gatekeeper::Gatekeeper>; _Args = {}; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic]\xe2\x80\x99\n'}
+[7.781957] (gatekeeper) StderrLine: {'line': b'/usr/include/c++/9/bits/shared_ptr_base.h:1344:71:   required from \xe2\x80\x98std::__shared_ptr<_Tp, _Lp>::__shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<gatekeeper::Gatekeeper>; _Args = {}; _Tp = gatekeeper::Gatekeeper; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic]\xe2\x80\x99\n'}
+[7.782326] (gatekeeper) StderrLine: {'line': b'/usr/include/c++/9/bits/shared_ptr.h:359:59:   required from \xe2\x80\x98std::shared_ptr<_Tp>::shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<gatekeeper::Gatekeeper>; _Args = {}; _Tp = gatekeeper::Gatekeeper]\xe2\x80\x99\n'}
+[7.783377] (gatekeeper) StderrLine: {'line': b'/usr/include/c++/9/bits/shared_ptr.h:701:14:   required from \xe2\x80\x98std::shared_ptr<_Tp> std::allocate_shared(const _Alloc&, _Args&& ...) [with _Tp = gatekeeper::Gatekeeper; _Alloc = std::allocator<gatekeeper::Gatekeeper>; _Args = {}]\xe2\x80\x99\n'}
+[7.783449] (gatekeeper) StderrLine: {'line': b'/usr/include/c++/9/bits/shared_ptr.h:717:39:   required from \xe2\x80\x98std::shared_ptr<_Tp> std::make_shared(_Args&& ...) [with _Tp = gatekeeper::Gatekeeper; _Args = {}]\xe2\x80\x99\n'}
+[7.783514] (gatekeeper) StderrLine: {'line': b'/root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:58:56:   required from here\n'}
+[7.783570] (gatekeeper) StderrLine: {'line': b'/usr/include/c++/9/ext/new_allocator.h:145:20: error: use of deleted function \xe2\x80\x98gatekeeper::Gatekeeper::Gatekeeper()\xe2\x80\x99\n'}
+[7.784165] (gatekeeper) StderrLine: {'line': b'  145 |  noexcept(noexcept(::new((void *)__p)\n'}
+[7.784229] (gatekeeper) StderrLine: {'line': b'      |                    ^~~~~~~~~~~~~~~~~~\n'}
+[7.784282] (gatekeeper) StderrLine: {'line': b'  146 |        _Up(std::forward<_Args>(__args)...)))\n'}
+[7.784334] (gatekeeper) StderrLine: {'line': b'      |        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n'}
+[7.784385] (gatekeeper) StderrLine: {'line': b'In file included from /root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:10:\n'}
+[7.784437] (gatekeeper) StderrLine: {'line': b'/root/colcon_ws/src/gatekeeper/include/gatekeeper/gatekeeper.hpp:31:7: note: \xe2\x80\x98gatekeeper::Gatekeeper::Gatekeeper()\xe2\x80\x99 is implicitly deleted because the default definition would be ill-formed:\n'}
+[7.784489] (gatekeeper) StderrLine: {'line': b'   31 | class Gatekeeper : public rclcpp::Node {\n'}
+[7.784540] (gatekeeper) StderrLine: {'line': b'      |       ^~~~~~~~~~\n'}
+[7.784590] (gatekeeper) StderrLine: {'line': b'/root/colcon_ws/src/gatekeeper/include/gatekeeper/gatekeeper.hpp:31:7: error: no matching function for call to \xe2\x80\x98rclcpp::Node::Node()\xe2\x80\x99\n'}
+[7.784642] (gatekeeper) StderrLine: {'line': b'In file included from /opt/ros/foxy/include/rclcpp/executors/single_threaded_executor.hpp:28,\n'}
+[7.784701] (gatekeeper) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/executors.hpp:22,\n'}
+[7.784752] (gatekeeper) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:146,\n'}
+[7.784802] (gatekeeper) StderrLine: {'line': b'                 from /root/colcon_ws/src/gatekeeper/include/gatekeeper/gatekeeper.hpp:7,\n'}
+[7.784852] (gatekeeper) StderrLine: {'line': b'                 from /root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:10:\n'}
+[7.784907] (gatekeeper) StderrLine: {'line': b'/opt/ros/foxy/include/rclcpp/node.hpp:1193:3: note: candidate: \xe2\x80\x98rclcpp::Node::Node(const rclcpp::Node&, const string&)\xe2\x80\x99\n'}
+[7.784961] (gatekeeper) StderrLine: {'line': b' 1193 |   Node(\n'}
+[7.785010] (gatekeeper) StderrLine: {'line': b'      |   ^~~~\n'}
+[7.785065] (gatekeeper) StderrLine: {'line': b'/opt/ros/foxy/include/rclcpp/node.hpp:1193:3: note:   candidate expects 2 arguments, 0 provided\n'}
+[7.785117] (gatekeeper) StderrLine: {'line': b'/opt/ros/foxy/include/rclcpp/node.hpp:98:12: note: candidate: \xe2\x80\x98rclcpp::Node::Node(const string&, const string&, const rclcpp::NodeOptions&)\xe2\x80\x99\n'}
+[7.785171] (gatekeeper) StderrLine: {'line': b'   98 |   explicit Node(\n'}
+[7.785221] (gatekeeper) StderrLine: {'line': b'      |            ^~~~\n'}
+[7.785271] (gatekeeper) StderrLine: {'line': b'/opt/ros/foxy/include/rclcpp/node.hpp:98:12: note:   candidate expects 3 arguments, 0 provided\n'}
+[7.785320] (gatekeeper) StderrLine: {'line': b'/opt/ros/foxy/include/rclcpp/node.hpp:86:12: note: candidate: \xe2\x80\x98rclcpp::Node::Node(const string&, const rclcpp::NodeOptions&)\xe2\x80\x99\n'}
+[7.785376] (gatekeeper) StderrLine: {'line': b'   86 |   explicit Node(\n'}
+[7.785428] (gatekeeper) StderrLine: {'line': b'      |            ^~~~\n'}
+[7.785479] (gatekeeper) StderrLine: {'line': b'/opt/ros/foxy/include/rclcpp/node.hpp:86:12: note:   candidate expects 2 arguments, 0 provided\n'}
+[7.785529] (gatekeeper) StderrLine: {'line': b'make[2]: *** [CMakeFiles/gatekeeper.dir/build.make:63: CMakeFiles/gatekeeper.dir/src/gatekeeper.cpp.o] Error 1\n'}
+[7.785581] (gatekeeper) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:80: CMakeFiles/gatekeeper.dir/all] Error 2\n'}
+[7.785632] (gatekeeper) StderrLine: {'line': b'make: *** [Makefile:141: all] Error 2\n'}
+[7.785685] (gatekeeper) CommandEnded: {'returncode': 2}
+[7.815934] (gatekeeper) JobEnded: {'identifier': 'gatekeeper', 'rc': 2}
+[7.823219] (-) TimerEvent: {}
+[7.826303] (-) EventReactorShutdown: {}

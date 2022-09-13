@@ -1,0 +1,7 @@
+/root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp: In member function ‘void gatekeeper::Gatekeeper::insertScan(const Vector3&, const PCLPointCloud&)’:
+/root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:45:65: warning: unused parameter ‘sensorOrigin’ [-Wunused-parameter]
+   45 | void Gatekeeper::insertScan( const geometry_msgs::msg::Vector3 &sensorOrigin,
+      |                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~
+/root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:46:24: warning: unused parameter ‘pc’ [-Wunused-parameter]
+   46 |   const PCLPointCloud& pc)
+      |   ~~~~~~~~~~~~~~~~~~~~~^~

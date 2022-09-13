@@ -1,0 +1,16 @@
+/root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp: In member function ‘void gatekeeper::Gatekeeper::insertScan(const Vector3&, const PCLPointCloud&)’:
+/root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:111:10: error: invalid use of member function ‘const float& octomath::Vector3::x() const’ (did you forget the ‘()’ ?)
+  111 |   origin.x = sensorOrigin.x;
+      |   ~~~~~~~^
+      |           ()
+/root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:112:10: error: invalid use of member function ‘const float& octomath::Vector3::y() const’ (did you forget the ‘()’ ?)
+  112 |   origin.y = sensorOrigin.y;
+      |   ~~~~~~~^
+      |           ()
+/root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:113:10: error: invalid use of member function ‘const float& octomath::Vector3::z() const’ (did you forget the ‘()’ ?)
+  113 |   origin.z = sensorOrigin.z;
+      |   ~~~~~~~^
+      |           ()
+make[2]: *** [CMakeFiles/gatekeeper.dir/build.make:63: CMakeFiles/gatekeeper.dir/src/gatekeeper.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:80: CMakeFiles/gatekeeper.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

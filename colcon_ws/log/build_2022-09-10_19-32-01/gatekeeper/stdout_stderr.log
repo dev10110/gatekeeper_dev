@@ -1,0 +1,23 @@
+[35m[1mScanning dependencies of target gatekeeper[0m
+[ 50%] Built target nominal_controller
+[ 75%] [32mBuilding CXX object CMakeFiles/gatekeeper.dir/src/gatekeeper.cpp.o[0m
+/root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp: In member function ‘void gatekeeper::Gatekeeper::cloud_callback(sensor_msgs::msg::PointCloud2_<std::allocator<void> >::SharedPtr)’:
+/root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:46:15: error: ‘cloud’ was not declared in this scope
+   46 |               cloud->header.stamp)) {
+      |               ^~~~~
+/root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:51:27: error: ‘cloud’ was not declared in this scope
+   51 |           m_worldFrameId, cloud->header.frame_id,
+      |                           ^~~~~
+/root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:53:23: error: ‘pcl_ros’ has not been declared
+   53 |       sensorToWorld = pcl_ros::transformAsMatrix(sensorToWorldTf);
+      |                       ^~~~~~~
+/root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp: In member function ‘void gatekeeper::Gatekeeper::insertScan(const Vector3&, const PCLPointCloud&)’:
+/root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:87:65: warning: unused parameter ‘sensorOrigin’ [-Wunused-parameter]
+   87 | void Gatekeeper::insertScan( const geometry_msgs::msg::Vector3 &sensorOrigin,
+      |                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~
+/root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:88:24: warning: unused parameter ‘pc’ [-Wunused-parameter]
+   88 |   const PCLPointCloud& pc)
+      |   ~~~~~~~~~~~~~~~~~~~~~^~
+make[2]: *** [CMakeFiles/gatekeeper.dir/build.make:63: CMakeFiles/gatekeeper.dir/src/gatekeeper.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:80: CMakeFiles/gatekeeper.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

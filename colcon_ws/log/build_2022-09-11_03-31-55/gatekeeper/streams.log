@@ -1,0 +1,126 @@
+[0.009s] Invoking command in '/root/colcon_ws/build/gatekeeper': CMAKE_PREFIX_PATH=/root/colcon_ws/install/dasc_msgs:/opt/ros/foxy:/root/colcon_ws/install/realsense_gazebo_plugin:/root/colcon_ws/install/px4_ros_com:/root/colcon_ws/install/dasc_robot:/root/colcon_ws/install/px4_msgs:/root/colcon_ws/install/gatekeeper:/root/colcon_ws/install/experiment LD_LIBRARY_PATH=/root/colcon_ws/install/dasc_msgs/lib:/root/colcon_ws/install/realsense_gazebo_plugin/lib:/root/colcon_ws/install/px4_ros_com/lib:/root/colcon_ws/install/dasc_robot/lib:/root/colcon_ws/install/px4_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib PYTHONPATH=/root/colcon_ws/install/dasc_msgs/lib/python3.8/site-packages:/root/colcon_ws/install/px4_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/cmake --build /root/colcon_ws/build/gatekeeper -- -j16 -l16
+[0.038s] -- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.057s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.199s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.205s] -- Found sensor_msgs: 2.0.4 (/opt/ros/foxy/share/sensor_msgs/cmake)
+[0.224s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.227s] -- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.342s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.466s] -- Found dasc_msgs: 0.0.0 (/root/colcon_ws/install/dasc_msgs/share/dasc_msgs/cmake)
+[0.491s] -- Found visualization_msgs: 2.0.4 (/opt/ros/foxy/share/visualization_msgs/cmake)
+[0.564s] -- Found rclcpp: 2.4.0 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.592s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.593s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.700s] -- Found tf2: 0.13.12 (/opt/ros/foxy/share/tf2/cmake)
+[0.711s] -- Found tf2_ros: 0.13.12 (/opt/ros/foxy/share/tf2_ros/cmake)
+[0.953s] -- Eigen found (include: /usr/include/eigen3, version: 3.3.7)
+[1.023s] -- The imported target "vtkParseOGLExt" references the file
+[1.023s]    "/usr/bin/vtkParseOGLExt-7.1"
+[1.023s] but this file does not exist.  Possible reasons include:
+[1.023s] * The file was deleted, renamed, or moved to another location.
+[1.023s] * An install or uninstall procedure did not complete successfully.
+[1.023s] * The installation package was faulty and contained
+[1.023s]    "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"
+[1.023s] but not all the files it references.
+[1.023s] 
+[1.024s] -- The imported target "vtkRenderingPythonTkWidgets" references the file
+[1.024s]    "/usr/lib/x86_64-linux-gnu/libvtkRenderingPythonTkWidgets.so"
+[1.024s] but this file does not exist.  Possible reasons include:
+[1.024s] * The file was deleted, renamed, or moved to another location.
+[1.024s] * An install or uninstall procedure did not complete successfully.
+[1.024s] * The installation package was faulty and contained
+[1.024s]    "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"
+[1.024s] but not all the files it references.
+[1.024s] 
+[1.024s] -- The imported target "vtk" references the file
+[1.024s]    "/usr/bin/vtk"
+[1.025s] but this file does not exist.  Possible reasons include:
+[1.025s] * The file was deleted, renamed, or moved to another location.
+[1.025s] * An install or uninstall procedure did not complete successfully.
+[1.025s] * The installation package was faulty and contained
+[1.025s]    "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"
+[1.025s] but not all the files it references.
+[1.025s] 
+[1.025s] -- The imported target "pvtk" references the file
+[1.025s]    "/usr/bin/pvtk"
+[1.025s] but this file does not exist.  Possible reasons include:
+[1.025s] * The file was deleted, renamed, or moved to another location.
+[1.025s] * An install or uninstall procedure did not complete successfully.
+[1.025s] * The installation package was faulty and contained
+[1.025s]    "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"
+[1.025s] but not all the files it references.
+[1.026s] 
+[1.045s] -- OpenNI found (include: /usr/include/ni, lib: /usr/lib/libOpenNI.so)
+[1.050s] -- OpenNI2 found (include: /usr/include/openni2, lib: /usr/lib/libOpenNI2.so)
+[1.050s] ** WARNING ** io features related to pcap will be disabled
+[1.051s] ** WARNING ** io features related to png will be disabled
+[1.060s] ** WARNING ** io features related to libusb-1.0 will be disabled
+[1.064s] -- OpenNI found (include: /usr/include/ni, lib: /usr/lib/libOpenNI.so)
+[1.069s] -- OpenNI2 found (include: /usr/include/openni2, lib: /usr/lib/libOpenNI2.so)
+[1.079s] -- QHULL found (include: /usr/include, lib: optimized;/usr/lib/x86_64-linux-gnu/libqhull.so;debug;/usr/lib/x86_64-linux-gnu/libqhull.so)
+[1.083s] -- OpenNI found (include: /usr/include/ni, lib: /usr/lib/libOpenNI.so)
+[1.092s] -- looking for PCL_COMMON
+[1.093s] -- looking for PCL_KDTREE
+[1.093s] -- looking for PCL_OCTREE
+[1.093s] -- looking for PCL_SEARCH
+[1.094s] -- looking for PCL_SAMPLE_CONSENSUS
+[1.094s] -- looking for PCL_FILTERS
+[1.095s] -- looking for PCL_2D
+[1.095s] -- looking for PCL_GEOMETRY
+[1.095s] -- looking for PCL_IO
+[1.097s] -- looking for PCL_FEATURES
+[1.097s] -- looking for PCL_ML
+[1.097s] -- looking for PCL_SEGMENTATION
+[1.097s] -- looking for PCL_VISUALIZATION
+[1.097s] -- looking for PCL_SURFACE
+[1.097s] -- looking for PCL_REGISTRATION
+[1.098s] -- looking for PCL_KEYPOINTS
+[1.098s] -- looking for PCL_TRACKING
+[1.098s] -- looking for PCL_RECOGNITION
+[1.099s] -- looking for PCL_STEREO
+[1.099s] -- looking for PCL_APPS
+[1.100s] -- looking for PCL_IN_HAND_SCANNER
+[1.100s] -- looking for PCL_POINT_CLOUD_EDITOR
+[1.100s] -- looking for PCL_OUTOFCORE
+[1.101s] -- looking for PCL_PEOPLE
+[1.103s] -- Found ament_lint_auto: 0.9.6 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[1.165s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.166s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.166s] -- Configured cppcheck include dirs: /root/colcon_ws/src/gatekeeper/include
+[1.167s] -- Configured cppcheck exclude dirs and/or files: 
+[1.167s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[1.167s] -- Configured cpplint exclude dirs and/or files: 
+[1.167s] -- Added test 'lint_cmake' to check CMake code style
+[1.167s] -- Added test 'uncrustify' to check C / C++ code style
+[1.167s] -- Configured uncrustify additional arguments: 
+[1.168s] -- Added test 'xmllint' to check XML markup files
+[1.170s] -- Configuring done
+[1.206s] -- Generating done
+[1.207s] -- Build files have been written to: /root/colcon_ws/build/gatekeeper
+[1.236s] [35m[1mScanning dependencies of target nominal_controller[0m
+[1.261s] [ 60%] Built target gatekeeper
+[1.263s] [ 80%] [32mBuilding CXX object CMakeFiles/nominal_controller.dir/src/nominal_controller.cpp.o[0m
+[3.739s] /root/colcon_ws/src/gatekeeper/src/nominal_controller.cpp: In constructor ‘NominalController::NominalController()’:
+[3.739s] /root/colcon_ws/src/gatekeeper/src/nominal_controller.cpp:48:94: error: no matching function for call to ‘NominalController::create_publisher<visualization_msgs::msg::MarkerArray>(const char [13])’
+[3.739s]    48 |     marker_pub_ = this->create_publisher<visualization_msgs::msg::MarkerArray>("nominal_traj");
+[3.739s]       |                                                                                              ^
+[3.739s] In file included from /opt/ros/foxy/include/rclcpp/node.hpp:1224,
+[3.739s]                  from /opt/ros/foxy/include/rclcpp/executors/single_threaded_executor.hpp:28,
+[3.739s]                  from /opt/ros/foxy/include/rclcpp/executors.hpp:22,
+[3.739s]                  from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:146,
+[3.739s]                  from /root/colcon_ws/src/gatekeeper/src/nominal_controller.cpp:5:
+[3.739s] /opt/ros/foxy/include/rclcpp/node_impl.hpp:71:1: note: candidate: ‘template<class MessageT, class AllocatorT, class PublisherT> std::shared_ptr<PublisherT> rclcpp::Node::create_publisher(const string&, const rclcpp::QoS&, const rclcpp::PublisherOptionsWithAllocator<AllocatorT>&)’
+[3.739s]    71 | Node::create_publisher(
+[3.740s]       | ^~~~
+[3.740s] /opt/ros/foxy/include/rclcpp/node_impl.hpp:71:1: note:   template argument deduction/substitution failed:
+[3.740s] /root/colcon_ws/src/gatekeeper/src/nominal_controller.cpp:48:94: note:   candidate expects 3 arguments, 1 provided
+[3.740s]    48 |     marker_pub_ = this->create_publisher<visualization_msgs::msg::MarkerArray>("nominal_traj");
+[3.740s]       |                                                                                              ^
+[3.740s] /root/colcon_ws/src/gatekeeper/src/nominal_controller.cpp: In member function ‘void NominalController::publish_one_trajectory()’:
+[3.740s] /root/colcon_ws/src/gatekeeper/src/nominal_controller.cpp:131:21: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<double, std::allocator<double> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+[3.740s]   131 |     for (int i=0; i < msg.ts.size(); i++){
+[3.740s]       |                   ~~^~~~~~~~~~~~~~~
+[3.740s] make[2]: *** [CMakeFiles/nominal_controller.dir/build.make:63: CMakeFiles/nominal_controller.dir/src/nominal_controller.cpp.o] Error 1
+[3.740s] make[1]: *** [CMakeFiles/Makefile2:107: CMakeFiles/nominal_controller.dir/all] Error 2
+[3.740s] make: *** [Makefile:141: all] Error 2
+[3.742s] Invoked command in '/root/colcon_ws/build/gatekeeper' returned '2': CMAKE_PREFIX_PATH=/root/colcon_ws/install/dasc_msgs:/opt/ros/foxy:/root/colcon_ws/install/realsense_gazebo_plugin:/root/colcon_ws/install/px4_ros_com:/root/colcon_ws/install/dasc_robot:/root/colcon_ws/install/px4_msgs:/root/colcon_ws/install/gatekeeper:/root/colcon_ws/install/experiment LD_LIBRARY_PATH=/root/colcon_ws/install/dasc_msgs/lib:/root/colcon_ws/install/realsense_gazebo_plugin/lib:/root/colcon_ws/install/px4_ros_com/lib:/root/colcon_ws/install/dasc_robot/lib:/root/colcon_ws/install/px4_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib PYTHONPATH=/root/colcon_ws/install/dasc_msgs/lib/python3.8/site-packages:/root/colcon_ws/install/px4_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/cmake --build /root/colcon_ws/build/gatekeeper -- -j16 -l16

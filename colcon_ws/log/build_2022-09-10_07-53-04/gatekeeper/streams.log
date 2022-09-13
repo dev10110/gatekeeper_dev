@@ -1,0 +1,55 @@
+[0.009s] Invoking command in '/root/colcon_ws/build/gatekeeper': CMAKE_PREFIX_PATH=/root/colcon_ws/install/dasc_msgs:/opt/ros/foxy:/root/colcon_ws/install/realsense_gazebo_plugin:/root/colcon_ws/install/px4_ros_com:/root/colcon_ws/install/dasc_robot:/root/colcon_ws/install/px4_msgs:/root/colcon_ws/install/gatekeeper:/root/colcon_ws/install/experiment /usr/bin/cmake --build /root/colcon_ws/build/gatekeeper -- -j16 -l16
+[0.049s] [35m[1mScanning dependencies of target nominal_controller[0m
+[0.072s] [ 50%] [32mBuilding CXX object CMakeFiles/nominal_controller.dir/src/nominal_controller.cpp.o[0m
+[2.456s] /root/colcon_ws/src/gatekeeper/src/nominal_controller.cpp: In constructor ‘NominalController::NominalController()’:
+[2.456s] /root/colcon_ws/src/gatekeeper/src/nominal_controller.cpp:29:32: error: no matching function for call to ‘rclcpp::Publisher<dasc_msgs::msg::QuadTrajectory_<std::allocator<void> > >::Publisher()’
+[2.456s]    29 |     : Node("nominal_controller")
+[2.457s]       |                                ^
+[2.457s] In file included from /opt/ros/foxy/include/rclcpp/topic_statistics/subscription_topic_statistics.hpp:31,
+[2.457s]                  from /opt/ros/foxy/include/rclcpp/subscription.hpp:50,
+[2.457s]                  from /opt/ros/foxy/include/rclcpp/any_executable.hpp:25,
+[2.457s]                  from /opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24,
+[2.457s]                  from /opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18,
+[2.457s]                  from /opt/ros/foxy/include/rclcpp/executor_options.hpp:20,
+[2.457s]                  from /opt/ros/foxy/include/rclcpp/executor.hpp:33,
+[2.457s]                  from /opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26,
+[2.457s]                  from /opt/ros/foxy/include/rclcpp/executors.hpp:21,
+[2.457s]                  from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:146,
+[2.457s]                  from /root/colcon_ws/src/gatekeeper/src/nominal_controller.cpp:5:
+[2.457s] /opt/ros/foxy/include/rclcpp/publisher.hpp:73:3: note: candidate: ‘rclcpp::Publisher<MessageT, AllocatorT>::Publisher(rclcpp::node_interfaces::NodeBaseInterface*, const string&, const rclcpp::QoS&, const rclcpp::PublisherOptionsWithAllocator<AllocatorT>&) [with MessageT = dasc_msgs::msg::QuadTrajectory_<std::allocator<void> >; AllocatorT = std::allocator<void>; std::string = std::__cxx11::basic_string<char>]’
+[2.458s]    73 |   Publisher(
+[2.458s]       |   ^~~~~~~~~
+[2.458s] /opt/ros/foxy/include/rclcpp/publisher.hpp:73:3: note:   candidate expects 4 arguments, 0 provided
+[2.458s] /opt/ros/foxy/include/rclcpp/publisher.hpp:51:7: note: candidate: ‘rclcpp::Publisher<dasc_msgs::msg::QuadTrajectory_<std::allocator<void> > >::Publisher(const rclcpp::Publisher<dasc_msgs::msg::QuadTrajectory_<std::allocator<void> > >&)’
+[2.458s]    51 | class Publisher : public PublisherBase
+[2.458s]       |       ^~~~~~~~~
+[2.458s] /opt/ros/foxy/include/rclcpp/publisher.hpp:51:7: note:   candidate expects 1 argument, 0 provided
+[2.458s] /root/colcon_ws/src/gatekeeper/src/nominal_controller.cpp:32:93: error: no match for ‘operator=’ (operand types are ‘rclcpp::Publisher<dasc_msgs::msg::QuadTrajectory_<std::allocator<void> > >’ and ‘std::shared_ptr<rclcpp::Publisher<dasc_msgs::msg::QuadTrajectory_<std::allocator<void> > > >’)
+[2.458s]    32 |     traj_pub_ = this->create_publisher<dasc_msgs::msg::QuadTrajectory>("/committed_traj", 10);
+[2.458s]       |                                                                                             ^
+[2.458s] In file included from /opt/ros/foxy/include/rclcpp/topic_statistics/subscription_topic_statistics.hpp:31,
+[2.458s]                  from /opt/ros/foxy/include/rclcpp/subscription.hpp:50,
+[2.458s]                  from /opt/ros/foxy/include/rclcpp/any_executable.hpp:25,
+[2.459s]                  from /opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24,
+[2.460s]                  from /opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18,
+[2.460s]                  from /opt/ros/foxy/include/rclcpp/executor_options.hpp:20,
+[2.460s]                  from /opt/ros/foxy/include/rclcpp/executor.hpp:33,
+[2.460s]                  from /opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26,
+[2.460s]                  from /opt/ros/foxy/include/rclcpp/executors.hpp:21,
+[2.460s]                  from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:146,
+[2.461s]                  from /root/colcon_ws/src/gatekeeper/src/nominal_controller.cpp:5:
+[2.461s] /opt/ros/foxy/include/rclcpp/publisher.hpp:51:7: note: candidate: ‘rclcpp::Publisher<dasc_msgs::msg::QuadTrajectory_<std::allocator<void> > >& rclcpp::Publisher<dasc_msgs::msg::QuadTrajectory_<std::allocator<void> > >::operator=(const rclcpp::Publisher<dasc_msgs::msg::QuadTrajectory_<std::allocator<void> > >&)’ <deleted>
+[2.461s]    51 | class Publisher : public PublisherBase
+[2.461s]       |       ^~~~~~~~~
+[2.461s] /opt/ros/foxy/include/rclcpp/publisher.hpp:51:7: note:   no known conversion for argument 1 from ‘std::shared_ptr<rclcpp::Publisher<dasc_msgs::msg::QuadTrajectory_<std::allocator<void> > > >’ to ‘const rclcpp::Publisher<dasc_msgs::msg::QuadTrajectory_<std::allocator<void> > >&’
+[2.461s] /root/colcon_ws/src/gatekeeper/src/nominal_controller.cpp: In member function ‘void NominalController::timer_callback()’:
+[2.461s] /root/colcon_ws/src/gatekeeper/src/nominal_controller.cpp:89:11: error: ‘transformStamped’ was not declared in this scope
+[2.461s]    89 |           transformStamped = tf_buffer_->lookupTransform(
+[2.461s]       |           ^~~~~~~~~~~~~~~~
+[2.461s] /root/colcon_ws/src/gatekeeper/src/nominal_controller.cpp:142:15: error: base operand of ‘->’ has non-pointer type ‘rclcpp::Publisher<dasc_msgs::msg::QuadTrajectory_<std::allocator<void> > >’
+[2.461s]   142 |     traj_pub_ -> publish(msg);
+[2.461s]       |               ^~
+[2.461s] make[2]: *** [CMakeFiles/nominal_controller.dir/build.make:63: CMakeFiles/nominal_controller.dir/src/nominal_controller.cpp.o] Error 1
+[2.462s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/nominal_controller.dir/all] Error 2
+[2.462s] make: *** [Makefile:141: all] Error 2
+[2.462s] Invoked command in '/root/colcon_ws/build/gatekeeper' returned '2': CMAKE_PREFIX_PATH=/root/colcon_ws/install/dasc_msgs:/opt/ros/foxy:/root/colcon_ws/install/realsense_gazebo_plugin:/root/colcon_ws/install/px4_ros_com:/root/colcon_ws/install/dasc_robot:/root/colcon_ws/install/px4_msgs:/root/colcon_ws/install/gatekeeper:/root/colcon_ws/install/experiment /usr/bin/cmake --build /root/colcon_ws/build/gatekeeper -- -j16 -l16

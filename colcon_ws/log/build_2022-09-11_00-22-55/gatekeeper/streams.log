@@ -1,0 +1,24 @@
+[0.014s] Invoking command in '/root/colcon_ws/build/gatekeeper': CMAKE_PREFIX_PATH=/root/colcon_ws/install/dasc_msgs:/opt/ros/foxy:/root/colcon_ws/install/realsense_gazebo_plugin:/root/colcon_ws/install/px4_ros_com:/root/colcon_ws/install/dasc_robot:/root/colcon_ws/install/px4_msgs:/root/colcon_ws/install/gatekeeper:/root/colcon_ws/install/experiment LD_LIBRARY_PATH=/root/colcon_ws/install/dasc_msgs/lib:/root/colcon_ws/install/realsense_gazebo_plugin/lib:/root/colcon_ws/install/px4_ros_com/lib:/root/colcon_ws/install/dasc_robot/lib:/root/colcon_ws/install/px4_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib PYTHONPATH=/root/colcon_ws/install/dasc_msgs/lib/python3.8/site-packages:/root/colcon_ws/install/px4_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/cmake --build /root/colcon_ws/build/gatekeeper -- -j16 -l16
+[0.073s] [35m[1mScanning dependencies of target gatekeeper[0m
+[0.096s] [ 40%] Built target nominal_controller
+[0.120s] [ 60%] [32mBuilding CXX object CMakeFiles/gatekeeper.dir/src/gatekeeper.cpp.o[0m
+[15.345s] /root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp: In constructor ‘gatekeeper::Gatekeeper::Gatekeeper()’:
+[15.345s] /root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:28:40: error: unable to find numeric literal operator ‘operator""ms’
+[15.345s]    28 |   pub_timer_ = this->create_wall_timer(500ms,
+[15.345s]       |                                        ^~~~~
+[15.345s] /root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:29:30: error: ‘publish_occupied_pcl’ is not a member of ‘gatekeeper::Gatekeeper’
+[15.346s]    29 |       std::bind(&Gatekeeper::publish_occupied_pcl, this));
+[15.346s]       |                              ^~~~~~~~~~~~~~~~~~~~
+[15.346s] /root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp: At global scope:
+[15.346s] /root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:149:6: error: no declaration matches ‘void gatekeeper::Gatekeeper::publish_occupied_pcl()’
+[15.346s]   149 | void Gatekeeper::publish_occupied_pcl() {
+[15.346s]       |      ^~~~~~~~~~
+[15.346s] /root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:149:6: note: no functions named ‘void gatekeeper::Gatekeeper::publish_occupied_pcl()’
+[15.346s] In file included from /root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:10:
+[15.346s] /root/colcon_ws/src/gatekeeper/include/gatekeeper/gatekeeper.hpp:35:7: note: ‘class gatekeeper::Gatekeeper’ defined here
+[15.346s]    35 | class Gatekeeper : public rclcpp::Node {
+[15.346s]       |       ^~~~~~~~~~
+[15.347s] make[2]: *** [CMakeFiles/gatekeeper.dir/build.make:63: CMakeFiles/gatekeeper.dir/src/gatekeeper.cpp.o] Error 1
+[15.347s] make[1]: *** [CMakeFiles/Makefile2:80: CMakeFiles/gatekeeper.dir/all] Error 2
+[15.347s] make: *** [Makefile:141: all] Error 2
+[15.350s] Invoked command in '/root/colcon_ws/build/gatekeeper' returned '2': CMAKE_PREFIX_PATH=/root/colcon_ws/install/dasc_msgs:/opt/ros/foxy:/root/colcon_ws/install/realsense_gazebo_plugin:/root/colcon_ws/install/px4_ros_com:/root/colcon_ws/install/dasc_robot:/root/colcon_ws/install/px4_msgs:/root/colcon_ws/install/gatekeeper:/root/colcon_ws/install/experiment LD_LIBRARY_PATH=/root/colcon_ws/install/dasc_msgs/lib:/root/colcon_ws/install/realsense_gazebo_plugin/lib:/root/colcon_ws/install/px4_ros_com/lib:/root/colcon_ws/install/dasc_robot/lib:/root/colcon_ws/install/px4_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib PYTHONPATH=/root/colcon_ws/install/dasc_msgs/lib/python3.8/site-packages:/root/colcon_ws/install/px4_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/cmake --build /root/colcon_ws/build/gatekeeper -- -j16 -l16

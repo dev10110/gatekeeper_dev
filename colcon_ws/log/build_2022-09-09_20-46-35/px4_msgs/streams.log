@@ -1,0 +1,748 @@
+[0.014s] Invoking command in '/root/colcon_ws/build/px4_msgs': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /root/colcon_ws/src/px4_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/root/colcon_ws/install/px4_msgs
+[0.089s] -- The C compiler identification is GNU 9.3.0
+[0.135s] -- The CXX compiler identification is GNU 9.3.0
+[0.142s] -- Check for working C compiler: /usr/lib/ccache/cc
+[0.199s] -- Check for working C compiler: /usr/lib/ccache/cc -- works
+[0.199s] -- Detecting C compiler ABI info
+[0.244s] -- Detecting C compiler ABI info - done
+[0.251s] -- Detecting C compile features
+[0.251s] -- Detecting C compile features - done
+[0.253s] -- Check for working CXX compiler: /usr/lib/ccache/c++
+[0.323s] -- Check for working CXX compiler: /usr/lib/ccache/c++ -- works
+[0.324s] -- Detecting CXX compiler ABI info
+[0.377s] -- Detecting CXX compiler ABI info - done
+[0.388s] -- Detecting CXX compile features
+[0.388s] -- Detecting CXX compile features - done
+[0.390s] -- Performing Test COMPILER_SUPPORTS_CXX17
+[0.455s] -- Performing Test COMPILER_SUPPORTS_CXX17 - Success
+[0.456s] -- Performing Test COMPILER_SUPPORTS_CXX14
+[0.519s] -- Performing Test COMPILER_SUPPORTS_CXX14 - Success
+[0.520s] -- Performing Test COMPILER_SUPPORTS_CXX11
+[0.587s] -- Performing Test COMPILER_SUPPORTS_CXX11 - Success
+[0.587s] -- Performing Test COMPILER_SUPPORTS_CXX0X
+[0.650s] -- Performing Test COMPILER_SUPPORTS_CXX0X - Success
+[0.650s] -- Using C++17 compiler
+[0.652s] -- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.672s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.672s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.796s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.816s] -- Found builtin_interfaces: 1.0.0 (/opt/ros/foxy/share/builtin_interfaces/cmake)
+[0.835s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.840s] -- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.915s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[0.947s] -- Found FastRTPS: /opt/ros/foxy/include  
+[1.014s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.033s] -- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)
+[1.064s] -- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") 
+[1.294s] -- Found ament_cmake_cppcheck: 0.9.6 (/opt/ros/foxy/share/ament_cmake_cppcheck/cmake)
+[1.296s] -- Found ament_cmake_cpplint: 0.9.6 (/opt/ros/foxy/share/ament_cmake_cpplint/cmake)
+[1.297s] -- Found ament_cmake_uncrustify: 0.9.6 (/opt/ros/foxy/share/ament_cmake_uncrustify/cmake)
+[1.299s] -- Found ament_cmake_ros: 0.9.2 (/opt/ros/foxy/share/ament_cmake_ros/cmake)
+[1.411s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.427s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.450s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3.5") 
+[1.452s] -- Found python_cmake_module: 0.8.1 (/opt/ros/foxy/share/python_cmake_module/cmake)
+[1.480s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.8.so (found suitable version "3.8.10", minimum required is "3.5") 
+[1.481s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.481s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.8
+[1.481s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.8.so
+[1.501s] -- Found PythonExtra: .so  
+[1.545s] -- Found ament_cmake_flake8: 0.9.6 (/opt/ros/foxy/share/ament_cmake_flake8/cmake)
+[1.546s] -- Found ament_cmake_pep257: 0.9.6 (/opt/ros/foxy/share/ament_cmake_pep257/cmake)
+[1.561s] -- Configuring done
+[1.617s] -- Generating done
+[1.619s] -- Build files have been written to: /root/colcon_ws/build/px4_msgs
+[1.625s] Invoked command in '/root/colcon_ws/build/px4_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /root/colcon_ws/src/px4_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/root/colcon_ws/install/px4_msgs
+[1.627s] Invoking command in '/root/colcon_ws/build/px4_msgs': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /root/colcon_ws/build/px4_msgs -- -j16 -l16
+[1.668s] [  1%] [34m[1mGenerating C code for ROS interfaces[0m
+[1.669s] [35m[1mScanning dependencies of target px4_msgs__cpp[0m
+[1.679s] [  1%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[6.074s] [35m[1mScanning dependencies of target px4_msgs__rosidl_generator_c[0m
+[6.090s] [  3%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/manual_control_setpoint__functions.c.o[0m
+[6.090s] [  3%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/debug_array__functions.c.o[0m
+[6.091s] [  3%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/debug_key_value__functions.c.o[0m
+[6.091s] [  4%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/gps_inject_data__functions.c.o[0m
+[6.091s] [  3%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/debug_value__functions.c.o[0m
+[6.091s] [  5%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_combined__functions.c.o[0m
+[6.091s] [  5%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/offboard_control_mode__functions.c.o[0m
+[6.091s] [  6%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/timesync__functions.c.o[0m
+[6.092s] [  6%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/sensor_gps__functions.c.o[0m
+[6.092s] [  3%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/battery_status__functions.c.o[0m
+[6.092s] [  3%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/debug_vect__functions.c.o[0m
+[6.092s] [  3%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/external_controller__functions.c.o[0m
+[6.099s] [  7%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/trajectory_setpoint__functions.c.o[0m
+[6.099s] [  7%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_attitude__functions.c.o[0m
+[6.100s] [  7%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/timesync_status__functions.c.o[0m
+[6.153s] [  9%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_control_mode__functions.c.o[0m
+[6.153s] [  9%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_attitude_setpoint__functions.c.o[0m
+[6.153s] [  9%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_local_position__functions.c.o[0m
+[6.154s] [  9%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_command__functions.c.o[0m
+[6.156s] [  9%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_gps_position__functions.c.o[0m
+[6.161s] [ 11%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_status__functions.c.o[0m
+[6.161s] [ 11%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_odometry__functions.c.o[0m
+[6.161s] [ 11%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_rates_setpoint__functions.c.o[0m
+[6.161s] [ 11%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_local_position_setpoint__functions.c.o[0m
+[6.166s] [ 12%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_visual_odometry__functions.c.o[0m
+[6.219s] [ 12%] [32m[1mLinking C shared library libpx4_msgs__rosidl_generator_c.so[0m
+[6.252s] [ 12%] Built target px4_msgs__rosidl_generator_c
+[6.261s] [ 14%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[6.261s] [ 14%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[6.367s] [ 14%] Built target px4_msgs__cpp
+[6.377s] [ 17%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[6.377s] [ 17%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[6.377s] [ 17%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[10.305s] [35m[1mScanning dependencies of target px4_msgs__rosidl_typesupport_c[0m
+[10.324s] [ 18%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/px4_msgs/msg/debug_vect__type_support.cpp.o[0m
+[10.324s] [ 18%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/px4_msgs/msg/battery_status__type_support.cpp.o[0m
+[10.328s] [ 18%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/px4_msgs/msg/debug_value__type_support.cpp.o[0m
+[10.328s] [ 18%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/px4_msgs/msg/debug_key_value__type_support.cpp.o[0m
+[10.328s] [ 19%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/px4_msgs/msg/debug_array__type_support.cpp.o[0m
+[10.329s] [ 20%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/px4_msgs/msg/gps_inject_data__type_support.cpp.o[0m
+[10.331s] [ 21%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/px4_msgs/msg/offboard_control_mode__type_support.cpp.o[0m
+[10.334s] [ 21%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/px4_msgs/msg/manual_control_setpoint__type_support.cpp.o[0m
+[10.335s] [ 21%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/px4_msgs/msg/sensor_combined__type_support.cpp.o[0m
+[10.336s] [ 22%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/px4_msgs/msg/sensor_gps__type_support.cpp.o[0m
+[10.340s] [ 22%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/px4_msgs/msg/external_controller__type_support.cpp.o[0m
+[10.376s] [ 22%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/px4_msgs/msg/timesync__type_support.cpp.o[0m
+[10.382s] [ 22%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/px4_msgs/msg/timesync_status__type_support.cpp.o[0m
+[10.401s] [ 23%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/px4_msgs/msg/trajectory_setpoint__type_support.cpp.o[0m
+[10.403s] [ 23%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/px4_msgs/msg/vehicle_attitude__type_support.cpp.o[0m
+[10.416s] [ 24%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/px4_msgs/msg/vehicle_attitude_setpoint__type_support.cpp.o[0m
+[10.428s] [ 25%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/px4_msgs/msg/vehicle_local_position__type_support.cpp.o[0m
+[10.429s] [ 25%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/px4_msgs/msg/vehicle_command__type_support.cpp.o[0m
+[10.429s] [ 25%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/px4_msgs/msg/vehicle_gps_position__type_support.cpp.o[0m
+[10.434s] [ 25%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/px4_msgs/msg/vehicle_odometry__type_support.cpp.o[0m
+[10.434s] [ 26%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/px4_msgs/msg/vehicle_control_mode__type_support.cpp.o[0m
+[10.434s] [ 26%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/px4_msgs/msg/vehicle_local_position_setpoint__type_support.cpp.o[0m
+[10.440s] [ 26%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/px4_msgs/msg/vehicle_status__type_support.cpp.o[0m
+[10.440s] [ 27%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/px4_msgs/msg/vehicle_rates_setpoint__type_support.cpp.o[0m
+[10.452s] [ 28%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/px4_msgs/msg/vehicle_visual_odometry__type_support.cpp.o[0m
+[10.500s] [ 28%] [32m[1mLinking CXX shared library libpx4_msgs__rosidl_typesupport_c.so[0m
+[10.537s] [ 28%] Built target px4_msgs__rosidl_typesupport_c
+[10.589s] [35m[1mScanning dependencies of target px4_msgs__rosidl_typesupport_cpp[0m
+[10.609s] [ 31%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/debug_vect__type_support.cpp.o[0m
+[10.609s] [ 31%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/debug_array__type_support.cpp.o[0m
+[10.609s] [ 31%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/gps_inject_data__type_support.cpp.o[0m
+[10.609s] [ 31%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/manual_control_setpoint__type_support.cpp.o[0m
+[10.610s] [ 31%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/debug_value__type_support.cpp.o[0m
+[10.610s] [ 32%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/offboard_control_mode__type_support.cpp.o[0m
+[10.610s] [ 32%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/sensor_combined__type_support.cpp.o[0m
+[10.610s] [ 31%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/debug_key_value__type_support.cpp.o[0m
+[10.610s] [ 31%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/external_controller__type_support.cpp.o[0m
+[10.610s] [ 31%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/battery_status__type_support.cpp.o[0m
+[10.619s] [ 33%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/timesync_status__type_support.cpp.o[0m
+[10.619s] [ 33%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/timesync__type_support.cpp.o[0m
+[10.619s] [ 33%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/sensor_gps__type_support.cpp.o[0m
+[11.080s] [ 34%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/trajectory_setpoint__type_support.cpp.o[0m
+[11.087s] [ 34%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/vehicle_attitude__type_support.cpp.o[0m
+[11.092s] [ 35%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/vehicle_attitude_setpoint__type_support.cpp.o[0m
+[11.116s] [ 35%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/vehicle_command__type_support.cpp.o[0m
+[11.127s] [ 36%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/vehicle_control_mode__type_support.cpp.o[0m
+[11.143s] [ 36%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/vehicle_gps_position__type_support.cpp.o[0m
+[11.153s] [ 37%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/vehicle_local_position__type_support.cpp.o[0m
+[11.177s] [ 37%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/vehicle_local_position_setpoint__type_support.cpp.o[0m
+[11.203s] [ 37%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/vehicle_odometry__type_support.cpp.o[0m
+[11.207s] [ 38%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/vehicle_rates_setpoint__type_support.cpp.o[0m
+[11.240s] [ 38%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/vehicle_status__type_support.cpp.o[0m
+[11.342s] [ 39%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/vehicle_visual_odometry__type_support.cpp.o[0m
+[11.362s] [35m[1mScanning dependencies of target px4_msgs__rosidl_typesupport_introspection_cpp[0m
+[11.434s] [ 39%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/battery_status__type_support.cpp.o[0m
+[11.543s] [ 40%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/debug_array__type_support.cpp.o[0m
+[11.582s] [ 40%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/debug_key_value__type_support.cpp.o[0m
+[11.594s] [ 41%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/debug_value__type_support.cpp.o[0m
+[11.604s] [35m[1mScanning dependencies of target px4_msgs__rosidl_typesupport_introspection_c[0m
+[11.622s] [ 42%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/external_controller__type_support.cpp.o[0m
+[11.623s] [ 42%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/debug_vect__type_support.cpp.o[0m
+[11.634s] [ 42%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/battery_status__type_support.c.o[0m
+[11.646s] [ 42%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/gps_inject_data__type_support.cpp.o[0m
+[11.657s] [ 43%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/debug_array__type_support.c.o[0m
+[11.679s] [ 44%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/debug_value__type_support.c.o[0m
+[11.684s] [ 44%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/debug_key_value__type_support.c.o[0m
+[11.700s] [ 44%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/debug_vect__type_support.c.o[0m
+[11.707s] [ 45%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/offboard_control_mode__type_support.cpp.o[0m
+[11.707s] [ 45%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/manual_control_setpoint__type_support.cpp.o[0m
+[11.710s] [35m[1mScanning dependencies of target px4_msgs__rosidl_typesupport_fastrtps_cpp[0m
+[11.728s] [ 45%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/sensor_combined__type_support.cpp.o[0m
+[11.739s] [ 46%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/external_controller__type_support.c.o[0m
+[11.756s] [ 46%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/gps_inject_data__type_support.c.o[0m
+[11.768s] [ 46%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/battery_status__type_support.cpp.o[0m
+[11.789s] [ 46%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/manual_control_setpoint__type_support.c.o[0m
+[11.813s] [ 47%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/offboard_control_mode__type_support.c.o[0m
+[11.816s] [ 47%] [32m[1mLinking CXX shared library libpx4_msgs__rosidl_typesupport_cpp.so[0m
+[11.832s] [ 47%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/sensor_combined__type_support.c.o[0m
+[11.884s] [ 48%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/sensor_gps__type_support.c.o[0m
+[11.893s] [ 48%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/timesync__type_support.c.o[0m
+[11.897s] [ 49%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/timesync_status__type_support.c.o[0m
+[11.912s] [ 49%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/trajectory_setpoint__type_support.c.o[0m
+[11.952s] [ 49%] Built target px4_msgs__rosidl_typesupport_cpp
+[11.960s] [ 50%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/sensor_gps__type_support.cpp.o[0m
+[11.987s] [ 50%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/timesync__type_support.cpp.o[0m
+[12.001s] [ 50%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/trajectory_setpoint__type_support.cpp.o[0m
+[12.003s] [ 51%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/timesync_status__type_support.cpp.o[0m
+[12.004s] [ 52%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/vehicle_attitude__type_support.c.o[0m
+[12.004s] [ 53%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/vehicle_attitude__type_support.cpp.o[0m
+[12.025s] [ 53%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/vehicle_attitude_setpoint__type_support.c.o[0m
+[12.067s] [ 53%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/vehicle_attitude_setpoint__type_support.cpp.o[0m
+[12.085s] [ 53%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/vehicle_command__type_support.cpp.o[0m
+[12.086s] [ 53%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/vehicle_command__type_support.c.o[0m
+[12.121s] [ 54%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/vehicle_control_mode__type_support.cpp.o[0m
+[12.125s] [ 54%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/vehicle_gps_position__type_support.cpp.o[0m
+[12.150s] [ 55%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/vehicle_control_mode__type_support.c.o[0m
+[12.152s] [ 55%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/vehicle_gps_position__type_support.c.o[0m
+[12.191s] [ 56%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/vehicle_local_position__type_support.cpp.o[0m
+[12.204s] [ 56%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/vehicle_local_position_setpoint__type_support.cpp.o[0m
+[12.214s] [ 57%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/vehicle_odometry__type_support.cpp.o[0m
+[12.231s] [ 58%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/vehicle_rates_setpoint__type_support.cpp.o[0m
+[12.231s] [ 58%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/vehicle_local_position__type_support.c.o[0m
+[12.269s] [ 58%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/vehicle_local_position_setpoint__type_support.c.o[0m
+[12.383s] [ 59%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/vehicle_status__type_support.cpp.o[0m
+[12.460s] [ 60%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/vehicle_odometry__type_support.c.o[0m
+[12.477s] [ 60%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/vehicle_visual_odometry__type_support.cpp.o[0m
+[12.504s] [ 60%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/vehicle_rates_setpoint__type_support.c.o[0m
+[12.512s] [ 61%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/vehicle_status__type_support.c.o[0m
+[12.515s] [ 62%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/debug_array__type_support.cpp.o[0m
+[12.520s] [ 62%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/vehicle_visual_odometry__type_support.c.o[0m
+[12.534s] [ 62%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/debug_key_value__type_support.cpp.o[0m
+[12.554s] [ 63%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/debug_value__type_support.cpp.o[0m
+[12.589s] [ 63%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/external_controller__type_support.cpp.o[0m
+[12.590s] [ 63%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/debug_vect__type_support.cpp.o[0m
+[12.591s] [ 63%] [32m[1mLinking C shared library libpx4_msgs__rosidl_typesupport_introspection_c.so[0m
+[12.603s] [ 64%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/gps_inject_data__type_support.cpp.o[0m
+[12.643s] [ 64%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/manual_control_setpoint__type_support.cpp.o[0m
+[12.646s] [ 64%] Built target px4_msgs__rosidl_typesupport_introspection_c
+[12.653s] [ 65%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/offboard_control_mode__type_support.cpp.o[0m
+[12.664s] [ 65%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/sensor_combined__type_support.cpp.o[0m
+[12.683s] [ 66%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/sensor_gps__type_support.cpp.o[0m
+[12.732s] [ 67%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/timesync_status__type_support.cpp.o[0m
+[12.737s] [ 67%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/trajectory_setpoint__type_support.cpp.o[0m
+[12.744s] [ 67%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/vehicle_attitude__type_support.cpp.o[0m
+[12.752s] [ 67%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/timesync__type_support.cpp.o[0m
+[12.872s] [ 68%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/vehicle_attitude_setpoint__type_support.cpp.o[0m
+[13.095s] [ 69%] [32m[1mLinking CXX shared library libpx4_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[13.248s] [ 70%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/vehicle_control_mode__type_support.cpp.o[0m
+[13.279s] [ 70%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/vehicle_command__type_support.cpp.o[0m
+[13.279s] [ 70%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/vehicle_gps_position__type_support.cpp.o[0m
+[13.331s] [ 71%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/vehicle_local_position__type_support.cpp.o[0m
+[13.344s] [ 71%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/vehicle_local_position_setpoint__type_support.cpp.o[0m
+[13.372s] [ 71%] Built target px4_msgs__rosidl_typesupport_introspection_cpp
+[13.384s] [ 72%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/vehicle_odometry__type_support.cpp.o[0m
+[13.390s] [ 72%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/vehicle_rates_setpoint__type_support.cpp.o[0m
+[13.432s] [ 72%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/vehicle_status__type_support.cpp.o[0m
+[13.440s] [ 73%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/vehicle_visual_odometry__type_support.cpp.o[0m
+[14.022s] [ 73%] [32m[1mLinking CXX shared library libpx4_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[14.099s] [ 73%] Built target px4_msgs__rosidl_typesupport_fastrtps_cpp
+[14.108s] [ 74%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[18.459s] [35m[1mScanning dependencies of target px4_msgs__rosidl_typesupport_fastrtps_c[0m
+[18.489s] [ 76%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/gps_inject_data__type_support_c.cpp.o[0m
+[18.489s] [ 76%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/debug_array__type_support_c.cpp.o[0m
+[18.489s] [ 76%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/battery_status__type_support_c.cpp.o[0m
+[18.494s] [ 76%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/manual_control_setpoint__type_support_c.cpp.o[0m
+[18.495s] [ 77%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/debug_vect__type_support_c.cpp.o[0m
+[18.495s] [ 77%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/debug_value__type_support_c.cpp.o[0m
+[18.495s] [ 79%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/offboard_control_mode__type_support_c.cpp.o[0m
+[18.496s] [ 77%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/external_controller__type_support_c.cpp.o[0m
+[18.496s] [ 80%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/timesync__type_support_c.cpp.o[0m
+[18.496s] [ 80%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/sensor_combined__type_support_c.cpp.o[0m
+[18.496s] [ 80%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/timesync_status__type_support_c.cpp.o[0m
+[18.496s] [ 80%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/sensor_gps__type_support_c.cpp.o[0m
+[18.497s] [ 76%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/debug_key_value__type_support_c.cpp.o[0m
+[18.497s] [ 80%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/trajectory_setpoint__type_support_c.cpp.o[0m
+[18.502s] [ 80%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/vehicle_attitude__type_support_c.cpp.o[0m
+[18.507s] [ 81%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/vehicle_attitude_setpoint__type_support_c.cpp.o[0m
+[19.104s] [ 81%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/vehicle_command__type_support_c.cpp.o[0m
+[19.116s] [ 81%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/vehicle_gps_position__type_support_c.cpp.o[0m
+[19.126s] [ 82%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/vehicle_control_mode__type_support_c.cpp.o[0m
+[19.135s] [ 83%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/vehicle_local_position__type_support_c.cpp.o[0m
+[19.148s] [ 83%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/vehicle_local_position_setpoint__type_support_c.cpp.o[0m
+[19.161s] [ 84%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/vehicle_odometry__type_support_c.cpp.o[0m
+[19.180s] [ 84%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/vehicle_rates_setpoint__type_support_c.cpp.o[0m
+[19.195s] [ 84%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/vehicle_status__type_support_c.cpp.o[0m
+[19.195s] [ 85%] [32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/vehicle_visual_odometry__type_support_c.cpp.o[0m
+[19.729s] [ 85%] [32m[1mLinking CXX shared library libpx4_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[19.821s] [ 85%] Built target px4_msgs__rosidl_typesupport_fastrtps_c
+[19.829s] [35m[1mScanning dependencies of target px4_msgs[0m
+[19.837s] [ 85%] Built target px4_msgs
+[19.845s] [35m[1mScanning dependencies of target px4_msgs__py[0m
+[19.853s] [ 85%] [34m[1mGenerating Python code for ROS interfaces[0m
+[28.190s] [ 85%] Built target px4_msgs__py
+[28.197s] [35m[1mScanning dependencies of target px4_msgs__python[0m
+[28.269s] [ 88%] [32mBuilding C object CMakeFiles/px4_msgs__python.dir/rosidl_generator_py/px4_msgs/msg/_debug_vect_s.c.o[0m
+[28.269s] [ 88%] [32mBuilding C object CMakeFiles/px4_msgs__python.dir/rosidl_generator_py/px4_msgs/msg/_debug_key_value_s.c.o[0m
+[28.269s] [ 88%] [32mBuilding C object CMakeFiles/px4_msgs__python.dir/rosidl_generator_py/px4_msgs/msg/_debug_array_s.c.o[0m
+[28.270s] [ 89%] [32mBuilding C object CMakeFiles/px4_msgs__python.dir/rosidl_generator_py/px4_msgs/msg/_gps_inject_data_s.c.o[0m
+[28.270s] [ 89%] [32mBuilding C object CMakeFiles/px4_msgs__python.dir/rosidl_generator_py/px4_msgs/msg/_external_controller_s.c.o[0m
+[28.270s] [ 89%] [32mBuilding C object CMakeFiles/px4_msgs__python.dir/rosidl_generator_py/px4_msgs/msg/_manual_control_setpoint_s.c.o[0m
+[28.270s] [ 89%] [32mBuilding C object CMakeFiles/px4_msgs__python.dir/rosidl_generator_py/px4_msgs/msg/_vehicle_attitude_s.c.o[0m
+[28.270s] [ 89%] [32mBuilding C object CMakeFiles/px4_msgs__python.dir/rosidl_generator_py/px4_msgs/msg/_offboard_control_mode_s.c.o[0m
+[28.270s] [ 88%] [32mBuilding C object CMakeFiles/px4_msgs__python.dir/rosidl_generator_py/px4_msgs/msg/_debug_value_s.c.o[0m
+[28.270s] [ 88%] [32mBuilding C object CMakeFiles/px4_msgs__python.dir/rosidl_generator_py/px4_msgs/msg/_battery_status_s.c.o[0m
+[28.270s] [ 90%] [32mBuilding C object CMakeFiles/px4_msgs__python.dir/rosidl_generator_py/px4_msgs/msg/_sensor_combined_s.c.o[0m
+[28.271s] [ 91%] [32mBuilding C object CMakeFiles/px4_msgs__python.dir/rosidl_generator_py/px4_msgs/msg/_timesync_s.c.o[0m
+[28.271s] [ 91%] [32mBuilding C object CMakeFiles/px4_msgs__python.dir/rosidl_generator_py/px4_msgs/msg/_timesync_status_s.c.o[0m
+[28.271s] [ 92%] [32mBuilding C object CMakeFiles/px4_msgs__python.dir/rosidl_generator_py/px4_msgs/msg/_trajectory_setpoint_s.c.o[0m
+[28.271s] [ 92%] [32mBuilding C object CMakeFiles/px4_msgs__python.dir/rosidl_generator_py/px4_msgs/msg/_sensor_gps_s.c.o[0m
+[28.272s] [ 93%] [32mBuilding C object CMakeFiles/px4_msgs__python.dir/rosidl_generator_py/px4_msgs/msg/_vehicle_attitude_setpoint_s.c.o[0m
+[28.447s] [ 93%] [32mBuilding C object CMakeFiles/px4_msgs__python.dir/rosidl_generator_py/px4_msgs/msg/_vehicle_command_s.c.o[0m
+[28.448s] [ 93%] [32mBuilding C object CMakeFiles/px4_msgs__python.dir/rosidl_generator_py/px4_msgs/msg/_vehicle_control_mode_s.c.o[0m
+[28.449s] [ 94%] [32mBuilding C object CMakeFiles/px4_msgs__python.dir/rosidl_generator_py/px4_msgs/msg/_vehicle_gps_position_s.c.o[0m
+[28.458s] [ 95%] [32mBuilding C object CMakeFiles/px4_msgs__python.dir/rosidl_generator_py/px4_msgs/msg/_vehicle_local_position_s.c.o[0m
+[28.458s] [ 95%] [32mBuilding C object CMakeFiles/px4_msgs__python.dir/rosidl_generator_py/px4_msgs/msg/_vehicle_local_position_setpoint_s.c.o[0m
+[28.458s] [ 95%] [32mBuilding C object CMakeFiles/px4_msgs__python.dir/rosidl_generator_py/px4_msgs/msg/_vehicle_odometry_s.c.o[0m
+[28.459s] [ 96%] [32mBuilding C object CMakeFiles/px4_msgs__python.dir/rosidl_generator_py/px4_msgs/msg/_vehicle_rates_setpoint_s.c.o[0m
+[28.465s] [ 96%] [32mBuilding C object CMakeFiles/px4_msgs__python.dir/rosidl_generator_py/px4_msgs/msg/_vehicle_status_s.c.o[0m
+[28.476s] [ 97%] [32mBuilding C object CMakeFiles/px4_msgs__python.dir/rosidl_generator_py/px4_msgs/msg/_vehicle_visual_odometry_s.c.o[0m
+[28.637s] [ 97%] [32m[1mLinking C shared library rosidl_generator_py/px4_msgs/libpx4_msgs__python.so[0m
+[28.681s] [ 97%] Built target px4_msgs__python
+[28.693s] [35m[1mScanning dependencies of target px4_msgs__rosidl_typesupport_fastrtps_c__pyext[0m
+[28.693s] [35m[1mScanning dependencies of target px4_msgs__rosidl_typesupport_introspection_c__pyext[0m
+[28.693s] [35m[1mScanning dependencies of target px4_msgs__rosidl_typesupport_c__pyext[0m
+[28.709s] [ 99%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/px4_msgs/_px4_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[28.709s] [ 99%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/px4_msgs/_px4_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[28.710s] [100%] [32mBuilding C object CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/px4_msgs/_px4_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[28.868s] [100%] [32m[1mLinking CXX shared library rosidl_generator_py/px4_msgs/px4_msgs_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so[0m
+[28.868s] [100%] [32m[1mLinking C shared library rosidl_generator_py/px4_msgs/px4_msgs_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so[0m
+[28.868s] [100%] [32m[1mLinking C shared library rosidl_generator_py/px4_msgs/px4_msgs_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so[0m
+[28.902s] [100%] Built target px4_msgs__rosidl_typesupport_introspection_c__pyext
+[28.902s] [100%] Built target px4_msgs__rosidl_typesupport_c__pyext
+[28.923s] [100%] Built target px4_msgs__rosidl_typesupport_fastrtps_c__pyext
+[28.934s] Invoked command in '/root/colcon_ws/build/px4_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /root/colcon_ws/build/px4_msgs -- -j16 -l16
+[29.571s] Invoking command in '/root/colcon_ws/build/px4_msgs': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /root/colcon_ws/build/px4_msgs
+[29.585s] -- Install configuration: ""
+[29.585s] -- Execute custom install script
+[29.585s] -- Symlinking: /root/colcon_ws/install/px4_msgs/share/ament_index/resource_index/rosidl_interfaces/px4_msgs
+[29.595s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/battery_status.h
+[29.601s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/debug_array.h
+[29.611s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/debug_key_value.h
+[29.619s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/debug_value.h
+[29.628s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/debug_vect.h
+[29.638s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/battery_status__functions.h
+[29.647s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/battery_status__struct.h
+[29.658s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/battery_status__type_support.h
+[29.667s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/debug_array__functions.h
+[29.675s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/debug_array__struct.h
+[29.681s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/debug_array__type_support.h
+[29.690s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/debug_key_value__functions.h
+[29.700s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/debug_key_value__struct.h
+[29.705s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/debug_key_value__type_support.h
+[29.714s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/debug_value__functions.h
+[29.723s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/debug_value__struct.h
+[29.729s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/debug_value__type_support.h
+[29.738s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/debug_vect__functions.h
+[29.745s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/debug_vect__struct.h
+[29.755s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/debug_vect__type_support.h
+[29.763s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/external_controller__functions.h
+[29.770s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/external_controller__struct.h
+[29.780s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/external_controller__type_support.h
+[29.787s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/gps_inject_data__functions.h
+[29.795s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/gps_inject_data__struct.h
+[29.804s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/gps_inject_data__type_support.h
+[29.811s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/manual_control_setpoint__functions.h
+[29.821s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/manual_control_setpoint__struct.h
+[29.829s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/manual_control_setpoint__type_support.h
+[29.834s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/offboard_control_mode__functions.h
+[29.843s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/offboard_control_mode__struct.h
+[29.851s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/offboard_control_mode__type_support.h
+[29.858s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/sensor_combined__functions.h
+[29.867s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/sensor_combined__struct.h
+[29.874s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/sensor_combined__type_support.h
+[29.885s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/sensor_gps__functions.h
+[29.893s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/sensor_gps__struct.h
+[29.902s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/sensor_gps__type_support.h
+[29.907s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/timesync__functions.h
+[29.918s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/timesync__struct.h
+[29.925s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/timesync__type_support.h
+[29.936s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/timesync_status__functions.h
+[29.944s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/timesync_status__struct.h
+[29.950s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/timesync_status__type_support.h
+[29.958s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/trajectory_setpoint__functions.h
+[29.966s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/trajectory_setpoint__struct.h
+[29.977s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/trajectory_setpoint__type_support.h
+[29.985s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_attitude__functions.h
+[29.995s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_attitude__struct.h
+[30.005s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_attitude__type_support.h
+[30.015s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_attitude_setpoint__functions.h
+[30.023s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_attitude_setpoint__struct.h
+[30.032s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_attitude_setpoint__type_support.h
+[30.041s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_command__functions.h
+[30.046s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_command__struct.h
+[30.054s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_command__type_support.h
+[30.064s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_control_mode__functions.h
+[30.072s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_control_mode__struct.h
+[30.081s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_control_mode__type_support.h
+[30.086s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_gps_position__functions.h
+[30.093s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_gps_position__struct.h
+[30.101s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_gps_position__type_support.h
+[30.108s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_local_position__functions.h
+[30.115s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_local_position__struct.h
+[30.123s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_local_position__type_support.h
+[30.131s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_local_position_setpoint__functions.h
+[30.138s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_local_position_setpoint__struct.h
+[30.150s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_local_position_setpoint__type_support.h
+[30.159s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_odometry__functions.h
+[30.166s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_odometry__struct.h
+[30.173s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_odometry__type_support.h
+[30.182s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_rates_setpoint__functions.h
+[30.189s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_rates_setpoint__struct.h
+[30.198s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_rates_setpoint__type_support.h
+[30.209s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_status__functions.h
+[30.219s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_status__struct.h
+[30.229s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_status__type_support.h
+[30.238s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_visual_odometry__functions.h
+[30.247s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_visual_odometry__struct.h
+[30.258s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_visual_odometry__type_support.h
+[30.266s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/external_controller.h
+[30.277s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/gps_inject_data.h
+[30.285s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/manual_control_setpoint.h
+[30.292s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/offboard_control_mode.h
+[30.300s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/rosidl_generator_c__visibility_control.h
+[30.310s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/sensor_combined.h
+[30.321s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/sensor_gps.h
+[30.329s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/timesync.h
+[30.340s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/timesync_status.h
+[30.348s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/trajectory_setpoint.h
+[30.355s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/vehicle_attitude.h
+[30.361s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/vehicle_attitude_setpoint.h
+[30.371s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/vehicle_command.h
+[30.379s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/vehicle_control_mode.h
+[30.386s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/vehicle_gps_position.h
+[30.395s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/vehicle_local_position.h
+[30.403s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/vehicle_local_position_setpoint.h
+[30.410s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/vehicle_odometry.h
+[30.417s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/vehicle_rates_setpoint.h
+[30.423s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/vehicle_status.h
+[30.433s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/vehicle_visual_odometry.h
+[30.442s] -- Symlinking: /root/colcon_ws/install/px4_msgs/share/px4_msgs/environment/library_path.sh
+[30.450s] -- Symlinking: /root/colcon_ws/install/px4_msgs/share/px4_msgs/environment/library_path.dsv
+[30.461s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/battery_status__rosidl_typesupport_fastrtps_c.h
+[30.469s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/debug_array__rosidl_typesupport_fastrtps_c.h
+[30.477s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/debug_key_value__rosidl_typesupport_fastrtps_c.h
+[30.481s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/debug_value__rosidl_typesupport_fastrtps_c.h
+[30.490s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/debug_vect__rosidl_typesupport_fastrtps_c.h
+[30.497s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/external_controller__rosidl_typesupport_fastrtps_c.h
+[30.503s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/gps_inject_data__rosidl_typesupport_fastrtps_c.h
+[30.511s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/manual_control_setpoint__rosidl_typesupport_fastrtps_c.h
+[30.519s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/offboard_control_mode__rosidl_typesupport_fastrtps_c.h
+[30.526s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/sensor_combined__rosidl_typesupport_fastrtps_c.h
+[30.534s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/sensor_gps__rosidl_typesupport_fastrtps_c.h
+[30.541s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/timesync__rosidl_typesupport_fastrtps_c.h
+[30.549s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/timesync_status__rosidl_typesupport_fastrtps_c.h
+[30.560s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/trajectory_setpoint__rosidl_typesupport_fastrtps_c.h
+[30.568s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_attitude__rosidl_typesupport_fastrtps_c.h
+[30.578s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_attitude_setpoint__rosidl_typesupport_fastrtps_c.h
+[30.583s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_command__rosidl_typesupport_fastrtps_c.h
+[30.592s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_control_mode__rosidl_typesupport_fastrtps_c.h
+[30.601s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_gps_position__rosidl_typesupport_fastrtps_c.h
+[30.610s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_local_position__rosidl_typesupport_fastrtps_c.h
+[30.619s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_local_position_setpoint__rosidl_typesupport_fastrtps_c.h
+[30.625s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_odometry__rosidl_typesupport_fastrtps_c.h
+[30.633s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_rates_setpoint__rosidl_typesupport_fastrtps_c.h
+[30.641s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_status__rosidl_typesupport_fastrtps_c.h
+[30.649s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_visual_odometry__rosidl_typesupport_fastrtps_c.h
+[30.654s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[30.662s] -- Symlinking: /root/colcon_ws/install/px4_msgs/lib/libpx4_msgs__rosidl_typesupport_fastrtps_c.so
+[30.671s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/battery_status__rosidl_typesupport_fastrtps_cpp.hpp
+[30.677s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/debug_array__rosidl_typesupport_fastrtps_cpp.hpp
+[30.686s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/debug_key_value__rosidl_typesupport_fastrtps_cpp.hpp
+[30.691s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/debug_value__rosidl_typesupport_fastrtps_cpp.hpp
+[30.700s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/debug_vect__rosidl_typesupport_fastrtps_cpp.hpp
+[30.707s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/external_controller__rosidl_typesupport_fastrtps_cpp.hpp
+[30.716s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/gps_inject_data__rosidl_typesupport_fastrtps_cpp.hpp
+[30.723s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/manual_control_setpoint__rosidl_typesupport_fastrtps_cpp.hpp
+[30.733s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/offboard_control_mode__rosidl_typesupport_fastrtps_cpp.hpp
+[30.741s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/sensor_combined__rosidl_typesupport_fastrtps_cpp.hpp
+[30.753s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/sensor_gps__rosidl_typesupport_fastrtps_cpp.hpp
+[30.760s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/timesync__rosidl_typesupport_fastrtps_cpp.hpp
+[30.768s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/timesync_status__rosidl_typesupport_fastrtps_cpp.hpp
+[30.776s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/trajectory_setpoint__rosidl_typesupport_fastrtps_cpp.hpp
+[30.785s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_attitude__rosidl_typesupport_fastrtps_cpp.hpp
+[30.795s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_attitude_setpoint__rosidl_typesupport_fastrtps_cpp.hpp
+[30.802s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_command__rosidl_typesupport_fastrtps_cpp.hpp
+[30.811s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_control_mode__rosidl_typesupport_fastrtps_cpp.hpp
+[30.822s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_gps_position__rosidl_typesupport_fastrtps_cpp.hpp
+[30.831s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_local_position__rosidl_typesupport_fastrtps_cpp.hpp
+[30.842s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_local_position_setpoint__rosidl_typesupport_fastrtps_cpp.hpp
+[30.851s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_odometry__rosidl_typesupport_fastrtps_cpp.hpp
+[30.859s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_rates_setpoint__rosidl_typesupport_fastrtps_cpp.hpp
+[30.865s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_status__rosidl_typesupport_fastrtps_cpp.hpp
+[30.873s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_visual_odometry__rosidl_typesupport_fastrtps_cpp.hpp
+[30.881s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[30.888s] -- Symlinking: /root/colcon_ws/install/px4_msgs/lib/libpx4_msgs__rosidl_typesupport_fastrtps_cpp.so
+[30.897s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/battery_status__rosidl_typesupport_introspection_c.h
+[30.905s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/debug_array__rosidl_typesupport_introspection_c.h
+[30.916s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/debug_key_value__rosidl_typesupport_introspection_c.h
+[30.924s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/debug_value__rosidl_typesupport_introspection_c.h
+[30.935s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/debug_vect__rosidl_typesupport_introspection_c.h
+[30.940s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/external_controller__rosidl_typesupport_introspection_c.h
+[30.949s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/gps_inject_data__rosidl_typesupport_introspection_c.h
+[30.958s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/manual_control_setpoint__rosidl_typesupport_introspection_c.h
+[30.968s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/offboard_control_mode__rosidl_typesupport_introspection_c.h
+[30.977s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/sensor_combined__rosidl_typesupport_introspection_c.h
+[30.984s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/sensor_gps__rosidl_typesupport_introspection_c.h
+[30.992s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/timesync__rosidl_typesupport_introspection_c.h
+[30.999s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/timesync_status__rosidl_typesupport_introspection_c.h
+[31.007s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/trajectory_setpoint__rosidl_typesupport_introspection_c.h
+[31.013s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_attitude__rosidl_typesupport_introspection_c.h
+[31.019s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_attitude_setpoint__rosidl_typesupport_introspection_c.h
+[31.028s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_command__rosidl_typesupport_introspection_c.h
+[31.035s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_control_mode__rosidl_typesupport_introspection_c.h
+[31.046s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_gps_position__rosidl_typesupport_introspection_c.h
+[31.055s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_local_position__rosidl_typesupport_introspection_c.h
+[31.061s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_local_position_setpoint__rosidl_typesupport_introspection_c.h
+[31.069s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_odometry__rosidl_typesupport_introspection_c.h
+[31.077s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_rates_setpoint__rosidl_typesupport_introspection_c.h
+[31.084s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_status__rosidl_typesupport_introspection_c.h
+[31.092s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_visual_odometry__rosidl_typesupport_introspection_c.h
+[31.097s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[31.107s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/battery_status.hpp
+[31.115s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/debug_array.hpp
+[31.126s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/debug_key_value.hpp
+[31.136s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/debug_value.hpp
+[31.142s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/debug_vect.hpp
+[31.150s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/battery_status__builder.hpp
+[31.158s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/battery_status__struct.hpp
+[31.169s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/battery_status__traits.hpp
+[31.176s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/debug_array__builder.hpp
+[31.185s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/debug_array__struct.hpp
+[31.190s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/debug_array__traits.hpp
+[31.198s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/debug_key_value__builder.hpp
+[31.206s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/debug_key_value__struct.hpp
+[31.213s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/debug_key_value__traits.hpp
+[31.221s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/debug_value__builder.hpp
+[31.232s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/debug_value__struct.hpp
+[31.240s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/debug_value__traits.hpp
+[31.247s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/debug_vect__builder.hpp
+[31.253s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/debug_vect__struct.hpp
+[31.261s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/debug_vect__traits.hpp
+[31.268s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/external_controller__builder.hpp
+[31.275s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/external_controller__struct.hpp
+[31.283s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/external_controller__traits.hpp
+[31.290s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/gps_inject_data__builder.hpp
+[31.298s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/gps_inject_data__struct.hpp
+[31.306s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/gps_inject_data__traits.hpp
+[31.317s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/manual_control_setpoint__builder.hpp
+[31.325s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/manual_control_setpoint__struct.hpp
+[31.337s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/manual_control_setpoint__traits.hpp
+[31.344s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/offboard_control_mode__builder.hpp
+[31.354s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/offboard_control_mode__struct.hpp
+[31.361s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/offboard_control_mode__traits.hpp
+[31.367s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/sensor_combined__builder.hpp
+[31.376s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/sensor_combined__struct.hpp
+[31.385s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/sensor_combined__traits.hpp
+[31.393s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/sensor_gps__builder.hpp
+[31.402s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/sensor_gps__struct.hpp
+[31.407s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/sensor_gps__traits.hpp
+[31.416s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/timesync__builder.hpp
+[31.427s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/timesync__struct.hpp
+[31.439s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/timesync__traits.hpp
+[31.448s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/timesync_status__builder.hpp
+[31.456s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/timesync_status__struct.hpp
+[31.463s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/timesync_status__traits.hpp
+[31.471s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/trajectory_setpoint__builder.hpp
+[31.480s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/trajectory_setpoint__struct.hpp
+[31.486s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/trajectory_setpoint__traits.hpp
+[31.498s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_attitude__builder.hpp
+[31.506s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_attitude__struct.hpp
+[31.512s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_attitude__traits.hpp
+[31.520s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_attitude_setpoint__builder.hpp
+[31.529s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_attitude_setpoint__struct.hpp
+[31.537s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_attitude_setpoint__traits.hpp
+[31.542s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_command__builder.hpp
+[31.549s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_command__struct.hpp
+[31.555s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_command__traits.hpp
+[31.563s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_control_mode__builder.hpp
+[31.571s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_control_mode__struct.hpp
+[31.578s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_control_mode__traits.hpp
+[31.586s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_gps_position__builder.hpp
+[31.593s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_gps_position__struct.hpp
+[31.604s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_gps_position__traits.hpp
+[31.612s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_local_position__builder.hpp
+[31.620s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_local_position__struct.hpp
+[31.625s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_local_position__traits.hpp
+[31.637s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_local_position_setpoint__builder.hpp
+[31.645s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_local_position_setpoint__struct.hpp
+[31.653s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_local_position_setpoint__traits.hpp
+[31.659s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_odometry__builder.hpp
+[31.667s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_odometry__struct.hpp
+[31.677s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_odometry__traits.hpp
+[31.685s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_rates_setpoint__builder.hpp
+[31.695s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_rates_setpoint__struct.hpp
+[31.700s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_rates_setpoint__traits.hpp
+[31.708s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_status__builder.hpp
+[31.718s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_status__struct.hpp
+[31.726s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_status__traits.hpp
+[31.737s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_visual_odometry__builder.hpp
+[31.746s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_visual_odometry__struct.hpp
+[31.753s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_visual_odometry__traits.hpp
+[31.762s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/external_controller.hpp
+[31.768s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/gps_inject_data.hpp
+[31.779s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/manual_control_setpoint.hpp
+[31.786s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/offboard_control_mode.hpp
+[31.795s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/sensor_combined.hpp
+[31.802s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/sensor_gps.hpp
+[31.810s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/timesync.hpp
+[31.821s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/timesync_status.hpp
+[31.831s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/trajectory_setpoint.hpp
+[31.839s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/vehicle_attitude.hpp
+[31.845s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/vehicle_attitude_setpoint.hpp
+[31.852s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/vehicle_command.hpp
+[31.858s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/vehicle_control_mode.hpp
+[31.864s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/vehicle_gps_position.hpp
+[31.870s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/vehicle_local_position.hpp
+[31.877s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/vehicle_local_position_setpoint.hpp
+[31.884s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/vehicle_odometry.hpp
+[31.890s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/vehicle_rates_setpoint.hpp
+[31.896s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/vehicle_status.hpp
+[31.903s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/vehicle_visual_odometry.hpp
+[31.911s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/battery_status__rosidl_typesupport_introspection_cpp.hpp
+[31.917s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/debug_array__rosidl_typesupport_introspection_cpp.hpp
+[31.925s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/debug_key_value__rosidl_typesupport_introspection_cpp.hpp
+[31.933s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/debug_value__rosidl_typesupport_introspection_cpp.hpp
+[31.940s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/debug_vect__rosidl_typesupport_introspection_cpp.hpp
+[31.945s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/external_controller__rosidl_typesupport_introspection_cpp.hpp
+[31.950s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/gps_inject_data__rosidl_typesupport_introspection_cpp.hpp
+[31.955s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/manual_control_setpoint__rosidl_typesupport_introspection_cpp.hpp
+[31.960s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/offboard_control_mode__rosidl_typesupport_introspection_cpp.hpp
+[31.965s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/sensor_combined__rosidl_typesupport_introspection_cpp.hpp
+[31.970s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/sensor_gps__rosidl_typesupport_introspection_cpp.hpp
+[31.975s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/timesync__rosidl_typesupport_introspection_cpp.hpp
+[31.982s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/timesync_status__rosidl_typesupport_introspection_cpp.hpp
+[31.991s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/trajectory_setpoint__rosidl_typesupport_introspection_cpp.hpp
+[31.999s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_attitude__rosidl_typesupport_introspection_cpp.hpp
+[32.007s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_attitude_setpoint__rosidl_typesupport_introspection_cpp.hpp
+[32.018s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_command__rosidl_typesupport_introspection_cpp.hpp
+[32.025s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_control_mode__rosidl_typesupport_introspection_cpp.hpp
+[32.032s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_gps_position__rosidl_typesupport_introspection_cpp.hpp
+[32.042s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_local_position__rosidl_typesupport_introspection_cpp.hpp
+[32.047s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_local_position_setpoint__rosidl_typesupport_introspection_cpp.hpp
+[32.052s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_odometry__rosidl_typesupport_introspection_cpp.hpp
+[32.057s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_rates_setpoint__rosidl_typesupport_introspection_cpp.hpp
+[32.062s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_status__rosidl_typesupport_introspection_cpp.hpp
+[32.067s] -- Symlinking: /root/colcon_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_visual_odometry__rosidl_typesupport_introspection_cpp.hpp
+[32.073s] -- Symlinking: /root/colcon_ws/install/px4_msgs/share/px4_msgs/environment/pythonpath.sh
+[32.083s] -- Symlinking: /root/colcon_ws/install/px4_msgs/share/px4_msgs/environment/pythonpath.dsv
+[32.091s] -- Symlinking: /root/colcon_ws/install/px4_msgs/lib/python3.8/site-packages/px4_msgs/__init__.py
+[32.104s] -- Symlinking: /root/colcon_ws/install/px4_msgs/lib/python3.8/site-packages/px4_msgs/msg/__init__.py
+[32.112s] -- Symlinking: /root/colcon_ws/install/px4_msgs/lib/python3.8/site-packages/px4_msgs/msg/_battery_status.py
+[32.124s] -- Symlinking: /root/colcon_ws/install/px4_msgs/lib/python3.8/site-packages/px4_msgs/msg/_debug_array.py
+[32.129s] -- Symlinking: /root/colcon_ws/install/px4_msgs/lib/python3.8/site-packages/px4_msgs/msg/_debug_key_value.py
+[32.137s] -- Symlinking: /root/colcon_ws/install/px4_msgs/lib/python3.8/site-packages/px4_msgs/msg/_debug_value.py
+[32.147s] -- Symlinking: /root/colcon_ws/install/px4_msgs/lib/python3.8/site-packages/px4_msgs/msg/_debug_vect.py
+[32.155s] -- Symlinking: /root/colcon_ws/install/px4_msgs/lib/python3.8/site-packages/px4_msgs/msg/_external_controller.py
+[32.166s] -- Symlinking: /root/colcon_ws/install/px4_msgs/lib/python3.8/site-packages/px4_msgs/msg/_gps_inject_data.py
+[32.173s] -- Symlinking: /root/colcon_ws/install/px4_msgs/lib/python3.8/site-packages/px4_msgs/msg/_manual_control_setpoint.py
+[32.180s] -- Symlinking: /root/colcon_ws/install/px4_msgs/lib/python3.8/site-packages/px4_msgs/msg/_offboard_control_mode.py
+[32.188s] -- Symlinking: /root/colcon_ws/install/px4_msgs/lib/python3.8/site-packages/px4_msgs/msg/_sensor_combined.py
+[32.195s] -- Symlinking: /root/colcon_ws/install/px4_msgs/lib/python3.8/site-packages/px4_msgs/msg/_sensor_gps.py
+[32.203s] -- Symlinking: /root/colcon_ws/install/px4_msgs/lib/python3.8/site-packages/px4_msgs/msg/_timesync.py
+[32.210s] -- Symlinking: /root/colcon_ws/install/px4_msgs/lib/python3.8/site-packages/px4_msgs/msg/_timesync_status.py
+[32.220s] -- Symlinking: /root/colcon_ws/install/px4_msgs/lib/python3.8/site-packages/px4_msgs/msg/_trajectory_setpoint.py
+[32.230s] -- Symlinking: /root/colcon_ws/install/px4_msgs/lib/python3.8/site-packages/px4_msgs/msg/_vehicle_attitude.py
+[32.240s] -- Symlinking: /root/colcon_ws/install/px4_msgs/lib/python3.8/site-packages/px4_msgs/msg/_vehicle_attitude_setpoint.py
+[32.248s] -- Symlinking: /root/colcon_ws/install/px4_msgs/lib/python3.8/site-packages/px4_msgs/msg/_vehicle_command.py
+[32.255s] -- Symlinking: /root/colcon_ws/install/px4_msgs/lib/python3.8/site-packages/px4_msgs/msg/_vehicle_control_mode.py
+[32.263s] -- Symlinking: /root/colcon_ws/install/px4_msgs/lib/python3.8/site-packages/px4_msgs/msg/_vehicle_gps_position.py
+[32.269s] -- Symlinking: /root/colcon_ws/install/px4_msgs/lib/python3.8/site-packages/px4_msgs/msg/_vehicle_local_position.py
+[32.278s] -- Symlinking: /root/colcon_ws/install/px4_msgs/lib/python3.8/site-packages/px4_msgs/msg/_vehicle_local_position_setpoint.py
+[32.290s] -- Symlinking: /root/colcon_ws/install/px4_msgs/lib/python3.8/site-packages/px4_msgs/msg/_vehicle_odometry.py
+[32.298s] -- Symlinking: /root/colcon_ws/install/px4_msgs/lib/python3.8/site-packages/px4_msgs/msg/_vehicle_rates_setpoint.py
+[32.307s] -- Symlinking: /root/colcon_ws/install/px4_msgs/lib/python3.8/site-packages/px4_msgs/msg/_vehicle_status.py
+[32.314s] -- Symlinking: /root/colcon_ws/install/px4_msgs/lib/python3.8/site-packages/px4_msgs/msg/_vehicle_visual_odometry.py
+[32.321s] -- Symlinking: /root/colcon_ws/install/px4_msgs/lib/python3.8/site-packages/px4_msgs/px4_msgs_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so
+[32.330s] -- Symlinking: /root/colcon_ws/install/px4_msgs/lib/python3.8/site-packages/px4_msgs/px4_msgs_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so
+[32.335s] -- Symlinking: /root/colcon_ws/install/px4_msgs/lib/python3.8/site-packages/px4_msgs/px4_msgs_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so
+[32.344s] -- Symlinking: /root/colcon_ws/install/px4_msgs/lib/libpx4_msgs__python.so
+[32.355s] -- Symlinking: /root/colcon_ws/install/px4_msgs/share/px4_msgs/msg/BatteryStatus.idl
+[32.363s] -- Symlinking: /root/colcon_ws/install/px4_msgs/share/px4_msgs/msg/DebugArray.idl
+[32.374s] -- Symlinking: /root/colcon_ws/install/px4_msgs/share/px4_msgs/msg/DebugKeyValue.idl
+[32.382s] -- Symlinking: /root/colcon_ws/install/px4_msgs/share/px4_msgs/msg/DebugValue.idl
+[32.394s] -- Symlinking: /root/colcon_ws/install/px4_msgs/share/px4_msgs/msg/DebugVect.idl
+[32.401s] -- Symlinking: /root/colcon_ws/install/px4_msgs/share/px4_msgs/msg/ExternalController.idl
+[32.413s] -- Symlinking: /root/colcon_ws/install/px4_msgs/share/px4_msgs/msg/GpsInjectData.idl
+[32.424s] -- Symlinking: /root/colcon_ws/install/px4_msgs/share/px4_msgs/msg/ManualControlSetpoint.idl
+[32.431s] -- Symlinking: /root/colcon_ws/install/px4_msgs/share/px4_msgs/msg/OffboardControlMode.idl
+[32.439s] -- Symlinking: /root/colcon_ws/install/px4_msgs/share/px4_msgs/msg/SensorCombined.idl
+[32.447s] -- Symlinking: /root/colcon_ws/install/px4_msgs/share/px4_msgs/msg/SensorGps.idl
+[32.457s] -- Symlinking: /root/colcon_ws/install/px4_msgs/share/px4_msgs/msg/Timesync.idl
+[32.463s] -- Symlinking: /root/colcon_ws/install/px4_msgs/share/px4_msgs/msg/TimesyncStatus.idl
+[32.475s] -- Symlinking: /root/colcon_ws/install/px4_msgs/share/px4_msgs/msg/TrajectorySetpoint.idl
+[32.483s] -- Symlinking: /root/colcon_ws/install/px4_msgs/share/px4_msgs/msg/VehicleAttitude.idl
+[32.493s] -- Symlinking: /root/colcon_ws/install/px4_msgs/share/px4_msgs/msg/VehicleAttitudeSetpoint.idl
+[32.501s] -- Symlinking: /root/colcon_ws/install/px4_msgs/share/px4_msgs/msg/VehicleCommand.idl
+[32.508s] -- Symlinking: /root/colcon_ws/install/px4_msgs/share/px4_msgs/msg/VehicleControlMode.idl
+[32.514s] -- Symlinking: /root/colcon_ws/install/px4_msgs/share/px4_msgs/msg/VehicleGpsPosition.idl
+[32.523s] -- Symlinking: /root/colcon_ws/install/px4_msgs/share/px4_msgs/msg/VehicleLocalPosition.idl
+[32.531s] -- Symlinking: /root/colcon_ws/install/px4_msgs/share/px4_msgs/msg/VehicleLocalPositionSetpoint.idl
+[32.542s] -- Symlinking: /root/colcon_ws/install/px4_msgs/share/px4_msgs/msg/VehicleOdometry.idl
+[32.550s] -- Symlinking: /root/colcon_ws/install/px4_msgs/share/px4_msgs/msg/VehicleRatesSetpoint.idl
+[32.556s] -- Symlinking: /root/colcon_ws/install/px4_msgs/share/px4_msgs/msg/VehicleStatus.idl
+[32.565s] -- Symlinking: /root/colcon_ws/install/px4_msgs/share/px4_msgs/msg/VehicleVisualOdometry.idl
+[32.574s] -- Symlinking: /root/colcon_ws/install/px4_msgs/share/px4_msgs/msg/BatteryStatus.msg
+[32.579s] -- Symlinking: /root/colcon_ws/install/px4_msgs/share/px4_msgs/msg/DebugArray.msg
+[32.587s] -- Symlinking: /root/colcon_ws/install/px4_msgs/share/px4_msgs/msg/DebugKeyValue.msg
+[32.596s] -- Symlinking: /root/colcon_ws/install/px4_msgs/share/px4_msgs/msg/DebugValue.msg
+[32.602s] -- Symlinking: /root/colcon_ws/install/px4_msgs/share/px4_msgs/msg/DebugVect.msg
+[32.610s] -- Symlinking: /root/colcon_ws/install/px4_msgs/share/px4_msgs/msg/ExternalController.msg
+[32.618s] -- Symlinking: /root/colcon_ws/install/px4_msgs/share/px4_msgs/msg/GpsInjectData.msg
+[32.627s] -- Symlinking: /root/colcon_ws/install/px4_msgs/share/px4_msgs/msg/ManualControlSetpoint.msg
+[32.634s] -- Symlinking: /root/colcon_ws/install/px4_msgs/share/px4_msgs/msg/OffboardControlMode.msg
+[32.645s] -- Symlinking: /root/colcon_ws/install/px4_msgs/share/px4_msgs/msg/SensorCombined.msg
+[32.653s] -- Symlinking: /root/colcon_ws/install/px4_msgs/share/px4_msgs/msg/SensorGps.msg
+[32.665s] -- Symlinking: /root/colcon_ws/install/px4_msgs/share/px4_msgs/msg/Timesync.msg
+[32.672s] -- Symlinking: /root/colcon_ws/install/px4_msgs/share/px4_msgs/msg/TimesyncStatus.msg
+[32.679s] -- Symlinking: /root/colcon_ws/install/px4_msgs/share/px4_msgs/msg/TrajectorySetpoint.msg
+[32.687s] -- Symlinking: /root/colcon_ws/install/px4_msgs/share/px4_msgs/msg/VehicleAttitude.msg
+[32.693s] -- Symlinking: /root/colcon_ws/install/px4_msgs/share/px4_msgs/msg/VehicleAttitudeSetpoint.msg
+[32.706s] -- Symlinking: /root/colcon_ws/install/px4_msgs/share/px4_msgs/msg/VehicleCommand.msg
+[32.714s] -- Symlinking: /root/colcon_ws/install/px4_msgs/share/px4_msgs/msg/VehicleControlMode.msg
+[32.725s] -- Symlinking: /root/colcon_ws/install/px4_msgs/share/px4_msgs/msg/VehicleGpsPosition.msg
+[32.733s] -- Symlinking: /root/colcon_ws/install/px4_msgs/share/px4_msgs/msg/VehicleLocalPosition.msg
+[32.744s] -- Symlinking: /root/colcon_ws/install/px4_msgs/share/px4_msgs/msg/VehicleLocalPositionSetpoint.msg
+[32.749s] -- Symlinking: /root/colcon_ws/install/px4_msgs/share/px4_msgs/msg/VehicleOdometry.msg
+[32.757s] -- Symlinking: /root/colcon_ws/install/px4_msgs/share/px4_msgs/msg/VehicleRatesSetpoint.msg
+[32.765s] -- Symlinking: /root/colcon_ws/install/px4_msgs/share/px4_msgs/msg/VehicleStatus.msg
+[32.773s] -- Symlinking: /root/colcon_ws/install/px4_msgs/share/px4_msgs/msg/VehicleVisualOdometry.msg
+[32.785s] -- Symlinking: /root/colcon_ws/install/px4_msgs/share/ament_index/resource_index/package_run_dependencies/px4_msgs
+[32.793s] -- Symlinking: /root/colcon_ws/install/px4_msgs/share/ament_index/resource_index/parent_prefix_path/px4_msgs
+[32.805s] -- Symlinking: /root/colcon_ws/install/px4_msgs/share/px4_msgs/environment/ament_prefix_path.sh
+[32.810s] -- Symlinking: /root/colcon_ws/install/px4_msgs/share/px4_msgs/environment/ament_prefix_path.dsv
+[32.819s] -- Symlinking: /root/colcon_ws/install/px4_msgs/share/px4_msgs/environment/path.sh
+[32.825s] -- Symlinking: /root/colcon_ws/install/px4_msgs/share/px4_msgs/environment/path.dsv
+[32.833s] -- Symlinking: /root/colcon_ws/install/px4_msgs/share/px4_msgs/local_setup.bash
+[32.842s] -- Symlinking: /root/colcon_ws/install/px4_msgs/share/px4_msgs/local_setup.sh
+[32.855s] -- Symlinking: /root/colcon_ws/install/px4_msgs/share/px4_msgs/local_setup.zsh
+[32.860s] -- Symlinking: /root/colcon_ws/install/px4_msgs/share/px4_msgs/local_setup.dsv
+[32.864s] -- Symlinking: /root/colcon_ws/install/px4_msgs/share/px4_msgs/package.dsv
+[32.872s] -- Symlinking: /root/colcon_ws/install/px4_msgs/share/ament_index/resource_index/packages/px4_msgs
+[32.881s] -- Symlinking: /root/colcon_ws/install/px4_msgs/share/px4_msgs/cmake/rosidl_cmake-extras.cmake
+[32.885s] -- Symlinking: /root/colcon_ws/install/px4_msgs/share/px4_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[32.893s] -- Symlinking: /root/colcon_ws/install/px4_msgs/share/px4_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[32.903s] -- Symlinking: /root/colcon_ws/install/px4_msgs/share/px4_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[32.909s] -- Symlinking: /root/colcon_ws/install/px4_msgs/share/px4_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[32.918s] -- Symlinking: /root/colcon_ws/install/px4_msgs/share/px4_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[32.926s] -- Symlinking: /root/colcon_ws/install/px4_msgs/share/px4_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[32.937s] -- Symlinking: /root/colcon_ws/install/px4_msgs/share/px4_msgs/cmake/px4_msgsConfig.cmake
+[32.945s] -- Symlinking: /root/colcon_ws/install/px4_msgs/share/px4_msgs/cmake/px4_msgsConfig-version.cmake
+[32.957s] -- Symlinking: /root/colcon_ws/install/px4_msgs/share/px4_msgs/package.xml
+[32.964s] -- Installing: /root/colcon_ws/install/px4_msgs/lib/libpx4_msgs__rosidl_generator_c.so
+[32.965s] -- Set runtime path of "/root/colcon_ws/install/px4_msgs/lib/libpx4_msgs__rosidl_generator_c.so" to ""
+[32.965s] -- Installing: /root/colcon_ws/install/px4_msgs/lib/libpx4_msgs__rosidl_typesupport_introspection_c.so
+[32.966s] -- Set runtime path of "/root/colcon_ws/install/px4_msgs/lib/libpx4_msgs__rosidl_typesupport_introspection_c.so" to ""
+[32.966s] -- Installing: /root/colcon_ws/install/px4_msgs/lib/libpx4_msgs__rosidl_typesupport_c.so
+[32.966s] -- Set runtime path of "/root/colcon_ws/install/px4_msgs/lib/libpx4_msgs__rosidl_typesupport_c.so" to ""
+[32.966s] -- Installing: /root/colcon_ws/install/px4_msgs/lib/libpx4_msgs__rosidl_typesupport_introspection_cpp.so
+[32.967s] -- Set runtime path of "/root/colcon_ws/install/px4_msgs/lib/libpx4_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+[32.967s] -- Installing: /root/colcon_ws/install/px4_msgs/lib/libpx4_msgs__rosidl_typesupport_cpp.so
+[32.967s] -- Set runtime path of "/root/colcon_ws/install/px4_msgs/lib/libpx4_msgs__rosidl_typesupport_cpp.so" to ""
+[32.995s] Compiling '/root/colcon_ws/install/px4_msgs/lib/python3.8/site-packages/px4_msgs/__init__.py'...
+[32.997s] -- Installing: /root/colcon_ws/install/px4_msgs/share/px4_msgs/cmake/px4_msgs__rosidl_generator_cExport.cmake
+[32.998s] -- Installing: /root/colcon_ws/install/px4_msgs/share/px4_msgs/cmake/px4_msgs__rosidl_generator_cExport-noconfig.cmake
+[32.998s] -- Installing: /root/colcon_ws/install/px4_msgs/share/px4_msgs/cmake/px4_msgs__rosidl_typesupport_introspection_cExport.cmake
+[32.998s] -- Installing: /root/colcon_ws/install/px4_msgs/share/px4_msgs/cmake/px4_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[32.998s] -- Installing: /root/colcon_ws/install/px4_msgs/share/px4_msgs/cmake/px4_msgs__rosidl_typesupport_cExport.cmake
+[32.998s] -- Installing: /root/colcon_ws/install/px4_msgs/share/px4_msgs/cmake/px4_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[32.998s] -- Installing: /root/colcon_ws/install/px4_msgs/share/px4_msgs/cmake/px4_msgs__rosidl_generator_cppExport.cmake
+[32.998s] -- Installing: /root/colcon_ws/install/px4_msgs/share/px4_msgs/cmake/px4_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[32.998s] -- Installing: /root/colcon_ws/install/px4_msgs/share/px4_msgs/cmake/px4_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[32.998s] -- Installing: /root/colcon_ws/install/px4_msgs/share/px4_msgs/cmake/px4_msgs__rosidl_typesupport_cppExport.cmake
+[32.999s] -- Installing: /root/colcon_ws/install/px4_msgs/share/px4_msgs/cmake/px4_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[33.001s] Invoked command in '/root/colcon_ws/build/px4_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /root/colcon_ws/build/px4_msgs

@@ -1,0 +1,57 @@
+[0.014s] Invoking command in '/root/colcon_ws/build/dasc_robot': CMAKE_PREFIX_PATH=/root/colcon_ws/install/px4_ros_com:/root/colcon_ws/install/px4_msgs:/root/colcon_ws/install/dasc_msgs:/opt/ros/foxy:/root/colcon_ws/install/realsense_gazebo_plugin:/root/colcon_ws/install/dasc_robot:/root/colcon_ws/install/gatekeeper:/root/colcon_ws/install/experiment LD_LIBRARY_PATH=/root/colcon_ws/install/px4_ros_com/lib:/root/colcon_ws/install/px4_msgs/lib:/root/colcon_ws/install/dasc_msgs/lib:/root/colcon_ws/install/realsense_gazebo_plugin/lib:/root/colcon_ws/install/dasc_robot/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib PYTHONPATH=/root/colcon_ws/install/px4_msgs/lib/python3.8/site-packages:/root/colcon_ws/install/dasc_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/cmake --build /root/colcon_ws/build/dasc_robot -- -j16 -l16
+[0.044s] -- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.063s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.188s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.195s] -- Found rclcpp: 2.4.0 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.223s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.225s] -- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.325s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.358s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.359s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.461s] -- Found tf2: 0.13.12 (/opt/ros/foxy/share/tf2/cmake)
+[0.494s] -- Found tf2_ros: 0.13.12 (/opt/ros/foxy/share/tf2_ros/cmake)
+[0.718s] -- Found px4_msgs: 2.0.1 (/root/colcon_ws/install/px4_msgs/share/px4_msgs/cmake)
+[0.729s] -- Found sensor_msgs: 2.0.4 (/opt/ros/foxy/share/sensor_msgs/cmake)
+[0.777s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/foxy/share/eigen3_cmake_module/cmake)
+[0.777s] -- Found px4_ros_com: 0.1.0 (/root/colcon_ws/install/px4_ros_com/share/px4_ros_com/cmake)
+[0.809s] -- Found dasc_msgs: 0.0.0 (/root/colcon_ws/install/dasc_msgs/share/dasc_msgs/cmake)
+[0.889s] -- Configuring done
+[0.961s] -- Generating done
+[0.963s] -- Build files have been written to: /root/colcon_ws/build/dasc_robot
+[1.019s] [ 11%] Built target dascBots
+[1.029s] [35m[1mScanning dependencies of target trajectory_follower[0m
+[1.046s] [ 16%] [32mBuilding CXX object CMakeFiles/trajectory_follower.dir/src/trajectory_follower.cpp.o[0m
+[1.046s] [ 61%] Built target example_control_geometric_velocity
+[1.046s] [ 61%] Built target example_control_multi_rover
+[1.046s] [ 61%] Built target example_control
+[1.047s] [ 61%] Built target example_control_geometric_acceleration
+[1.047s] [ 72%] Built target example_control_geometric
+[1.047s] [ 83%] Built target joystick_controller
+[1.053s] [ 94%] Built target dasc_robot_lib
+[2.705s] /root/colcon_ws/src/robot-framework/src/trajectory_follower.cpp: In constructor ‘TrajectoryFollower::TrajectoryFollower(std::shared_ptr<DASCRobot>)’:
+[2.705s] /root/colcon_ws/src/robot-framework/src/trajectory_follower.cpp:25:40: error: ‘traj_callback’ is not a member of ‘TrajectoryFollower’
+[2.705s]    25 |         std::bind(&TrajectoryFollower::traj_callback, this, _1));
+[2.705s]       |                                        ^~~~~~~~~~~~~
+[2.705s] /root/colcon_ws/src/robot-framework/src/trajectory_follower.cpp: In member function ‘void TrajectoryFollower::set_takeoff_traj()’:
+[2.705s] /root/colcon_ws/src/robot-framework/src/trajectory_follower.cpp:87:43: error: ‘using SharedPtr = class std::shared_ptr<rclcpp::Clock>’ {aka ‘class std::shared_ptr<rclcpp::Clock>’} has no member named ‘now’
+[2.705s]    87 |     traj.header.stamp = this->get_clock().now();
+[2.705s]       |                                           ^~~
+[2.705s] /root/colcon_ws/src/robot-framework/src/trajectory_follower.cpp: In member function ‘void TrajectoryFollower::timer_callback()’:
+[2.706s] /root/colcon_ws/src/robot-framework/src/trajectory_follower.cpp:125:46: error: invalid use of non-static member function ‘rclcpp::Time rclcpp::Node::now() const’
+[2.706s]   125 |     std::chrono::duration<double> dur = (now - traj.header.stamp);
+[2.706s]       |                                          ~~~~^~~~~~~~~~~~~~~~~~~
+[2.706s] In file included from /opt/ros/foxy/include/rclcpp/executors/single_threaded_executor.hpp:28,
+[2.706s]                  from /opt/ros/foxy/include/rclcpp/executors.hpp:22,
+[2.706s]                  from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:146,
+[2.706s]                  from /root/colcon_ws/src/robot-framework/include/dasc_robot/DASCRobots.hpp:6,
+[2.706s]                  from /root/colcon_ws/src/robot-framework/src/trajectory_follower.cpp:2:
+[2.706s] /opt/ros/foxy/include/rclcpp/node.hpp:1025:3: note: declared here
+[2.706s]  1025 |   now() const;
+[2.706s]       |   ^~~
+[2.707s] /root/colcon_ws/src/robot-framework/src/trajectory_follower.cpp:138:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<double, std::allocator<double> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+[2.707s]   138 |    for (int i=0; i < traj.ts.size(); i++){
+[2.707s]       |                  ~~^~~~~~~~~~~~~~~~
+[2.707s] make[2]: *** [CMakeFiles/trajectory_follower.dir/build.make:63: CMakeFiles/trajectory_follower.dir/src/trajectory_follower.cpp.o] Error 1
+[2.707s] make[1]: *** [CMakeFiles/Makefile2:94: CMakeFiles/trajectory_follower.dir/all] Error 2
+[2.707s] make: *** [Makefile:141: all] Error 2
+[2.708s] Invoked command in '/root/colcon_ws/build/dasc_robot' returned '2': CMAKE_PREFIX_PATH=/root/colcon_ws/install/px4_ros_com:/root/colcon_ws/install/px4_msgs:/root/colcon_ws/install/dasc_msgs:/opt/ros/foxy:/root/colcon_ws/install/realsense_gazebo_plugin:/root/colcon_ws/install/dasc_robot:/root/colcon_ws/install/gatekeeper:/root/colcon_ws/install/experiment LD_LIBRARY_PATH=/root/colcon_ws/install/px4_ros_com/lib:/root/colcon_ws/install/px4_msgs/lib:/root/colcon_ws/install/dasc_msgs/lib:/root/colcon_ws/install/realsense_gazebo_plugin/lib:/root/colcon_ws/install/dasc_robot/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib PYTHONPATH=/root/colcon_ws/install/px4_msgs/lib/python3.8/site-packages:/root/colcon_ws/install/dasc_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/cmake --build /root/colcon_ws/build/dasc_robot -- -j16 -l16

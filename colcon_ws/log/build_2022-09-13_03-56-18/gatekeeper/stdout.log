@@ -1,0 +1,3 @@
+[35m[1mScanning dependencies of target nominal_controller[0m
+[ 40%] [32mBuilding CXX object CMakeFiles/nominal_controller.dir/src/nominal_controller.cpp.o[0m
+[ 80%] Built target gatekeeper

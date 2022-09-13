@@ -1,0 +1,52 @@
+[0.010s] Invoking command in '/root/colcon_ws/build/dasc_robot': CMAKE_PREFIX_PATH=/root/colcon_ws/install/px4_ros_com:/root/colcon_ws/install/px4_msgs:/opt/ros/foxy:/root/colcon_ws/install/realsense_gazebo_plugin:/root/colcon_ws/install/dasc_robot:/root/colcon_ws/install/experiment LD_LIBRARY_PATH=/root/colcon_ws/install/px4_ros_com/lib:/root/colcon_ws/install/px4_msgs/lib:/root/colcon_ws/install/realsense_gazebo_plugin/lib:/root/colcon_ws/install/dasc_robot/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib /usr/bin/cmake --build /root/colcon_ws/build/dasc_robot -- -j16 -l16
+[0.060s] [ 12%] Built target dascBots
+[0.071s] [35m[1mScanning dependencies of target joystick_controller[0m
+[0.087s] [ 62%] Built target example_control_geometric
+[0.087s] [ 62%] Built target example_control
+[0.087s] [ 62%] Built target example_control_geometric_velocity
+[0.087s] [ 62%] Built target example_control_geometric_acceleration
+[0.088s] [ 75%] Built target example_control_multi_rover
+[0.092s] [ 87%] Built target dasc_robot_lib
+[0.097s] [ 93%] [32mBuilding CXX object CMakeFiles/joystick_controller.dir/src/joystick_control.cpp.o[0m
+[2.404s] /root/colcon_ws/src/robot-framework/src/joystick_control.cpp: In member function ‘void JoystickController::takeoff()’:
+[2.404s] /root/colcon_ws/src/robot-framework/src/joystick_control.cpp:76:7: error: ‘err’ was not declared in this scope; did you mean ‘erf’?
+[2.404s]    76 |       err = 0;
+[2.404s]       |       ^~~
+[2.404s]       |       erf
+[2.404s] In file included from /opt/ros/foxy/include/rclcpp/service.hpp:34,
+[2.405s]                  from /opt/ros/foxy/include/rclcpp/callback_group.hpp:25,
+[2.405s]                  from /opt/ros/foxy/include/rclcpp/any_executable.hpp:20,
+[2.405s]                  from /opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24,
+[2.405s]                  from /opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18,
+[2.405s]                  from /opt/ros/foxy/include/rclcpp/executor_options.hpp:20,
+[2.405s]                  from /opt/ros/foxy/include/rclcpp/executor.hpp:33,
+[2.405s]                  from /opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26,
+[2.405s]                  from /opt/ros/foxy/include/rclcpp/executors.hpp:21,
+[2.405s]                  from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:146,
+[2.405s]                  from /root/colcon_ws/src/robot-framework/include/dasc_robot/DASCRobots.hpp:6,
+[2.405s]                  from /root/colcon_ws/src/robot-framework/src/joystick_control.cpp:2:
+[2.405s] /root/colcon_ws/src/robot-framework/src/joystick_control.cpp:83:7: error: static assertion failed: First argument to logging macros must be an rclcpp::Logger
+[2.405s]    83 |       RCLCPP_INFO("TAKING OFF.. err: %f", std::sqrt(err));
+[2.405s]       |       ^~~~~~~~~~~
+[2.405s] In file included from /opt/ros/foxy/include/rclcpp/client.hpp:40,
+[2.405s]                  from /opt/ros/foxy/include/rclcpp/callback_group.hpp:23,
+[2.406s]                  from /opt/ros/foxy/include/rclcpp/any_executable.hpp:20,
+[2.406s]                  from /opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24,
+[2.406s]                  from /opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18,
+[2.406s]                  from /opt/ros/foxy/include/rclcpp/executor_options.hpp:20,
+[2.406s]                  from /opt/ros/foxy/include/rclcpp/executor.hpp:33,
+[2.406s]                  from /opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26,
+[2.406s]                  from /opt/ros/foxy/include/rclcpp/executors.hpp:21,
+[2.406s]                  from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:146,
+[2.406s]                  from /root/colcon_ws/src/robot-framework/include/dasc_robot/DASCRobots.hpp:6,
+[2.406s]                  from /root/colcon_ws/src/robot-framework/src/joystick_control.cpp:2:
+[2.406s] /root/colcon_ws/src/robot-framework/src/joystick_control.cpp:83:7: error: request for member ‘get_name’ in ‘"TAKING OFF.. err: %f"’, which is of non-class type ‘const char [21]’
+[2.406s]    83 |       RCLCPP_INFO("TAKING OFF.. err: %f", std::sqrt(err));
+[2.406s]       |       ^~~~~~~~~~~
+[2.406s] /root/colcon_ws/src/robot-framework/src/joystick_control.cpp:83:7: error: request for member ‘get_name’ in ‘"TAKING OFF.. err: %f"’, which is of non-class type ‘const char [21]’
+[2.406s]    83 |       RCLCPP_INFO("TAKING OFF.. err: %f", std::sqrt(err));
+[2.406s]       |       ^~~~~~~~~~~
+[2.407s] make[2]: *** [CMakeFiles/joystick_controller.dir/build.make:63: CMakeFiles/joystick_controller.dir/src/joystick_control.cpp.o] Error 1
+[2.407s] make[1]: *** [CMakeFiles/Makefile2:308: CMakeFiles/joystick_controller.dir/all] Error 2
+[2.407s] make: *** [Makefile:141: all] Error 2
+[2.407s] Invoked command in '/root/colcon_ws/build/dasc_robot' returned '2': CMAKE_PREFIX_PATH=/root/colcon_ws/install/px4_ros_com:/root/colcon_ws/install/px4_msgs:/opt/ros/foxy:/root/colcon_ws/install/realsense_gazebo_plugin:/root/colcon_ws/install/dasc_robot:/root/colcon_ws/install/experiment LD_LIBRARY_PATH=/root/colcon_ws/install/px4_ros_com/lib:/root/colcon_ws/install/px4_msgs/lib:/root/colcon_ws/install/realsense_gazebo_plugin/lib:/root/colcon_ws/install/dasc_robot/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib /usr/bin/cmake --build /root/colcon_ws/build/dasc_robot -- -j16 -l16

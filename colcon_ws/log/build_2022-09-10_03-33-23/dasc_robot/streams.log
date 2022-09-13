@@ -1,0 +1,39 @@
+[0.013s] Invoking command in '/root/colcon_ws/build/dasc_robot': CMAKE_PREFIX_PATH=/root/colcon_ws/install/px4_ros_com:/root/colcon_ws/install/px4_msgs:/opt/ros/foxy:/root/colcon_ws/install/realsense_gazebo_plugin:/root/colcon_ws/install/dasc_robot:/root/colcon_ws/install/experiment LD_LIBRARY_PATH=/root/colcon_ws/install/px4_ros_com/lib:/root/colcon_ws/install/px4_msgs/lib:/root/colcon_ws/install/realsense_gazebo_plugin/lib:/root/colcon_ws/install/dasc_robot/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib /usr/bin/cmake --build /root/colcon_ws/build/dasc_robot -- -j16 -l16
+[0.041s] -- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.060s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.180s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.188s] -- Found rclcpp: 2.4.0 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.212s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.215s] -- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.326s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.359s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.360s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.466s] -- Found tf2: 0.13.12 (/opt/ros/foxy/share/tf2/cmake)
+[0.497s] -- Found tf2_ros: 0.13.12 (/opt/ros/foxy/share/tf2_ros/cmake)
+[0.712s] -- Found px4_msgs: 2.0.1 (/root/colcon_ws/install/px4_msgs/share/px4_msgs/cmake)
+[0.724s] -- Found sensor_msgs: 2.0.4 (/opt/ros/foxy/share/sensor_msgs/cmake)
+[0.778s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/foxy/share/eigen3_cmake_module/cmake)
+[0.779s] -- Found px4_ros_com: 0.1.0 (/root/colcon_ws/install/px4_ros_com/share/px4_ros_com/cmake)
+[0.881s] -- Configuring done
+[0.952s] -- Generating done
+[0.954s] -- Build files have been written to: /root/colcon_ws/build/dasc_robot
+[1.009s] [ 12%] Built target dascBots
+[1.018s] [35m[1mScanning dependencies of target joystick_controller[0m
+[1.035s] [ 68%] Built target example_control_multi_rover
+[1.035s] [ 68%] Built target example_control
+[1.035s] [ 68%] Built target example_control_geometric_velocity
+[1.036s] [ 68%] Built target example_control_geometric
+[1.036s] [ 75%] Built target example_control_geometric_acceleration
+[1.040s] [ 87%] Built target dasc_robot_lib
+[1.097s] [ 93%] [32mBuilding CXX object CMakeFiles/joystick_controller.dir/src/joystick_control.cpp.o[0m
+[2.744s] /root/colcon_ws/src/robot-framework/src/joystick_control.cpp: In function ‘int main(int, char**)’:
+[2.744s] /root/colcon_ws/src/robot-framework/src/joystick_control.cpp:66:8: error: ‘std::this_thead’ has not been declared
+[2.744s]    66 |   std::this_thead::sleep_for(2000ms);
+[2.744s]       |        ^~~~~~~~~~
+[2.744s] /root/colcon_ws/src/robot-framework/src/joystick_control.cpp:73:16: error: ‘node’ was not declared in this scope
+[2.744s]    73 |   rclcpp::spin(node);
+[2.744s]       |                ^~~~
+[2.744s] make[2]: *** [CMakeFiles/joystick_controller.dir/build.make:63: CMakeFiles/joystick_controller.dir/src/joystick_control.cpp.o] Error 1
+[2.745s] make[1]: *** [CMakeFiles/Makefile2:308: CMakeFiles/joystick_controller.dir/all] Error 2
+[2.745s] make: *** [Makefile:141: all] Error 2
+[2.747s] Invoked command in '/root/colcon_ws/build/dasc_robot' returned '2': CMAKE_PREFIX_PATH=/root/colcon_ws/install/px4_ros_com:/root/colcon_ws/install/px4_msgs:/opt/ros/foxy:/root/colcon_ws/install/realsense_gazebo_plugin:/root/colcon_ws/install/dasc_robot:/root/colcon_ws/install/experiment LD_LIBRARY_PATH=/root/colcon_ws/install/px4_ros_com/lib:/root/colcon_ws/install/px4_msgs/lib:/root/colcon_ws/install/realsense_gazebo_plugin/lib:/root/colcon_ws/install/dasc_robot/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib /usr/bin/cmake --build /root/colcon_ws/build/dasc_robot -- -j16 -l16

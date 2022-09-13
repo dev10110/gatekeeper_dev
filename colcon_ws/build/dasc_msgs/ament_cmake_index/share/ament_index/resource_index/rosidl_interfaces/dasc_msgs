@@ -1,0 +1,4 @@
+msg/QuadSetpoint.idl
+msg/QuadSetpoint.msg
+msg/QuadTrajectory.idl
+msg/QuadTrajectory.msg

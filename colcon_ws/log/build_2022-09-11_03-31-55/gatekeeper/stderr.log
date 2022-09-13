@@ -1,0 +1,26 @@
+** WARNING ** io features related to pcap will be disabled
+** WARNING ** io features related to png will be disabled
+** WARNING ** io features related to libusb-1.0 will be disabled
+/root/colcon_ws/src/gatekeeper/src/nominal_controller.cpp: In constructor ‘NominalController::NominalController()’:
+/root/colcon_ws/src/gatekeeper/src/nominal_controller.cpp:48:94: error: no matching function for call to ‘NominalController::create_publisher<visualization_msgs::msg::MarkerArray>(const char [13])’
+   48 |     marker_pub_ = this->create_publisher<visualization_msgs::msg::MarkerArray>("nominal_traj");
+      |                                                                                              ^
+In file included from /opt/ros/foxy/include/rclcpp/node.hpp:1224,
+                 from /opt/ros/foxy/include/rclcpp/executors/single_threaded_executor.hpp:28,
+                 from /opt/ros/foxy/include/rclcpp/executors.hpp:22,
+                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:146,
+                 from /root/colcon_ws/src/gatekeeper/src/nominal_controller.cpp:5:
+/opt/ros/foxy/include/rclcpp/node_impl.hpp:71:1: note: candidate: ‘template<class MessageT, class AllocatorT, class PublisherT> std::shared_ptr<PublisherT> rclcpp::Node::create_publisher(const string&, const rclcpp::QoS&, const rclcpp::PublisherOptionsWithAllocator<AllocatorT>&)’
+   71 | Node::create_publisher(
+      | ^~~~
+/opt/ros/foxy/include/rclcpp/node_impl.hpp:71:1: note:   template argument deduction/substitution failed:
+/root/colcon_ws/src/gatekeeper/src/nominal_controller.cpp:48:94: note:   candidate expects 3 arguments, 1 provided
+   48 |     marker_pub_ = this->create_publisher<visualization_msgs::msg::MarkerArray>("nominal_traj");
+      |                                                                                              ^
+/root/colcon_ws/src/gatekeeper/src/nominal_controller.cpp: In member function ‘void NominalController::publish_one_trajectory()’:
+/root/colcon_ws/src/gatekeeper/src/nominal_controller.cpp:131:21: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<double, std::allocator<double> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  131 |     for (int i=0; i < msg.ts.size(); i++){
+      |                   ~~^~~~~~~~~~~~~~~
+make[2]: *** [CMakeFiles/nominal_controller.dir/build.make:63: CMakeFiles/nominal_controller.dir/src/nominal_controller.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:107: CMakeFiles/nominal_controller.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

@@ -1,0 +1,26 @@
+[0.009s] Invoking command in '/root/colcon_ws/build/gatekeeper': CMAKE_PREFIX_PATH=/root/colcon_ws/install/dasc_msgs:/opt/ros/foxy:/root/colcon_ws/install/realsense_gazebo_plugin:/root/colcon_ws/install/px4_ros_com:/root/colcon_ws/install/dasc_robot:/root/colcon_ws/install/px4_msgs:/root/colcon_ws/install/gatekeeper:/root/colcon_ws/install/experiment /usr/bin/cmake --build /root/colcon_ws/build/gatekeeper -- -j16 -l16
+[0.053s] [35m[1mScanning dependencies of target nominal_controller[0m
+[0.079s] [ 50%] [32mBuilding CXX object CMakeFiles/nominal_controller.dir/src/nominal_controller.cpp.o[0m
+[4.511s] [100%] [32m[1mLinking CXX executable nominal_controller[0m
+[4.702s] [100%] Built target nominal_controller
+[4.712s] Invoked command in '/root/colcon_ws/build/gatekeeper' returned '0': CMAKE_PREFIX_PATH=/root/colcon_ws/install/dasc_msgs:/opt/ros/foxy:/root/colcon_ws/install/realsense_gazebo_plugin:/root/colcon_ws/install/px4_ros_com:/root/colcon_ws/install/dasc_robot:/root/colcon_ws/install/px4_msgs:/root/colcon_ws/install/gatekeeper:/root/colcon_ws/install/experiment /usr/bin/cmake --build /root/colcon_ws/build/gatekeeper -- -j16 -l16
+[4.735s] Invoking command in '/root/colcon_ws/build/gatekeeper': CMAKE_PREFIX_PATH=/root/colcon_ws/install/dasc_msgs:/opt/ros/foxy:/root/colcon_ws/install/realsense_gazebo_plugin:/root/colcon_ws/install/px4_ros_com:/root/colcon_ws/install/dasc_robot:/root/colcon_ws/install/px4_msgs:/root/colcon_ws/install/gatekeeper:/root/colcon_ws/install/experiment /usr/bin/cmake --install /root/colcon_ws/build/gatekeeper
+[4.746s] -- Install configuration: ""
+[4.747s] -- Execute custom install script
+[4.747s] -- Up-to-date symlink: /root/colcon_ws/install/gatekeeper/lib/gatekeeper/nominal_controller
+[4.747s] -- Up-to-date symlink: /root/colcon_ws/install/gatekeeper/share/ament_index/resource_index/package_run_dependencies/gatekeeper
+[4.748s] -- Up-to-date symlink: /root/colcon_ws/install/gatekeeper/share/ament_index/resource_index/parent_prefix_path/gatekeeper
+[4.748s] -- Up-to-date symlink: /root/colcon_ws/install/gatekeeper/share/gatekeeper/environment/ament_prefix_path.sh
+[4.748s] -- Up-to-date symlink: /root/colcon_ws/install/gatekeeper/share/gatekeeper/environment/ament_prefix_path.dsv
+[4.748s] -- Up-to-date symlink: /root/colcon_ws/install/gatekeeper/share/gatekeeper/environment/path.sh
+[4.748s] -- Up-to-date symlink: /root/colcon_ws/install/gatekeeper/share/gatekeeper/environment/path.dsv
+[4.748s] -- Up-to-date symlink: /root/colcon_ws/install/gatekeeper/share/gatekeeper/local_setup.bash
+[4.749s] -- Up-to-date symlink: /root/colcon_ws/install/gatekeeper/share/gatekeeper/local_setup.sh
+[4.749s] -- Up-to-date symlink: /root/colcon_ws/install/gatekeeper/share/gatekeeper/local_setup.zsh
+[4.749s] -- Up-to-date symlink: /root/colcon_ws/install/gatekeeper/share/gatekeeper/local_setup.dsv
+[4.749s] -- Symlinking: /root/colcon_ws/install/gatekeeper/share/gatekeeper/package.dsv
+[4.758s] -- Up-to-date symlink: /root/colcon_ws/install/gatekeeper/share/ament_index/resource_index/packages/gatekeeper
+[4.758s] -- Up-to-date symlink: /root/colcon_ws/install/gatekeeper/share/gatekeeper/cmake/gatekeeperConfig.cmake
+[4.758s] -- Up-to-date symlink: /root/colcon_ws/install/gatekeeper/share/gatekeeper/cmake/gatekeeperConfig-version.cmake
+[4.758s] -- Up-to-date symlink: /root/colcon_ws/install/gatekeeper/share/gatekeeper/package.xml
+[4.760s] Invoked command in '/root/colcon_ws/build/gatekeeper' returned '0': CMAKE_PREFIX_PATH=/root/colcon_ws/install/dasc_msgs:/opt/ros/foxy:/root/colcon_ws/install/realsense_gazebo_plugin:/root/colcon_ws/install/px4_ros_com:/root/colcon_ws/install/dasc_robot:/root/colcon_ws/install/px4_msgs:/root/colcon_ws/install/gatekeeper:/root/colcon_ws/install/experiment /usr/bin/cmake --install /root/colcon_ws/build/gatekeeper

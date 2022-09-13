@@ -1,0 +1,14 @@
+[35m[1mScanning dependencies of target nominal_controller[0m
+[ 60%] Built target gatekeeper
+[ 80%] [32mBuilding CXX object CMakeFiles/nominal_controller.dir/src/nominal_controller.cpp.o[0m
+/root/colcon_ws/src/gatekeeper/src/nominal_controller.cpp: In member function ‘void NominalController::publish_one_trajectory()’:
+/root/colcon_ws/src/gatekeeper/src/nominal_controller.cpp:116:39: error: ‘douvle’ was not declared in this scope; did you mean ‘double’?
+  116 |      double th = M_PI_2 * double(i) / douvle(N);
+      |                                       ^~~~~~
+      |                                       double
+/root/colcon_ws/src/gatekeeper/src/nominal_controller.cpp:110:12: warning: unused variable ‘th’ [-Wunused-variable]
+  110 |     double th = 0.0;
+      |            ^~
+make[2]: *** [CMakeFiles/nominal_controller.dir/build.make:63: CMakeFiles/nominal_controller.dir/src/nominal_controller.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:107: CMakeFiles/nominal_controller.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

@@ -1,0 +1,9 @@
+[ 11%] Built target dascBots
+[ 16%] [32mBuilding CXX object CMakeFiles/trajectory_follower.dir/src/trajectory_follower.cpp.o[0m
+[ 83%] Built target example_control
+[ 83%] Built target example_control_geometric
+[ 83%] Built target example_control_geometric_acceleration
+[ 83%] Built target dasc_robot_lib
+[ 83%] Built target example_control_geometric_velocity
+[ 83%] Built target example_control_multi_rover
+[ 94%] Built target joystick_controller

@@ -1,0 +1,11 @@
+[0.008s] Invoking command in '/root/colcon_ws/build/gatekeeper': CMAKE_PREFIX_PATH=/root/colcon_ws/install/dasc_msgs:/opt/ros/foxy:/root/colcon_ws/install/realsense_gazebo_plugin:/root/colcon_ws/install/px4_ros_com:/root/colcon_ws/install/dasc_robot:/root/colcon_ws/install/px4_msgs:/root/colcon_ws/install/gatekeeper:/root/colcon_ws/install/experiment /usr/bin/cmake --build /root/colcon_ws/build/gatekeeper -- -j16 -l16
+[0.051s] [35m[1mScanning dependencies of target nominal_controller[0m
+[0.075s] [ 50%] [32mBuilding CXX object CMakeFiles/nominal_controller.dir/src/nominal_controller.cpp.o[0m
+[2.469s] /root/colcon_ws/src/gatekeeper/src/nominal_controller.cpp: In member function ‘void NominalController::joy_callback(sensor_msgs::msg::Joy_<std::allocator<void> >::SharedPtr)’:
+[2.469s] /root/colcon_ws/src/gatekeeper/src/nominal_controller.cpp:90:16: error: ‘std_max’ was not declared in this scope
+[2.469s]    90 |     target_x = std_max(last_x - 1.0, std::min(target_x, last_x + 1.0));
+[2.469s]       |                ^~~~~~~
+[2.469s] make[2]: *** [CMakeFiles/nominal_controller.dir/build.make:63: CMakeFiles/nominal_controller.dir/src/nominal_controller.cpp.o] Error 1
+[2.469s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/nominal_controller.dir/all] Error 2
+[2.469s] make: *** [Makefile:141: all] Error 2
+[2.472s] Invoked command in '/root/colcon_ws/build/gatekeeper' returned '2': CMAKE_PREFIX_PATH=/root/colcon_ws/install/dasc_msgs:/opt/ros/foxy:/root/colcon_ws/install/realsense_gazebo_plugin:/root/colcon_ws/install/px4_ros_com:/root/colcon_ws/install/dasc_robot:/root/colcon_ws/install/px4_msgs:/root/colcon_ws/install/gatekeeper:/root/colcon_ws/install/experiment /usr/bin/cmake --build /root/colcon_ws/build/gatekeeper -- -j16 -l16

@@ -1,0 +1,15 @@
+/root/colcon_ws/src/robot-framework/src/trajectory_follower.cpp: In member function ‘void TrajectoryFollower::traj_callback(dasc_msgs::msg::QuadTrajectory_<std::allocator<void> >::SharedPtr)’:
+/root/colcon_ws/src/robot-framework/src/trajectory_follower.cpp:126:13: error: no match for ‘operator=’ (operand types are ‘QuadTrajectory’ {aka ‘dasc_msgs::msg::QuadTrajectory_<std::allocator<void> >’} and ‘const SharedPtr*’ {aka ‘const std::shared_ptr<dasc_msgs::msg::QuadTrajectory_<std::allocator<void> > >*’})
+  126 |     traj = &msg;
+      |             ^~~
+In file included from /root/colcon_ws/install/dasc_msgs/include/dasc_msgs/msg/quad_trajectory.hpp:7,
+                 from /root/colcon_ws/src/robot-framework/src/trajectory_follower.cpp:5:
+/root/colcon_ws/install/dasc_msgs/include/dasc_msgs/msg/detail/quad_trajectory__struct.hpp:35:8: note: candidate: ‘dasc_msgs::msg::QuadTrajectory_<std::allocator<void> >& dasc_msgs::msg::QuadTrajectory_<std::allocator<void> >::operator=(const dasc_msgs::msg::QuadTrajectory_<std::allocator<void> >&)’
+   35 | struct QuadTrajectory_
+      |        ^~~~~~~~~~~~~~~
+/root/colcon_ws/install/dasc_msgs/include/dasc_msgs/msg/detail/quad_trajectory__struct.hpp:35:8: note:   no known conversion for argument 1 from ‘const SharedPtr*’ {aka ‘const std::shared_ptr<dasc_msgs::msg::QuadTrajectory_<std::allocator<void> > >*’} to ‘const dasc_msgs::msg::QuadTrajectory_<std::allocator<void> >&’
+/root/colcon_ws/install/dasc_msgs/include/dasc_msgs/msg/detail/quad_trajectory__struct.hpp:35:8: note: candidate: ‘dasc_msgs::msg::QuadTrajectory_<std::allocator<void> >& dasc_msgs::msg::QuadTrajectory_<std::allocator<void> >::operator=(dasc_msgs::msg::QuadTrajectory_<std::allocator<void> >&&)’
+/root/colcon_ws/install/dasc_msgs/include/dasc_msgs/msg/detail/quad_trajectory__struct.hpp:35:8: note:   no known conversion for argument 1 from ‘const SharedPtr*’ {aka ‘const std::shared_ptr<dasc_msgs::msg::QuadTrajectory_<std::allocator<void> > >*’} to ‘dasc_msgs::msg::QuadTrajectory_<std::allocator<void> >&&’
+make[2]: *** [CMakeFiles/trajectory_follower.dir/build.make:63: CMakeFiles/trajectory_follower.dir/src/trajectory_follower.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:94: CMakeFiles/trajectory_follower.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

@@ -1,0 +1,77 @@
+[0.012s] Invoking command in '/root/colcon_ws/build/gatekeeper': CMAKE_PREFIX_PATH=/root/colcon_ws/install/dasc_msgs:/opt/ros/foxy:/root/colcon_ws/install/realsense_gazebo_plugin:/root/colcon_ws/install/px4_ros_com:/root/colcon_ws/install/dasc_robot:/root/colcon_ws/install/px4_msgs:/root/colcon_ws/install/gatekeeper:/root/colcon_ws/install/experiment LD_LIBRARY_PATH=/root/colcon_ws/install/dasc_msgs/lib:/root/colcon_ws/install/realsense_gazebo_plugin/lib:/root/colcon_ws/install/px4_ros_com/lib:/root/colcon_ws/install/dasc_robot/lib:/root/colcon_ws/install/px4_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib PYTHONPATH=/root/colcon_ws/install/dasc_msgs/lib/python3.8/site-packages:/root/colcon_ws/install/px4_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/cmake --build /root/colcon_ws/build/gatekeeper -- -j16 -l16
+[0.059s] [35m[1mScanning dependencies of target gatekeeper[0m
+[0.077s] [ 50%] Built target nominal_controller
+[0.106s] [ 75%] [32mBuilding CXX object CMakeFiles/gatekeeper.dir/src/gatekeeper.cpp.o[0m
+[9.170s] /root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp: In constructor ‘gatekeeper::Gatekeeper::Gatekeeper()’:
+[9.170s] /root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:22:59: error: no match for ‘operator=’ (operand types are ‘std::shared_ptr<sensor_msgs::msg::PointCloud2_<std::allocator<void> > >’ and ‘std::shared_ptr<rclcpp::Subscription<sensor_msgs::msg::PointCloud2_<std::allocator<void> >, std::allocator<void>, rclcpp::message_memory_strategy::MessageMemoryStrategy<sensor_msgs::msg::PointCloud2_<std::allocator<void> >, std::allocator<void> > > >’)
+[9.170s]    22 |       std::bind(&Gatekeeper::cloud_callback, this, ph::_1));
+[9.170s]       |                                                           ^
+[9.170s] In file included from /usr/include/c++/9/memory:81,
+[9.170s]                  from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:144,
+[9.171s]                  from /root/colcon_ws/src/gatekeeper/include/gatekeeper/gatekeeper.hpp:7,
+[9.171s]                  from /root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:10:
+[9.171s] /usr/include/c++/9/bits/shared_ptr.h:309:19: note: candidate: ‘std::shared_ptr<_Tp>& std::shared_ptr<_Tp>::operator=(const std::shared_ptr<_Tp>&) [with _Tp = sensor_msgs::msg::PointCloud2_<std::allocator<void> >]’
+[9.171s]   309 |       shared_ptr& operator=(const shared_ptr&) noexcept = default;
+[9.171s]       |                   ^~~~~~~~
+[9.171s] /usr/include/c++/9/bits/shared_ptr.h:309:29: note:   no known conversion for argument 1 from ‘std::shared_ptr<rclcpp::Subscription<sensor_msgs::msg::PointCloud2_<std::allocator<void> >, std::allocator<void>, rclcpp::message_memory_strategy::MessageMemoryStrategy<sensor_msgs::msg::PointCloud2_<std::allocator<void> >, std::allocator<void> > > >’ to ‘const std::shared_ptr<sensor_msgs::msg::PointCloud2_<std::allocator<void> > >&’
+[9.171s]   309 |       shared_ptr& operator=(const shared_ptr&) noexcept = default;
+[9.171s]       |                             ^~~~~~~~~~~~~~~~~
+[9.171s] /usr/include/c++/9/bits/shared_ptr.h:313:2: note: candidate: ‘template<class _Yp> std::shared_ptr<_Tp>::_Assignable<const std::shared_ptr<_Yp>&> std::shared_ptr<_Tp>::operator=(const std::shared_ptr<_Yp>&) [with _Yp = _Yp; _Tp = sensor_msgs::msg::PointCloud2_<std::allocator<void> >]’
+[9.171s]   313 |  operator=(const shared_ptr<_Yp>& __r) noexcept
+[9.171s]       |  ^~~~~~~~
+[9.171s] /usr/include/c++/9/bits/shared_ptr.h:313:2: note:   template argument deduction/substitution failed:
+[9.172s] /usr/include/c++/9/bits/shared_ptr.h: In substitution of ‘template<class _Tp> template<class _Arg> using _Assignable = typename std::enable_if<std::is_assignable<std::__shared_ptr<_Tp>&, _Arg>::value, std::shared_ptr<_Tp>&>::type [with _Arg = const std::shared_ptr<rclcpp::Subscription<sensor_msgs::msg::PointCloud2_<std::allocator<void> >, std::allocator<void>, rclcpp::message_memory_strategy::MessageMemoryStrategy<sensor_msgs::msg::PointCloud2_<std::allocator<void> >, std::allocator<void> > > >&; _Tp = sensor_msgs::msg::PointCloud2_<std::allocator<void> >]’:
+[9.172s] /usr/include/c++/9/bits/shared_ptr.h:313:2:   required by substitution of ‘template<class _Yp> std::shared_ptr<sensor_msgs::msg::PointCloud2_<std::allocator<void> > >::_Assignable<const std::shared_ptr<_Tp>&> std::shared_ptr<sensor_msgs::msg::PointCloud2_<std::allocator<void> > >::operator=<_Yp>(const std::shared_ptr<_Tp>&) [with _Yp = rclcpp::Subscription<sensor_msgs::msg::PointCloud2_<std::allocator<void> >, std::allocator<void>, rclcpp::message_memory_strategy::MessageMemoryStrategy<sensor_msgs::msg::PointCloud2_<std::allocator<void> >, std::allocator<void> > >]’
+[9.172s] /root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:22:59:   required from here
+[9.172s] /usr/include/c++/9/bits/shared_ptr.h:111:8: error: no type named ‘type’ in ‘struct std::enable_if<false, std::shared_ptr<sensor_msgs::msg::PointCloud2_<std::allocator<void> > >&>’
+[9.172s]   111 |  using _Assignable = typename enable_if<
+[9.172s]       |        ^~~~~~~~~~~
+[9.172s] /usr/include/c++/9/bits/shared_ptr.h:324:2: note: candidate: ‘template<class _Yp> std::shared_ptr<_Tp>::_Assignable<std::auto_ptr<_Up> > std::shared_ptr<_Tp>::operator=(std::auto_ptr<_Up>&&) [with _Yp = _Yp; _Tp = sensor_msgs::msg::PointCloud2_<std::allocator<void> >]’
+[9.172s]   324 |  operator=(auto_ptr<_Yp>&& __r)
+[9.172s]       |  ^~~~~~~~
+[9.172s] /usr/include/c++/9/bits/shared_ptr.h:324:2: note:   template argument deduction/substitution failed:
+[9.172s] /root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:22:59: note:   ‘std::shared_ptr<rclcpp::Subscription<sensor_msgs::msg::PointCloud2_<std::allocator<void> >, std::allocator<void>, rclcpp::message_memory_strategy::MessageMemoryStrategy<sensor_msgs::msg::PointCloud2_<std::allocator<void> >, std::allocator<void> > > >’ is not derived from ‘std::auto_ptr<_Up>’
+[9.172s]    22 |       std::bind(&Gatekeeper::cloud_callback, this, ph::_1));
+[9.172s]       |                                                           ^
+[9.172s] In file included from /usr/include/c++/9/memory:81,
+[9.172s]                  from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:144,
+[9.172s]                  from /root/colcon_ws/src/gatekeeper/include/gatekeeper/gatekeeper.hpp:7,
+[9.173s]                  from /root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:10:
+[9.173s] /usr/include/c++/9/bits/shared_ptr.h:333:7: note: candidate: ‘std::shared_ptr<_Tp>& std::shared_ptr<_Tp>::operator=(std::shared_ptr<_Tp>&&) [with _Tp = sensor_msgs::msg::PointCloud2_<std::allocator<void> >]’
+[9.173s]   333 |       operator=(shared_ptr&& __r) noexcept
+[9.173s]       |       ^~~~~~~~
+[9.173s] /usr/include/c++/9/bits/shared_ptr.h:333:30: note:   no known conversion for argument 1 from ‘std::shared_ptr<rclcpp::Subscription<sensor_msgs::msg::PointCloud2_<std::allocator<void> >, std::allocator<void>, rclcpp::message_memory_strategy::MessageMemoryStrategy<sensor_msgs::msg::PointCloud2_<std::allocator<void> >, std::allocator<void> > > >’ to ‘std::shared_ptr<sensor_msgs::msg::PointCloud2_<std::allocator<void> > >&&’
+[9.173s]   333 |       operator=(shared_ptr&& __r) noexcept
+[9.173s]       |                 ~~~~~~~~~~~~~^~~
+[9.173s] /usr/include/c++/9/bits/shared_ptr.h:341:2: note: candidate: ‘template<class _Yp> std::shared_ptr<_Tp>::_Assignable<std::shared_ptr<_Yp> > std::shared_ptr<_Tp>::operator=(std::shared_ptr<_Yp>&&) [with _Yp = _Yp; _Tp = sensor_msgs::msg::PointCloud2_<std::allocator<void> >]’
+[9.173s]   341 |  operator=(shared_ptr<_Yp>&& __r) noexcept
+[9.173s]       |  ^~~~~~~~
+[9.173s] /usr/include/c++/9/bits/shared_ptr.h:341:2: note:   template argument deduction/substitution failed:
+[9.174s] /usr/include/c++/9/bits/shared_ptr.h: In substitution of ‘template<class _Tp> template<class _Arg> using _Assignable = typename std::enable_if<std::is_assignable<std::__shared_ptr<_Tp>&, _Arg>::value, std::shared_ptr<_Tp>&>::type [with _Arg = std::shared_ptr<rclcpp::Subscription<sensor_msgs::msg::PointCloud2_<std::allocator<void> >, std::allocator<void>, rclcpp::message_memory_strategy::MessageMemoryStrategy<sensor_msgs::msg::PointCloud2_<std::allocator<void> >, std::allocator<void> > > >; _Tp = sensor_msgs::msg::PointCloud2_<std::allocator<void> >]’:
+[9.174s] /usr/include/c++/9/bits/shared_ptr.h:341:2:   required by substitution of ‘template<class _Yp> std::shared_ptr<sensor_msgs::msg::PointCloud2_<std::allocator<void> > >::_Assignable<std::shared_ptr<_Tp> > std::shared_ptr<sensor_msgs::msg::PointCloud2_<std::allocator<void> > >::operator=<_Yp>(std::shared_ptr<_Tp>&&) [with _Yp = rclcpp::Subscription<sensor_msgs::msg::PointCloud2_<std::allocator<void> >, std::allocator<void>, rclcpp::message_memory_strategy::MessageMemoryStrategy<sensor_msgs::msg::PointCloud2_<std::allocator<void> >, std::allocator<void> > >]’
+[9.174s] /root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:22:59:   required from here
+[9.174s] /usr/include/c++/9/bits/shared_ptr.h:111:8: error: no type named ‘type’ in ‘struct std::enable_if<false, std::shared_ptr<sensor_msgs::msg::PointCloud2_<std::allocator<void> > >&>’
+[9.174s]   111 |  using _Assignable = typename enable_if<
+[9.174s]       |        ^~~~~~~~~~~
+[9.174s] /usr/include/c++/9/bits/shared_ptr.h:349:2: note: candidate: ‘template<class _Yp, class _Del> std::shared_ptr<_Tp>::_Assignable<std::unique_ptr<_Up, _Ep> > std::shared_ptr<_Tp>::operator=(std::unique_ptr<_Up, _Ep>&&) [with _Yp = _Yp; _Del = _Del; _Tp = sensor_msgs::msg::PointCloud2_<std::allocator<void> >]’
+[9.174s]   349 |  operator=(unique_ptr<_Yp, _Del>&& __r)
+[9.175s]       |  ^~~~~~~~
+[9.175s] /usr/include/c++/9/bits/shared_ptr.h:349:2: note:   template argument deduction/substitution failed:
+[9.175s] /root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:22:59: note:   ‘std::shared_ptr<rclcpp::Subscription<sensor_msgs::msg::PointCloud2_<std::allocator<void> >, std::allocator<void>, rclcpp::message_memory_strategy::MessageMemoryStrategy<sensor_msgs::msg::PointCloud2_<std::allocator<void> >, std::allocator<void> > > >’ is not derived from ‘std::unique_ptr<_Tp, _Dp>’
+[9.175s]    22 |       std::bind(&Gatekeeper::cloud_callback, this, ph::_1));
+[9.175s]       |                                                           ^
+[9.175s] /root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp: In member function ‘void gatekeeper::Gatekeeper::cloud_callback(sensor_msgs::msg::PointCloud2_<std::allocator<void> >::SharedPtr)’:
+[9.175s] /root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:37:3: error: ‘PCLPointCloud’ {aka ‘pcl::PointCloud<pcl::PointXYZ>’} is not a template
+[9.175s]    37 |   PCLPointCloud<PCLPoint> pc;
+[9.175s]       |   ^~~~~~~~~~~~~
+[9.175s] /root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp: In member function ‘void gatekeeper::Gatekeeper::insertScan(const Vector3&, const PCLPointCloud&)’:
+[9.176s] /root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:45:65: warning: unused parameter ‘sensorOrigin’ [-Wunused-parameter]
+[9.176s]    45 | void Gatekeeper::insertScan( const geometry_msgs::msg::Vector3 &sensorOrigin,
+[9.176s]       |                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~
+[9.176s] /root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:46:24: warning: unused parameter ‘pc’ [-Wunused-parameter]
+[9.176s]    46 |   const PCLPointCloud& pc)
+[9.176s]       |   ~~~~~~~~~~~~~~~~~~~~~^~
+[9.176s] make[2]: *** [CMakeFiles/gatekeeper.dir/build.make:63: CMakeFiles/gatekeeper.dir/src/gatekeeper.cpp.o] Error 1
+[9.176s] make[1]: *** [CMakeFiles/Makefile2:80: CMakeFiles/gatekeeper.dir/all] Error 2
+[9.176s] make: *** [Makefile:141: all] Error 2
+[9.177s] Invoked command in '/root/colcon_ws/build/gatekeeper' returned '2': CMAKE_PREFIX_PATH=/root/colcon_ws/install/dasc_msgs:/opt/ros/foxy:/root/colcon_ws/install/realsense_gazebo_plugin:/root/colcon_ws/install/px4_ros_com:/root/colcon_ws/install/dasc_robot:/root/colcon_ws/install/px4_msgs:/root/colcon_ws/install/gatekeeper:/root/colcon_ws/install/experiment LD_LIBRARY_PATH=/root/colcon_ws/install/dasc_msgs/lib:/root/colcon_ws/install/realsense_gazebo_plugin/lib:/root/colcon_ws/install/px4_ros_com/lib:/root/colcon_ws/install/dasc_robot/lib:/root/colcon_ws/install/px4_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib PYTHONPATH=/root/colcon_ws/install/dasc_msgs/lib/python3.8/site-packages:/root/colcon_ws/install/px4_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/cmake --build /root/colcon_ws/build/gatekeeper -- -j16 -l16

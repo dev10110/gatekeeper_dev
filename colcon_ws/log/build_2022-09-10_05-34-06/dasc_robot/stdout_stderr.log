@@ -1,0 +1,17 @@
+[ 12%] Built target dascBots
+[35m[1mScanning dependencies of target joystick_controller[0m
+[ 68%] Built target example_control
+[ 68%] Built target example_control_geometric_acceleration
+[ 68%] Built target example_control_geometric
+[ 68%] Built target example_control_multi_rover
+[ 75%] Built target example_control_geometric_velocity
+[ 87%] Built target dasc_robot_lib
+[ 93%] [32mBuilding CXX object CMakeFiles/joystick_controller.dir/src/joystick_control.cpp.o[0m
+/root/colcon_ws/src/robot-framework/src/joystick_control.cpp: In member function ‘void JoystickController::takeoff()’:
+/root/colcon_ws/src/robot-framework/src/joystick_control.cpp:76:7: error: ‘err’ was not declared in this scope; did you mean ‘erf’?
+   76 |       err = 0;
+      |       ^~~
+      |       erf
+make[2]: *** [CMakeFiles/joystick_controller.dir/build.make:63: CMakeFiles/joystick_controller.dir/src/joystick_control.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:308: CMakeFiles/joystick_controller.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

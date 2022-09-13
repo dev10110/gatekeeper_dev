@@ -1,0 +1,2 @@
+/usr/bin/ar qc libdascBots.a  CMakeFiles/dascBots.dir/src/DASCRobots.cpp.o
+/usr/bin/ranlib libdascBots.a

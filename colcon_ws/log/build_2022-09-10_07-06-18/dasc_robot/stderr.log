@@ -1,0 +1,4 @@
+/root/colcon_ws/src/robot-framework/src/trajectory_follower.cpp: In member function ‘void TrajectoryFollower::traj_callback(dasc_msgs::msg::QuadTrajectory_<std::allocator<void> >::SharedPtr)’:
+/root/colcon_ws/src/robot-framework/src/trajectory_follower.cpp:117:54: warning: unused parameter ‘msg’ [-Wunused-parameter]
+  117 |   void traj_callback(const QuadTrajectory::SharedPtr msg){
+      |                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~

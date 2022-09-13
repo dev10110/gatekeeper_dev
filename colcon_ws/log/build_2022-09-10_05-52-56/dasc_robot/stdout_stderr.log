@@ -1,0 +1,20 @@
+[ 12%] Built target dascBots
+[35m[1mScanning dependencies of target joystick_controller[0m
+[35m[1mScanning dependencies of target example_control_geometric_velocity[0m
+[ 62%] Built target example_control
+[ 62%] Built target example_control_geometric_acceleration
+[ 62%] Built target example_control_multi_rover
+[ 62%] Built target example_control_geometric
+[ 75%] Built target dasc_robot_lib
+[ 87%] [32mBuilding CXX object CMakeFiles/joystick_controller.dir/src/joystick_control.cpp.o[0m
+[ 87%] [32mBuilding CXX object CMakeFiles/example_control_geometric_velocity.dir/src/example_control_geometric_velocity.cpp.o[0m
+[ 93%] [32m[1mLinking CXX executable example_control_geometric_velocity[0m
+[ 93%] Built target example_control_geometric_velocity
+/root/colcon_ws/src/robot-framework/src/joystick_control.cpp: In member function ‘void JoystickController::takeoff()’:
+/root/colcon_ws/src/robot-framework/src/joystick_control.cpp:95:69: error: ‘des_vel_yaw’ was not declared in this scope; did you mean ‘des_vel_y’?
+   95 |       quad-> cmdWorldVelocity(des_vel_x, des_vel_y, des_vel_z, NAN, des_vel_yaw);
+      |                                                                     ^~~~~~~~~~~
+      |                                                                     des_vel_y
+make[2]: *** [CMakeFiles/joystick_controller.dir/build.make:63: CMakeFiles/joystick_controller.dir/src/joystick_control.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:308: CMakeFiles/joystick_controller.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

@@ -1,0 +1,36 @@
+[0.017s] Invoking command in '/root/colcon_ws/build/gatekeeper': CMAKE_PREFIX_PATH=/root/colcon_ws/install/dasc_msgs:/opt/ros/foxy:/root/colcon_ws/install/realsense_gazebo_plugin:/root/colcon_ws/install/px4_ros_com:/root/colcon_ws/install/dasc_robot:/root/colcon_ws/install/px4_msgs:/root/colcon_ws/install/gatekeeper:/root/colcon_ws/install/experiment LD_LIBRARY_PATH=/root/colcon_ws/install/dasc_msgs/lib:/root/colcon_ws/install/realsense_gazebo_plugin/lib:/root/colcon_ws/install/px4_ros_com/lib:/root/colcon_ws/install/dasc_robot/lib:/root/colcon_ws/install/px4_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib PYTHONPATH=/root/colcon_ws/install/dasc_msgs/lib/python3.8/site-packages:/root/colcon_ws/install/px4_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/cmake --build /root/colcon_ws/build/gatekeeper -- -j16 -l16
+[0.061s] [35m[1mScanning dependencies of target gatekeeper[0m
+[0.079s] [ 50%] Built target nominal_controller
+[0.097s] [ 75%] [32mBuilding CXX object CMakeFiles/gatekeeper.dir/src/gatekeeper.cpp.o[0m
+[6.113s] /root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp: In constructor ‘gatekeeper::Gatekeeper::Gatekeeper()’:
+[6.113s] /root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:22:59: error: expected ‘)’ before ‘;’ token
+[6.113s]    22 |       std::bind(&Gatekeeper::cloud_callback, this, ph::_1);
+[6.113s]       |                                                           ^
+[6.113s]       |                                                           )
+[6.113s] /root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:21:77: note: to match this ‘(’
+[6.113s]    21 |   m_pointCloudSub = this->create_subscription<sensor_msgs::msg::PointCloud2>("/camera/points", 10,
+[6.113s]       |                                                                             ^
+[6.113s] /root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp: In member function ‘void gatekeeper::Gatekeeper::cloud_callback(const ConstSharedPtr&)’:
+[6.113s] /root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:34:56: warning: unused parameter ‘msg’ [-Wunused-parameter]
+[6.114s]    34 |   const sensor_msgs::msg::PointCloud2::ConstSharedPtr &msg)
+[6.114s]       |   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+[6.114s] /root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp: In member function ‘void gatekeeper::Gatekeeper::insertScan(const Vector3&, const PCLPointCloud&)’:
+[6.114s] /root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:42:65: warning: unused parameter ‘sensorOrigin’ [-Wunused-parameter]
+[6.114s]    42 | void Gatekeeper::insertScan( const geometry_msgs::msg::Vector3 &sensorOrigin,
+[6.114s]       |                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~
+[6.114s] /root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:43:24: warning: unused parameter ‘pc’ [-Wunused-parameter]
+[6.114s]    43 |   const PCLPointCloud& pc)
+[6.114s]       |   ~~~~~~~~~~~~~~~~~~~~~^~
+[6.114s] /root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp: At global scope:
+[6.114s] /root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:53:2: warning: extra ‘;’ [-Wpedantic]
+[6.115s]    53 | }; // namespace gatekeeper
+[6.115s]       |  ^
+[6.115s] /root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp: In function ‘int main(int, char**)’:
+[6.115s] /root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:63:11: warning: statement is a reference, not call, to function ‘rclcpp::shutdown’ [-Waddress]
+[6.115s]    63 |   rclcpp::shutdown;
+[6.115s]       |   ~~~~~~~~^~~~~~~~
+[6.115s] /root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:63:11: warning: statement has no effect [-Wunused-value]
+[6.115s] make[2]: *** [CMakeFiles/gatekeeper.dir/build.make:63: CMakeFiles/gatekeeper.dir/src/gatekeeper.cpp.o] Error 1
+[6.115s] make[1]: *** [CMakeFiles/Makefile2:80: CMakeFiles/gatekeeper.dir/all] Error 2
+[6.115s] make: *** [Makefile:141: all] Error 2
+[6.116s] Invoked command in '/root/colcon_ws/build/gatekeeper' returned '2': CMAKE_PREFIX_PATH=/root/colcon_ws/install/dasc_msgs:/opt/ros/foxy:/root/colcon_ws/install/realsense_gazebo_plugin:/root/colcon_ws/install/px4_ros_com:/root/colcon_ws/install/dasc_robot:/root/colcon_ws/install/px4_msgs:/root/colcon_ws/install/gatekeeper:/root/colcon_ws/install/experiment LD_LIBRARY_PATH=/root/colcon_ws/install/dasc_msgs/lib:/root/colcon_ws/install/realsense_gazebo_plugin/lib:/root/colcon_ws/install/px4_ros_com/lib:/root/colcon_ws/install/dasc_robot/lib:/root/colcon_ws/install/px4_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib PYTHONPATH=/root/colcon_ws/install/dasc_msgs/lib/python3.8/site-packages:/root/colcon_ws/install/px4_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/cmake --build /root/colcon_ws/build/gatekeeper -- -j16 -l16

@@ -1,0 +1,52 @@
+[35m[1mScanning dependencies of target gatekeeper[0m
+[ 40%] Built target nominal_controller
+[ 60%] [32mBuilding CXX object CMakeFiles/gatekeeper.dir/src/gatekeeper.cpp.o[0m
+/root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp: In member function ‘void gatekeeper::Gatekeeper::nominalTraj_callback(dasc_msgs::msg::QuadTrajectory_<std::allocator<void> >::SharedPtr)’:
+/root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:122:36: error: no matching function for call to ‘rclcpp::Publisher<dasc_msgs::msg::QuadTrajectory_<std::allocator<void> > >::publish(const SharedPtr&)’
+  122 |   m_committedTrajPub -> publish(msg);
+      |                                    ^
+In file included from /opt/ros/foxy/include/rclcpp/topic_statistics/subscription_topic_statistics.hpp:31,
+                 from /opt/ros/foxy/include/rclcpp/subscription.hpp:50,
+                 from /opt/ros/foxy/include/rclcpp/any_executable.hpp:25,
+                 from /opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24,
+                 from /opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18,
+                 from /opt/ros/foxy/include/rclcpp/executor_options.hpp:20,
+                 from /opt/ros/foxy/include/rclcpp/executor.hpp:33,
+                 from /opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26,
+                 from /opt/ros/foxy/include/rclcpp/executors.hpp:21,
+                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:146,
+                 from /root/colcon_ws/src/gatekeeper/include/gatekeeper/gatekeeper.hpp:7,
+                 from /root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:10:
+/opt/ros/foxy/include/rclcpp/publisher.hpp:185:3: note: candidate: ‘void rclcpp::Publisher<MessageT, AllocatorT>::publish(std::unique_ptr<MessageT, typename std::conditional<std::is_same<typename std::allocator_traits<typename std::allocator_traits<_Alloc>::rebind_traits<MessageT>::allocator_type>::rebind_alloc<MessageT>, typename std::allocator<void>::rebind<_Tp1>::other>::value, std::default_delete<_Tp>, rclcpp::allocator::AllocatorDeleter<typename std::allocator_traits<_Alloc>::rebind_traits<MessageT>::allocator_type> >::type>) [with MessageT = dasc_msgs::msg::QuadTrajectory_<std::allocator<void> >; AllocatorT = std::allocator<void>; typename std::conditional<std::is_same<typename std::allocator_traits<typename std::allocator_traits<_Alloc>::rebind_traits<MessageT>::allocator_type>::rebind_alloc<MessageT>, typename std::allocator<void>::rebind<_Tp1>::other>::value, std::default_delete<_Tp>, rclcpp::allocator::AllocatorDeleter<typename std::allocator_traits<_Alloc>::rebind_traits<MessageT>::allocator_type> >::type = std::default_delete<dasc_msgs::msg::QuadTrajectory_<std::allocator<void> > >]’
+  185 |   publish(std::unique_ptr<MessageT, MessageDeleter> msg)
+      |   ^~~~~~~
+/opt/ros/foxy/include/rclcpp/publisher.hpp:185:53: note:   no known conversion for argument 1 from ‘const SharedPtr’ {aka ‘const std::shared_ptr<dasc_msgs::msg::QuadTrajectory_<std::allocator<void> > >’} to ‘std::unique_ptr<dasc_msgs::msg::QuadTrajectory_<std::allocator<void> >, std::default_delete<dasc_msgs::msg::QuadTrajectory_<std::allocator<void> > > >’
+  185 |   publish(std::unique_ptr<MessageT, MessageDeleter> msg)
+      |           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+/opt/ros/foxy/include/rclcpp/publisher.hpp:209:3: note: candidate: ‘void rclcpp::Publisher<MessageT, AllocatorT>::publish(const MessageT&) [with MessageT = dasc_msgs::msg::QuadTrajectory_<std::allocator<void> >; AllocatorT = std::allocator<void>]’
+  209 |   publish(const MessageT & msg)
+      |   ^~~~~~~
+/opt/ros/foxy/include/rclcpp/publisher.hpp:209:28: note:   no known conversion for argument 1 from ‘const SharedPtr’ {aka ‘const std::shared_ptr<dasc_msgs::msg::QuadTrajectory_<std::allocator<void> > >’} to ‘const dasc_msgs::msg::QuadTrajectory_<std::allocator<void> >&’
+  209 |   publish(const MessageT & msg)
+      |           ~~~~~~~~~~~~~~~~~^~~
+/opt/ros/foxy/include/rclcpp/publisher.hpp:226:3: note: candidate: ‘void rclcpp::Publisher<MessageT, AllocatorT>::publish(const rcl_serialized_message_t&) [with MessageT = dasc_msgs::msg::QuadTrajectory_<std::allocator<void> >; AllocatorT = std::allocator<void>; rcl_serialized_message_t = rcutils_uint8_array_t]’
+  226 |   publish(const rcl_serialized_message_t & serialized_msg)
+      |   ^~~~~~~
+/opt/ros/foxy/include/rclcpp/publisher.hpp:226:44: note:   no known conversion for argument 1 from ‘const SharedPtr’ {aka ‘const std::shared_ptr<dasc_msgs::msg::QuadTrajectory_<std::allocator<void> > >’} to ‘const rcl_serialized_message_t&’ {aka ‘const rcutils_uint8_array_t&’}
+  226 |   publish(const rcl_serialized_message_t & serialized_msg)
+      |           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~
+/opt/ros/foxy/include/rclcpp/publisher.hpp:232:3: note: candidate: ‘void rclcpp::Publisher<MessageT, AllocatorT>::publish(const rclcpp::SerializedMessage&) [with MessageT = dasc_msgs::msg::QuadTrajectory_<std::allocator<void> >; AllocatorT = std::allocator<void>]’
+  232 |   publish(const SerializedMessage & serialized_msg)
+      |   ^~~~~~~
+/opt/ros/foxy/include/rclcpp/publisher.hpp:232:37: note:   no known conversion for argument 1 from ‘const SharedPtr’ {aka ‘const std::shared_ptr<dasc_msgs::msg::QuadTrajectory_<std::allocator<void> > >’} to ‘const rclcpp::SerializedMessage&’
+  232 |   publish(const SerializedMessage & serialized_msg)
+      |           ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~
+/opt/ros/foxy/include/rclcpp/publisher.hpp:246:3: note: candidate: ‘void rclcpp::Publisher<MessageT, AllocatorT>::publish(rclcpp::LoanedMessage<MessageT, AllocatorT>&&) [with MessageT = dasc_msgs::msg::QuadTrajectory_<std::allocator<void> >; AllocatorT = std::allocator<void>]’
+  246 |   publish(rclcpp::LoanedMessage<MessageT, AllocatorT> && loaned_msg)
+      |   ^~~~~~~
+/opt/ros/foxy/include/rclcpp/publisher.hpp:246:58: note:   no known conversion for argument 1 from ‘const SharedPtr’ {aka ‘const std::shared_ptr<dasc_msgs::msg::QuadTrajectory_<std::allocator<void> > >’} to ‘rclcpp::LoanedMessage<dasc_msgs::msg::QuadTrajectory_<std::allocator<void> >, std::allocator<void> >&&’
+  246 |   publish(rclcpp::LoanedMessage<MessageT, AllocatorT> && loaned_msg)
+      |           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+make[2]: *** [CMakeFiles/gatekeeper.dir/build.make:63: CMakeFiles/gatekeeper.dir/src/gatekeeper.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:80: CMakeFiles/gatekeeper.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

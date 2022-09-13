@@ -1,0 +1,57 @@
+In file included from /usr/include/pcl-1.10/pcl/register_point_struct.h:56,
+                 from /usr/include/pcl-1.10/pcl/point_types.h:44,
+                 from /root/colcon_ws/src/gatekeeper/include/gatekeeper/gatekeeper.hpp:13,
+                 from /root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:10:
+/usr/include/pcl-1.10/pcl/point_traits.h: In instantiation of ‘struct pcl::traits::fieldList<pcl::PointCloud<pcl::PointXYZ> >’:
+/usr/include/pcl-1.10/pcl/filters/voxel_grid.h:488:13:   required from ‘class pcl::VoxelGrid<pcl::PointCloud<pcl::PointXYZ> >’
+/root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:101:33:   required from here
+/usr/include/pcl-1.10/pcl/point_traits.h:179:12: error: invalid use of incomplete type ‘struct pcl::traits::fieldList<pcl::PointCloud<pcl::PointXYZ> >’
+  179 |     struct fieldList : fieldList<typename POD<PointT>::type>
+      |            ^~~~~~~~~
+/usr/include/pcl-1.10/pcl/point_traits.h:179:12: note: declaration of ‘struct pcl::traits::fieldList<pcl::PointCloud<pcl::PointXYZ> >’
+In file included from /usr/include/pcl-1.10/pcl/point_traits.h:48,
+                 from /usr/include/pcl-1.10/pcl/register_point_struct.h:56,
+                 from /usr/include/pcl-1.10/pcl/point_types.h:44,
+                 from /root/colcon_ws/src/gatekeeper/include/gatekeeper/gatekeeper.hpp:13,
+                 from /root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:10:
+/usr/include/pcl-1.10/pcl/point_traits.h:185:7: error: could not convert ‘pcl::traits::fieldList<pcl::PointCloud<pcl::PointXYZ> >::POINT_TYPE_NOT_PROPERLY_REGISTERED185::assert_arg()’ from ‘mpl_::failed************ (pcl::traits::fieldList<pcl::PointCloud<pcl::PointXYZ> >::POINT_TYPE_NOT_PROPERLY_REGISTERED::************)(pcl::PointCloud<pcl::PointXYZ>&)’ to ‘mpl_::assert<false>::type’ {aka ‘mpl_::assert<false>’}
+  185 |       BOOST_MPL_ASSERT_MSG((!std::is_same<PointT, typename POD<PointT>::type>::value),
+      |       ^
+      |       |
+      |       mpl_::failed************ (pcl::traits::fieldList<pcl::PointCloud<pcl::PointXYZ> >::POINT_TYPE_NOT_PROPERLY_REGISTERED::************)(pcl::PointCloud<pcl::PointXYZ>&)
+In file included from /root/colcon_ws/src/gatekeeper/include/gatekeeper/gatekeeper.hpp:15,
+                 from /root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:10:
+/usr/include/pcl-1.10/pcl/filters/voxel_grid.h: In instantiation of ‘class pcl::VoxelGrid<pcl::PointCloud<pcl::PointXYZ> >’:
+/root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:101:33:   required from here
+/usr/include/pcl-1.10/pcl/filters/voxel_grid.h:488:13: error: no type named ‘type’ in ‘struct pcl::traits::fieldList<pcl::PointCloud<pcl::PointXYZ> >’
+  488 |       using FieldList = typename pcl::traits::fieldList<PointT>::type;
+      |             ^~~~~~~~~
+/root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp: In member function ‘void gatekeeper::Gatekeeper::cloud_callback(sensor_msgs::msg::PointCloud2_<std::allocator<void> >::SharedPtr)’:
+/root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:102:21: error: cannot convert ‘PCLPointCloud’ {aka ‘pcl::PointCloud<pcl::PointXYZ>’} to ‘const PointCloudConstPtr&’ {aka ‘const boost::shared_ptr<const pcl::PointCloud<pcl::PointCloud<pcl::PointXYZ> > >&’}
+  102 |   vox.setInputCloud(filtered);
+      |                     ^~~~~~~~
+      |                     |
+      |                     PCLPointCloud {aka pcl::PointCloud<pcl::PointXYZ>}
+In file included from /usr/include/pcl-1.10/pcl/filters/filter.h:42,
+                 from /usr/include/pcl-1.10/pcl/filters/filter_indices.h:42,
+                 from /usr/include/pcl-1.10/pcl/filters/passthrough.h:42,
+                 from /root/colcon_ws/src/gatekeeper/include/gatekeeper/gatekeeper.hpp:14,
+                 from /root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:10:
+/usr/include/pcl-1.10/pcl/pcl_base.h:96:48: note:   initializing argument 1 of ‘void pcl::PCLBase<PointT>::setInputCloud(const PointCloudConstPtr&) [with PointT = pcl::PointCloud<pcl::PointXYZ>; pcl::PCLBase<PointT>::PointCloudConstPtr = boost::shared_ptr<const pcl::PointCloud<pcl::PointCloud<pcl::PointXYZ> > >]’
+   96 |       setInputCloud (const PointCloudConstPtr &cloud);
+      |                      ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+/root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:104:14: error: cannot convert ‘PCLPointCloud’ {aka ‘pcl::PointCloud<pcl::PointXYZ>’} to ‘pcl::Filter<pcl::PointCloud<pcl::PointXYZ> >::PointCloud&’ {aka ‘pcl::PointCloud<pcl::PointCloud<pcl::PointXYZ> >&’}
+  104 |   vox.filter(downsampled);
+      |              ^~~~~~~~~~~
+      |              |
+      |              PCLPointCloud {aka pcl::PointCloud<pcl::PointXYZ>}
+In file included from /usr/include/pcl-1.10/pcl/filters/filter_indices.h:42,
+                 from /usr/include/pcl-1.10/pcl/filters/passthrough.h:42,
+                 from /root/colcon_ws/src/gatekeeper/include/gatekeeper/gatekeeper.hpp:14,
+                 from /root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:10:
+/usr/include/pcl-1.10/pcl/filters/filter.h:130:27: note:   initializing argument 1 of ‘void pcl::Filter<PointT>::filter(pcl::Filter<PointT>::PointCloud&) [with PointT = pcl::PointCloud<pcl::PointXYZ>; pcl::Filter<PointT>::PointCloud = pcl::PointCloud<pcl::PointCloud<pcl::PointXYZ> >]’
+  130 |       filter (PointCloud &output)
+      |               ~~~~~~~~~~~~^~~~~~
+make[2]: *** [CMakeFiles/gatekeeper.dir/build.make:63: CMakeFiles/gatekeeper.dir/src/gatekeeper.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:80: CMakeFiles/gatekeeper.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

@@ -1,0 +1,32 @@
+[35m[1mScanning dependencies of target nominal_controller[0m
+[ 60%] Built target gatekeeper
+[ 80%] [32mBuilding CXX object CMakeFiles/nominal_controller.dir/src/nominal_controller.cpp.o[0m
+/root/colcon_ws/src/gatekeeper/src/nominal_controller.cpp: In member function ‘void NominalController::publish_one_trajectory()’:
+/root/colcon_ws/src/gatekeeper/src/nominal_controller.cpp:111:12: warning: unused variable ‘R’ [-Wunused-variable]
+  111 |     double R = 0.5;
+      |            ^
+/root/colcon_ws/src/gatekeeper/src/nominal_controller.cpp: In member function ‘void NominalController::joy_callback(sensor_msgs::msg::Joy_<std::allocator<void> >::SharedPtr)’:
+/root/colcon_ws/src/gatekeeper/src/nominal_controller.cpp:196:60: warning: unused parameter ‘msg’ [-Wunused-parameter]
+  196 |   void joy_callback(const sensor_msgs::msg::Joy::SharedPtr msg){
+      |                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+[100%] [32m[1mLinking CXX executable nominal_controller[0m
+[100%] Built target nominal_controller
+-- Install configuration: ""
+-- Execute custom install script
+-- Up-to-date symlink: /root/colcon_ws/install/gatekeeper/lib/gatekeeper/nominal_controller
+-- Up-to-date symlink: /root/colcon_ws/install/gatekeeper/lib/gatekeeper/gatekeeper
+-- Up-to-date symlink: /root/colcon_ws/install/gatekeeper/share/ament_index/resource_index/package_run_dependencies/gatekeeper
+-- Up-to-date symlink: /root/colcon_ws/install/gatekeeper/share/ament_index/resource_index/parent_prefix_path/gatekeeper
+-- Up-to-date symlink: /root/colcon_ws/install/gatekeeper/share/gatekeeper/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /root/colcon_ws/install/gatekeeper/share/gatekeeper/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /root/colcon_ws/install/gatekeeper/share/gatekeeper/environment/path.sh
+-- Up-to-date symlink: /root/colcon_ws/install/gatekeeper/share/gatekeeper/environment/path.dsv
+-- Up-to-date symlink: /root/colcon_ws/install/gatekeeper/share/gatekeeper/local_setup.bash
+-- Up-to-date symlink: /root/colcon_ws/install/gatekeeper/share/gatekeeper/local_setup.sh
+-- Up-to-date symlink: /root/colcon_ws/install/gatekeeper/share/gatekeeper/local_setup.zsh
+-- Up-to-date symlink: /root/colcon_ws/install/gatekeeper/share/gatekeeper/local_setup.dsv
+-- Symlinking: /root/colcon_ws/install/gatekeeper/share/gatekeeper/package.dsv
+-- Up-to-date symlink: /root/colcon_ws/install/gatekeeper/share/ament_index/resource_index/packages/gatekeeper
+-- Up-to-date symlink: /root/colcon_ws/install/gatekeeper/share/gatekeeper/cmake/gatekeeperConfig.cmake
+-- Up-to-date symlink: /root/colcon_ws/install/gatekeeper/share/gatekeeper/cmake/gatekeeperConfig-version.cmake
+-- Up-to-date symlink: /root/colcon_ws/install/gatekeeper/share/gatekeeper/package.xml

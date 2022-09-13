@@ -1,0 +1,45 @@
+[35m[1mScanning dependencies of target gatekeeper[0m
+[ 40%] Built target nominal_controller
+[ 60%] [32mBuilding CXX object CMakeFiles/gatekeeper.dir/src/gatekeeper.cpp.o[0m
+[01m[K/root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:135:[m[K [01;31m[Kerror: [m[Kunterminated argument list invoking macro "RCLCPP_INFO"
+  135 | }
+      | 
+[01m[K/root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:[m[K In member function ‘[01m[Kvoid gatekeeper::Gatekeeper::cloud_callback(sensor_msgs::msg::PointCloud2_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:88:38:[m[K [01;31m[Kerror: [m[K‘[01m[Kmillis[m[K’ is not a member of ‘[01m[Kstd[m[K’; did you mean ‘[01m[Kmilli[m[K’?
+   88 |   std::chrono::duration<double, std::[01;31m[Kmillis[m[K> elapsed_ms = end - start;
+      |                                      [01;31m[K^~~~~~[m[K
+      |                                      [32m[Kmilli[m[K
+[01m[K/root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:88:38:[m[K [01;31m[Kerror: [m[K‘[01m[Kmillis[m[K’ is not a member of ‘[01m[Kstd[m[K’; did you mean ‘[01m[Kmilli[m[K’?
+   88 |   std::chrono::duration<double, std::[01;31m[Kmillis[m[K> elapsed_ms = end - start;
+      |                                      [01;31m[K^~~~~~[m[K
+      |                                      [32m[Kmilli[m[K
+[01m[K/root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:88:44:[m[K [01;31m[Kerror: [m[Ktemplate argument 2 is invalid
+   88 |   std::chrono::duration<double, std::millis[01;31m[K>[m[K elapsed_ms = end - start;
+      |                                            [01;31m[K^[m[K
+[01m[K/root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:88:63:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kstd::__success_type<std::chrono::duration<long int, std::ratio<1, 1000000000> > >::type[m[K’ {aka ‘[01m[Kstd::chrono::duration<long int, std::ratio<1, 1000000000> >[m[K’} to ‘[01m[Kint[m[K’ in initialization
+   88 |   std::chrono::duration<double, std::millis> elapsed_ms = [01;31m[Kend - start[m[K;
+      |                                                           [01;31m[K~~~~^~~~~~~[m[K
+      |                                                               [01;31m[K|[m[K
+      |                                                               [01;31m[Kstd::__success_type<std::chrono::duration<long int, std::ratio<1, 1000000000> > >::type {aka std::chrono::duration<long int, std::ratio<1, 1000000000> >}[m[K
+[01m[K/root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:90:3:[m[K [01;31m[Kerror: [m[K‘[01m[KRCLCPP_INFO[m[K’ was not declared in this scope
+   90 |   [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "PointCloudInsertion: %f ms", elapsed_ms.count();
+      |   [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:88:46:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kelapsed_ms[m[K’ [[01;35m[K-Wunused-variable[m[K]
+   88 |   std::chrono::duration<double, std::millis> [01;35m[Kelapsed_ms[m[K = end - start;
+      |                                              [01;35m[K^~~~~~~~~~[m[K
+[01m[K/root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:90:3:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ at end of input
+   90 |   [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "PointCloudInsertion: %f ms", elapsed_ms.count();
+      |   [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:32:1:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+   32 | [01;36m[K{[m[K
+      | [01;36m[K^[m[K
+[01m[K/root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:[m[K At global scope:
+[01m[K/root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:90:3:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ at end of input
+   90 |   [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "PointCloudInsertion: %f ms", elapsed_ms.count();
+      |   [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:12:22:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+   12 | namespace gatekeeper [01;36m[K{[m[K
+      |                      [01;36m[K^[m[K
+make[2]: *** [CMakeFiles/gatekeeper.dir/build.make:63: CMakeFiles/gatekeeper.dir/src/gatekeeper.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:80: CMakeFiles/gatekeeper.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

@@ -1,0 +1,54 @@
+/root/colcon_ws/src/robot-framework/src/trajectory_follower.cpp: In member function ‘void TrajectoryFollower::timer_callback()’:
+/root/colcon_ws/src/robot-framework/src/trajectory_follower.cpp:179:17: error: ‘QuadTrajectory’ {aka ‘struct dasc_msgs::msg::QuadTrajectory_<std::allocator<void> >’} has no member named ‘yaw_rates’
+  179 |            traj.yaw_rates[i],
+      |                 ^~~~~~~~~
+make[2]: *** [CMakeFiles/trajectory_follower.dir/build.make:63: CMakeFiles/trajectory_follower.dir/src/trajectory_follower.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:94: CMakeFiles/trajectory_follower.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+/usr/bin/ld: libdascBots.a(DASCRobots.cpp.o):(.data.rel.ro._ZTC9DASCRobot0_4DASC[_ZTV9DASCRobot]+0x10): undefined reference to `typeinfo for DASC'
+/usr/bin/ld: libdascBots.a(DASCRobots.cpp.o):(.data.rel.ro._ZTC9DASCRobot0_4DASC[_ZTV9DASCRobot]+0x90): undefined reference to `DASC::cmdFullState(double, double, double, double, double, double, double, double, double, double, double)'
+/usr/bin/ld: libdascBots.a(DASCRobots.cpp.o):(.data.rel.ro._ZTC9DASCRobot0_4DASC[_ZTV9DASCRobot]+0xb8): undefined reference to `typeinfo for DASC'
+/usr/bin/ld: libdascBots.a(DASCRobots.cpp.o):(.data.rel.ro._ZTI9DASCRobot[_ZTI9DASCRobot]+0x10): undefined reference to `typeinfo for DASC'
+collect2: error: ld returned 1 exit status
+/usr/bin/ld: libdascBots.a(DASCRobots.cpp.o):(.data.rel.ro._ZTC9DASCRobot0_4DASC[_ZTV9DASCRobot]+0x10): undefined reference to `typeinfo for DASC'
+/usr/bin/ld: libdascBots.a(DASCRobots.cpp.o):(.data.rel.ro._ZTC9DASCRobot0_4DASC[_ZTV9DASCRobot]+0x90): undefined reference to `DASC::cmdFullState(double, double, double, double, double, double, double, double, double, double, double)'
+/usr/bin/ld: libdascBots.a(DASCRobots.cpp.o):(.data.rel.ro._ZTC9DASCRobot0_4DASC[_ZTV9DASCRobot]+0xb8): undefined reference to `typeinfo for DASC'
+/usr/bin/ld: libdascBots.a(DASCRobots.cpp.o):(.data.rel.ro._ZTI9DASCRobot[_ZTI9DASCRobot]+0x10): undefined reference to `typeinfo for DASC'
+collect2: error: ld returned 1 exit status
+make[2]: *** [CMakeFiles/example_control.dir/build.make:225: example_control] Error 1
+make[1]: *** [CMakeFiles/Makefile2:310: CMakeFiles/example_control.dir/all] Error 2
+make[2]: *** [CMakeFiles/example_control_geometric_acceleration.dir/build.make:225: example_control_geometric_acceleration] Error 1
+make[1]: *** [CMakeFiles/Makefile2:283: CMakeFiles/example_control_geometric_acceleration.dir/all] Error 2
+/usr/bin/ld: libdascBots.a(DASCRobots.cpp.o):(.data.rel.ro._ZTC9DASCRobot0_4DASC[_ZTV9DASCRobot]+0x10): undefined reference to `typeinfo for DASC'
+/usr/bin/ld: libdascBots.a(DASCRobots.cpp.o):(.data.rel.ro._ZTC9DASCRobot0_4DASC[_ZTV9DASCRobot]+0x90): undefined reference to `DASC::cmdFullState(double, double, double, double, double, double, double, double, double, double, double)'
+/usr/bin/ld: libdascBots.a(DASCRobots.cpp.o):(.data.rel.ro._ZTC9DASCRobot0_4DASC[_ZTV9DASCRobot]+0xb8): undefined reference to `typeinfo for DASC'
+/usr/bin/ld: libdascBots.a(DASCRobots.cpp.o):(.data.rel.ro._ZTI9DASCRobot[_ZTI9DASCRobot]+0x10): undefined reference to `typeinfo for DASC'
+collect2: error: ld returned 1 exit status
+make[2]: *** [CMakeFiles/example_control_geometric_velocity.dir/build.make:225: example_control_geometric_velocity] Error 1
+make[1]: *** [CMakeFiles/Makefile2:175: CMakeFiles/example_control_geometric_velocity.dir/all] Error 2
+/usr/bin/ld: libdascBots.a(DASCRobots.cpp.o):(.data.rel.ro._ZTC9DASCRobot0_4DASC[_ZTV9DASCRobot]+0x10): undefined reference to `typeinfo for DASC'
+/usr/bin/ld: libdascBots.a(DASCRobots.cpp.o):(.data.rel.ro._ZTC9DASCRobot0_4DASC[_ZTV9DASCRobot]+0x90): undefined reference to `DASC::cmdFullState(double, double, double, double, double, double, double, double, double, double, double)'
+/usr/bin/ld: libdascBots.a(DASCRobots.cpp.o):(.data.rel.ro._ZTC9DASCRobot0_4DASC[_ZTV9DASCRobot]+0xb8): undefined reference to `typeinfo for DASC'
+/usr/bin/ld: libdascBots.a(DASCRobots.cpp.o):(.data.rel.ro._ZTI9DASCRobot[_ZTI9DASCRobot]+0x10): undefined reference to `typeinfo for DASC'
+collect2: error: ld returned 1 exit status
+/usr/bin/ld: libdascBots.a(DASCRobots.cpp.o):(.data.rel.ro._ZTC9DASCRobot0_4DASC[_ZTV9DASCRobot]+0x10): undefined reference to `typeinfo for DASC'
+/usr/bin/ld: libdascBots.a(DASCRobots.cpp.o):(.data.rel.ro._ZTC9DASCRobot0_4DASC[_ZTV9DASCRobot]+0x90): undefined reference to `DASC::cmdFullState(double, double, double, double, double, double, double, double, double, double, double)'
+/usr/bin/ld: libdascBots.a(DASCRobots.cpp.o):(.data.rel.ro._ZTC9DASCRobot0_4DASC[_ZTV9DASCRobot]+0xb8): undefined reference to `typeinfo for DASC'
+/usr/bin/ld: libdascBots.a(DASCRobots.cpp.o):(.data.rel.ro._ZTI9DASCRobot[_ZTI9DASCRobot]+0x10): undefined reference to `typeinfo for DASC'
+collect2: error: ld returned 1 exit status
+make[2]: *** [CMakeFiles/example_control_multi_rover.dir/build.make:225: example_control_multi_rover] Error 1
+make[2]: *** [CMakeFiles/example_control_geometric.dir/build.make:225: example_control_geometric] Error 1
+make[1]: *** [CMakeFiles/Makefile2:229: CMakeFiles/example_control_multi_rover.dir/all] Error 2
+make[1]: *** [CMakeFiles/Makefile2:148: CMakeFiles/example_control_geometric.dir/all] Error 2
+/root/colcon_ws/src/robot-framework/src/joystick_control.cpp: In member function ‘void JoystickController::takeoff()’:
+/root/colcon_ws/src/robot-framework/src/joystick_control.cpp:63:12: warning: unused variable ‘target_yaw’ [-Wunused-variable]
+   63 |     double target_yaw    = 0.0;
+      |            ^~~~~~~~~~
+/usr/bin/ld: libdascBots.a(DASCRobots.cpp.o):(.data.rel.ro._ZTC9DASCRobot0_4DASC[_ZTV9DASCRobot]+0x10): undefined reference to `typeinfo for DASC'
+/usr/bin/ld: libdascBots.a(DASCRobots.cpp.o):(.data.rel.ro._ZTC9DASCRobot0_4DASC[_ZTV9DASCRobot]+0x90): undefined reference to `DASC::cmdFullState(double, double, double, double, double, double, double, double, double, double, double)'
+/usr/bin/ld: libdascBots.a(DASCRobots.cpp.o):(.data.rel.ro._ZTC9DASCRobot0_4DASC[_ZTV9DASCRobot]+0xb8): undefined reference to `typeinfo for DASC'
+/usr/bin/ld: libdascBots.a(DASCRobots.cpp.o):(.data.rel.ro._ZTI9DASCRobot[_ZTI9DASCRobot]+0x10): undefined reference to `typeinfo for DASC'
+collect2: error: ld returned 1 exit status
+make[2]: *** [CMakeFiles/joystick_controller.dir/build.make:225: joystick_controller] Error 1
+make[1]: *** [CMakeFiles/Makefile2:337: CMakeFiles/joystick_controller.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

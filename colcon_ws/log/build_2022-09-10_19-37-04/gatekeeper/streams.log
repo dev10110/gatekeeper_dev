@@ -1,0 +1,19 @@
+[0.014s] Invoking command in '/root/colcon_ws/build/gatekeeper': CMAKE_PREFIX_PATH=/root/colcon_ws/install/dasc_msgs:/opt/ros/foxy:/root/colcon_ws/install/realsense_gazebo_plugin:/root/colcon_ws/install/px4_ros_com:/root/colcon_ws/install/dasc_robot:/root/colcon_ws/install/px4_msgs:/root/colcon_ws/install/gatekeeper:/root/colcon_ws/install/experiment LD_LIBRARY_PATH=/root/colcon_ws/install/dasc_msgs/lib:/root/colcon_ws/install/realsense_gazebo_plugin/lib:/root/colcon_ws/install/px4_ros_com/lib:/root/colcon_ws/install/dasc_robot/lib:/root/colcon_ws/install/px4_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib PYTHONPATH=/root/colcon_ws/install/dasc_msgs/lib/python3.8/site-packages:/root/colcon_ws/install/px4_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/cmake --build /root/colcon_ws/build/gatekeeper -- -j16 -l16
+[0.058s] [35m[1mScanning dependencies of target gatekeeper[0m
+[0.077s] [ 50%] Built target nominal_controller
+[0.095s] [ 75%] [32mBuilding CXX object CMakeFiles/gatekeeper.dir/src/gatekeeper.cpp.o[0m
+[10.883s] /root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp: In member function ‘void gatekeeper::Gatekeeper::insertScan(const Vector3&, const PCLPointCloud&)’:
+[10.884s] /root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:87:65: warning: unused parameter ‘sensorOrigin’ [-Wunused-parameter]
+[10.884s]    87 | void Gatekeeper::insertScan( const geometry_msgs::msg::Vector3 &sensorOrigin,
+[10.884s]       |                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~
+[10.884s] /root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:88:24: warning: unused parameter ‘pc’ [-Wunused-parameter]
+[10.884s]    88 |   const PCLPointCloud& pc)
+[10.884s]       |   ~~~~~~~~~~~~~~~~~~~~~^~
+[10.908s] [100%] [32m[1mLinking CXX executable gatekeeper[0m
+[11.265s] /usr/bin/ld: CMakeFiles/gatekeeper.dir/src/gatekeeper.cpp.o: in function `gatekeeper::Gatekeeper::cloud_callback(std::shared_ptr<sensor_msgs::msg::PointCloud2_<std::allocator<void> > >)':
+[11.266s] gatekeeper.cpp:(.text+0x989): undefined reference to `pcl_ros::transformAsMatrix(geometry_msgs::msg::TransformStamped_<std::allocator<void> > const&)'
+[11.266s] collect2: error: ld returned 1 exit status
+[11.267s] make[2]: *** [CMakeFiles/gatekeeper.dir/build.make:269: gatekeeper] Error 1
+[11.267s] make[1]: *** [CMakeFiles/Makefile2:80: CMakeFiles/gatekeeper.dir/all] Error 2
+[11.267s] make: *** [Makefile:141: all] Error 2
+[11.269s] Invoked command in '/root/colcon_ws/build/gatekeeper' returned '2': CMAKE_PREFIX_PATH=/root/colcon_ws/install/dasc_msgs:/opt/ros/foxy:/root/colcon_ws/install/realsense_gazebo_plugin:/root/colcon_ws/install/px4_ros_com:/root/colcon_ws/install/dasc_robot:/root/colcon_ws/install/px4_msgs:/root/colcon_ws/install/gatekeeper:/root/colcon_ws/install/experiment LD_LIBRARY_PATH=/root/colcon_ws/install/dasc_msgs/lib:/root/colcon_ws/install/realsense_gazebo_plugin/lib:/root/colcon_ws/install/px4_ros_com/lib:/root/colcon_ws/install/dasc_robot/lib:/root/colcon_ws/install/px4_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib PYTHONPATH=/root/colcon_ws/install/dasc_msgs/lib/python3.8/site-packages:/root/colcon_ws/install/px4_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/cmake --build /root/colcon_ws/build/gatekeeper -- -j16 -l16

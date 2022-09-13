@@ -1,0 +1,1 @@
+/root/colcon_ws/build/dasc_msgs/rosidl_typesupport_fastrtps_c/dasc_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h

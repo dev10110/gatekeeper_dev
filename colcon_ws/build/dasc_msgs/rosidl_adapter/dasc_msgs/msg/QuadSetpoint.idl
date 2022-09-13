@@ -1,0 +1,21 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from dasc_msgs/msg/QuadSetpoint.msg
+// generated code does not contain a copyright notice
+
+#include "std_msgs/msg/Header.idl"
+
+module dasc_msgs {
+  module msg {
+    struct QuadSetpoint {
+      std_msgs::msg::Header header;
+
+      double x;
+
+      double y;
+
+      double z;
+
+      double yaw;
+    };
+  };
+};

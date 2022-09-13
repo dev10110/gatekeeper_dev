@@ -1,0 +1,19 @@
+[0.010s] Invoking command in '/root/colcon_ws/build/dasc_robot': CMAKE_PREFIX_PATH=/root/colcon_ws/install/px4_ros_com:/root/colcon_ws/install/px4_msgs:/opt/ros/foxy:/root/colcon_ws/install/realsense_gazebo_plugin:/root/colcon_ws/install/dasc_robot:/root/colcon_ws/install/experiment LD_LIBRARY_PATH=/root/colcon_ws/install/px4_ros_com/lib:/root/colcon_ws/install/px4_msgs/lib:/root/colcon_ws/install/realsense_gazebo_plugin/lib:/root/colcon_ws/install/dasc_robot/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib /usr/bin/cmake --build /root/colcon_ws/build/dasc_robot -- -j16 -l16
+[0.060s] [ 12%] Built target dascBots
+[0.071s] [35m[1mScanning dependencies of target joystick_controller[0m
+[0.088s] [ 68%] Built target example_control
+[0.088s] [ 68%] Built target example_control_geometric_acceleration
+[0.088s] [ 68%] Built target example_control_geometric
+[0.088s] [ 68%] Built target example_control_multi_rover
+[0.088s] [ 75%] Built target example_control_geometric_velocity
+[0.091s] [ 87%] Built target dasc_robot_lib
+[0.094s] [ 93%] [32mBuilding CXX object CMakeFiles/joystick_controller.dir/src/joystick_control.cpp.o[0m
+[2.382s] /root/colcon_ws/src/robot-framework/src/joystick_control.cpp: In member function ‘void JoystickController::takeoff()’:
+[2.382s] /root/colcon_ws/src/robot-framework/src/joystick_control.cpp:76:7: error: ‘err’ was not declared in this scope; did you mean ‘erf’?
+[2.382s]    76 |       err = 0;
+[2.382s]       |       ^~~
+[2.382s]       |       erf
+[2.383s] make[2]: *** [CMakeFiles/joystick_controller.dir/build.make:63: CMakeFiles/joystick_controller.dir/src/joystick_control.cpp.o] Error 1
+[2.383s] make[1]: *** [CMakeFiles/Makefile2:308: CMakeFiles/joystick_controller.dir/all] Error 2
+[2.383s] make: *** [Makefile:141: all] Error 2
+[2.385s] Invoked command in '/root/colcon_ws/build/dasc_robot' returned '2': CMAKE_PREFIX_PATH=/root/colcon_ws/install/px4_ros_com:/root/colcon_ws/install/px4_msgs:/opt/ros/foxy:/root/colcon_ws/install/realsense_gazebo_plugin:/root/colcon_ws/install/dasc_robot:/root/colcon_ws/install/experiment LD_LIBRARY_PATH=/root/colcon_ws/install/px4_ros_com/lib:/root/colcon_ws/install/px4_msgs/lib:/root/colcon_ws/install/realsense_gazebo_plugin/lib:/root/colcon_ws/install/dasc_robot/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib /usr/bin/cmake --build /root/colcon_ws/build/dasc_robot -- -j16 -l16

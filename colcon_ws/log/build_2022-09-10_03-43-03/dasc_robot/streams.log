@@ -1,0 +1,55 @@
+[0.013s] Invoking command in '/root/colcon_ws/build/dasc_robot': CMAKE_PREFIX_PATH=/root/colcon_ws/install/px4_ros_com:/root/colcon_ws/install/px4_msgs:/opt/ros/foxy:/root/colcon_ws/install/realsense_gazebo_plugin:/root/colcon_ws/install/dasc_robot:/root/colcon_ws/install/experiment LD_LIBRARY_PATH=/root/colcon_ws/install/px4_ros_com/lib:/root/colcon_ws/install/px4_msgs/lib:/root/colcon_ws/install/realsense_gazebo_plugin/lib:/root/colcon_ws/install/dasc_robot/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib /usr/bin/cmake --build /root/colcon_ws/build/dasc_robot -- -j16 -l16
+[0.087s] [ 12%] Built target dascBots
+[0.102s] [35m[1mScanning dependencies of target joystick_controller[0m
+[0.102s] [35m[1mScanning dependencies of target example_control_geometric[0m
+[0.119s] [ 62%] Built target example_control_geometric_acceleration
+[0.119s] [ 62%] Built target example_control_multi_rover
+[0.119s] [ 62%] Built target example_control_geometric_velocity
+[0.119s] [ 62%] Built target example_control
+[0.123s] [ 75%] Built target dasc_robot_lib
+[0.124s] [ 81%] [32mBuilding CXX object CMakeFiles/example_control_geometric.dir/src/example_control_geometric.cpp.o[0m
+[0.124s] [ 87%] [32mBuilding CXX object CMakeFiles/joystick_controller.dir/src/joystick_control.cpp.o[0m
+[1.834s] [ 93%] [32m[1mLinking CXX executable example_control_geometric[0m
+[1.853s] /root/colcon_ws/src/robot-framework/src/joystick_control.cpp: In constructor ‘JoystickController::JoystickController(std::shared_ptr<DASCRobot>)’:
+[1.853s] /root/colcon_ws/src/robot-framework/src/joystick_control.cpp:20:63: error: taking address of rvalue [-fpermissive]
+[1.853s]    20 |         &std::bind(&JoystickController::joy_callback, this, _1));
+[1.853s]       |                                                               ^
+[1.854s] In file included from /opt/ros/foxy/include/rclcpp/client.hpp:32,
+[1.854s]                  from /opt/ros/foxy/include/rclcpp/callback_group.hpp:23,
+[1.854s]                  from /opt/ros/foxy/include/rclcpp/any_executable.hpp:20,
+[1.854s]                  from /opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24,
+[1.854s]                  from /opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18,
+[1.854s]                  from /opt/ros/foxy/include/rclcpp/executor_options.hpp:20,
+[1.854s]                  from /opt/ros/foxy/include/rclcpp/executor.hpp:33,
+[1.854s]                  from /opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26,
+[1.854s]                  from /opt/ros/foxy/include/rclcpp/executors.hpp:21,
+[1.854s]                  from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:146,
+[1.854s]                  from /root/colcon_ws/src/robot-framework/include/dasc_robot/DASCRobots.hpp:6,
+[1.854s]                  from /root/colcon_ws/src/robot-framework/src/joystick_control.cpp:2:
+[1.854s] /opt/ros/foxy/include/rclcpp/function_traits.hpp: In instantiation of ‘struct rclcpp::function_traits::function_traits<std::_Bind<void (JoystickController::*(JoystickController*, std::_Placeholder<1>))(sensor_msgs::msg::Joy_<std::allocator<void> >)>*>’:
+[1.854s] /opt/ros/foxy/include/rclcpp/subscription_traits.hpp:97:8:   required from ‘struct rclcpp::subscription_traits::has_message_type<std::_Bind<void (JoystickController::*(JoystickController*, std::_Placeholder<1>))(sensor_msgs::msg::Joy_<std::allocator<void> >)>*, std::allocator<void>, void, void, void, void>’
+[1.855s] /opt/ros/foxy/include/rclcpp/node.hpp:204:5:   required by substitution of ‘template<class MessageT, class CallbackT, class AllocatorT, class CallbackMessageT, class SubscriptionT, class MessageMemoryStrategyT> std::shared_ptr<SubscriptionT> rclcpp::Node::create_subscription(const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr) [with MessageT = sensor_msgs::msg::Joy_<std::allocator<void> >; CallbackT = std::_Bind<void (JoystickController::*(JoystickController*, std::_Placeholder<1>))(sensor_msgs::msg::Joy_<std::allocator<void> >)>*; AllocatorT = std::allocator<void>; CallbackMessageT = <missing>; SubscriptionT = <missing>; MessageMemoryStrategyT = <missing>]’
+[1.855s] /root/colcon_ws/src/robot-framework/src/joystick_control.cpp:20:64:   required from here
+[1.855s] /opt/ros/foxy/include/rclcpp/function_traits.hpp:52:40: error: ‘operator()’ is not a member of ‘std::_Bind<void (JoystickController::*(JoystickController*, std::_Placeholder<1>))(sensor_msgs::msg::Joy_<std::allocator<void> >)>*’
+[1.855s]    52 |     typename function_traits<decltype( &FunctionT::operator())>::arguments>::type;
+[1.855s]       |                                        ^~~~~~~~~~~~~~~~~~~~~~
+[1.855s] /opt/ros/foxy/include/rclcpp/function_traits.hpp:52:40: error: ‘operator()’ is not a member of ‘std::_Bind<void (JoystickController::*(JoystickController*, std::_Placeholder<1>))(sensor_msgs::msg::Joy_<std::allocator<void> >)>*’
+[1.855s] /opt/ros/foxy/include/rclcpp/function_traits.hpp:52:40: error: ‘operator()’ is not a member of ‘std::_Bind<void (JoystickController::*(JoystickController*, std::_Placeholder<1>))(sensor_msgs::msg::Joy_<std::allocator<void> >)>*’
+[1.855s] /root/colcon_ws/src/robot-framework/src/joystick_control.cpp:20:64: error: no matching function for call to ‘JoystickController::create_subscription<sensor_msgs::msg::Joy>(const char [5], int, std::_Bind_helper<false, void (JoystickController::*)(sensor_msgs::msg::Joy_<std::allocator<void> >), JoystickController*, const std::_Placeholder<1>&>::type*)’
+[1.855s]    20 |         &std::bind(&JoystickController::joy_callback, this, _1));
+[1.855s]       |                                                                ^
+[1.855s] In file included from /opt/ros/foxy/include/rclcpp/executors/single_threaded_executor.hpp:28,
+[1.855s]                  from /opt/ros/foxy/include/rclcpp/executors.hpp:22,
+[1.855s]                  from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:146,
+[1.856s]                  from /root/colcon_ws/src/robot-framework/include/dasc_robot/DASCRobots.hpp:6,
+[1.856s]                  from /root/colcon_ws/src/robot-framework/src/joystick_control.cpp:2:
+[1.856s] /opt/ros/foxy/include/rclcpp/node.hpp:213:3: note: candidate: ‘template<class MessageT, class CallbackT, class AllocatorT, class CallbackMessageT, class SubscriptionT, class MessageMemoryStrategyT> std::shared_ptr<SubscriptionT> rclcpp::Node::create_subscription(const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr)’
+[1.856s]   213 |   create_subscription(
+[1.856s]       |   ^~~~~~~~~~~~~~~~~~~
+[1.856s] /opt/ros/foxy/include/rclcpp/node.hpp:213:3: note:   substitution of deduced template arguments resulted in errors seen above
+[1.856s] make[2]: *** [CMakeFiles/joystick_controller.dir/build.make:63: CMakeFiles/joystick_controller.dir/src/joystick_control.cpp.o] Error 1
+[1.856s] make[1]: *** [CMakeFiles/Makefile2:308: CMakeFiles/joystick_controller.dir/all] Error 2
+[1.856s] make[1]: *** Waiting for unfinished jobs....
+[2.256s] [ 93%] Built target example_control_geometric
+[2.256s] make: *** [Makefile:141: all] Error 2
+[2.258s] Invoked command in '/root/colcon_ws/build/dasc_robot' returned '2': CMAKE_PREFIX_PATH=/root/colcon_ws/install/px4_ros_com:/root/colcon_ws/install/px4_msgs:/opt/ros/foxy:/root/colcon_ws/install/realsense_gazebo_plugin:/root/colcon_ws/install/dasc_robot:/root/colcon_ws/install/experiment LD_LIBRARY_PATH=/root/colcon_ws/install/px4_ros_com/lib:/root/colcon_ws/install/px4_msgs/lib:/root/colcon_ws/install/realsense_gazebo_plugin/lib:/root/colcon_ws/install/dasc_robot/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib /usr/bin/cmake --build /root/colcon_ws/build/dasc_robot -- -j16 -l16

@@ -1,0 +1,7 @@
+{
+  "package_name": "dasc_msgs",
+  "non_idl_tuples": [
+    "/root/colcon_ws/src/dasc_msgs:msg/QuadSetpoint.msg",
+    "/root/colcon_ws/src/dasc_msgs:msg/QuadTrajectory.msg"
+  ]
+}

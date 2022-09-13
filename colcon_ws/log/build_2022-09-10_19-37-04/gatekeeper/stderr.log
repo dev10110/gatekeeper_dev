@@ -1,0 +1,13 @@
+/root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp: In member function ‘void gatekeeper::Gatekeeper::insertScan(const Vector3&, const PCLPointCloud&)’:
+/root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:87:65: warning: unused parameter ‘sensorOrigin’ [-Wunused-parameter]
+   87 | void Gatekeeper::insertScan( const geometry_msgs::msg::Vector3 &sensorOrigin,
+      |                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~
+/root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:88:24: warning: unused parameter ‘pc’ [-Wunused-parameter]
+   88 |   const PCLPointCloud& pc)
+      |   ~~~~~~~~~~~~~~~~~~~~~^~
+/usr/bin/ld: CMakeFiles/gatekeeper.dir/src/gatekeeper.cpp.o: in function `gatekeeper::Gatekeeper::cloud_callback(std::shared_ptr<sensor_msgs::msg::PointCloud2_<std::allocator<void> > >)':
+gatekeeper.cpp:(.text+0x989): undefined reference to `pcl_ros::transformAsMatrix(geometry_msgs::msg::TransformStamped_<std::allocator<void> > const&)'
+collect2: error: ld returned 1 exit status
+make[2]: *** [CMakeFiles/gatekeeper.dir/build.make:269: gatekeeper] Error 1
+make[1]: *** [CMakeFiles/Makefile2:80: CMakeFiles/gatekeeper.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

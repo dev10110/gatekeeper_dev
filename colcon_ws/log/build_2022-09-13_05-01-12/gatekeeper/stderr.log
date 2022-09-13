@@ -1,0 +1,28 @@
+/root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp: In member function ‘void gatekeeper::Gatekeeper::assume_free_space()’:
+/root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:77:32: error: qualified-id in declaration before ‘(’ token
+   77 | void Gatekeeper::cloud_callback(
+      |                                ^
+/root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:143:38: error: qualified-id in declaration before ‘(’ token
+  143 | void Gatekeeper::nominalTraj_callback(const dasc_msgs::msg::QuadTrajectory::SharedPtr nom_msg){
+      |                                      ^
+/root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:196:28: error: qualified-id in declaration before ‘(’ token
+  196 | void Gatekeeper::insertScan( const geometry_msgs::msg::Vector3 &sensorOrigin,
+      |                            ^
+/root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:229:38: error: qualified-id in declaration before ‘(’ token
+  229 | void Gatekeeper::publish_occupied_pcl() {
+      |                                      ^
+/root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:260:34: error: qualified-id in declaration before ‘(’ token
+  260 | void Gatekeeper::publish_free_pcl() {
+      |                                  ^
+/root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp: In function ‘int gatekeeper::main(int, char**)’:
+/root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:304:1: warning: no return statement in function returning non-void [-Wreturn-type]
+  304 | }
+      | ^
+/root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp: At global scope:
+/root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:304:1: error: expected ‘}’ at end of input
+/root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:12:22: note: to match this ‘{’
+   12 | namespace gatekeeper {
+      |                      ^
+make[2]: *** [CMakeFiles/gatekeeper.dir/build.make:63: CMakeFiles/gatekeeper.dir/src/gatekeeper.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:80: CMakeFiles/gatekeeper.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

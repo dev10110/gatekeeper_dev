@@ -1,0 +1,49 @@
+[0.010s] Invoking command in '/root/colcon_ws/build/gatekeeper': CMAKE_PREFIX_PATH=/root/colcon_ws/install/dasc_msgs:/opt/ros/foxy:/root/colcon_ws/install/realsense_gazebo_plugin:/root/colcon_ws/install/px4_ros_com:/root/colcon_ws/install/dasc_robot:/root/colcon_ws/install/px4_msgs:/root/colcon_ws/install/gatekeeper:/root/colcon_ws/install/experiment /usr/bin/cmake --build /root/colcon_ws/build/gatekeeper -- -j16 -l16
+[0.042s] -- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.066s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.206s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.222s] -- Found sensor_msgs: 2.0.4 (/opt/ros/foxy/share/sensor_msgs/cmake)
+[0.261s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.268s] -- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.383s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[0.411s] -- Found FastRTPS: /opt/ros/foxy/include  
+[0.491s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.633s] -- Found dasc_msgs: 0.0.0 (/root/colcon_ws/install/dasc_msgs/share/dasc_msgs/cmake)
+[0.661s] -- Found rclcpp: 2.4.0 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.711s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.712s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.714s] -- Looking for pthread.h
+[0.844s] -- Looking for pthread.h - found
+[0.844s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.928s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[0.928s] -- Looking for pthread_create in pthreads
+[0.994s] -- Looking for pthread_create in pthreads - not found
+[0.995s] -- Looking for pthread_create in pthread
+[1.052s] -- Looking for pthread_create in pthread - found
+[1.053s] -- Found Threads: TRUE  
+[1.183s] -- Found tf2: 0.13.12 (/opt/ros/foxy/share/tf2/cmake)
+[1.197s] -- Found tf2_ros: 0.13.12 (/opt/ros/foxy/share/tf2_ros/cmake)
+[1.463s] -- Found ament_lint_auto: 0.9.6 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[1.532s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.533s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.534s] -- Configured cppcheck include dirs: 
+[1.534s] -- Configured cppcheck exclude dirs and/or files: 
+[1.534s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[1.534s] -- Configured cpplint exclude dirs and/or files: 
+[1.535s] -- Added test 'lint_cmake' to check CMake code style
+[1.536s] -- Added test 'uncrustify' to check C / C++ code style
+[1.536s] -- Configured uncrustify additional arguments: 
+[1.536s] -- Added test 'xmllint' to check XML markup files
+[1.539s] -- Configuring done
+[1.551s] -- Generating done
+[1.553s] -- Build files have been written to: /root/colcon_ws/build/gatekeeper
+[1.579s] [35m[1mScanning dependencies of target nominal_controller[0m
+[1.618s] [ 50%] [32mBuilding CXX object CMakeFiles/nominal_controller.dir/src/nominal_controller.cpp.o[0m
+[1.710s] [01m[K/root/colcon_ws/src/gatekeeper/src/nominal_controller.cpp:5:10:[m[K [01;31m[Kfatal error: [m[Krclcpp/rclcpp.h: No such file or directory
+[1.710s]     5 | #include [01;31m[K"rclcpp/rclcpp.h"[m[K
+[1.710s]       |          [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[1.710s] compilation terminated.
+[1.711s] make[2]: *** [CMakeFiles/nominal_controller.dir/build.make:63: CMakeFiles/nominal_controller.dir/src/nominal_controller.cpp.o] Error 1
+[1.711s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/nominal_controller.dir/all] Error 2
+[1.711s] make: *** [Makefile:141: all] Error 2
+[1.713s] Invoked command in '/root/colcon_ws/build/gatekeeper' returned '2': CMAKE_PREFIX_PATH=/root/colcon_ws/install/dasc_msgs:/opt/ros/foxy:/root/colcon_ws/install/realsense_gazebo_plugin:/root/colcon_ws/install/px4_ros_com:/root/colcon_ws/install/dasc_robot:/root/colcon_ws/install/px4_msgs:/root/colcon_ws/install/gatekeeper:/root/colcon_ws/install/experiment /usr/bin/cmake --build /root/colcon_ws/build/gatekeeper -- -j16 -l16

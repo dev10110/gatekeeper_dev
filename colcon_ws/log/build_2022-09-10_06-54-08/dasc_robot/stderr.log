@@ -1,0 +1,4 @@
+/root/colcon_ws/src/robot-framework/src/joystick_control.cpp: In member function ‘void JoystickController::takeoff()’:
+/root/colcon_ws/src/robot-framework/src/joystick_control.cpp:63:12: warning: unused variable ‘target_yaw’ [-Wunused-variable]
+   63 |     double target_yaw    = 0.0;
+      |            ^~~~~~~~~~

@@ -1,0 +1,55 @@
+[0.016s] Invoking command in '/root/colcon_ws/build/gatekeeper': CMAKE_PREFIX_PATH=/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/bin/cmake /root/colcon_ws/src/gatekeeper -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/root/colcon_ws/install/gatekeeper
+[0.097s] -- The C compiler identification is GNU 9.3.0
+[0.143s] -- The CXX compiler identification is GNU 9.3.0
+[0.149s] -- Check for working C compiler: /usr/lib/ccache/cc
+[0.211s] -- Check for working C compiler: /usr/lib/ccache/cc -- works
+[0.212s] -- Detecting C compiler ABI info
+[0.282s] -- Detecting C compiler ABI info - done
+[0.291s] -- Detecting C compile features
+[0.291s] -- Detecting C compile features - done
+[0.293s] -- Check for working CXX compiler: /usr/lib/ccache/c++
+[0.369s] -- Check for working CXX compiler: /usr/lib/ccache/c++ -- works
+[0.370s] -- Detecting CXX compiler ABI info
+[0.459s] -- Detecting CXX compiler ABI info - done
+[0.472s] -- Detecting CXX compile features
+[0.472s] -- Detecting CXX compile features - done
+[0.475s] -- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.498s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.498s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.634s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.665s] -- Found ament_lint_auto: 0.9.6 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[0.737s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.738s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.738s] -- Configured cppcheck include dirs: 
+[0.738s] -- Configured cppcheck exclude dirs and/or files: 
+[0.738s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[0.738s] -- Configured cpplint exclude dirs and/or files: 
+[0.739s] -- Added test 'lint_cmake' to check CMake code style
+[0.740s] -- Added test 'uncrustify' to check C / C++ code style
+[0.740s] -- Configured uncrustify additional arguments: 
+[0.741s] -- Added test 'xmllint' to check XML markup files
+[0.743s] -- Configuring done
+[0.744s] -- Generating done
+[0.745s] -- Build files have been written to: /root/colcon_ws/build/gatekeeper
+[0.748s] Invoked command in '/root/colcon_ws/build/gatekeeper' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/bin/cmake /root/colcon_ws/src/gatekeeper -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/root/colcon_ws/install/gatekeeper
+[0.750s] Invoking command in '/root/colcon_ws/build/gatekeeper': CMAKE_PREFIX_PATH=/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/bin/cmake --build /root/colcon_ws/build/gatekeeper -- -j16 -l16
+[0.791s] Invoked command in '/root/colcon_ws/build/gatekeeper' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/bin/cmake --build /root/colcon_ws/build/gatekeeper -- -j16 -l16
+[0.814s] Invoking command in '/root/colcon_ws/build/gatekeeper': CMAKE_PREFIX_PATH=/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/bin/cmake --install /root/colcon_ws/build/gatekeeper
+[0.823s] -- Install configuration: ""
+[0.823s] -- Execute custom install script
+[0.824s] -- Symlinking: /root/colcon_ws/install/gatekeeper/share/ament_index/resource_index/package_run_dependencies/gatekeeper
+[0.833s] -- Symlinking: /root/colcon_ws/install/gatekeeper/share/ament_index/resource_index/parent_prefix_path/gatekeeper
+[0.841s] -- Symlinking: /root/colcon_ws/install/gatekeeper/share/gatekeeper/environment/ament_prefix_path.sh
+[0.850s] -- Symlinking: /root/colcon_ws/install/gatekeeper/share/gatekeeper/environment/ament_prefix_path.dsv
+[0.857s] -- Symlinking: /root/colcon_ws/install/gatekeeper/share/gatekeeper/environment/path.sh
+[0.864s] -- Symlinking: /root/colcon_ws/install/gatekeeper/share/gatekeeper/environment/path.dsv
+[0.870s] -- Symlinking: /root/colcon_ws/install/gatekeeper/share/gatekeeper/local_setup.bash
+[0.878s] -- Symlinking: /root/colcon_ws/install/gatekeeper/share/gatekeeper/local_setup.sh
+[0.885s] -- Symlinking: /root/colcon_ws/install/gatekeeper/share/gatekeeper/local_setup.zsh
+[0.893s] -- Symlinking: /root/colcon_ws/install/gatekeeper/share/gatekeeper/local_setup.dsv
+[0.900s] -- Symlinking: /root/colcon_ws/install/gatekeeper/share/gatekeeper/package.dsv
+[0.909s] -- Symlinking: /root/colcon_ws/install/gatekeeper/share/ament_index/resource_index/packages/gatekeeper
+[0.922s] -- Symlinking: /root/colcon_ws/install/gatekeeper/share/gatekeeper/cmake/gatekeeperConfig.cmake
+[0.930s] -- Symlinking: /root/colcon_ws/install/gatekeeper/share/gatekeeper/cmake/gatekeeperConfig-version.cmake
+[0.941s] -- Symlinking: /root/colcon_ws/install/gatekeeper/share/gatekeeper/package.xml
+[0.953s] Invoked command in '/root/colcon_ws/build/gatekeeper' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/bin/cmake --install /root/colcon_ws/build/gatekeeper

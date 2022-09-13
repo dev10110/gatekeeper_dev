@@ -1,0 +1,43 @@
+/root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp: In member function ‘void gatekeeper::Gatekeeper::assume_free_space()’:
+/root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:65:9: error: expected ‘(’ before ‘m_octree’
+   65 |         m_octree->updateNode(x,y,z,thresMin, true);
+      |         ^~~~~~~~
+      |         (
+/root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:65:50: error: call of overloaded ‘updateNode(double&, double&, double&, double&, bool)’ is ambiguous
+   65 |         m_octree->updateNode(x,y,z,thresMin, true);
+      |                                                  ^
+In file included from /usr/include/octomap/OccupancyOcTreeBase.h:506,
+                 from /usr/include/octomap/OcTree.h:38,
+                 from /usr/include/octomap/octomap.h:37,
+                 from /root/colcon_ws/src/gatekeeper/include/gatekeeper/gatekeeper.hpp:13,
+                 from /root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:10:
+/usr/include/octomap/OccupancyOcTreeBase.hxx:333:9: note: candidate: ‘NODE* octomap::OccupancyOcTreeBase<NODE>::updateNode(double, double, double, float, bool) [with NODE = octomap::OcTreeNode]’
+  333 |   NODE* OccupancyOcTreeBase<NODE>::updateNode(double x, double y, double z, float log_odds_update, bool lazy_eval) {
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/octomap/OccupancyOcTreeBase.hxx:359:9: note: candidate: ‘NODE* octomap::OccupancyOcTreeBase<NODE>::updateNode(double, double, double, bool, bool) [with NODE = octomap::OcTreeNode]’
+  359 |   NODE* OccupancyOcTreeBase<NODE>::updateNode(double x, double y, double z, bool occupied, bool lazy_eval) {
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~
+/root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:66:7: error: expected primary-expression before ‘}’ token
+   66 |       }
+      |       ^
+/root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:65:52: error: expected ‘;’ before ‘}’ token
+   65 |         m_octree->updateNode(x,y,z,thresMin, true);
+      |                                                    ^
+      |                                                    ;
+   66 |       }
+      |       ~                                             
+/root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:66:7: error: expected primary-expression before ‘}’ token
+   66 |       }
+      |       ^
+/root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:65:52: error: expected ‘)’ before ‘}’ token
+   65 |         m_octree->updateNode(x,y,z,thresMin, true);
+      |         ~~~~~~~~                                   ^
+      |                                                    )
+   66 |       }
+      |       ~                                             
+/root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:66:7: error: expected primary-expression before ‘}’ token
+   66 |       }
+      |       ^
+make[2]: *** [CMakeFiles/gatekeeper.dir/build.make:63: CMakeFiles/gatekeeper.dir/src/gatekeeper.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:80: CMakeFiles/gatekeeper.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

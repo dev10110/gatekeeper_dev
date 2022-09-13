@@ -1,0 +1,1 @@
+/root/colcon_ws/build/dasc_msgs/ament_cmake_core/dasc_msgsConfig-version.cmake

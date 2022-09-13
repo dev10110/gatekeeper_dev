@@ -1,0 +1,30 @@
+[0.013s] Invoking command in '/root/colcon_ws/build/dasc_robot': CMAKE_PREFIX_PATH=/root/colcon_ws/install/px4_ros_com:/root/colcon_ws/install/px4_msgs:/root/colcon_ws/install/dasc_msgs:/opt/ros/foxy:/root/colcon_ws/install/realsense_gazebo_plugin:/root/colcon_ws/install/dasc_robot:/root/colcon_ws/install/gatekeeper:/root/colcon_ws/install/experiment LD_LIBRARY_PATH=/root/colcon_ws/install/px4_ros_com/lib:/root/colcon_ws/install/px4_msgs/lib:/root/colcon_ws/install/dasc_msgs/lib:/root/colcon_ws/install/realsense_gazebo_plugin/lib:/root/colcon_ws/install/dasc_robot/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib PYTHONPATH=/root/colcon_ws/install/px4_msgs/lib/python3.8/site-packages:/root/colcon_ws/install/dasc_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/cmake --build /root/colcon_ws/build/dasc_robot -- -j16 -l16
+[0.083s] [ 11%] Built target dascBots
+[0.097s] [35m[1mScanning dependencies of target trajectory_follower[0m
+[0.113s] [ 77%] Built target example_control
+[0.114s] [ 77%] Built target example_control_geometric
+[0.114s] [ 77%] Built target example_control_geometric_velocity
+[0.114s] [ 77%] Built target joystick_controller
+[0.114s] [ 77%] Built target example_control_geometric_acceleration
+[0.114s] [ 77%] Built target example_control_multi_rover
+[0.118s] [ 88%] Built target dasc_robot_lib
+[0.121s] [ 94%] [32mBuilding CXX object CMakeFiles/trajectory_follower.dir/src/trajectory_follower.cpp.o[0m
+[2.348s] /root/colcon_ws/src/robot-framework/src/trajectory_follower.cpp: In member function ‘void TrajectoryFollower::traj_callback(dasc_msgs::msg::QuadTrajectory_<std::allocator<void> >::SharedPtr)’:
+[2.348s] /root/colcon_ws/src/robot-framework/src/trajectory_follower.cpp:121:13: error: ‘const SharedPtr’ {aka ‘const class std::shared_ptr<dasc_msgs::msg::QuadTrajectory_<std::allocator<void> > >’} has no member named ‘header’
+[2.348s]   121 |     if (msg.header.stamp > this->get_clock()->now()){
+[2.348s]       |             ^~~~~~
+[2.349s] /root/colcon_ws/src/robot-framework/src/trajectory_follower.cpp:126:12: error: no match for ‘operator=’ (operand types are ‘QuadTrajectory’ {aka ‘dasc_msgs::msg::QuadTrajectory_<std::allocator<void> >’} and ‘const SharedPtr’ {aka ‘const std::shared_ptr<dasc_msgs::msg::QuadTrajectory_<std::allocator<void> > >’})
+[2.349s]   126 |     traj = msg;
+[2.349s]       |            ^~~
+[2.349s] In file included from /root/colcon_ws/install/dasc_msgs/include/dasc_msgs/msg/quad_trajectory.hpp:7,
+[2.349s]                  from /root/colcon_ws/src/robot-framework/src/trajectory_follower.cpp:5:
+[2.349s] /root/colcon_ws/install/dasc_msgs/include/dasc_msgs/msg/detail/quad_trajectory__struct.hpp:35:8: note: candidate: ‘dasc_msgs::msg::QuadTrajectory_<std::allocator<void> >& dasc_msgs::msg::QuadTrajectory_<std::allocator<void> >::operator=(const dasc_msgs::msg::QuadTrajectory_<std::allocator<void> >&)’
+[2.349s]    35 | struct QuadTrajectory_
+[2.349s]       |        ^~~~~~~~~~~~~~~
+[2.349s] /root/colcon_ws/install/dasc_msgs/include/dasc_msgs/msg/detail/quad_trajectory__struct.hpp:35:8: note:   no known conversion for argument 1 from ‘const SharedPtr’ {aka ‘const std::shared_ptr<dasc_msgs::msg::QuadTrajectory_<std::allocator<void> > >’} to ‘const dasc_msgs::msg::QuadTrajectory_<std::allocator<void> >&’
+[2.349s] /root/colcon_ws/install/dasc_msgs/include/dasc_msgs/msg/detail/quad_trajectory__struct.hpp:35:8: note: candidate: ‘dasc_msgs::msg::QuadTrajectory_<std::allocator<void> >& dasc_msgs::msg::QuadTrajectory_<std::allocator<void> >::operator=(dasc_msgs::msg::QuadTrajectory_<std::allocator<void> >&&)’
+[2.349s] /root/colcon_ws/install/dasc_msgs/include/dasc_msgs/msg/detail/quad_trajectory__struct.hpp:35:8: note:   no known conversion for argument 1 from ‘const SharedPtr’ {aka ‘const std::shared_ptr<dasc_msgs::msg::QuadTrajectory_<std::allocator<void> > >’} to ‘dasc_msgs::msg::QuadTrajectory_<std::allocator<void> >&&’
+[2.349s] make[2]: *** [CMakeFiles/trajectory_follower.dir/build.make:63: CMakeFiles/trajectory_follower.dir/src/trajectory_follower.cpp.o] Error 1
+[2.349s] make[1]: *** [CMakeFiles/Makefile2:94: CMakeFiles/trajectory_follower.dir/all] Error 2
+[2.349s] make: *** [Makefile:141: all] Error 2
+[2.351s] Invoked command in '/root/colcon_ws/build/dasc_robot' returned '2': CMAKE_PREFIX_PATH=/root/colcon_ws/install/px4_ros_com:/root/colcon_ws/install/px4_msgs:/root/colcon_ws/install/dasc_msgs:/opt/ros/foxy:/root/colcon_ws/install/realsense_gazebo_plugin:/root/colcon_ws/install/dasc_robot:/root/colcon_ws/install/gatekeeper:/root/colcon_ws/install/experiment LD_LIBRARY_PATH=/root/colcon_ws/install/px4_ros_com/lib:/root/colcon_ws/install/px4_msgs/lib:/root/colcon_ws/install/dasc_msgs/lib:/root/colcon_ws/install/realsense_gazebo_plugin/lib:/root/colcon_ws/install/dasc_robot/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib PYTHONPATH=/root/colcon_ws/install/px4_msgs/lib/python3.8/site-packages:/root/colcon_ws/install/dasc_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/cmake --build /root/colcon_ws/build/dasc_robot -- -j16 -l16

@@ -1,0 +1,31 @@
+[35m[1mScanning dependencies of target gatekeeper[0m
+[ 40%] Built target nominal_controller
+[ 60%] [32mBuilding CXX object CMakeFiles/gatekeeper.dir/src/gatekeeper.cpp.o[0m
+/root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp: In member function ‘void gatekeeper::Gatekeeper::publish_occupied_pcl()’:
+/root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:163:20: error: no matching function for call to ‘pcl::PointCloud<pcl::PointXYZ>::insert(PCLPoint&)’
+  163 |         pc.insert(p);
+      |                    ^
+In file included from /usr/include/pcl-1.10/pcl/pcl_base.h:53,
+                 from /usr/include/pcl-1.10/pcl/filters/filter.h:42,
+                 from /usr/include/pcl-1.10/pcl/filters/filter_indices.h:42,
+                 from /usr/include/pcl-1.10/pcl/filters/passthrough.h:42,
+                 from /root/colcon_ws/src/gatekeeper/include/gatekeeper/gatekeeper.hpp:14,
+                 from /root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:10:
+/usr/include/pcl-1.10/pcl/point_cloud.h:495:7: note: candidate: ‘pcl::PointCloud<PointT>::iterator pcl::PointCloud<PointT>::insert(pcl::PointCloud<PointT>::iterator, const PointT&) [with PointT = pcl::PointXYZ; pcl::PointCloud<PointT>::iterator = __gnu_cxx::__normal_iterator<pcl::PointXYZ*, std::vector<pcl::PointXYZ, Eigen::aligned_allocator<pcl::PointXYZ> > >]’
+  495 |       insert (iterator position, const PointT& pt)
+      |       ^~~~~~
+/usr/include/pcl-1.10/pcl/point_cloud.h:495:7: note:   candidate expects 2 arguments, 1 provided
+/usr/include/pcl-1.10/pcl/point_cloud.h:510:7: note: candidate: ‘void pcl::PointCloud<PointT>::insert(pcl::PointCloud<PointT>::iterator, std::size_t, const PointT&) [with PointT = pcl::PointXYZ; pcl::PointCloud<PointT>::iterator = __gnu_cxx::__normal_iterator<pcl::PointXYZ*, std::vector<pcl::PointXYZ, Eigen::aligned_allocator<pcl::PointXYZ> > >; std::size_t = long unsigned int]’
+  510 |       insert (iterator position, std::size_t n, const PointT& pt)
+      |       ^~~~~~
+/usr/include/pcl-1.10/pcl/point_cloud.h:510:7: note:   candidate expects 3 arguments, 1 provided
+/usr/include/pcl-1.10/pcl/point_cloud.h:524:7: note: candidate: ‘template<class InputIterator> void pcl::PointCloud<PointT>::insert(pcl::PointCloud<PointT>::iterator, InputIterator, InputIterator) [with InputIterator = InputIterator; PointT = pcl::PointXYZ]’
+  524 |       insert (iterator position, InputIterator first, InputIterator last)
+      |       ^~~~~~
+/usr/include/pcl-1.10/pcl/point_cloud.h:524:7: note:   template argument deduction/substitution failed:
+/root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:163:20: note:   candidate expects 3 arguments, 1 provided
+  163 |         pc.insert(p);
+      |                    ^
+make[2]: *** [CMakeFiles/gatekeeper.dir/build.make:63: CMakeFiles/gatekeeper.dir/src/gatekeeper.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:80: CMakeFiles/gatekeeper.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

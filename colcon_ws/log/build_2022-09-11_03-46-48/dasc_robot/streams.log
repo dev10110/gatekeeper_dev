@@ -1,0 +1,13 @@
+[0.019s] Invoking command in '/root/colcon_ws/build/dasc_robot': CMAKE_PREFIX_PATH=/root/colcon_ws/install/px4_ros_com:/root/colcon_ws/install/px4_msgs:/root/colcon_ws/install/dasc_msgs:/opt/ros/foxy:/root/colcon_ws/install/realsense_gazebo_plugin:/root/colcon_ws/install/dasc_robot:/root/colcon_ws/install/gatekeeper:/root/colcon_ws/install/experiment LD_LIBRARY_PATH=/root/colcon_ws/install/px4_ros_com/lib:/root/colcon_ws/install/px4_msgs/lib:/root/colcon_ws/install/dasc_msgs/lib:/root/colcon_ws/install/realsense_gazebo_plugin/lib:/root/colcon_ws/install/dasc_robot/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib /usr/bin/cmake --build /root/colcon_ws/build/dasc_robot -- -j16 -l16
+[0.108s] [ 11%] Built target dascBots
+[0.131s] [35m[1mScanning dependencies of target trajectory_follower[0m
+[0.165s] [ 55%] Built target example_control_geometric
+[0.166s] [ 55%] Built target example_control
+[0.166s] [ 55%] Built target joystick_controller
+[0.166s] [ 66%] Built target example_control_multi_rover
+[0.166s] [ 66%] Built target example_control_geometric_velocity
+[0.166s] [ 77%] Built target dasc_robot_lib
+[0.166s] [ 88%] Built target example_control_geometric_acceleration
+[0.183s] [ 94%] [32mBuilding CXX object CMakeFiles/trajectory_follower.dir/src/trajectory_follower.cpp.o[0m
+[6.004s] [100%] [32m[1mLinking CXX executable trajectory_follower[0m
+[7.317s] [100%] Built target trajectory_follower

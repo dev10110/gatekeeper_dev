@@ -1,0 +1,8 @@
+/root/colcon_ws/src/gatekeeper/src/nominal_controller.cpp: In member function ‘void NominalController::publish_one_trajectory()’:
+/root/colcon_ws/src/gatekeeper/src/nominal_controller.cpp:115:39: error: ‘douvle’ was not declared in this scope; did you mean ‘double’?
+  115 |      double th = M_PI_2 * double(i) / douvle(N);
+      |                                       ^~~~~~
+      |                                       double
+make[2]: *** [CMakeFiles/nominal_controller.dir/build.make:63: CMakeFiles/nominal_controller.dir/src/nominal_controller.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:107: CMakeFiles/nominal_controller.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

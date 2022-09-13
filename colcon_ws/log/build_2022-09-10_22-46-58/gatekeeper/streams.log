@@ -1,0 +1,43 @@
+[0.015s] Invoking command in '/root/colcon_ws/build/gatekeeper': CMAKE_PREFIX_PATH=/root/colcon_ws/install/dasc_msgs:/opt/ros/foxy:/root/colcon_ws/install/realsense_gazebo_plugin:/root/colcon_ws/install/px4_ros_com:/root/colcon_ws/install/dasc_robot:/root/colcon_ws/install/px4_msgs:/root/colcon_ws/install/gatekeeper:/root/colcon_ws/install/experiment LD_LIBRARY_PATH=/root/colcon_ws/install/dasc_msgs/lib:/root/colcon_ws/install/realsense_gazebo_plugin/lib:/root/colcon_ws/install/px4_ros_com/lib:/root/colcon_ws/install/dasc_robot/lib:/root/colcon_ws/install/px4_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib PYTHONPATH=/root/colcon_ws/install/dasc_msgs/lib/python3.8/site-packages:/root/colcon_ws/install/px4_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/cmake --build /root/colcon_ws/build/gatekeeper -- -j16 -l16
+[0.080s] [35m[1mScanning dependencies of target gatekeeper[0m
+[0.105s] [ 40%] Built target nominal_controller
+[0.138s] [ 60%] [32mBuilding CXX object CMakeFiles/gatekeeper.dir/src/gatekeeper.cpp.o[0m
+[14.067s] In file included from /root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:10:
+[14.067s] /root/colcon_ws/src/gatekeeper/include/gatekeeper/gatekeeper.hpp:57:48: error: expected primary-expression before ‘max’
+[14.067s]    57 |     double numMax = std::numeric_limits<double>max();
+[14.067s]       |                                                ^~~
+[14.067s] /root/colcon_ws/src/gatekeeper/include/gatekeeper/gatekeeper.hpp:58:49: error: expected primary-expression before ‘max’
+[14.067s]    58 |     double numMin = -std::numeric_limits<double>max();
+[14.067s]       |                                                 ^~~
+[14.067s] /root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp: In member function ‘void gatekeeper::Gatekeeper::cloud_callback(sensor_msgs::msg::PointCloud2_<std::allocator<void> >::SharedPtr)’:
+[14.067s] /root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:91:8: error: ‘PassThrough’ is not a member of ‘pcl’
+[14.067s]    91 |   pcl::PassThrough<PCLPoint> pass_x;
+[14.067s]       |        ^~~~~~~~~~~
+[14.067s] /root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:91:28: error: expected primary-expression before ‘>’ token
+[14.068s]    91 |   pcl::PassThrough<PCLPoint> pass_x;
+[14.068s]       |                            ^
+[14.068s] /root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:91:30: error: ‘pass_x’ was not declared in this scope
+[14.068s]    91 |   pcl::PassThrough<PCLPoint> pass_x;
+[14.068s]       |                              ^~~~~~
+[14.068s] /root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:94:8: error: ‘PassThrough’ is not a member of ‘pcl’
+[14.068s]    94 |   pcl::PassThrough<PCLPoint> pass_y;
+[14.068s]       |        ^~~~~~~~~~~
+[14.068s] /root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:94:28: error: expected primary-expression before ‘>’ token
+[14.068s]    94 |   pcl::PassThrough<PCLPoint> pass_y;
+[14.068s]       |                            ^
+[14.068s] /root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:94:30: error: ‘pass_y’ was not declared in this scope
+[14.068s]    94 |   pcl::PassThrough<PCLPoint> pass_y;
+[14.068s]       |                              ^~~~~~
+[14.068s] /root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:97:8: error: ‘PassThrough’ is not a member of ‘pcl’
+[14.068s]    97 |   pcl::PassThrough<PCLPoint> pass_z;
+[14.068s]       |        ^~~~~~~~~~~
+[14.068s] /root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:97:28: error: expected primary-expression before ‘>’ token
+[14.069s]    97 |   pcl::PassThrough<PCLPoint> pass_z;
+[14.069s]       |                            ^
+[14.069s] /root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:97:30: error: ‘pass_z’ was not declared in this scope
+[14.069s]    97 |   pcl::PassThrough<PCLPoint> pass_z;
+[14.069s]       |                              ^~~~~~
+[14.069s] make[2]: *** [CMakeFiles/gatekeeper.dir/build.make:63: CMakeFiles/gatekeeper.dir/src/gatekeeper.cpp.o] Error 1
+[14.069s] make[1]: *** [CMakeFiles/Makefile2:80: CMakeFiles/gatekeeper.dir/all] Error 2
+[14.069s] make: *** [Makefile:141: all] Error 2
+[14.072s] Invoked command in '/root/colcon_ws/build/gatekeeper' returned '2': CMAKE_PREFIX_PATH=/root/colcon_ws/install/dasc_msgs:/opt/ros/foxy:/root/colcon_ws/install/realsense_gazebo_plugin:/root/colcon_ws/install/px4_ros_com:/root/colcon_ws/install/dasc_robot:/root/colcon_ws/install/px4_msgs:/root/colcon_ws/install/gatekeeper:/root/colcon_ws/install/experiment LD_LIBRARY_PATH=/root/colcon_ws/install/dasc_msgs/lib:/root/colcon_ws/install/realsense_gazebo_plugin/lib:/root/colcon_ws/install/px4_ros_com/lib:/root/colcon_ws/install/dasc_robot/lib:/root/colcon_ws/install/px4_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib PYTHONPATH=/root/colcon_ws/install/dasc_msgs/lib/python3.8/site-packages:/root/colcon_ws/install/px4_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/cmake --build /root/colcon_ws/build/gatekeeper -- -j16 -l16

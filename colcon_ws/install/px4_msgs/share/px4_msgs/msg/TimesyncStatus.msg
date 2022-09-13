@@ -1,0 +1,1 @@
+/root/colcon_ws/src/px4_msgs/msg/TimesyncStatus.msg
