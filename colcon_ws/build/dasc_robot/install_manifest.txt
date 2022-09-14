@@ -1,2 +1,0 @@
-/root/colcon_ws/install/dasc_robot/lib/dasc_robot/libdascBots.a
-/root/colcon_ws/install/dasc_robot/lib/dasc_robot/libdasc_robot_lib.so

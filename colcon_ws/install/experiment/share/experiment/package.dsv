@@ -1,8 +1,0 @@
-source;share/experiment/hook/cmake_prefix_path.ps1
-source;share/experiment/hook/cmake_prefix_path.dsv
-source;share/experiment/hook/cmake_prefix_path.sh
-source;share/experiment/local_setup.bash
-source;share/experiment/local_setup.dsv
-source;share/experiment/local_setup.ps1
-source;share/experiment/local_setup.sh
-source;share/experiment/local_setup.zsh

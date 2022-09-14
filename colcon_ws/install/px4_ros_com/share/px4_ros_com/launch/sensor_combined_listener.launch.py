@@ -1,1 +1,0 @@
-/root/colcon_ws/src/px4_ros_com/launch/sensor_combined_listener.launch.py

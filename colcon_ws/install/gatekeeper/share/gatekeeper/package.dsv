@@ -1,8 +1,0 @@
-source;share/gatekeeper/hook/cmake_prefix_path.ps1
-source;share/gatekeeper/hook/cmake_prefix_path.dsv
-source;share/gatekeeper/hook/cmake_prefix_path.sh
-source;share/gatekeeper/local_setup.bash
-source;share/gatekeeper/local_setup.dsv
-source;share/gatekeeper/local_setup.ps1
-source;share/gatekeeper/local_setup.sh
-source;share/gatekeeper/local_setup.zsh

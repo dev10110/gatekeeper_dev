@@ -1,1 +1,0 @@
-/root/colcon_ws/src/dasc_msgs/msg/QuadSetpoint.msg
