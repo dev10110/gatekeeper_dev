@@ -1,4 +1,4 @@
-colcon_ws/build
-colcon_ws/install
-colcon_ws/log
-PX4-Autopilot/build/
+colcon_ws/build/**
+colcon_ws/install/**
+colcon_ws/log/**
+PX4-Autopilot/build/**
