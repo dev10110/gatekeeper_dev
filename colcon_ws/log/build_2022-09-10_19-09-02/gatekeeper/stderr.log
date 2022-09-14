@@ -1,8 +1,0 @@
-[01m[K/root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:10:10:[m[K [01;31m[Kfatal error: [m[Kgatekeeper/gatekeeper.hpp: No such file or directory
-   10 | #include [01;31m[K<gatekeeper/gatekeeper.hpp>[m[K
-      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
-compilation terminated.
-make[2]: *** [CMakeFiles/gatekeeper.dir/build.make:63: CMakeFiles/gatekeeper.dir/src/gatekeeper.cpp.o] Error 1
-make[1]: *** [CMakeFiles/Makefile2:80: CMakeFiles/gatekeeper.dir/all] Error 2
-make[1]: *** Waiting for unfinished jobs....
-make: *** [Makefile:141: all] Error 2

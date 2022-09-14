@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/gatekeeper.dir/src/dynamics.cpp.o"
   "CMakeFiles/gatekeeper.dir/src/gatekeeper.cpp.o"
   "CMakeFiles/gatekeeper.dir/src/transforms.cpp.o"
   "gatekeeper"

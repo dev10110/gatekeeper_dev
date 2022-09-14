@@ -1,9 +1,0 @@
-[35m[1mScanning dependencies of target nominal_controller[0m
-[ 50%] [32mBuilding CXX object CMakeFiles/nominal_controller.dir/src/nominal_controller.cpp.o[0m
-/root/colcon_ws/src/gatekeeper/src/nominal_controller.cpp: In member function ‘void NominalController::joy_callback(sensor_msgs::msg::Joy_<std::allocator<void> >::SharedPtr)’:
-/root/colcon_ws/src/gatekeeper/src/nominal_controller.cpp:90:16: error: ‘std_max’ was not declared in this scope
-   90 |     target_x = std_max(last_x - 1.0, std::min(target_x, last_x + 1.0));
-      |                ^~~~~~~
-make[2]: *** [CMakeFiles/nominal_controller.dir/build.make:63: CMakeFiles/nominal_controller.dir/src/nominal_controller.cpp.o] Error 1
-make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/nominal_controller.dir/all] Error 2
-make: *** [Makefile:141: all] Error 2

@@ -1,4 +1,0 @@
-Invoking command in '/root/colcon_ws/build/gatekeeper': CMAKE_PREFIX_PATH=/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/bin/cmake --build /root/colcon_ws/build/gatekeeper -- -j16 -l16
-Invoked command in '/root/colcon_ws/build/gatekeeper' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/bin/cmake --build /root/colcon_ws/build/gatekeeper -- -j16 -l16
-Invoking command in '/root/colcon_ws/build/gatekeeper': CMAKE_PREFIX_PATH=/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/bin/cmake --install /root/colcon_ws/build/gatekeeper
-Invoked command in '/root/colcon_ws/build/gatekeeper' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/bin/cmake --install /root/colcon_ws/build/gatekeeper

@@ -1,8 +1,0 @@
-/root/colcon_ws/src/robot-framework/src/joystick_control.cpp: In member function ‘void JoystickController::takeoff()’:
-/root/colcon_ws/src/robot-framework/src/joystick_control.cpp:95:69: error: ‘des_vel_yaw’ was not declared in this scope; did you mean ‘des_vel_y’?
-   95 |       quad-> cmdWorldVelocity(des_vel_x, des_vel_y, des_vel_z, NAN, des_vel_yaw);
-      |                                                                     ^~~~~~~~~~~
-      |                                                                     des_vel_y
-make[2]: *** [CMakeFiles/joystick_controller.dir/build.make:63: CMakeFiles/joystick_controller.dir/src/joystick_control.cpp.o] Error 1
-make[1]: *** [CMakeFiles/Makefile2:308: CMakeFiles/joystick_controller.dir/all] Error 2
-make: *** [Makefile:141: all] Error 2

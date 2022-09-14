@@ -18,6 +18,7 @@ set(CMAKE_TARGET_DEFINITIONS_C
 
 # The include file search paths:
 set(CMAKE_C_TARGET_INCLUDE_PATH
+  "/root/colcon_ws/src/dasc_msgs/include"
   "rosidl_generator_c"
   "/opt/ros/foxy/include"
   )

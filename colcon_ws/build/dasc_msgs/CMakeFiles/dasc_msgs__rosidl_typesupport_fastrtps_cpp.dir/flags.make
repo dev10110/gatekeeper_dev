@@ -6,5 +6,5 @@ CXX_FLAGS = -fPIC   -Wall -Wextra -Wpedantic -Wall -Wextra -Wpedantic -std=gnu++
 
 CXX_DEFINES = -DFOONATHAN_MEMORY=1 -DFOONATHAN_MEMORY_VERSION_MAJOR=0 -DFOONATHAN_MEMORY_VERSION_MINOR=6 -DFOONATHAN_MEMORY_VERSION_PATCH=2 -DRCUTILS_ENABLE_FAULT_INJECTION -DROS_PACKAGE_NAME=\"dasc_msgs\" -Ddasc_msgs__rosidl_typesupport_fastrtps_cpp_EXPORTS
 
-CXX_INCLUDES = -I/root/colcon_ws/build/dasc_msgs/rosidl_generator_cpp -I/root/colcon_ws/build/dasc_msgs/rosidl_typesupport_fastrtps_cpp -isystem /opt/ros/foxy/include -isystem /opt/ros/foxy/include/foonathan_memory/comp -isystem /opt/ros/foxy/include/foonathan_memory 
+CXX_INCLUDES = -I/root/colcon_ws/src/dasc_msgs/include -I/root/colcon_ws/build/dasc_msgs/rosidl_generator_cpp -I/root/colcon_ws/build/dasc_msgs/rosidl_typesupport_fastrtps_cpp -isystem /opt/ros/foxy/include -isystem /opt/ros/foxy/include/foonathan_memory/comp -isystem /opt/ros/foxy/include/foonathan_memory 
 

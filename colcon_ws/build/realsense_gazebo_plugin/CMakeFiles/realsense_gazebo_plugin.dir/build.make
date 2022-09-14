@@ -297,8 +297,8 @@ librealsense_gazebo_plugin.so: /usr/lib/x86_64-linux-gnu/libdart-external-odelcp
 librealsense_gazebo_plugin.so: /usr/lib/x86_64-linux-gnu/libccd.so
 librealsense_gazebo_plugin.so: /usr/lib/x86_64-linux-gnu/libfcl.so
 librealsense_gazebo_plugin.so: /usr/lib/x86_64-linux-gnu/libassimp.so
-librealsense_gazebo_plugin.so: /usr/lib/x86_64-linux-gnu/liboctomap.so.1.9.3
-librealsense_gazebo_plugin.so: /usr/lib/x86_64-linux-gnu/liboctomath.so.1.9.3
+librealsense_gazebo_plugin.so: /opt/ros/foxy/lib/liboctomap.so.1.9.8
+librealsense_gazebo_plugin.so: /opt/ros/foxy/lib/liboctomath.so.1.9.8
 librealsense_gazebo_plugin.so: /usr/lib/x86_64-linux-gnu/libboost_atomic.so.1.71.0
 librealsense_gazebo_plugin.so: /usr/lib/x86_64-linux-gnu/libignition-transport8.so.8.3.0
 librealsense_gazebo_plugin.so: /usr/lib/x86_64-linux-gnu/libignition-fuel_tools4.so.4.4.0

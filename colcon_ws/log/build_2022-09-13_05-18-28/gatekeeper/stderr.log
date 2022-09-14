@@ -1,4 +1,0 @@
-/root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp: In member function ‘void gatekeeper::Gatekeeper::nominalTraj_callback(dasc_msgs::msg::QuadTrajectory_<std::allocator<void> >::SharedPtr)’:
-/root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp:183:23: warning: comparison of integer expressions of different signedness: ‘size_t’ {aka ‘long unsigned int’} and ‘int’ [-Wsign-compare]
-  183 |   for (size_t i =0; i < maxI; i++){
-      |                     ~~^~~~~~

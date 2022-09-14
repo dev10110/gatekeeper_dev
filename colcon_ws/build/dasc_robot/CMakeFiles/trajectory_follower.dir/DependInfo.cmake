@@ -18,10 +18,10 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/root/colcon_ws/src/robot-framework/include/dasc_robot"
-  "/root/colcon_ws/install/dasc_msgs/include"
   "/root/colcon_ws/install/px4_ros_com/include/px4_ros_com"
   "/root/colcon_ws/install/px4_ros_com/include"
   "/root/colcon_ws/install/px4_msgs/include"
+  "/root/colcon_ws/install/dasc_msgs/include"
   "/opt/ros/foxy/include"
   "/usr/include/eigen3"
   )

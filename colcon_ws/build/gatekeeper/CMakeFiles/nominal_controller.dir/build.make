@@ -88,10 +88,10 @@ nominal_controller: /opt/ros/foxy/lib/libsensor_msgs__rosidl_typesupport_c.so
 nominal_controller: /opt/ros/foxy/lib/libsensor_msgs__rosidl_typesupport_introspection_cpp.so
 nominal_controller: /opt/ros/foxy/lib/libsensor_msgs__rosidl_typesupport_cpp.so
 nominal_controller: /opt/ros/foxy/lib/libstatic_transform_broadcaster_node.so
-nominal_controller: /opt/ros/foxy/lib/libvisualization_msgs__rosidl_typesupport_introspection_c.so
-nominal_controller: /opt/ros/foxy/lib/libvisualization_msgs__rosidl_typesupport_c.so
-nominal_controller: /opt/ros/foxy/lib/libvisualization_msgs__rosidl_typesupport_introspection_cpp.so
-nominal_controller: /opt/ros/foxy/lib/libvisualization_msgs__rosidl_typesupport_cpp.so
+nominal_controller: /opt/ros/foxy/lib/libnav_msgs__rosidl_typesupport_introspection_c.so
+nominal_controller: /opt/ros/foxy/lib/libnav_msgs__rosidl_typesupport_c.so
+nominal_controller: /opt/ros/foxy/lib/libnav_msgs__rosidl_typesupport_introspection_cpp.so
+nominal_controller: /opt/ros/foxy/lib/libnav_msgs__rosidl_typesupport_cpp.so
 nominal_controller: /root/colcon_ws/install/dasc_msgs/lib/libdasc_msgs__rosidl_generator_c.so
 nominal_controller: /opt/ros/foxy/lib/libsensor_msgs__rosidl_generator_c.so
 nominal_controller: /opt/ros/foxy/lib/libtf2_ros.so
@@ -153,7 +153,7 @@ nominal_controller: /opt/ros/foxy/lib/librcl_interfaces__rosidl_generator_c.so
 nominal_controller: /opt/ros/foxy/lib/librcl_interfaces__rosidl_typesupport_c.so
 nominal_controller: /opt/ros/foxy/lib/librcl_interfaces__rosidl_typesupport_introspection_cpp.so
 nominal_controller: /opt/ros/foxy/lib/librcl_interfaces__rosidl_typesupport_cpp.so
-nominal_controller: /opt/ros/foxy/lib/libvisualization_msgs__rosidl_generator_c.so
+nominal_controller: /opt/ros/foxy/lib/libnav_msgs__rosidl_generator_c.so
 nominal_controller: /opt/ros/foxy/lib/libgeometry_msgs__rosidl_typesupport_introspection_c.so
 nominal_controller: /opt/ros/foxy/lib/libgeometry_msgs__rosidl_generator_c.so
 nominal_controller: /opt/ros/foxy/lib/libgeometry_msgs__rosidl_typesupport_c.so

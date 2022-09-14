@@ -20,11 +20,13 @@ find_package(ament_cmake REQUIRED)
 find_package(std_msgs    REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 
+include_directories(include)
+
+
 rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/QuadSetpoint.msg"
   "msg/QuadTrajectory.msg"
   DEPENDENCIES std_msgs
-
 )
 
 if(BUILD_TESTING)

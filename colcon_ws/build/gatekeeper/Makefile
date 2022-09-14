@@ -181,6 +181,19 @@ gatekeeper/fast:
 .PHONY : gatekeeper/fast
 
 #=============================================================================
+# Target rules for targets named joystick_controller
+
+# Build rule for target.
+joystick_controller: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 joystick_controller
+.PHONY : joystick_controller
+
+# fast build rule for target.
+joystick_controller/fast:
+	$(MAKE) -f CMakeFiles/joystick_controller.dir/build.make CMakeFiles/joystick_controller.dir/build
+.PHONY : joystick_controller/fast
+
+#=============================================================================
 # Target rules for targets named nominal_controller
 
 # Build rule for target.
@@ -219,6 +232,33 @@ uninstall/fast:
 	$(MAKE) -f CMakeFiles/uninstall.dir/build.make CMakeFiles/uninstall.dir/build
 .PHONY : uninstall/fast
 
+src/dynamics.o: src/dynamics.cpp.o
+
+.PHONY : src/dynamics.o
+
+# target to build an object file
+src/dynamics.cpp.o:
+	$(MAKE) -f CMakeFiles/gatekeeper.dir/build.make CMakeFiles/gatekeeper.dir/src/dynamics.cpp.o
+.PHONY : src/dynamics.cpp.o
+
+src/dynamics.i: src/dynamics.cpp.i
+
+.PHONY : src/dynamics.i
+
+# target to preprocess a source file
+src/dynamics.cpp.i:
+	$(MAKE) -f CMakeFiles/gatekeeper.dir/build.make CMakeFiles/gatekeeper.dir/src/dynamics.cpp.i
+.PHONY : src/dynamics.cpp.i
+
+src/dynamics.s: src/dynamics.cpp.s
+
+.PHONY : src/dynamics.s
+
+# target to generate assembly for a file
+src/dynamics.cpp.s:
+	$(MAKE) -f CMakeFiles/gatekeeper.dir/build.make CMakeFiles/gatekeeper.dir/src/dynamics.cpp.s
+.PHONY : src/dynamics.cpp.s
+
 src/gatekeeper.o: src/gatekeeper.cpp.o
 
 .PHONY : src/gatekeeper.o
@@ -245,6 +285,33 @@ src/gatekeeper.s: src/gatekeeper.cpp.s
 src/gatekeeper.cpp.s:
 	$(MAKE) -f CMakeFiles/gatekeeper.dir/build.make CMakeFiles/gatekeeper.dir/src/gatekeeper.cpp.s
 .PHONY : src/gatekeeper.cpp.s
+
+src/joystick_controller.o: src/joystick_controller.cpp.o
+
+.PHONY : src/joystick_controller.o
+
+# target to build an object file
+src/joystick_controller.cpp.o:
+	$(MAKE) -f CMakeFiles/joystick_controller.dir/build.make CMakeFiles/joystick_controller.dir/src/joystick_controller.cpp.o
+.PHONY : src/joystick_controller.cpp.o
+
+src/joystick_controller.i: src/joystick_controller.cpp.i
+
+.PHONY : src/joystick_controller.i
+
+# target to preprocess a source file
+src/joystick_controller.cpp.i:
+	$(MAKE) -f CMakeFiles/joystick_controller.dir/build.make CMakeFiles/joystick_controller.dir/src/joystick_controller.cpp.i
+.PHONY : src/joystick_controller.cpp.i
+
+src/joystick_controller.s: src/joystick_controller.cpp.s
+
+.PHONY : src/joystick_controller.s
+
+# target to generate assembly for a file
+src/joystick_controller.cpp.s:
+	$(MAKE) -f CMakeFiles/joystick_controller.dir/build.make CMakeFiles/joystick_controller.dir/src/joystick_controller.cpp.s
+.PHONY : src/joystick_controller.cpp.s
 
 src/nominal_controller.o: src/nominal_controller.cpp.o
 
@@ -313,13 +380,20 @@ help:
 	@echo "... edit_cache"
 	@echo "... test"
 	@echo "... gatekeeper"
+	@echo "... joystick_controller"
 	@echo "... nominal_controller"
 	@echo "... install/local"
 	@echo "... gatekeeper_uninstall"
 	@echo "... uninstall"
+	@echo "... src/dynamics.o"
+	@echo "... src/dynamics.i"
+	@echo "... src/dynamics.s"
 	@echo "... src/gatekeeper.o"
 	@echo "... src/gatekeeper.i"
 	@echo "... src/gatekeeper.s"
+	@echo "... src/joystick_controller.o"
+	@echo "... src/joystick_controller.i"
+	@echo "... src/joystick_controller.s"
 	@echo "... src/nominal_controller.o"
 	@echo "... src/nominal_controller.i"
 	@echo "... src/nominal_controller.s"

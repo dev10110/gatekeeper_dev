@@ -313,8 +313,11 @@ message(STATUS "Execute custom install script")
 # install("TARGETS" "nominal_controller" "DESTINATION" "lib/gatekeeper")
 include("/root/colcon_ws/build/gatekeeper/ament_cmake_symlink_install_targets_0_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
-# install("TARGETS" "gatekeeper" "DESTINATION" "lib/gatekeeper")
+# install("TARGETS" "joystick_controller" "DESTINATION" "lib/gatekeeper")
 include("/root/colcon_ws/build/gatekeeper/ament_cmake_symlink_install_targets_1_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+
+# install("TARGETS" "gatekeeper" "DESTINATION" "lib/gatekeeper")
+include("/root/colcon_ws/build/gatekeeper/ament_cmake_symlink_install_targets_2_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
 # install(FILES "/root/colcon_ws/build/gatekeeper/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/gatekeeper" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 ament_cmake_symlink_install_files("/root/colcon_ws/src/gatekeeper" FILES "/root/colcon_ws/build/gatekeeper/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/gatekeeper" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")

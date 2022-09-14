@@ -6,5 +6,5 @@ CXX_FLAGS = -fPIC   -Wall -std=gnu++14
 
 CXX_DEFINES = -DRCUTILS_ENABLE_FAULT_INJECTION -DROS_PACKAGE_NAME=\"dasc_msgs\" -Ddasc_msgs__rosidl_typesupport_introspection_cpp_EXPORTS
 
-CXX_INCLUDES = -I/root/colcon_ws/build/dasc_msgs/rosidl_generator_cpp -isystem /opt/ros/foxy/include 
+CXX_INCLUDES = -I/root/colcon_ws/src/dasc_msgs/include -I/root/colcon_ws/build/dasc_msgs/rosidl_generator_cpp -isystem /opt/ros/foxy/include 
 

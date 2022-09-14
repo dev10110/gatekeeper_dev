@@ -1,9 +1,0 @@
-[ 12%] Built target dascBots
-[35m[1mScanning dependencies of target joystick_controller[0m
-[ 68%] Built target example_control
-[ 68%] Built target example_control_geometric_acceleration
-[ 68%] Built target example_control_geometric
-[ 68%] Built target example_control_multi_rover
-[ 75%] Built target example_control_geometric_velocity
-[ 87%] Built target dasc_robot_lib
-[ 93%] [32mBuilding CXX object CMakeFiles/joystick_controller.dir/src/joystick_control.cpp.o[0m

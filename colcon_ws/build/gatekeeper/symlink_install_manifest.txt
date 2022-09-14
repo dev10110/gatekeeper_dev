@@ -1,4 +1,5 @@
 /root/colcon_ws/install/gatekeeper/lib/gatekeeper/nominal_controller
+/root/colcon_ws/install/gatekeeper/lib/gatekeeper/joystick_controller
 /root/colcon_ws/install/gatekeeper/lib/gatekeeper/gatekeeper
 /root/colcon_ws/install/gatekeeper/share/ament_index/resource_index/package_run_dependencies/gatekeeper
 /root/colcon_ws/install/gatekeeper/share/ament_index/resource_index/parent_prefix_path/gatekeeper

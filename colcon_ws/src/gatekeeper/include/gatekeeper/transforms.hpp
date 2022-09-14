@@ -11,16 +11,13 @@
 #include <geometry_msgs/msg/transform_stamped.hpp>
 
 namespace pcl_ros {
-    
-    /** \brief Obtain the transformation matrix from TF into an Eigen form
-     * \param bt the TF transformation
-     * \param out_mat the Eigen transformation
-     */
-    void transformAsMatrix(
-        const tf2::Transform &, Eigen::Matrix4f &);
-    Eigen::Matrix4f transformAsMatrix(
-        const geometry_msgs::msg::TransformStamped &);
-}
+
+/** \brief Obtain the transformation matrix from TF into an Eigen form
+ * \param bt the TF transformation
+ * \param out_mat the Eigen transformation
+ */
+void transformAsMatrix(const tf2::Transform &, Eigen::Matrix4f &);
+Eigen::Matrix4f transformAsMatrix(const geometry_msgs::msg::TransformStamped &);
+} // namespace pcl_ros
 
 #endif // PCL_ROS_TRANSFORMS_H_
-

@@ -1,9 +1,0 @@
-[35m[1mScanning dependencies of target nominal_controller[0m
-[ 50%] [32mBuilding CXX object CMakeFiles/nominal_controller.dir/src/nominal_controller.cpp.o[0m
-/root/colcon_ws/src/gatekeeper/src/nominal_controller.cpp: In member function ‘void NominalController::timer_callback()’:
-/root/colcon_ws/src/gatekeeper/src/nominal_controller.cpp:89:11: error: ‘transformStamped’ was not declared in this scope
-   89 |           transformStamped = tf_buffer_->lookupTransform(
-      |           ^~~~~~~~~~~~~~~~
-make[2]: *** [CMakeFiles/nominal_controller.dir/build.make:63: CMakeFiles/nominal_controller.dir/src/nominal_controller.cpp.o] Error 1
-make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/nominal_controller.dir/all] Error 2
-make: *** [Makefile:141: all] Error 2

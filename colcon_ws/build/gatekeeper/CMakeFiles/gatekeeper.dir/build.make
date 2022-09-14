@@ -83,16 +83,31 @@ CMakeFiles/gatekeeper.dir/src/transforms.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gatekeeper.dir/src/transforms.cpp.s"
 	/usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/colcon_ws/src/gatekeeper/src/transforms.cpp -o CMakeFiles/gatekeeper.dir/src/transforms.cpp.s
 
+CMakeFiles/gatekeeper.dir/src/dynamics.cpp.o: CMakeFiles/gatekeeper.dir/flags.make
+CMakeFiles/gatekeeper.dir/src/dynamics.cpp.o: /root/colcon_ws/src/gatekeeper/src/dynamics.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/colcon_ws/build/gatekeeper/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/gatekeeper.dir/src/dynamics.cpp.o"
+	/usr/lib/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gatekeeper.dir/src/dynamics.cpp.o -c /root/colcon_ws/src/gatekeeper/src/dynamics.cpp
+
+CMakeFiles/gatekeeper.dir/src/dynamics.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gatekeeper.dir/src/dynamics.cpp.i"
+	/usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/colcon_ws/src/gatekeeper/src/dynamics.cpp > CMakeFiles/gatekeeper.dir/src/dynamics.cpp.i
+
+CMakeFiles/gatekeeper.dir/src/dynamics.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gatekeeper.dir/src/dynamics.cpp.s"
+	/usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/colcon_ws/src/gatekeeper/src/dynamics.cpp -o CMakeFiles/gatekeeper.dir/src/dynamics.cpp.s
+
 # Object files for target gatekeeper
 gatekeeper_OBJECTS = \
 "CMakeFiles/gatekeeper.dir/src/gatekeeper.cpp.o" \
-"CMakeFiles/gatekeeper.dir/src/transforms.cpp.o"
+"CMakeFiles/gatekeeper.dir/src/transforms.cpp.o" \
+"CMakeFiles/gatekeeper.dir/src/dynamics.cpp.o"
 
 # External object files for target gatekeeper
 gatekeeper_EXTERNAL_OBJECTS =
 
 gatekeeper: CMakeFiles/gatekeeper.dir/src/gatekeeper.cpp.o
 gatekeeper: CMakeFiles/gatekeeper.dir/src/transforms.cpp.o
+gatekeeper: CMakeFiles/gatekeeper.dir/src/dynamics.cpp.o
 gatekeeper: CMakeFiles/gatekeeper.dir/build.make
 gatekeeper: /root/colcon_ws/install/dasc_msgs/lib/libdasc_msgs__rosidl_typesupport_introspection_c.so
 gatekeeper: /root/colcon_ws/install/dasc_msgs/lib/libdasc_msgs__rosidl_typesupport_c.so
@@ -103,6 +118,14 @@ gatekeeper: /opt/ros/foxy/lib/libsensor_msgs__rosidl_typesupport_c.so
 gatekeeper: /opt/ros/foxy/lib/libsensor_msgs__rosidl_typesupport_introspection_cpp.so
 gatekeeper: /opt/ros/foxy/lib/libsensor_msgs__rosidl_typesupport_cpp.so
 gatekeeper: /opt/ros/foxy/lib/libstatic_transform_broadcaster_node.so
+gatekeeper: /opt/ros/foxy/lib/libnav_msgs__rosidl_typesupport_introspection_c.so
+gatekeeper: /opt/ros/foxy/lib/libnav_msgs__rosidl_typesupport_c.so
+gatekeeper: /opt/ros/foxy/lib/libnav_msgs__rosidl_typesupport_introspection_cpp.so
+gatekeeper: /opt/ros/foxy/lib/libnav_msgs__rosidl_typesupport_cpp.so
+gatekeeper: /root/colcon_ws/install/px4_msgs/lib/libpx4_msgs__rosidl_typesupport_introspection_c.so
+gatekeeper: /root/colcon_ws/install/px4_msgs/lib/libpx4_msgs__rosidl_typesupport_c.so
+gatekeeper: /root/colcon_ws/install/px4_msgs/lib/libpx4_msgs__rosidl_typesupport_introspection_cpp.so
+gatekeeper: /root/colcon_ws/install/px4_msgs/lib/libpx4_msgs__rosidl_typesupport_cpp.so
 gatekeeper: /usr/lib/x86_64-linux-gnu/libpcl_apps.so
 gatekeeper: /usr/lib/x86_64-linux-gnu/libpcl_outofcore.so
 gatekeeper: /usr/lib/x86_64-linux-gnu/libpcl_people.so
@@ -131,8 +154,8 @@ gatekeeper: /usr/lib/x86_64-linux-gnu/libvtkViewsCore-7.1.so.7.1p.1
 gatekeeper: /usr/lib/x86_64-linux-gnu/libvtkRenderingContextOpenGL2-7.1.so.7.1p.1
 gatekeeper: /usr/lib/x86_64-linux-gnu/libvtkRenderingOpenGL2-7.1.so.7.1p.1
 gatekeeper: /usr/lib/x86_64-linux-gnu/libflann_cpp.so
-gatekeeper: /usr/lib/x86_64-linux-gnu/liboctomap.so
-gatekeeper: /usr/lib/x86_64-linux-gnu/liboctomath.so
+gatekeeper: /opt/ros/foxy/lib/liboctomap.so
+gatekeeper: /opt/ros/foxy/lib/liboctomath.so
 gatekeeper: /root/colcon_ws/install/dasc_msgs/lib/libdasc_msgs__rosidl_generator_c.so
 gatekeeper: /opt/ros/foxy/lib/libsensor_msgs__rosidl_generator_c.so
 gatekeeper: /opt/ros/foxy/lib/libtf2_ros.so
@@ -145,11 +168,6 @@ gatekeeper: /opt/ros/foxy/lib/libtf2_msgs__rosidl_generator_c.so
 gatekeeper: /opt/ros/foxy/lib/libtf2_msgs__rosidl_typesupport_c.so
 gatekeeper: /opt/ros/foxy/lib/libtf2_msgs__rosidl_typesupport_introspection_cpp.so
 gatekeeper: /opt/ros/foxy/lib/libtf2_msgs__rosidl_typesupport_cpp.so
-gatekeeper: /opt/ros/foxy/lib/libgeometry_msgs__rosidl_typesupport_introspection_c.so
-gatekeeper: /opt/ros/foxy/lib/libgeometry_msgs__rosidl_generator_c.so
-gatekeeper: /opt/ros/foxy/lib/libgeometry_msgs__rosidl_typesupport_c.so
-gatekeeper: /opt/ros/foxy/lib/libgeometry_msgs__rosidl_typesupport_introspection_cpp.so
-gatekeeper: /opt/ros/foxy/lib/libgeometry_msgs__rosidl_typesupport_cpp.so
 gatekeeper: /opt/ros/foxy/lib/libaction_msgs__rosidl_typesupport_introspection_c.so
 gatekeeper: /opt/ros/foxy/lib/libaction_msgs__rosidl_generator_c.so
 gatekeeper: /opt/ros/foxy/lib/libaction_msgs__rosidl_typesupport_c.so
@@ -168,11 +186,6 @@ gatekeeper: /opt/ros/foxy/lib/liblibstatistics_collector_test_msgs__rosidl_gener
 gatekeeper: /opt/ros/foxy/lib/liblibstatistics_collector_test_msgs__rosidl_typesupport_c.so
 gatekeeper: /opt/ros/foxy/lib/liblibstatistics_collector_test_msgs__rosidl_typesupport_introspection_cpp.so
 gatekeeper: /opt/ros/foxy/lib/liblibstatistics_collector_test_msgs__rosidl_typesupport_cpp.so
-gatekeeper: /opt/ros/foxy/lib/libstd_msgs__rosidl_typesupport_introspection_c.so
-gatekeeper: /opt/ros/foxy/lib/libstd_msgs__rosidl_generator_c.so
-gatekeeper: /opt/ros/foxy/lib/libstd_msgs__rosidl_typesupport_c.so
-gatekeeper: /opt/ros/foxy/lib/libstd_msgs__rosidl_typesupport_introspection_cpp.so
-gatekeeper: /opt/ros/foxy/lib/libstd_msgs__rosidl_typesupport_cpp.so
 gatekeeper: /opt/ros/foxy/lib/librcl.so
 gatekeeper: /opt/ros/foxy/lib/librmw_implementation.so
 gatekeeper: /opt/ros/foxy/lib/librmw.so
@@ -204,6 +217,18 @@ gatekeeper: /opt/ros/foxy/lib/librcl_interfaces__rosidl_generator_c.so
 gatekeeper: /opt/ros/foxy/lib/librcl_interfaces__rosidl_typesupport_c.so
 gatekeeper: /opt/ros/foxy/lib/librcl_interfaces__rosidl_typesupport_introspection_cpp.so
 gatekeeper: /opt/ros/foxy/lib/librcl_interfaces__rosidl_typesupport_cpp.so
+gatekeeper: /opt/ros/foxy/lib/libnav_msgs__rosidl_generator_c.so
+gatekeeper: /opt/ros/foxy/lib/libgeometry_msgs__rosidl_typesupport_introspection_c.so
+gatekeeper: /opt/ros/foxy/lib/libgeometry_msgs__rosidl_generator_c.so
+gatekeeper: /opt/ros/foxy/lib/libgeometry_msgs__rosidl_typesupport_c.so
+gatekeeper: /opt/ros/foxy/lib/libgeometry_msgs__rosidl_typesupport_introspection_cpp.so
+gatekeeper: /opt/ros/foxy/lib/libgeometry_msgs__rosidl_typesupport_cpp.so
+gatekeeper: /opt/ros/foxy/lib/libstd_msgs__rosidl_typesupport_introspection_c.so
+gatekeeper: /opt/ros/foxy/lib/libstd_msgs__rosidl_generator_c.so
+gatekeeper: /opt/ros/foxy/lib/libstd_msgs__rosidl_typesupport_c.so
+gatekeeper: /opt/ros/foxy/lib/libstd_msgs__rosidl_typesupport_introspection_cpp.so
+gatekeeper: /opt/ros/foxy/lib/libstd_msgs__rosidl_typesupport_cpp.so
+gatekeeper: /root/colcon_ws/install/px4_msgs/lib/libpx4_msgs__rosidl_generator_c.so
 gatekeeper: /opt/ros/foxy/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_c.so
 gatekeeper: /opt/ros/foxy/lib/libbuiltin_interfaces__rosidl_generator_c.so
 gatekeeper: /opt/ros/foxy/lib/libbuiltin_interfaces__rosidl_typesupport_c.so
@@ -280,7 +305,7 @@ gatekeeper: /usr/lib/x86_64-linux-gnu/libX11.so
 gatekeeper: /usr/lib/x86_64-linux-gnu/libXext.so
 gatekeeper: /usr/lib/x86_64-linux-gnu/libXt.so
 gatekeeper: CMakeFiles/gatekeeper.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/root/colcon_ws/build/gatekeeper/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable gatekeeper"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/root/colcon_ws/build/gatekeeper/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable gatekeeper"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/gatekeeper.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

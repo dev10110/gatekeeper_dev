@@ -1,6 +1,0 @@
-[35m[1mScanning dependencies of target gatekeeper[0m
-[ 40%] Built target nominal_controller
-[ 60%] [32mBuilding CXX object CMakeFiles/gatekeeper.dir/src/gatekeeper.cpp.o[0m
-make[2]: *** [CMakeFiles/gatekeeper.dir/build.make:63: CMakeFiles/gatekeeper.dir/src/gatekeeper.cpp.o] Interrupt
-make[1]: *** [CMakeFiles/Makefile2:80: CMakeFiles/gatekeeper.dir/all] Interrupt
-make: *** [Makefile:141: all] Interrupt

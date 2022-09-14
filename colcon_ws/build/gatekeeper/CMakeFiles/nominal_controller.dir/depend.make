@@ -13,6 +13,10 @@ CMakeFiles/nominal_controller.dir/src/nominal_controller.cpp.o: /opt/ros/foxy/in
 CMakeFiles/nominal_controller.dir/src/nominal_controller.cpp.o: /opt/ros/foxy/include/geometry_msgs/msg/detail/point__struct.hpp
 CMakeFiles/nominal_controller.dir/src/nominal_controller.cpp.o: /opt/ros/foxy/include/geometry_msgs/msg/detail/point__traits.hpp
 CMakeFiles/nominal_controller.dir/src/nominal_controller.cpp.o: /opt/ros/foxy/include/geometry_msgs/msg/detail/pose__struct.hpp
+CMakeFiles/nominal_controller.dir/src/nominal_controller.cpp.o: /opt/ros/foxy/include/geometry_msgs/msg/detail/pose__traits.hpp
+CMakeFiles/nominal_controller.dir/src/nominal_controller.cpp.o: /opt/ros/foxy/include/geometry_msgs/msg/detail/pose_stamped__builder.hpp
+CMakeFiles/nominal_controller.dir/src/nominal_controller.cpp.o: /opt/ros/foxy/include/geometry_msgs/msg/detail/pose_stamped__struct.hpp
+CMakeFiles/nominal_controller.dir/src/nominal_controller.cpp.o: /opt/ros/foxy/include/geometry_msgs/msg/detail/pose_stamped__traits.hpp
 CMakeFiles/nominal_controller.dir/src/nominal_controller.cpp.o: /opt/ros/foxy/include/geometry_msgs/msg/detail/quaternion__struct.hpp
 CMakeFiles/nominal_controller.dir/src/nominal_controller.cpp.o: /opt/ros/foxy/include/geometry_msgs/msg/detail/quaternion__traits.hpp
 CMakeFiles/nominal_controller.dir/src/nominal_controller.cpp.o: /opt/ros/foxy/include/geometry_msgs/msg/detail/transform__struct.hpp
@@ -23,6 +27,7 @@ CMakeFiles/nominal_controller.dir/src/nominal_controller.cpp.o: /opt/ros/foxy/in
 CMakeFiles/nominal_controller.dir/src/nominal_controller.cpp.o: /opt/ros/foxy/include/geometry_msgs/msg/detail/vector3__struct.hpp
 CMakeFiles/nominal_controller.dir/src/nominal_controller.cpp.o: /opt/ros/foxy/include/geometry_msgs/msg/detail/vector3__traits.hpp
 CMakeFiles/nominal_controller.dir/src/nominal_controller.cpp.o: /opt/ros/foxy/include/geometry_msgs/msg/point.hpp
+CMakeFiles/nominal_controller.dir/src/nominal_controller.cpp.o: /opt/ros/foxy/include/geometry_msgs/msg/pose_stamped.hpp
 CMakeFiles/nominal_controller.dir/src/nominal_controller.cpp.o: /opt/ros/foxy/include/geometry_msgs/msg/transform_stamped.hpp
 CMakeFiles/nominal_controller.dir/src/nominal_controller.cpp.o: /opt/ros/foxy/include/libstatistics_collector/collector/collector.hpp
 CMakeFiles/nominal_controller.dir/src/nominal_controller.cpp.o: /opt/ros/foxy/include/libstatistics_collector/collector/generate_statistics_message.hpp
@@ -34,6 +39,10 @@ CMakeFiles/nominal_controller.dir/src/nominal_controller.cpp.o: /opt/ros/foxy/in
 CMakeFiles/nominal_controller.dir/src/nominal_controller.cpp.o: /opt/ros/foxy/include/libstatistics_collector/topic_statistics_collector/received_message_period.hpp
 CMakeFiles/nominal_controller.dir/src/nominal_controller.cpp.o: /opt/ros/foxy/include/libstatistics_collector/topic_statistics_collector/topic_statistics_collector.hpp
 CMakeFiles/nominal_controller.dir/src/nominal_controller.cpp.o: /opt/ros/foxy/include/libstatistics_collector/visibility_control.hpp
+CMakeFiles/nominal_controller.dir/src/nominal_controller.cpp.o: /opt/ros/foxy/include/nav_msgs/msg/detail/path__builder.hpp
+CMakeFiles/nominal_controller.dir/src/nominal_controller.cpp.o: /opt/ros/foxy/include/nav_msgs/msg/detail/path__struct.hpp
+CMakeFiles/nominal_controller.dir/src/nominal_controller.cpp.o: /opt/ros/foxy/include/nav_msgs/msg/detail/path__traits.hpp
+CMakeFiles/nominal_controller.dir/src/nominal_controller.cpp.o: /opt/ros/foxy/include/nav_msgs/msg/path.hpp
 CMakeFiles/nominal_controller.dir/src/nominal_controller.cpp.o: /opt/ros/foxy/include/rcl/allocator.h
 CMakeFiles/nominal_controller.dir/src/nominal_controller.cpp.o: /opt/ros/foxy/include/rcl/arguments.h
 CMakeFiles/nominal_controller.dir/src/nominal_controller.cpp.o: /opt/ros/foxy/include/rcl/client.h
@@ -291,7 +300,6 @@ CMakeFiles/nominal_controller.dir/src/nominal_controller.cpp.o: /opt/ros/foxy/in
 CMakeFiles/nominal_controller.dir/src/nominal_controller.cpp.o: /opt/ros/foxy/include/statistics_msgs/msg/detail/metrics_message__traits.hpp
 CMakeFiles/nominal_controller.dir/src/nominal_controller.cpp.o: /opt/ros/foxy/include/statistics_msgs/msg/detail/statistic_data_point__struct.hpp
 CMakeFiles/nominal_controller.dir/src/nominal_controller.cpp.o: /opt/ros/foxy/include/statistics_msgs/msg/metrics_message.hpp
-CMakeFiles/nominal_controller.dir/src/nominal_controller.cpp.o: /opt/ros/foxy/include/std_msgs/msg/detail/color_rgba__struct.hpp
 CMakeFiles/nominal_controller.dir/src/nominal_controller.cpp.o: /opt/ros/foxy/include/std_msgs/msg/detail/header__struct.hpp
 CMakeFiles/nominal_controller.dir/src/nominal_controller.cpp.o: /opt/ros/foxy/include/std_msgs/msg/detail/header__traits.hpp
 CMakeFiles/nominal_controller.dir/src/nominal_controller.cpp.o: /opt/ros/foxy/include/tf2/LinearMath/Matrix3x3.h
@@ -329,14 +337,10 @@ CMakeFiles/nominal_controller.dir/src/nominal_controller.cpp.o: /opt/ros/foxy/in
 CMakeFiles/nominal_controller.dir/src/nominal_controller.cpp.o: /opt/ros/foxy/include/tracetools/tracetools.h
 CMakeFiles/nominal_controller.dir/src/nominal_controller.cpp.o: /opt/ros/foxy/include/tracetools/utils.hpp
 CMakeFiles/nominal_controller.dir/src/nominal_controller.cpp.o: /opt/ros/foxy/include/tracetools/visibility_control.hpp
-CMakeFiles/nominal_controller.dir/src/nominal_controller.cpp.o: /opt/ros/foxy/include/visualization_msgs/msg/detail/marker__struct.hpp
-CMakeFiles/nominal_controller.dir/src/nominal_controller.cpp.o: /opt/ros/foxy/include/visualization_msgs/msg/detail/marker_array__builder.hpp
-CMakeFiles/nominal_controller.dir/src/nominal_controller.cpp.o: /opt/ros/foxy/include/visualization_msgs/msg/detail/marker_array__struct.hpp
-CMakeFiles/nominal_controller.dir/src/nominal_controller.cpp.o: /opt/ros/foxy/include/visualization_msgs/msg/detail/marker_array__traits.hpp
-CMakeFiles/nominal_controller.dir/src/nominal_controller.cpp.o: /opt/ros/foxy/include/visualization_msgs/msg/marker_array.hpp
 CMakeFiles/nominal_controller.dir/src/nominal_controller.cpp.o: /root/colcon_ws/install/dasc_msgs/include/dasc_msgs/msg/detail/quad_trajectory__builder.hpp
 CMakeFiles/nominal_controller.dir/src/nominal_controller.cpp.o: /root/colcon_ws/install/dasc_msgs/include/dasc_msgs/msg/detail/quad_trajectory__struct.hpp
 CMakeFiles/nominal_controller.dir/src/nominal_controller.cpp.o: /root/colcon_ws/install/dasc_msgs/include/dasc_msgs/msg/detail/quad_trajectory__traits.hpp
 CMakeFiles/nominal_controller.dir/src/nominal_controller.cpp.o: /root/colcon_ws/install/dasc_msgs/include/dasc_msgs/msg/quad_trajectory.hpp
+CMakeFiles/nominal_controller.dir/src/nominal_controller.cpp.o: /root/colcon_ws/src/gatekeeper/include/gatekeeper/visualization.hpp
 CMakeFiles/nominal_controller.dir/src/nominal_controller.cpp.o: /root/colcon_ws/src/gatekeeper/src/nominal_controller.cpp
 

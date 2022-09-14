@@ -46,15 +46,16 @@ def generate_launch_description():
         IncludeLaunchDescription(
             PythonLaunchDescriptionSource([gazebo_launch_dir, '/gzserver.launch.py']),
             launch_arguments={'world': LaunchConfiguration('world'),
-                              'verbose': 'true'}.items(),
+                              'verbose': 'true',
+                              'lockstep': 'true'}.items(),
         ),
         IncludeLaunchDescription(
             PythonLaunchDescriptionSource([gazebo_launch_dir, '/gzclient.launch.py'])
         ),
         
-        #IncludeLaunchDescription(
-        #    XMLLaunchDescriptionSource([octomap_launch_dir, '/octomap_mapping.launch.xml'])
-        #),
+        # IncludeLaunchDescription(
+        #     XMLLaunchDescriptionSource([octomap_launch_dir, '/octomap_mapping.launch.xml'])
+        # ),
         
         Node(
             package="tf2_ros",
@@ -67,7 +68,22 @@ def generate_launch_description():
         #    executable="joystick_controller"
         #    ),
 
-        Node(
+        #Node(
+        #    package="dasc_robot",
+        #    executable="trajectory_follower"
+        #    ),
+        
+        #Node(
+        #    package="dasc_robot",
+        #    executable="example_control"
+        #    ),
+
+        #Node(
+        #    package="gatekeeper",
+        #    executable="gatekeeper"
+        #    ),
+
+         Node(
             package="joy",
             executable="joy_node"
             ),

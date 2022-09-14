@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/root/colcon_ws/src/gatekeeper/src/dynamics.cpp" "/root/colcon_ws/build/gatekeeper/CMakeFiles/gatekeeper.dir/src/dynamics.cpp.o"
   "/root/colcon_ws/src/gatekeeper/src/gatekeeper.cpp" "/root/colcon_ws/build/gatekeeper/CMakeFiles/gatekeeper.dir/src/gatekeeper.cpp.o"
   "/root/colcon_ws/src/gatekeeper/src/transforms.cpp" "/root/colcon_ws/build/gatekeeper/CMakeFiles/gatekeeper.dir/src/transforms.cpp.o"
   )
@@ -31,6 +32,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/usr/include/eigen3"
   "/usr/include/ni"
   "/usr/include/openni2"
+  "/root/colcon_ws/install/px4_msgs/include"
   "/root/colcon_ws/install/dasc_msgs/include"
   "/opt/ros/foxy/include"
   )
