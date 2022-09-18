@@ -28,12 +28,13 @@ using namespace std::placeholders;
 
 class JoystickController : public rclcpp::Node {
 public:
-  JoystickController() : Node("nominal_controller") {
+  JoystickController() : Node("joystick_controller") {
 
     start_time = this->get_clock()->now();
 
     traj_pub_ = this->create_publisher<dasc_msgs::msg::QuadTrajectory>(
-        "/nominal_trajectory", 10);
+        "committed_trajectory", 10);
+        //"/nominal_trajectory", 10);
 
     traj_viz_pub_ =
         this->create_publisher<nav_msgs::msg::Path>("/nomimal_traj_viz", 10);
@@ -86,7 +87,7 @@ private:
     // get the transform
     try {
       auto transformStamped =
-          tf_buffer_->lookupTransform("world", "drone1", tf2::TimePointZero);
+          tf_buffer_->lookupTransform("world", "drone1", msg->header.stamp, 100ms);
 
       last_x = transformStamped.transform.translation.x;
       last_y = transformStamped.transform.translation.y;
