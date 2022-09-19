@@ -3,7 +3,6 @@
 #include <memory>
 
 #include <builtin_interfaces/msg/time.hpp>
-#include <dasc_msgs/msg/quad_setpoint.hpp>
 #include <dasc_msgs/msg/quad_trajectory.hpp>
 #include <geometry_msgs/msg/point.hpp>
 #include <nav_msgs/msg/path.hpp>
@@ -36,13 +35,10 @@ public:
     rclcpp::Parameter simTime("use_sim_time", rclcpp::ParameterValue(true));
     this->set_parameter(simTime);
 
-    //traj_pub_ = this->create_publisher<dasc_msgs::msg::QuadTrajectory>(
-    //    "/committed_trajectory", 10);
+    traj_pub_ = this->create_publisher<dasc_msgs::msg::QuadTrajectory>(
+        "/committed_trajectory", 10);
     // "/nominal_trajectory", 10);
 
-    traj_pub_ = this->create_publisher<dasc_msgs::msg::QuadSetpoint>(
-     "/target_setpoint", 10);
-    
     traj_viz_pub_ =
         this->create_publisher<nav_msgs::msg::Path>("/nominal_traj_viz", 10);
 
@@ -55,7 +51,7 @@ public:
         std::make_shared<tf2_ros::TransformListener>(*tf_buffer_);
 
     timer_ = this->create_wall_timer(
-        50ms, std::bind(&JoystickController::timer_callback, this));
+        1000ms, std::bind(&JoystickController::timer_callback, this));
   }
 
 private:
@@ -78,10 +74,8 @@ private:
   // rclcpp
   rclcpp::TimerBase::SharedPtr timer_;
   rclcpp::Subscription<sensor_msgs::msg::Joy>::SharedPtr joy_sub_{nullptr};
-  rclcpp::Publisher<dasc_msgs::msg::QuadSetpoint>::SharedPtr traj_pub_{
+  rclcpp::Publisher<dasc_msgs::msg::QuadTrajectory>::SharedPtr traj_pub_{
       nullptr};
-  //rclcpp::Publisher<dasc_msgs::msg::QuadTrajectory>::SharedPtr traj_pub_{
-  //    nullptr};
   rclcpp::Publisher<nav_msgs::msg::Path>::SharedPtr traj_viz_pub_;
 
   std::shared_ptr<tf2_ros::TransformListener> transform_listener_{nullptr};
@@ -107,24 +101,14 @@ private:
     vel_x = cmd_pitch * std::cos(last_yaw) - cmd_roll * std::sin(last_yaw);
     vel_y = cmd_pitch * std::sin(last_yaw) + cmd_roll * std::cos(last_yaw);
     vel_z = cmd_throttle;
-    vel_t = 2*cmd_yaw;
+    vel_t = cmd_yaw;
 
-    double dt = 0.05;
+    double dt = 0.1;
 
     target_x += vel_x * dt;
     target_y += vel_y * dt;
     target_z += vel_z * dt;
     target_yaw += vel_t * dt;
-
-
-    if (msg->buttons[1] == 1) {
-      // reset target
-      target_x = last_x;
-      target_y = last_y;
-      target_z = last_z;
-      target_yaw = last_yaw;
-      RCLCPP_INFO(this->get_logger(), "RESETING");
-    }
 
     return;
   }
@@ -139,6 +123,7 @@ private:
 
   void timer_callback() {
 
+    double T = 1.0; // horizon
 
     // get the transform
     try {
@@ -162,26 +147,51 @@ private:
     target_z = saturate(target_z, last_z, 1.0);
     target_yaw = dyn::clampToPi(saturate(target_yaw, last_yaw, 1.0 * M_PI));
 
-    dasc_msgs::msg::QuadSetpoint traj{};
+    double x = last_x;
+    double y = last_y;
+    double z = last_z;
+    double yaw = last_yaw;
+
+    // construct the desired trajectory
+    dasc_msgs::msg::QuadTrajectory traj = dasc_msgs::msg::QuadTrajectory();
 
     traj.header.stamp = transformStamped.header.stamp;
     traj.header.frame_id = "world";
 
-    traj.x = target_x;
-    traj.y = target_y;
-    traj.z = target_z;
-    traj.yaw = target_yaw;
+    for (int i = 0; i < 20; i++) {
+
+      double f = (double)i / 20.0;
+
+      traj.ts.push_back(f * T);
+      traj.xs.push_back(x);
+      traj.ys.push_back(y);
+      traj.zs.push_back(z);
+      traj.yaws.push_back(yaw);
+      traj.vxs.push_back(0 * vel_x);
+      traj.vys.push_back(0 * vel_y);
+      traj.vzs.push_back(0 * vel_z);
+
+      x += vel_x * T / 20.0;
+      y += vel_y * T / 20.0;
+      z += vel_z * T / 20.0;
+      yaw += vel_t * T / 20.0;
+
+      x = saturate(x, last_x, 1.0);
+      y = saturate(y, last_y, 1.0);
+      z = saturate(z, last_z, 1.0);
+      yaw = dyn::clampToPi(yaw);
+    }
 
     // // publish desired trajectory
     RCLCPP_INFO(this->get_logger(), "PUBLISHING! Target: (%f, %f, %f, %f)",
                 target_x, target_y, target_z, target_yaw);
     traj_pub_->publish(traj);
 
-    //nav_msgs::msg::Path path = dasc_msgs::msg::toPathMsg(traj);
-    //path.header.stamp = traj.header.stamp;
-    //path.header.frame_id = traj.header.frame_id;
+    nav_msgs::msg::Path path = dasc_msgs::msg::toPathMsg(traj);
+    path.header.stamp = traj.header.stamp;
+    path.header.frame_id = traj.header.frame_id;
 
-    //traj_viz_pub_->publish(path);
+    traj_viz_pub_->publish(path);
   }
 
 }; // class JoystickController

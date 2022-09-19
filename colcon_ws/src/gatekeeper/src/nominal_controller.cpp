@@ -100,7 +100,7 @@ private:
       msg.vxs.push_back(0.0);
       msg.vys.push_back(0.0);
       msg.vzs.push_back(0.0);
-      msg.yaws.push_back(th + 0.5*M_PI*(t/T));
+      msg.yaws.push_back(th + 0.5 * M_PI * (t / T));
 
       t += dt;
       x += vx * dt;
@@ -113,13 +113,13 @@ private:
       double f = (t - T) / T;
 
       msg.ts.push_back(t);
-      msg.xs.push_back(0.0); // R * std::cos(th) - R);
-      msg.ys.push_back(4.0*f);   // R * std::sin(th) );
+      msg.xs.push_back(0.0);     // R * std::cos(th) - R);
+      msg.ys.push_back(4.0 * f); // R * std::sin(th) );
       msg.zs.push_back(0.5);
       msg.vxs.push_back(0.0);
       msg.vys.push_back(0.0);
       msg.vzs.push_back(0.0);
-      msg.yaws.push_back(M_PI*0.5);
+      msg.yaws.push_back(M_PI * 0.5);
 
       t += dt;
       x += vx * dt;
@@ -132,13 +132,13 @@ private:
       double f = (t - 2 * T) / T;
 
       msg.ts.push_back(t);
-      msg.xs.push_back(0.0); // R * std::cos(th) - R);
-      msg.ys.push_back(4 * (1.0 - f));           // R * std::sin(th) );
+      msg.xs.push_back(0.0);           // R * std::cos(th) - R);
+      msg.ys.push_back(4 * (1.0 - f)); // R * std::sin(th) );
       msg.zs.push_back(0.5);
       msg.vxs.push_back(0.0);
       msg.vys.push_back(0.0);
       msg.vzs.push_back(0.0);
-      msg.yaws.push_back(M_PI*0.5);
+      msg.yaws.push_back(M_PI * 0.5);
 
       t += dt;
       x += vx * dt;

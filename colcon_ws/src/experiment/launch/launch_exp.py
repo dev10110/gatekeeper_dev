@@ -60,7 +60,10 @@ def generate_launch_description():
         Node(
             package="tf2_ros",
             executable="static_transform_publisher",
-            arguments=['0','0','0','-1.57','0','-1.57', 'drone1', 'camera_link']
+            arguments=['0','0','0','-1.57','0','-1.57', 'drone1', 'camera_link'],
+            parameters = [
+                {'use_sim_time': True}
+                ],
             ),
         
         #Node(
@@ -85,7 +88,10 @@ def generate_launch_description():
 
          Node(
             package="joy",
-            executable="joy_node"
+            executable="joy_node",
+            parameters = [
+                {'use_sim_time': True}
+                ],
             ),
 
         ExecuteProcess(

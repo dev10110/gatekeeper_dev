@@ -57,12 +57,45 @@ Input tracking_controller(State &x, State &x_des) {
   double kp = 4.0;
   double kv = 2.0;
 
-  u.ax = kp * (x_des.x - x.x) + kv * (x_des.vx - x.vx);
-  u.ay = kp * (x_des.y - x.y) + kv * (x_des.vy - x.vy);
-  u.az = kp * (x_des.z - x.z) + kv * (x_des.vz - x.vz);
+  u.ax = 0.0;
+  u.ay = 0.0;
+  u.az = 0.0;
 
-  double angle_diff = clampToPi(x_des.yaw - x.yaw);
-  u.yaw_rate = 1.0 * std::min(M_PI / 4.0, std::max(angle_diff, -M_PI / 4.0));
+  if (!std::isnan(x_des.x)) {
+    u.ax += kp * (x_des.x - x.x);
+  }
+  if (!std::isnan(x_des.y)) {
+    u.ay += kp * (x_des.y - x.y);
+  }
+  if (!std::isnan(x_des.z)) {
+    u.az += kp * (x_des.z - x.z);
+  }
+
+  if (!std::isnan(x_des.vx)) {
+    u.ax += kv * (x_des.vx - x.vx);
+  }
+  if (!std::isnan(x_des.vy)) {
+    u.ay += kv * (x_des.vy - x.vy);
+  }
+  if (!std::isnan(x_des.vz)) {
+    u.az += kv * (x_des.vz - x.vz);
+  }
+
+  u.yaw_rate = 0.0;
+  if (!std::isnan(x_des.yaw)) {
+    double angle_diff = clampToPi(x_des.yaw - x.yaw);
+    u.yaw_rate += 1.0 * std::min(M_PI / 4.0, std::max(angle_diff, -M_PI / 4.0));
+  }
+
+
+  double a_max = 2.0;
+
+  if (u.ax > a_max) u.ax = a_max;
+  if (u.ax < -a_max) u.ax = -a_max;
+  if (u.ay > a_max) u.ay = a_max;
+  if (u.az > a_max) u.az = a_max;
+  if (u.ay < -a_max) u.ay = -a_max;
+  if (u.az < -a_max) u.az = -a_max;
 
   return u;
 }
@@ -166,6 +199,56 @@ Trajectory interpolate(Trajectory &P_des, float dt) {
   return P;
 }
 
+Trajectory simulate_target_hover(double t0, State &x0, State &target,
+                                 size_t N_nom, size_t N_ext, double dt) {
+
+  Trajectory P{};
+
+  State x(x0);
+
+  double des_hover_yaw = 0.0;
+
+  double t = t0;
+
+  for (size_t i = 0; i < N_nom; i++) {
+
+    Input u = tracking_controller(x, target);
+
+    P.ts.push_back(t);
+    P.xs.push_back(copy(x));
+    P.us.push_back(copy(u));
+
+    des_hover_yaw = target.yaw;
+
+    x = dynamics(x, u, dt);
+    t = t + dt;
+  }
+
+  // define the desired hover state
+  State hover = copy(x);
+  hover.vx = 0.0;
+  hover.vy = 0.0;
+  hover.vz = 0.0;
+  hover.yaw = des_hover_yaw;
+
+  for (size_t i = 0; i < N_ext; i++) {
+
+    Input u = tracking_controller(x, hover);
+
+    P.ts.push_back(t);
+    P.xs.push_back(copy(x));
+    P.us.push_back(copy(u));
+
+    x = dynamics(x, u, dt);
+    t = t + dt;
+  }
+
+  // std::cout << "** SIMED: " << std::endl;
+  // print(P);
+
+  return P;
+}
+
 Trajectory simulate_extend_hover(double t0, State &x0, Trajectory &P_nom,
                                  size_t N_nom, size_t N_ext, double dt) {
 
@@ -177,20 +260,31 @@ Trajectory simulate_extend_hover(double t0, State &x0, Trajectory &P_nom,
   State x(x0);
   double t = t0;
 
-  double des_hover = x.yaw;
+  double des_hover_yaw = x.yaw;
 
+  size_t ind = 0;
+  bool done = false;
   for (size_t i = 0; i < N_nom; i++) {
 
-    if (i >= P_des.xs.size())
+    while (P_des.ts[ind] < t) {
+      ind++;
+      if (ind >= P_des.xs.size()) {
+        done = true;
+      }
+    }
+
+    if (done)
       break;
 
-    Input u = tracking_controller(x, P_des.xs[i]);
+    State target = P_des.xs[ind];
+
+    Input u = tracking_controller(x, target);
 
     P.ts.push_back(t);
     P.xs.push_back(copy(x));
     P.us.push_back(copy(u));
 
-    des_hover = P_des.xs[i].yaw;
+    des_hover_yaw = target.yaw;
 
     x = dynamics(x, u, dt);
     t = t + dt;
@@ -201,7 +295,7 @@ Trajectory simulate_extend_hover(double t0, State &x0, Trajectory &P_nom,
   hover.vx = 0.0;
   hover.vy = 0.0;
   hover.vz = 0.0;
-  hover.yaw = des_hover;
+  hover.yaw = des_hover_yaw;
 
   for (size_t i = 0; i < N_ext; i++) {
 
