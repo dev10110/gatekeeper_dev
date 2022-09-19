@@ -212,7 +212,16 @@ Trajectory simulate_target_hover(double t0, State &x0, State &target,
 
   for (size_t i = 0; i < N_nom; i++) {
 
-    Input u = tracking_controller(x, target);
+	  Input u{};
+    if (dt * i >= 0.050) { // if more than 50 ms from start
+    u = tracking_controller(x, target);
+    }
+    else{
+    u.ax = 0.0;
+    u.ay = 0.0;
+    u.az = 0.0;
+    u.yaw_rate = 0.0;
+    }
 
     P.ts.push_back(t);
     P.xs.push_back(copy(x));

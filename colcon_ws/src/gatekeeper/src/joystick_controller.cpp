@@ -55,7 +55,7 @@ public:
         std::make_shared<tf2_ros::TransformListener>(*tf_buffer_);
 
     timer_ = this->create_wall_timer(
-        50ms, std::bind(&JoystickController::timer_callback, this));
+        200ms, std::bind(&JoystickController::timer_callback, this));
   }
 
 private:

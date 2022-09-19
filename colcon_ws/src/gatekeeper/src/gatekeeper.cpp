@@ -138,6 +138,7 @@ void Gatekeeper::assume_free_space() {
 void Gatekeeper::cloud_callback(
     const sensor_msgs::msg::PointCloud2::SharedPtr msg) {
 
+  return;
 
   auto start = std::chrono::steady_clock::now();
 
@@ -235,6 +236,8 @@ bool Gatekeeper::isSafe(double x, double y, double z, double r) {
 bool Gatekeeper::isSafe(dyn::Trajectory P) {
 
 
+  return true;
+
   double R = 0.30; // margin radius
 
   size_t N = P.ts.size();
@@ -312,6 +315,9 @@ dasc_msgs::msg::QuadTrajectory direct_copy(dyn::Trajectory P, int i = -1) {
     msg.vys.push_back(P.xs[i].vy);
     msg.vzs.push_back(P.xs[i].vz);
     msg.yaws.push_back(P.xs[i].yaw);
+    msg.axs.push_back(P.us[i].ax);
+    msg.ays.push_back(P.us[i].ay);
+    msg.azs.push_back(P.us[i].az);
   }
 
   return msg;
@@ -372,13 +378,13 @@ void Gatekeeper::traj_timer_callback() {
 
   // forward simulate on the last quad state
 
-  auto now = this->get_clock()-> now();
 
-  dyn::Trajectory P_ext = simulate_target_hover(0.0, last_quad_state, target, 50, 400, 0.01);
+  // dyn::Trajectory P_ext = simulate_target_hover(0.0, last_quad_state, target, 50, 400, 0.01);
+  dyn::Trajectory P_ext = simulate_target_hover(0.0, last_quad_state, target, 50, 100, 0.01);
 
   // publish the extended trajectory
   dasc_msgs::msg::QuadTrajectory ext_msg = direct_copy(P_ext);
-  ext_msg.header.stamp = now;
+  ext_msg.header.stamp = last_pos_t;
   ext_msg.header.frame_id = "world";
   publish_extended_traj(ext_msg);
 
